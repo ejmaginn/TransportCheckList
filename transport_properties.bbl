@@ -1,0 +1,132 @@
+\begin{thebibliography}{13}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\urlprefix}{}
+\providecommand{\doiprefix}{doi: }
+
+\bibitem[{LAM(????)}]{LAMMPS}
+LAMMPS Users' Workshop;.
+\newblock
+  \url{http://lammps.sandia.gov/workshops/Feb10/Craig_Tenney/rnemd-lammps2010.pdf},
+  \url{http://lammps.sandia.gov/tutorials/sor13/SoR_09-Common_NonEquilibrium_Calculations.pdf}.
+
+\bibitem[{Aivazian et~al.(2006)Aivazian, Dikran and Serrano, Ramon L. and
+  Pfeffer, Suzanne}]{Aivazian917}
+\textbf{\color{LiveCoMSMediumGrey} Aivazian D}, Serrano RL, Pfeffer S.
+\newblock TIP47 is a key effector for Rab9 localization.
+\newblock The Journal of Cell Biology.  2006; 173(6):917--926.
+\newblock \urlprefix\url{http://jcb.rupress.org/content/173/6/917},
+  \href{http://dx.doi.org/10.1083/jcb.200510010}{\doiprefix
+  \detokenize{http://dx.doi.org/10.1083/jcb.200510010}}.
+
+\bibitem[{Bloss et~al.(2016)Bloss, Cinnamon S and Wineinger, Nathan E and
+  Peters, Melissa and Boeldt, Debra L and Ariniello, Lauren and Kim, Ju Young
+  and Sheard, Judy and Komatireddy, Ravi and Barrett, Paddy and Topol, Eric
+  J}]{Bloss029983}
+\textbf{\color{LiveCoMSMediumGrey} Bloss CS}, Wineinger NE, Peters M, Boeldt
+  DL, Ariniello L, Kim JY, Sheard J, Komatireddy R, Barrett P, Topol EJ.
+\newblock A prospective randomized trial examining health care utilization in
+  individuals using multiple smartphone-enabled biosensors.
+\newblock bioRxiv.  2016;
+  \urlprefix\url{http://biorxiv.org/content/early/2016/01/14/029983},
+  \href{http://dx.doi.org/10.1101/029983}{\doiprefix
+  \detokenize{http://dx.doi.org/10.1101/029983}}.
+
+\bibitem[{Brettar et~al.(2004{\natexlab{a}})Brettar, Ingrid and Christen,
+  Richard and Höfle, Manfred
+  G.}]{SGM:/content/journal/ijsem/10.1099/ijs.0.63255-0}
+\textbf{\color{LiveCoMSMediumGrey} Brettar I}, Christen R, Höfle MG.
+\newblock Aquiflexum balticum gen. nov., sp. nov., a novel marine bacterium of
+  the Cytophaga–Flavobacterium–Bacteroides group isolated from surface
+  water of the central Baltic Sea.
+\newblock International Journal of Systematic and Evolutionary Microbiology.
+  2004; 54(6):2335--2341.
+\newblock
+  \urlprefix\url{http://ijs.microbiologyresearch.org/content/journal/ijsem/10.1099/ijs.0.63255-0}.
+
+\bibitem[{Brettar et~al.(2004{\natexlab{b}})Brettar, Ingrid and Christen,
+  Richard and Höfle, Manfred
+  G.}]{SGM:/content/journal/ijsem/10.1099/ijs.0.02752-0}
+\textbf{\color{LiveCoMSMediumGrey} Brettar I}, Christen R, Höfle MG.
+\newblock Belliella baltica gen. nov., sp. nov., a novel marine bacterium of
+  the Cytophaga–Flavobacterium–Bacteroides group isolated from surface
+  water of the central Baltic Sea.
+\newblock International Journal of Systematic and Evolutionary Microbiology.
+  2004; 54(1):65--70.
+\newblock
+  \urlprefix\url{http://ijs.microbiologyresearch.org/content/journal/ijsem/10.1099/ijs.0.02752-0}.
+
+\bibitem[{Hieber and Chiang(1992)Hieber, C. A. and Chiang, H. H.}]{Hieber1992}
+\textbf{\color{LiveCoMSMediumGrey} Hieber CA}, Chiang HH.
+\newblock Shear-rate-dependence modeling of polymer melt viscosity.
+\newblock Polymer Engineering \& Science.  1992; 32(14):931--938.
+\newblock \urlprefix\url{http://dx.doi.org/10.1002/pen.760321404},
+  \href{10.1002/pen.760321404}{\doiprefix \detokenize{10.1002/pen.760321404}}.
+
+\bibitem[{Kioupis and Maginn(2000)Kioupis, Loukas I. and Maginn, Edward
+  J.}]{Kioupis2000}
+\textbf{\color{LiveCoMSMediumGrey} Kioupis LI}, Maginn EJ.
+\newblock Impact of Molecular Architecture on the High-Pressure Rheology of
+  Hydrocarbon Fluids.
+\newblock The Journal of Physical Chemistry B.  2000; 104(32):7774--7783.
+\newblock \urlprefix\url{http://dx.doi.org/10.1021/jp000966x},
+  \href{10.1021/jp000966x}{\doiprefix \detokenize{10.1021/jp000966x}}.
+
+\bibitem[{McQuilton et~al.(2012)McQuilton, Peter and St. Pierre, Susan E. and
+  Thurmond, Jim and the FlyBase Consortium}]{McQuilton01012012}
+\textbf{\color{LiveCoMSMediumGrey} McQuilton P}, St~Pierre SE, Thurmond J, the
+  FlyBase~Consortium.
+\newblock FlyBase 101 – the basics of navigating FlyBase.
+\newblock Nucleic Acids Research.  2012; 40(D1):D706--D714.
+\newblock
+  \urlprefix\url{http://nar.oxfordjournals.org/content/40/D1/D706.abstract},
+  \href{http://dx.doi.org/10.1093/nar/gkr1030}{\doiprefix
+  \detokenize{http://dx.doi.org/10.1093/nar/gkr1030}}.
+
+\bibitem[{Moultos et~al.(2016)Othonas A. Moultos and Yong Zhang and Ioannis N.
+  Tsimpanogiannis and Ioannis G. Economou and Edward J. Maginn}]{Moultos2016}
+\textbf{\color{LiveCoMSMediumGrey} Moultos OA}, Zhang Y, Tsimpanogiannis IN,
+  Economou IG, Maginn EJ.
+\newblock System-size corrections for self-diffusion coefficients calculated
+  from molecular dynamics simulations: The case of CO2, n-alkanes, and
+  poly(ethylene glycol) dimethyl ethers.
+\newblock The Journal of Chemical Physics.  2016; 145(7):074109.
+\newblock \urlprefix\url{http://dx.doi.org/10.1063/1.4960776},
+  \href{10.1063/1.4960776}{\doiprefix \detokenize{10.1063/1.4960776}}.
+
+\bibitem[{M\"uller-Plathe(1999)M\"uller-Plathe, Florian}]{Muller1999}
+\textbf{\color{LiveCoMSMediumGrey} M\"uller-Plathe F}.
+\newblock Reversing the perturbation in nonequilibrium molecular dynamics: An
+  easy way to calculate the shear viscosity of fluids.
+\newblock Phys Rev E.  1999 May; 59:4894--4898.
+\newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.59.4894},
+  \href{10.1103/PhysRevE.59.4894}{\doiprefix
+  \detokenize{10.1103/PhysRevE.59.4894}}.
+
+\bibitem[{Tenney and Maginn(2010)Craig M. Tenney and Edward J.
+  Maginn}]{Tenney2010}
+\textbf{\color{LiveCoMSMediumGrey} Tenney CM}, Maginn EJ.
+\newblock Limitations and recommendations for the calculation of shear
+  viscosity using reverse nonequilibrium molecular dynamics.
+\newblock The Journal of Chemical Physics.  2010; 132(1):014103.
+\newblock \urlprefix\url{http://dx.doi.org/10.1063/1.3276454},
+  \href{10.1063/1.3276454}{\doiprefix \detokenize{10.1063/1.3276454}}.
+
+\bibitem[{Yeh and Hummer(2004)Yeh, In-Chul and Hummer, Gerhard}]{Yeh2004}
+\textbf{\color{LiveCoMSMediumGrey} Yeh IC}, Hummer G.
+\newblock System-Size Dependence of Diffusion Coefficients and Viscosities from
+  Molecular Dynamics Simulations with Periodic Boundary Conditions.
+\newblock The Journal of Physical Chemistry B.  2004; 108(40):15873--15879.
+\newblock \urlprefix\url{http://dx.doi.org/10.1021/jp0477147},
+  \href{10.1021/jp0477147}{\doiprefix \detokenize{10.1021/jp0477147}}.
+
+\bibitem[{Zhang et~al.(2015)Zhang, Yong and Otani, Akihito and Maginn, Edward
+  J.}]{Zhang2015}
+\textbf{\color{LiveCoMSMediumGrey} Zhang Y}, Otani A, Maginn EJ.
+\newblock Reliable Viscosity Calculation from Equilibrium Molecular Dynamics
+  Simulations: A Time Decomposition Method.
+\newblock Journal of Chemical Theory and Computation.  2015; 11(8):3537--3546.
+\newblock \urlprefix\url{http://dx.doi.org/10.1021/acs.jctc.5b00351},
+  \href{10.1021/acs.jctc.5b00351}{\doiprefix
+  \detokenize{10.1021/acs.jctc.5b00351}}, pMID: 26574439.
+
+\end{thebibliography}

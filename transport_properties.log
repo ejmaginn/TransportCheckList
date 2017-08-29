@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  29 AUG 2017 09:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  29 AUG 2017 10:16
 entering extended mode
 **./transport_properties.tex
 (transport_properties.tex
@@ -1959,44 +1959,44 @@ Package: translator 2010/06/12 ver 1.10
 appings.tex"))) (transport_properties.aux)
 \openout1 = `transport_properties.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 54.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 43.
-LaTeX Font Info:    Try loading font information for LS1+stix on input line 43.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 54.
+LaTeX Font Info:    Try loading font information for LS1+stix on input line 54.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\stix\ls1stix.fd"
 File: ls1stix.fd 2015/04/17 v1.1.2-latex STIX LS1 font definitions
 )
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 43.
-LaTeX Font Info:    Try loading font information for LS2+stix on input line 43.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 54.
+LaTeX Font Info:    Try loading font information for LS2+stix on input line 54.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\stix\ls2stix.fd"
 File: ls2stix.fd 2015/04/17 v1.1.2-latex STIX LS2 font definitions
 )
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Try loading font information for T1+fos on input line 43.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Try loading font information for T1+fos on input line 54.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\opensans\t1fos.fd"
 File: t1fos.fd 2011/11/11 Fontinst v1.927 font definitions for T1/fos.
@@ -2029,7 +2029,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Info: Redefining \microtypecontext on input line 43.
+LaTeX Info: Redefining \microtypecontext on input line 54.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2084,8 +2084,8 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 43.
-Package hyperref Info: Link coloring ON on input line 43.
+(lastpage)             ! on input line 54.
+Package hyperref Info: Link coloring ON on input line 54.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -2094,9 +2094,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count349
 )
-LaTeX Info: Redefining \ref on input line 43.
-LaTeX Info: Redefining \pageref on input line 43.
-LaTeX Info: Redefining \nameref on input line 43.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
 
 (transport_properties.out) (transport_properties.out)
 \@outlinefile=\write4
@@ -2105,7 +2105,7 @@ LaTeX Info: Redefining \nameref on input line 43.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 43.
+. Activating mapping `default' on line 54.
 .................................................
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\translator\dicts\translator-basi
@@ -2117,47 +2117,47 @@ File: siunitx-abbreviations.cfg 2017/08/02 v2.7j siunitx: Abbreviated units
 )
 \c__siunitx_mathsf_int=\count350
 LaTeX Font Info:    Try loading font information for LS1+stixscr on input line 
-43.
+54.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\stix\ls1stixscr.fd"
 File: ls1stixscr.fd 2015/04/17 v1.1.2-latex STIX script LS1 font definitions
 )
-LaTeX Font Info:    Try loading font information for LS2+stixex on input line 4
-3.
+LaTeX Font Info:    Try loading font information for LS2+stixex on input line 5
+4.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\stix\ls2stixex.fd"
 File: ls2stixex.fd 2015/04/17 v1.1.2-latex STIX extentions LS2 font definitions
 
 )
 LaTeX Font Info:    Try loading font information for LS1+stixfrak on input line
- 43.
+ 54.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\stix\ls1stixfrak.fd"
 File: ls1stixfrak.fd 2015/04/17 v1.1.2-latex STIX fraktur LS1 font definitions
 )
-LaTeX Font Info:    Try loading font information for LS1+stixbb on input line 4
-3.
+LaTeX Font Info:    Try loading font information for LS1+stixbb on input line 5
+4.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\stix\ls1stixbb.fd"
 File: ls1stixbb.fd 2015/04/17 v1.1.2-latex STIX blackboard LS1 font definitions
 
 )
 LaTeX Font Info:    Try loading font information for LS2+stixcal on input line 
-43.
+54.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\stix\ls2stixcal.fd"
 File: ls2stixcal.fd 2015/04/17 v1.1.2-latex STIX calligraphic LS2 font definiti
 ons
 )
-LaTeX Font Info:    Try loading font information for LS1+stixsf on input line 4
-3.
+LaTeX Font Info:    Try loading font information for LS1+stixsf on input line 5
+4.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\stix\ls1stixsf.fd"
 File: ls1stixsf.fd 2015/04/17 v1.1.2-latex STIX sans-serif LS1 font definitions
 
 )
-LaTeX Font Info:    Try loading font information for LS2+stixtt on input line 4
-3.
+LaTeX Font Info:    Try loading font information for LS2+stixtt on input line 5
+4.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\stix\ls2stixtt.fd"
 File: ls2stixtt.fd 2015/04/17 v1.1.2-latex STIX typewriter LS2 font definitions
@@ -2165,14 +2165,14 @@ File: ls2stixtt.fd 2015/04/17 v1.1.2-latex STIX typewriter LS2 font definitions
 )
 \c__siunitx_mathtt_int=\count351
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <9> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 46.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <22> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 46.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <10> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 46.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <7.5> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 46.
-LaTeX Font Info:    Try loading font information for TS1+fos on input line 46.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 57.
+LaTeX Font Info:    Try loading font information for TS1+fos on input line 57.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\opensans\ts1fos.fd"
 File: ts1fos.fd 2011/11/11 Fontinst v1.927 font definitions for TS1/fos.
@@ -2182,169 +2182,50 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <7> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 46.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 55.
-
-Overfull \hbox (5.4685pt too wide) in paragraph at lines 91--91
-|\T1/fos/b/n/10.95 Equilibrium Molec-u-lar Dy-nam-ics (EMD) Routes to Trans-por
-t Prop-er-ties (Level
- []
-
-[1
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 65.
+ [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <9> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 130.
- [3] [4] [5]
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 140.
+ [3] [4] [5] (transport_properties.bbl [6]
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <8> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 249.
-
-[6]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 298.
-
- ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [7]
-Overfull \hbox (17.75201pt too wide) in paragraph at lines 331--332
-\T1/fos/m/n/9 (-20) you can then use the con-ve-nience com-mands []\T1/lmtt/m/n
-/9 \FIG{view}\T1/fos/m/n/9 (-20) , []\T1/lmtt/m/n/9 \TABLE{example}\T1/fos/m/n/
-9 (-20) , []\T1/lmtt/m/n/9 \EQ{CLT} \T1/fos/m/n/9 (-20) and []\T1/lmtt/m/n/9 \B
-OX{simple}
- []
-
-<frog.jpg, id=245, 748.7975pt x 741.77126pt>
-File: frog.jpg Graphic file (type jpg)
- <use frog.jpg>
-Package pdftex.def Info: frog.jpg used on input line 336.
-(pdftex.def)             Requested size: 187.03404pt x 185.27258pt.
-
-<elife-18156-fig2.pdf, id=246, 573.82379pt x 621.76291pt>
-File: elife-18156-fig2.pdf Graphic file (type pdf)
-
-<use elife-18156-fig2.pdf>
-Package pdftex.def Info: elife-18156-fig2.pdf used on input line 345.
-(pdftex.def)             Requested size: 507.89421pt x 550.33131pt.
-Package hyperref Info: bookmark level for unknown featurebox defaults to 0 on i
-nput line 357.
- <example-image.png, id=251, 401.5pt x 301.125pt>
-File: example-image.png Graphic file (type png)
-
-<use example-image.png>
-Package pdftex.def Info: example-image.png used on input line 362.
-(pdftex.def)             Requested size: 142.26378pt x 106.70024pt.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 366.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 366.
- [8 <./frog.jpg>] [9 <./elife-18156-fig2.pdf>]
-<elife-13214-fig7.pdf, id=276, 291.97081pt x 369.5406pt>
-File: elife-13214-fig7.pdf Graphic file (type pdf)
-
-<use elife-13214-fig7.pdf>
-Package pdftex.def Info: elife-13214-fig7.pdf used on input line 381.
-(pdftex.def)             Requested size: 406.58981pt x 514.61288pt.
-pdfTeX warning (ext4): destination with the same identifier (name{figsupp.1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.385 ...ript.}{\includegraphics[width=6cm]{frog}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{data.1}) has been already used, duplicate 
-ignored
-<to be read again> 
-                   \relax 
-l.387 ...{This is a description of a data source.}
-                                                   [10 <C:/Program Files/MiKTeX
- 2.9/tex/latex/mwe/example-image.png>] [11 <./elife-13214-fig7.pdf>]
-(transport_properties.bbl [12]) [13]
-File: frog.jpg Graphic file (type jpg)
- <use frog.jpg>
-Package pdftex.def Info: frog.jpg used on input line 437.
-(pdftex.def)             Requested size: 377.59703pt x 199.16039pt.
-File: frog.jpg Graphic file (type jpg)
- <use frog.jpg>
-Package pdftex.def Info: frog.jpg used on input line 446.
-(pdftex.def)             Requested size: 377.59703pt x 199.16039pt.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 450.
- [14
-
-]
-[15]
-File: frog.jpg Graphic file (type jpg)
- <use frog.jpg>
-Package pdftex.def Info: frog.jpg used on input line 453.
-(pdftex.def)             Requested size: 377.59703pt x 199.16039pt.
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.454 ...figure}{This is a figure in the appendix}
-                                                  
-
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 13.
+) 
 AED: lastpage setting LastPage
-[16
-
-] (transport_properties.suppinfo
-File: frog.jpg Graphic file (type jpg)
- <use frog.jpg>
-Package pdftex.def Info: frog.jpg used on input line 1.
-(pdftex.def)             Requested size: 170.71652pt x 169.10976pt.
-File: frog.jpg Graphic file (type jpg)
- <use frog.jpg>
-Package pdftex.def Info: frog.jpg used on input line 2.
-(pdftex.def)             Requested size: 170.71652pt x 169.10976pt.
-File: frog.jpg Graphic file (type jpg)
-
-<use frog.jpg>
-Package pdftex.def Info: frog.jpg used on input line 3.
-(pdftex.def)             Requested size: 170.71652pt x 169.10976pt.
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 456.
- [17
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 456.
+[7] (transport_properties.suppinfo)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
  (transport_properties.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 456.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 456.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
 Package rerunfilecheck Info: File `transport_properties.out' has not changed.
-(rerunfilecheck)             Checksum: C7943A76AAC88340C0CA934928F67220;1740.
+(rerunfilecheck)             Checksum: 3E4A14C76FBBFA32BFFA63A99D56766A;1177.
  ) 
 Here is how much of TeX's memory you used:
- 27948 strings out of 493333
- 506919 string characters out of 3139198
+ 27656 strings out of 493333
+ 501397 string characters out of 3139198
  739849 words of memory out of 3000000
- 30484 multiletter control sequences out of 15000+200000
- 172160 words of font info for 520 fonts, out of 3000000 for 9000
+ 30332 multiletter control sequences out of 15000+200000
+ 146613 words of font info for 436 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,14n,49p,10437b,988s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/opensans/opensans-01.enc}{C:/Program Files/MiKTeX 2.9
-/fonts/enc/dvips/opensans/opensans-02.enc}{C:/Program Files/MiKTeX 2.9/fonts/en
-c/dvips/opensans/opensans-04.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/o
-pensans/opensans-03.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/opensan
-s/OpenSans-Bold.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/opensans/Op
-enSans-BoldItalic.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/opensans/
-OpenSans-Italic.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/opensans/Op
-enSans-Regular.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt8.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/stix/stix-mathcal.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/stix/stix-mathex.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/stix/stix-mathit.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/stix/stix-mathrm.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/stix/sti
-x-mathscr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/stix/stix-mathsf.
-pfb>
-Output written on transport_properties.pdf (17 pages, 832063 bytes).
+ 44i,12n,49p,10437b,968s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-02.enc}{C:/Pro
+gram Files/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-01.enc}{C:/Program File
+s/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-04.enc}{C:/Program Files/MiKTeX 
+2.9/fonts/enc/dvips/opensans/opensans-03.enc}<C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/opensans/OpenSans-Bold.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/opensans/OpenSans-BoldItalic.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/opensans/OpenSans-Regular.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/stix/stix-mathcal.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/stix/stix-mathex.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/stix/sti
+x-mathit.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/stix/stix-mathrm.p
+fb>
+Output written on transport_properties.pdf (7 pages, 133287 bytes).
 PDF statistics:
- 440 PDF objects out of 1000 (max. 8388607)
- 126 named destinations out of 1000 (max. 500000)
- 60629 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 262 PDF objects out of 1000 (max. 8388607)
+ 84 named destinations out of 1000 (max. 500000)
+ 47737 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -104,25 +104,48 @@ It is most convenient to consider compiling the transport properties as an impli
 
 The general formula for computing a transport property via an EMD simulation is given as
 
-\begin{equation}
+\begin{equation} \label{eq:Green-Kubo}
 \gamma = \int_{0}^{\infty}dt\langle\dot{\xi}(t)\dot{\xi}(0)\rangle
 \end{equation}
 
-where $\gamma$ is the transport coefficient and $\xi$ is the perturbation in the Hamiltonian associated with the particular transport property under consideration and $\dot{\xi}$ signifies a time derivative. Integrals of the form given by Equation 1 are known as “Green-Kubo” integrals. It is easy to show that an integrated form of Equation 1 results in an “Einstein” formula for the transport coefficient. Thus an equivalent expression for $\gamma$ is
+where $\gamma$ is the transport coefficient and $\xi$ is the perturbation in the Hamiltonian associated with the particular transport property under consideration and $\dot{\xi}$ signifies a time derivative. Integrals of the form given by Equation \ref{eq:Green-Kubo} are known as “Green-Kubo” integrals. It is easy to show that an integrated form of Equation \ref{eq:Green-Kubo} results in an “Einstein” formula for the transport coefficient. Thus an equivalent expression for $\gamma$ is
 
-\begin{equation}
-2t\gamma = \langle (\xi(t)-\xi(0))^2 \rangle
+\begin{equation} \label{eq:Einstein}
+\gamma = \frac{\langle (\xi(t)-\xi(0))^2 \rangle}{2t}
 \end{equation}
 
-For self-diffusivity, $\xi$ is the Cartesian atom position and the time correlation function, $\dot{\xi}$, in Equation 1 is of the molecular velocities. For the shear viscosity, the integral in Equation 1 is of the time correlation of the off-diagonal elements of the stress tensor. For the thermal conductivity the integral is over the energy current, and for the electrical conductivity the integral is over the electric current [Could cite Allen and Tildesley I suppose].
+For self-diffusivity, $\xi$ is the Cartesian atom position and the time correlation function, $\dot{\xi}$, in Equation \ref{eq:Green-Kubo} is of the molecular velocities. For the shear viscosity, the integral in Equation \ref{eq:Green-Kubo} is of the time correlation of the off-diagonal elements of the stress tensor. For the thermal conductivity the integral is over the energy current, and for the electrical conductivity the integral is over the electric current [Could cite Allen and Tildesley I suppose].
 
-%We should include a table that evaluates Equation 1 and 2 with the different xi types so that it is more clear -ramess101
+% I think this table could be useful -ramess101
+
+\begin{table}[bt]
+	\caption{\label{tab:EMD_equations}Equilibrium molecular dynamics equations.}
+	% Use ``S'' column identifier to align on decimal point 
+	% ``l'' left aligns text in the column
+	% ``r'' right aligns text in the column
+	% ``c'' right aligns text in the column
+	% & separates columns, \\ ends the row.
+	
+	\begin{tabular}{l l l l l} 
+		\toprule
+		Property & $\gamma$          & $\xi$                        & Equation \ref{eq:Green-Kubo}    & Equation \ref{eq:Einstein}     \\
+		\midrule
+		Self-diffusion     & $D$ & $x$          & $\int_{0}^{\infty}dt\langle v_{x,i}(t) v_{x,i}(0)\rangle$    & $\frac{1}{2t}\langle (x_i(t)-x_i(0))^2 \rangle$   \\
+		Shear viscosity     & $\eta$       & $x v_y$           & $\beta V \int_{0}^{\infty}dt\langle P_{x,y}(t) P_{x,y}(0)\rangle$    & $\frac{m^2\beta}{2t}\langle (x_i(t)v_{y,i}(t)-x_i(0)v_{y,i}(0))^2 \rangle$  \\
+		Thermal conductivity      & $\lambda$      & $x E$              & $ \frac{k\beta^2}{V} \int_{0}^{\infty}dt\langle S_{x}(t) S_{x}(0)\rangle$    & $\frac{k\beta^2}{2Vt}\langle \left(x_i(t)(E_i(t)-\langle E \rangle)-x_i(0)(E_i(0)-\langle E \rangle)\right)^2 \rangle$  \\
+		\bottomrule
+	\end{tabular}
+$P_{x,y}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( \frac{P_{x,i}(t)P_{y,i}(t)}{m} + x_i(t) f_{y,i}(t) \right)$
+\newline
+$S_{x}(t) = \frac{d}{dt} \sum_{i=1}^{N} \left( x_i(t) (E_i(t) - \langle E \rangle) \right)$.
+\end{table}
+
 
 An important implicit assumption in the above equations is that the time over which these expressions are evaluated is much larger than the correlation time of the variable $\xi$. This assumption is often satisfied easily for simple liquids, where relaxation times are fast but becomes problematical for systems with sluggish dynamics. Obtaining reliable results with reasonable uncertainties can require simulations that are much longer than the longest relaxation times in the system, which are often unknown at the start of a simulation. Therefore, insufficient simulation time is a common pitfall in estimating transport properties.
 
-Transport properties have to be estimated from the long-time integral of eqn 1 or the slope of eqn 2. Both methods involve some “judgement” on the part of the user and results can vary depending on where the slope is taken and for how long the integral is carried out. Some recent work has suggested some guidelines for how to compute an objective estimate of the viscosity using eqn 1. Similar approaches for estimating other transport properties from eqns 1 or 2 should be possible to develop. As no single best practice can be recommended for the region over which the slope or integral is calculated, it is important to justify how this decision was made.
+Transport properties have to be estimated from the long-time integral of Equation \ref{eq:Green-Kubo} or the slope of Equation \ref{eq:Einstein}. Both methods involve some “judgement” on the part of the user and results can vary depending on where the slope is taken and for how long the integral is carried out. Some recent work has suggested some guidelines for how to compute an objective estimate of the viscosity using Equation \ref{eq:Green-Kubo}. Similar approaches for estimating other transport properties from Equations \ref{eq:Green-Kubo} or \ref{eq:Einstein} should be possible to develop. As no single best practice can be recommended for the region over which the slope or integral is calculated, it is important to justify how this decision was made.
 
-Although both Equation 1 (Green-Kubo) and Equation 2 (Einstein) are theoretically rigorous, in practice one method is often preferred depending on the property being estimated ( $\propto \gamma$). In the case of self-diffusivity, we recommend the Einstein (MSD) approach. By contrast, for viscosity we typically recommend Green-Kubo, although for some systems the Einstein approach may be preferable.
+Although both Equation \ref{eq:Green-Kubo} (Green-Kubo) and Equation \ref{eq:Einstein} (Einstein) are theoretically rigorous, in practice one method is often preferred depending on the property being estimated ( $\propto \gamma$). In the case of self-diffusivity, we recommend the Einstein (MSD) approach. By contrast, for viscosity we typically recommend Green-Kubo, although for some systems the Einstein approach may be preferable.
 
 \subsection{Checklist for Equilibrium Einstein Approach for Self-Diffusivity}
 

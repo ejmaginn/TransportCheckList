@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\urlprefix}{}
 \providecommand{\doiprefix}{doi: }
@@ -8,6 +8,35 @@ LAMMPS Users' Workshop;.
 \newblock
   \url{http://lammps.sandia.gov/workshops/Feb10/Craig_Tenney/rnemd-lammps2010.pdf},
   \url{http://lammps.sandia.gov/tutorials/sor13/SoR_09-Common_NonEquilibrium_Calculations.pdf}.
+
+\bibitem[{Allen and Tildesley(1987)Allen, M. P. and Tildesley, D.
+  J.}]{Allen1987}
+\textbf{\color{LiveCoMSMediumGrey} Allen MP}, Tildesley DJ.
+\newblock Computer simulation of liquids.
+\newblock Oxford England New York: Clarendon Press ; Oxford University Press;
+  1987.
+
+\bibitem[{Frenkel and Smit(2002)Frenkel, Daan and Smit, Berend}]{Frenkel2002}
+\textbf{\color{LiveCoMSMediumGrey} Frenkel D}, Smit B.
+\newblock Understanding molecular simulation : from algorithms to applications.
+\newblock 2nd ed. Computational science series, San Diego: Academic Press;
+  2002.
+
+\bibitem[{Gordon(2006)Peter A. Gordon}]{Gordon2006}
+\textbf{\color{LiveCoMSMediumGrey} Gordon PA}.
+\newblock Development of intermolecular potentials for predicting transport
+  properties of hydrocarbons.
+\newblock The Journal of Chemical Physics.  2006; 125(1):014504.
+\newblock \urlprefix\url{https://doi.org/10.1063/1.2208359},
+  \href{10.1063/1.2208359}{\doiprefix \detokenize{10.1063/1.2208359}}.
+
+\bibitem[{Hess(2002)Berk Hess}]{Hess2002}
+\textbf{\color{LiveCoMSMediumGrey} Hess B}.
+\newblock Determining the shear viscosity of model liquids from molecular
+  dynamics simulations.
+\newblock The Journal of Chemical Physics.  2002; 116(1):209--217.
+\newblock \urlprefix\url{http://aip.scitation.org/doi/abs/10.1063/1.1421362},
+  \href{10.1063/1.1421362}{\doiprefix \detokenize{10.1063/1.1421362}}.
 
 \bibitem[{Hieber and Chiang(1992)Hieber, C. A. and Chiang, H. H.}]{Hieber1992}
 \textbf{\color{LiveCoMSMediumGrey} Hieber CA}, Chiang HH.
@@ -24,6 +53,15 @@ LAMMPS Users' Workshop;.
 \newblock The Journal of Physical Chemistry B.  2000; 104(32):7774--7783.
 \newblock \urlprefix\url{http://dx.doi.org/10.1021/jp000966x},
   \href{10.1021/jp000966x}{\doiprefix \detokenize{10.1021/jp000966x}}.
+
+\bibitem[{Mondello and Grest(1997)Maurizio Mondello and Gary S.
+  Grest}]{Mondello1997}
+\textbf{\color{LiveCoMSMediumGrey} Mondello M}, Grest GS.
+\newblock Viscosity calculations of n-alkanes by equilibrium molecular
+  dynamics.
+\newblock The Journal of Chemical Physics.  1997; 106(22):9327--9336.
+\newblock \urlprefix\url{https://doi.org/10.1063/1.474002},
+  \href{10.1063/1.474002}{\doiprefix \detokenize{10.1063/1.474002}}.
 
 \bibitem[{Moultos et~al.(2016)Othonas A. Moultos and Yong Zhang and Ioannis N.
   Tsimpanogiannis and Ioannis G. Economou and Edward J. Maginn}]{Moultos2016}
@@ -45,6 +83,31 @@ LAMMPS Users' Workshop;.
   \href{10.1103/PhysRevE.59.4894}{\doiprefix
   \detokenize{10.1103/PhysRevE.59.4894}}.
 
+\bibitem[{Nieto-Draghi et~al.(2015)Nieto-Draghi, Carlos and Fayet, Guillaume
+  and Creton, Benoit and Rozanska, Xavier and Rotureau, Patricia and de
+  Hemptinne, Jean-Charles and Ungerer, Philippe and Rousseau, Bernard and
+  Adamo, Carlo}]{Nieto2015}
+\textbf{\color{LiveCoMSMediumGrey} Nieto-Draghi C}, Fayet G, Creton B, Rozanska
+  X, Rotureau P, de~Hemptinne JC, Ungerer P, Rousseau B, Adamo C.
+\newblock A General Guidebook for the Theoretical Prediction of Physicochemical
+  Properties of Chemicals for Regulatory Purposes.
+\newblock Chemical Reviews.  2015; 115(24):13093--13164.
+\newblock \urlprefix\url{http://dx.doi.org/10.1021/acs.chemrev.5b00215},
+  \href{10.1021/acs.chemrev.5b00215}{\doiprefix
+  \detokenize{10.1021/acs.chemrev.5b00215}}, pMID: 26624238.
+
+\bibitem[{Payal et~al.(2012)Rajdeep Singh Payal and S. Balasubramanian and
+  Indranil Rudra and Kunj Tandon and Ingo Mahlke and David Doyle and Roger
+  Cracknell}]{Payal2012}
+\textbf{\color{LiveCoMSMediumGrey} Payal RS}, Balasubramanian S, Rudra I,
+  Tandon K, Mahlke I, Doyle D, Cracknell R.
+\newblock Shear viscosity of linear alkanes through molecular simulations:
+  quantitative tests for n-decane and n-hexadecane.
+\newblock Molecular Simulation.  2012; 38(14-15):1234--1241.
+\newblock \urlprefix\url{https://doi.org/10.1080/08927022.2012.702423},
+  \href{10.1080/08927022.2012.702423}{\doiprefix
+  \detokenize{10.1080/08927022.2012.702423}}.
+
 \bibitem[{Tenney and Maginn(2010)Craig M. Tenney and Edward J.
   Maginn}]{Tenney2010}
 \textbf{\color{LiveCoMSMediumGrey} Tenney CM}, Maginn EJ.
@@ -61,5 +124,15 @@ LAMMPS Users' Workshop;.
 \newblock The Journal of Physical Chemistry B.  2004; 108(40):15873--15879.
 \newblock \urlprefix\url{http://dx.doi.org/10.1021/jp0477147},
   \href{10.1021/jp0477147}{\doiprefix \detokenize{10.1021/jp0477147}}.
+
+\bibitem[{Zhang et~al.(2015)Zhang, Yong and Otani, Akihito and Maginn, Edward
+  J.}]{Zhang2015}
+\textbf{\color{LiveCoMSMediumGrey} Zhang Y}, Otani A, Maginn EJ.
+\newblock Reliable Viscosity Calculation from Equilibrium Molecular Dynamics
+  Simulations: A Time Decomposition Method.
+\newblock Journal of Chemical Theory and Computation.  2015; 11(8):3537--3546.
+\newblock \urlprefix\url{http://dx.doi.org/10.1021/acs.jctc.5b00351},
+  \href{10.1021/acs.jctc.5b00351}{\doiprefix
+  \detokenize{10.1021/acs.jctc.5b00351}}, pMID: 26574439.
 
 \end{thebibliography}

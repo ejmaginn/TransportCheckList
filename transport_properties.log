@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  29 AUG 2017 10:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  20 DEC 2017 16:04
 entering extended mode
 **./transport_properties.tex
 (transport_properties.tex
@@ -2188,36 +2188,59 @@ LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <10.95> not available
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <8> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 122.
+LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <9> not available
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 103.
 
-Overfull \hbox (23.95164pt too wide) in paragraph at lines 129--141
-[][]
- []
+
+Package natbib Warning: Citation `Leach2001' on page 2 undefined on input line 
+105.
 
 [2]
-LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <9> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 163.
- [3] [4] [5] [6] (transport_properties.bbl)
+LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <8> not available
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 169.
+ [3] [4] [5] <figures/MoultosFig3.png, id=217, 390.70969pt x 272.51813pt>
+File: figures/MoultosFig3.png Graphic file (type png)
+
+<use figures/MoultosFig3.png>
+Package pdftex.def Info: figures/MoultosFig3.png used on input line 266.
+(pdftex.def)             Requested size: 231.26378pt x 161.30408pt.
+
+<figures/ZhangFig9.png, id=218, 393.72093pt x 266.49562pt>
+File: figures/ZhangFig9.png Graphic file (type png)
+
+<use figures/ZhangFig9.png>
+Package pdftex.def Info: figures/ZhangFig9.png used on input line 273.
+(pdftex.def)             Requested size: 231.26378pt x 156.53163pt.
+ [6] [7 <./figures/MoultosFig3.png> <./figures/ZhangFig9.png>] [8] (transport_p
+roperties.bbl [9]
+Underfull \hbox (badness 1248) in paragraph at lines 102--110
+[][]\T1/fos/b/n/8 Payal RS[]\T1/fos/m/n/8 (+20) , Bal-a-sub-ra-ma-nian S, Rudra
+ I, Tan-don K, Mahlke I, Doyle D, Crack-nell R.  Shear vis-cos-ity
+ []
+
+)
+
+Package natbib Warning: There were undefined citations.
+
 
 AED: lastpage setting LastPage
-[7] (transport_properties.suppinfo)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 289.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 289.
+[10] (transport_properties.suppinfo)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 357.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 357.
  (transport_properties.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 289.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 289.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 357.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 357.
 Package rerunfilecheck Info: File `transport_properties.out' has not changed.
-(rerunfilecheck)             Checksum: 99B5163444B568F8475397866B3C588E;1178.
+(rerunfilecheck)             Checksum: 71153656EC5818F246795D625F1C55D8;1180.
  ) 
 Here is how much of TeX's memory you used:
- 27663 strings out of 493333
- 501523 string characters out of 3139198
+ 27774 strings out of 493333
+ 503399 string characters out of 3139198
  739849 words of memory out of 3000000
- 30338 multiletter control sequences out of 15000+200000
- 146613 words of font info for 436 fonts, out of 3000000 for 9000
+ 30376 multiletter control sequences out of 15000+200000
+ 151201 words of font info for 470 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,11n,45p,10437b,925s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,12n,45p,10437b,992s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-02.enc}{C:/Pro
 gram Files/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-01.enc}{C:/Program File
 s/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-04.enc}{C:/Program Files/MiKTeX 
@@ -2228,10 +2251,10 @@ ype1/public/opensans/OpenSans-Regular.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/stix/stix-mathcal.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/stix/stix-mathex.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/stix/sti
 x-mathit.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/stix/stix-mathrm.p
-fb>
-Output written on transport_properties.pdf (7 pages, 141588 bytes).
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/stix/stix-mathsf.pfb>
+Output written on transport_properties.pdf (10 pages, 219745 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 85 named destinations out of 1000 (max. 500000)
- 47737 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 368 PDF objects out of 1000 (max. 8388607)
+ 114 named destinations out of 1000 (max. 500000)
+ 47747 words of extra memory for PDF output out of 51595 (max. 10000000)
 

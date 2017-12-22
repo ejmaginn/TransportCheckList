@@ -117,7 +117,8 @@ Transport properties describe the rates at which mass, momentum, heat or charge 
 	\end{enumerate}
 	\item Software manuals
 	\begin{enumerate}
-		\item 
+		\item GROMACS
+		\item LAMMPS
 	\end{enumerate}
 \end{enumerate}
 Most text books and class notes provide a thorough discussion of EMD/NEMD theory with little discussion of practical considerations. Review articles tend to focus on the numerical advantages and disadvantages of different methods but assume that the reader already understands the subtleties of each method. Furthermore, although the LAMMPS and GROMACS manuals describe some of the theory and implementation of these methods in their respective environments, the documentation is typically insufficient for someone not familiar with best practices for estimating transport properties. This document supplements the existing literature by providing a succinct checklist and common pitfalls. The purpose of this document is to improve the quality of published results and to cut down the time required to obtain meaningful and reliable results. %Citation -ramess101
@@ -131,14 +132,13 @@ The general formula for computing a transport property via an EMD simulation is 
 \begin{equation} \label{eq:Green-Kubo}
 \gamma = \int_{0}^{\infty}dt\langle\dot{\xi}(t)\dot{\xi}(0)\rangle
 \end{equation}
-
 where $\gamma$ is the transport coefficient and $\xi$ is the perturbation in the Hamiltonian associated with the particular transport property under consideration and $\dot{\xi}$ signifies a time derivative. Integrals of the form given by Equation \ref{eq:Green-Kubo} are known as “Green-Kubo” integrals. It is easy to show that an integrated form of Equation \ref{eq:Green-Kubo} results in an “Einstein” formula for the transport coefficient. Thus an equivalent expression for $\gamma$ is
 
 \begin{equation} \label{eq:Einstein}
 \gamma = \lim_{t\to\infty} \frac{\langle (\xi(t)-\xi(0))^2 \rangle}{2t}
 \end{equation}
 
-For self-diffusivity, $\xi$ is the Cartesian atom position and the time correlation function, $\dot{\xi}$, in Equation \ref{eq:Green-Kubo} is of the molecular velocities. For the shear viscosity, the integral in Equation \ref{eq:Green-Kubo} is of the time correlation of the off-diagonal elements of the stress tensor. For the thermal conductivity the integral is over the energy current, and for the electrical conductivity the integral is over the electric current [Could cite Allen and Tildesley I suppose].
+For self-diffusivity, $\xi$ is the Cartesian atom position and the time correlation function, $\dot{\xi}$, in Equation \ref{eq:Green-Kubo} is of the molecular velocities. For the shear viscosity, the integral in Equation \ref{eq:Green-Kubo} is of the time correlation of the off-diagonal elements of the stress tensor. For the thermal conductivity the integral is over the energy current, and for the electrical conductivity the integral is over the electric current. The relevant equations for self-diffusivity and shear viscosity are provided in Table \ref{tab:EMD_equations}.
 
 % I think this table could be useful -ramess101
 
@@ -165,6 +165,28 @@ For self-diffusivity, $\xi$ is the Cartesian atom position and the time correlat
 %\end{table}
 
 % Since this paper focuses on diffusion and viscosity I have removed conductivity. I also modified the equations somewhat. -RAM
+%\begin{table}[bt]
+%	\caption{\label{tab:EMD_equations}Equilibrium molecular dynamics equations.}
+%	% Use ``S'' column identifier to align on decimal point 
+%	% ``l'' left aligns text in the column
+%	% ``r'' right aligns text in the column
+%	% ``c'' right aligns text in the column
+%	% & separates columns, \\ ends the row.
+%	
+%	\begin{tabular}{l l l l l} 
+%		\toprule
+%		Property & $\gamma$          & $\xi$                        & Equation \ref{eq:Green-Kubo}    & Equation \ref{eq:Einstein}     \\
+%		\midrule
+%		Self-diffusion     & $D$ & $\alpha$          & $\int_{0}^{\infty}dt\langle v_{\alpha,i}(t) v_{\alpha,i}(0)\rangle$    & $\frac{1}{2t}\langle (\alpha_i(t)-\alpha_i(0))^2 \rangle$   \\
+%		Shear viscosity     & $\eta$       & $\alpha \dot{\beta}$           & $\frac{V}{k_bT} \int_{0}^{\infty}dt\langle P_{\alpha,\beta}(t) P_{\alpha,\beta}(0)\rangle$    & $\frac{m^2}{2k_bTVt}\langle (\alpha_i(t)\dot{\beta_i}(t)-\alpha_i(0)\dot{\beta_i}(0))^2 \rangle$  \\
+%		\bottomrule
+%	\end{tabular}
+%\newline
+%$P_{\alpha,\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( \frac{P_{\alpha,i}(t)P_{\beta,i}(t)}{m} + \alpha_i(t) \ddot{\beta_i}(t) \right)$
+%\newline
+%$\alpha$, $\beta = x, y, $ or $z$ coordinates
+%\end{table}
+
 \begin{table}[bt]
 	\caption{\label{tab:EMD_equations}Equilibrium molecular dynamics equations.}
 	% Use ``S'' column identifier to align on decimal point 
@@ -177,22 +199,22 @@ For self-diffusivity, $\xi$ is the Cartesian atom position and the time correlat
 		\toprule
 		Property & $\gamma$          & $\xi$                        & Equation \ref{eq:Green-Kubo}    & Equation \ref{eq:Einstein}     \\
 		\midrule
-		Self-diffusion     & $D$ & $\alpha$          & $\int_{0}^{\infty}dt\langle v_{\alpha,i}(t) v_{\alpha,i}(0)\rangle$    & $\frac{1}{2t}\langle (\alpha_i(t)-\alpha_i(0))^2 \rangle$   \\
-		Shear viscosity     & $\eta$       & $\alpha \dot{\beta}$           & $\frac{V}{k_bT} \int_{0}^{\infty}dt\langle P_{\alpha,\beta}(t) P_{\alpha,\beta}(0)\rangle$    & $\frac{m^2}{2k_bTVt}\langle (\alpha_i(t)\dot{\beta_i}(t)-\alpha_i(0)\dot{\beta_i}(0))^2 \rangle$  \\
+		Self-diffusion     & $D$ & $\r$          & $\int_{0}^{\infty}dt\langle v_{\alpha,i}(t) v_{\alpha,i}(0)\rangle$    & $ \lim_{t\to\infty} \frac{1}{2t}\langle |\r_i(t)-\r_i(0)|^2 \rangle$   \\
+		Shear viscosity     & $\eta$       & $\alpha \dot{\beta}$           & $\frac{V}{k_bT} \int_{0}^{\infty}dt\langle P_{\alpha,\beta}(t) P_{\alpha,\beta}(0)\rangle$    & $ \lim_{t\to\infty} \frac{V2}{2k_bT}\langle (\alpha_i(t)\dot{\beta_i}(t)-\alpha_i(0)\dot{\beta_i}(0))^2 \rangle$  \\
 		\bottomrule
 	\end{tabular}
-\newline
-$P_{\alpha,\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( \frac{P_{\alpha,i}(t)P_{\beta,i}(t)}{m} + \alpha_i(t) \ddot{\beta_i}(t) \right)$
-\newline
-$\alpha$, $\beta = x, y, $ or $z$ coordinates
+	\newline
+	$P_{\alpha,\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( \frac{P_{\alpha,i}(t)P_{\beta,i}(t)}{m} + \alpha_i(t) \ddot{\beta_i}(t) \right)$
+	\newline
+	$\alpha$, $\beta = x, y, $ or $z$ coordinates
 \end{table}
 
 
 An important implicit assumption in the above equations is that the time over which these expressions are evaluated is much larger than the correlation time of the variable $\xi$. This assumption is often satisfied easily for simple liquids, where relaxation times are fast but becomes problematical for systems with sluggish dynamics. Obtaining reliable results with reasonable uncertainties can require simulations that are much longer than the longest relaxation times in the system, which are often unknown at the start of a simulation. Therefore, insufficient simulation time is a common pitfall in estimating transport properties.
 
-Transport properties have to be estimated from the long-time integral of Equation \ref{eq:Green-Kubo} or the slope of Equation \ref{eq:Einstein}. Both methods involve some “judgment” on the part of the user and results can vary depending on where the slope is taken and for how long the integral is carried out. Some recent work has suggested some guidelines for how to compute an objective estimate of the viscosity using Equation \ref{eq:Green-Kubo}. Similar approaches for estimating other transport properties from Equations \ref{eq:Green-Kubo} or \ref{eq:Einstein} should be possible to develop. As no single best practice can be recommended for the region over which the slope or integral is calculated, it is important to justify how this decision was made. Furthermore, it is critical to quantify the degree of variability in the estimated property that arises from varying the time interval included in the data analysis.
+Transport properties have to be estimated from the long-time integral of Equation \ref{eq:Green-Kubo} or the slope of Equation \ref{eq:Einstein}. Both methods involve some “judgment” on the part of the user and results can vary depending on where the slope is taken and for how long the integral is carried out. Some recent work has suggested some guidelines for how to compute an objective estimate of the viscosity using Equation \ref{eq:Green-Kubo}. Similar approaches for estimating other transport properties from Equations \ref{eq:Green-Kubo} or \ref{eq:Einstein} should be possible to develop. As no single best practice can be recommended for the region over which the slope or integral is calculated, it is important to justify how this decision was made. Furthermore, it is critical to quantify the degree of variability in the estimated property that arises from varying the time interval included in the data analysis. Precision in the final value is a key factor in selecting between the Green-Kubo or Einstein methods. For this reason, we emphasize the importance of proper data analysis and uncertainty quantification.
 
-Although both Equation \ref{eq:Green-Kubo} (Green-Kubo) and Equation \ref{eq:Einstein} (Einstein) are theoretically rigorous, in practice one method is often preferred depending on the property being estimated ( $\propto \gamma$). In the case of self-diffusivity, we recommend the Einstein (MSD) approach. By contrast, for viscosity we typically recommend Green-Kubo, although for some systems the Einstein approach may be preferable. 
+Although both Equation \ref{eq:Green-Kubo} (Green-Kubo) and Equation \ref{eq:Einstein} (Einstein) are theoretically rigorous, in practice one method is often preferred depending on the property being estimated ( $\propto \gamma$). In the case of self-diffusivity, we recommend the Einstein (MSD) approach. By contrast, for viscosity we typically recommend Green-Kubo, although for some systems the Einstein approach may be preferable.
 
 \subsection{Checklist for Equilibrium Einstein Approach for Self-Diffusivity}
 
@@ -280,6 +302,9 @@ Similar to self-diffusivity, EMD for viscosity is straightforward but its reliab
 \subsection{Equilibrium Einstein Approach for Viscosity}
 
 Similar to the Green-Kubo approach, the key to obtaining precise estimates of viscosity with the Einstein approach is to average multiple replicate simulations. The viscosity with respect to time is estimated from the slope of the Einstein integral. Thus, the average of replicates can be performed in one of two ways. The first option is to calculate the viscosity with respect to time for each replicate and then average the replicates. However, this approach results in large fluctuations, similar to the Green-Kubo approach. The second, and recommended, method is to average the Einstein integral of the multiple replicates. The resulting Einstein integral is often linear over a large time interval if sufficient replicates are used. Subsequently, the slope is determined from this average Einstein integral. In general, the initial time should be discarded. Since the Einstein relation is valid in the limit of infinite time, it is common to fit the slope at long time. However, it is also common to fit the slope to an intermediate time interval. We recommend that the author explain why the slope was calculated using a given time interval and how much variability is introduced if a different region is selected. Fortunately, with sufficient replicate simulations the slope tends to be fairly constant over short, intermediate, and long time intervals. The number of replicates needed has not been rigorously investigated as it has for the Green-Kubo approach. For this reason, we recommend creating a plot of viscosity with respect to number of replicates to determine when sufficient replicates have been simulated. It is our experience that the number of replicates is similar to that for Green-Kubo. As recommended for Green-Kubo, we also recommend bootstrapping the uncertainty by randomly sampling which replicates are averaged for calculating the slope.
+
+Hess claims that the Einstein relation is more convenient than Green-Kubo for viscosity because ``inaccuracies in the long time correlations can be ignored by only considering integral over shorter times.'' 
+%What do we want to make of this claim? -RAM
 
 \section{Non-Equilibrium Molecular Dynamics (EMD) Routes to Transport Properties}
 

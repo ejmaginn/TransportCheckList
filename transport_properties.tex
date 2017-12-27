@@ -96,7 +96,7 @@ General outline of equilibrium methods of self-diffusivity and viscosity for liq
 
 \section{Introduction}
 
-Transport properties describe the rates at which mass, momentum, heat or charge move through a given substance. They involve mean squared displacements (MSDs) of molecules as the system evolves dynamically. In general, these properties can be computed by equilibrium molecular dynamics (EMD) or by non-EMD (NEMD) methods. The equilibrium methods involve post-processing of a standard molecular dynamics (MD) trajectory while NEMD methods require modifications of the underlying equations of motion and/or boundary conditions of the system. Many codes such as LAMMPS and GROMACS have analysis tools that automatically estimate transport properties from an EMD or NEMD simulation, but there are often insufficient checks as to whether the actual underlying simulations are adequate for making these estimates. As Berk Hess has said in a forum post on using the GROMACS -vis option for calculating viscosity, ``...it will give nonsense unless you know exactly what you are doing''. For this reason, we highly recommend reviewing this list of existing resources:
+Transport properties describe the rates at which mass, momentum, heat or charge move through a given substance. They involve mean squared displacements (MSDs) of molecules as the system evolves dynamically. In general, these properties can be computed by equilibrium molecular dynamics (EMD) or by non-EMD (NEMD) methods. The equilibrium methods involve post-processing of a standard molecular dynamics (MD) trajectory while NEMD methods require modifications of the underlying equations of motion and/or boundary conditions of the system. Many codes such as LAMMPS and GROMACS have analysis tools that automatically estimate transport properties from an EMD or NEMD simulation, but there are often insufficient checks as to whether the actual underlying simulations are adequate for making these estimates. As Berk Hess has said in a forum post on using the GROMACS ``energy -vis'' option for calculating viscosity, ``...it will give nonsense unless you know exactly what you are doing''. For this reason, we highly recommend reviewing this list of existing resources in addition to the present manuscript:
 \begin{enumerate}
 	\item Text books:
 	\begin{enumerate}
@@ -113,6 +113,8 @@ Transport properties describe the rates at which mass, momentum, heat or charge 
 	\item Published articles
 	\begin{enumerate}
 		\item \cite{Hess2002}
+		\item \cite{Chen2009}
+		\item \cite{Ungerer2007}
 		\item \cite{Nieto2015}, pages 13139-13140
 	\end{enumerate}
 	\item Software manuals
@@ -121,7 +123,7 @@ Transport properties describe the rates at which mass, momentum, heat or charge 
 		\item LAMMPS
 	\end{enumerate}
 \end{enumerate}
-Most text books and class notes provide a thorough discussion of EMD/NEMD theory with little discussion of practical considerations. Review articles tend to focus on the numerical advantages and disadvantages of different methods but assume that the reader already understands the subtleties of each method. Furthermore, although the LAMMPS and GROMACS manuals describe some of the theory and implementation of these methods in their respective environments, the documentation is typically insufficient for someone not familiar with best practices for estimating transport properties. This document supplements the existing literature by providing a succinct checklist and common pitfalls. The purpose of this document is to improve the quality of published results and to cut down the time required to obtain meaningful and reliable results. %Citation -ramess101
+Most text books and class notes provide a thorough discussion of EMD/NEMD theory with little discussion of practical considerations. Review articles tend to focus on the numerical advantages and disadvantages of different methods but assume that the reader already understands the subtleties of implementing each method. Furthermore, although the LAMMPS and GROMACS manuals describe some of the theory and implementation of these methods in their respective environments, the documentation is typically insufficient for someone not familiar with best practices for estimating transport properties. This document supplements the existing literature by providing a succinct checklist and common pitfalls. The purpose of this document is to improve the quality of published results and to cut down the time required to obtain meaningful and reliable results. %Citation -ramess101
 
 \section{Equilibrium Molecular Dynamics (EMD) Routes to Transport Properties}
 
@@ -159,7 +161,7 @@ For self-diffusivity, $\xi$ is the Cartesian atom position and the time correlat
 %		Thermal conductivity      & $\lambda$      & $x E$              & $ \frac{k\beta^2}{V} \int_{0}^{\infty}dt\langle S_{x}(t) S_{x}(0)\rangle$    & $\frac{k\beta^2}{2Vt}\langle \left(x_i(t)(E_i(t)-\langle E \rangle)-x_i(0)(E_i(0)-\langle E \rangle)\right)^2 \rangle$  \\
 %		\bottomrule
 %	\end{tabular}
-%$P_{x,y}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( \frac{P_{x,i}(t)P_{y,i}(t)}{m} + x_i(t) f_{y,i}(t) \right)$
+%$P_{x,y}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( \frac{p_{x,i}(t)p_{y,i}(t)}{m} + x_i(t) f_{y,i}(t) \right)$
 %\newline
 %$S_{x}(t) = \frac{d}{dt} \sum_{i=1}^{N} \left( x_i(t) (E_i(t) - \langle E \rangle) \right)$.
 %\end{table}
@@ -182,7 +184,7 @@ For self-diffusivity, $\xi$ is the Cartesian atom position and the time correlat
 %		\bottomrule
 %	\end{tabular}
 %\newline
-%$P_{\alpha,\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( \frac{P_{\alpha,i}(t)P_{\beta,i}(t)}{m} + \alpha_i(t) \ddot{\beta_i}(t) \right)$
+%$P_{\alpha,\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( \frac{p_{\alpha,i}(t)p_{\beta,i}(t)}{m} + \alpha_i(t) \ddot{\beta_i}(t) \right)$
 %\newline
 %$\alpha$, $\beta = x, y, $ or $z$ coordinates
 %\end{table}
@@ -204,17 +206,25 @@ For self-diffusivity, $\xi$ is the Cartesian atom position and the time correlat
 		\bottomrule
 	\end{tabular}
 	\newline
-	$P_{\alpha,\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( \frac{P_{\alpha,i}(t)P_{\beta,i}(t)}{m} + \alpha_i(t) \ddot{\beta_i}(t) \right)$
+	$P_{\alpha,\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( \frac{p_{\alpha,i}(t)p_{\beta,i}(t)}{m} + \alpha_i(t) \ddot{\beta_i}(t) \right)$
 	\newline
 	$\alpha$, $\beta = x, y, $ or $z$ coordinates
 \end{table}
 
+An important implicit assumption in Equations \ref{eq:Green-Kubo} and \ref{eq:Einstein} is that the time over which these expressions are evaluated is much larger than the correlation time of the variable $\xi$. This assumption is often satisfied easily for simple liquids, where relaxation times are fast but becomes problematical for systems with sluggish dynamics. Obtaining reliable results with reasonable uncertainties can require simulations that are much longer than the longest relaxation times in the system, which are often unknown at the start of a simulation. Therefore, insufficient simulation time is a common pitfall in estimating transport properties.
 
-An important implicit assumption in the above equations is that the time over which these expressions are evaluated is much larger than the correlation time of the variable $\xi$. This assumption is often satisfied easily for simple liquids, where relaxation times are fast but becomes problematical for systems with sluggish dynamics. Obtaining reliable results with reasonable uncertainties can require simulations that are much longer than the longest relaxation times in the system, which are often unknown at the start of a simulation. Therefore, insufficient simulation time is a common pitfall in estimating transport properties.
+% Do we have a recommendation here for how to overcome this? Perhaps varying the simulation time to observe any change in the property value? -RAM
 
 Transport properties have to be estimated from the long-time integral of Equation \ref{eq:Green-Kubo} or the slope of Equation \ref{eq:Einstein}. Both methods involve some “judgment” on the part of the user and results can vary depending on where the slope is taken (Einstein approach) and for how long the integral is carried out (Green-Kubo approach). Some recent work has suggested some guidelines for how to compute an objective estimate of the viscosity using Equation \ref{eq:Green-Kubo}. Similar approaches for estimating other transport properties from Equations \ref{eq:Green-Kubo} or \ref{eq:Einstein} should be possible to develop. As no single best practice can be recommended for the region over which the slope or integral is calculated, it is important to justify how this decision was made. Furthermore, it is critical to quantify the degree of variability in the estimated property that arises from varying the time interval included in the data analysis. Precision in the final value is a key factor for selecting between the Green-Kubo or Einstein methods. For this reason, we emphasize the importance of proper data analysis and uncertainty quantification.
 
-In practice, several tricks are employed to reduce the numerical uncertainties. For self-diffusivity, it is a standard practice to average the mean-square-displacement or velocity autocorrelation function over all $N$ molecules. For self-diffusivity, it is also standard practice to average the x, y, and z displacements or velocities. For shear viscosity, it is not possible to average over the number of particles because viscosity is a collective property that depends on the pressure/stress tensor which is an intensive property. However, it is common to use the xy, yz, zx and other pressure/stress tensors to improve averaging. Finally, for both self-diffusivity and shear viscosity it is common to use multiple start times $(t_0)$. It is important that the difference between subsequent $t_0$ values $(\delta t_0)$ be longer than the  
+In practice, several tricks are employed to reduce the numerical uncertainties. For self-diffusivity, it is a standard practice to average the mean-square-displacement or velocity autocorrelation function over all $N$ molecules. For shear viscosity, it is not possible to average over the number of particles because viscosity is a collective property that depends on the pressure/stress tensor which is an intensive property. For self-diffusivity, it is also standard practice to average the x, y, and z displacements or velocities. For viscosity, the recommended practice is to use multiple components from the pressure/stress tensor. For example, although early studies only implemented the xy component, the common practice in recent studies is to use the three off-diagonal (xy, yz, zx) and sometimes three additional modified diagonal terms of the pressure/stress tensor. Figure \ref{fig:ChenFig1}, taken from Chen et al., demonstrates that the viscosity is nearly identical when using the three off-diagonal terms or when using six terms. To improve statistical averaging, we recommend using all six terms. Finally, for both self-diffusivity and shear viscosity it is common to average over multiple time origins $(t_0)$. It is important that the difference between subsequent $t_0$ values $(\delta t_0)$ be long enough that the different time intervals are independent.  
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=3.2in]{figures/ChenFig1.png}
+	\caption{}
+	\label{fig:ChenFig1}
+\end{figure}
 
 Although both Equation \ref{eq:Green-Kubo} (Green-Kubo) and Equation \ref{eq:Einstein} (Einstein) are theoretically rigorous, in practice one method is often preferred depending on the property being estimated ( $\propto \gamma$). In the case of self-diffusivity, we recommend the Einstein (MSD) approach. By contrast, for viscosity we typically recommend Green-Kubo, although for some systems the Einstein approach may be preferable.
 
@@ -222,7 +232,7 @@ Although both Equation \ref{eq:Green-Kubo} (Green-Kubo) and Equation \ref{eq:Ein
 
 %I think that we should have this just as a general Einstein approach section and then if anything is specific to Self-Diffusivity we move it to a new section -ramess101
 
-The Einstein approach is the most commonly used method for computing self-diffusivity. It is robust and we recommend this as the best approach. However, we also recommend validating that the Green-Kubo method provides a similar result. Although systematic deviations are often observed between the two methods, if the analysis is done properly, they should agree within their statistical uncertainties \cite{Kondratyuk2016,Liu2012}. 
+The Einstein approach is the most commonly used method for computing self-diffusivity. It is robust and we recommend this as the best approach. However, we also recommend validating that the Green-Kubo method provides a similar result. Although systematic deviations are often observed between the two methods, if the analysis is done properly the values should agree within their statistical uncertainties \cite{Kondratyuk2016,Liu2012}. 
 
 \begin{enumerate}
 	\item Ensemble - for a liquid solution, it is safest to run in the microcanonical (NVE) ensemble. %Although this may be the best practice, it appears to me that a large number of practitioners run their production simulations in the NPT ensemble. Should we point this out? I.e. should we say something like "although it is common to see values reported from the NPT ensemble..."? That way the reader will know why our recommendation seems to differ from what they find in the literature. -ramess101
@@ -273,11 +283,11 @@ Many of the same things apply as with the Einstein approach. Key differences:
 
 Similar to self-diffusivity, EMD for viscosity is straightforward but its reliability compared to experimental data has not been evaluated with a comprehensive database. Many more experimental data are available for viscosity than for self-diffusivity. Anecdotal studies with small databases show encouraging results, but deviations from experiment can range from 5-35\% even when results are said to be “good.” Nieto-Draghi et al. provide a useful review of the status quo \cite{Nieto2015}. EMD may deviate 2x more than NEMD from experimental data; hydrogen bonding throws in complications that may require empirical corrections. 
 
-Although the popularity of NEMD methods has increases in recent years, \cite{Chen2009} demonstrate that EMD methods can be of equal accuracy and reliability to NEMD as long as best practices (i.e. data analysis) are implemented. That being said, in certain cases (i.e. high viscosity) NEMD may be preferable.
-
 % I don't think we want to talk about comparison to experimental data. We are not really concerned about if diffusivity or viscosity are accurately predicted relative to experiment, we just want to present the best methods for obtaining reproducible/honest results. In addition, you can predict viscosity more accurately if you parameterize your force field for such a purpose. -ramess101
 
 % I am unaware of this - can a citation be given? -ejmaginn
+
+Although the popularity of NEMD methods has increased in recent years, \cite{Chen2009} demonstrate that EMD methods can be of equal accuracy and reliability to NEMD as long as best practices (i.e. thorough data analysis) are implemented. That being said, in certain cases (i.e. high viscosity) NEMD may be preferable.
 
 \begin{enumerate}
 	\item Ensemble: NPT is not recommended. NVE is ideal; NVT has been used with success. For example, Fanourgakis et al. reported that the NVT and NVE ensembles provide nearly identical results \cite{Fanourgakis2012}.
@@ -292,17 +302,21 @@ Although the popularity of NEMD methods has increases in recent years, \cite{Che
     % I think this point of averaging multiple simulations is important enough to merit its' own discussion
 	\item Perform independent replicate trajectories (i.e. different initial configurations or random seed to initialize velocities). The primary advantage of performing replicates is the computational speed-up. Figure \ref{fig:PayalFig2}, taken from Payal et al. \cite{Payal2012}, demonstrates that an average of 10 replicate simulations of 2 ns length converges to the same value as a single 4 ns simulation. Since these replicates can be performed in parallel the computational time is reduced by a factor of two, in this example. However, Figure \ref{fig:ZhangFig8}, taken from Zhang et al., demonstrates that if the length of each independent trajectory is too short the viscosity will not converge to the correct value, regardless of how many replicates are used. 
 	\item The number of replicates used in literature varies widely. Payal et al. used 10 replicates whereas Zhang et al. performed a systematic investigation of the minimal number of replicates required for convergence. They observed that a value of 30-40 replicates was statistically equivalent to 100 replicates for their system. However, the necessary number of replicates depends on the system. Specifically, the most important factors are the compound, the temperature, the number of molecules, and the simulation time.  In addition, replicates can provide a more rigorous uncertainty assessment. We recommend bootstrapping the uncertainties by randomly sampling which replicates are included in the average and data analysis procedure. Furthermore, because the uncertainty is inversely proportional to the square root of the number of replicates (see Figure 7 of Zhang et al. and Figure 8 of Ma et al.), increasing the number of replicates is a simple, fast, and direct way to reduce the uncertainty.
-	\item Report how the viscosity was estimated from the ``running integral''. There are two common methods:
+	\item Report how the viscosity was estimated from the ``running integral''. There are three common methods:
 	\begin{enumerate}
-		\item A slightly ambiguous but common practice is to report an average that is obtained over a region of time. Due to large fluctuations at long times, the initial plateau at short times (around 10 ps) is typically the region of choice \cite{Fanourgakis2012}. However, it is important to explain how this time interval was selected (i.e. visual inspection, test of convergence, etc.) and to quantify how much the estimated viscosity would change if the region over which the average is calculated was modified.
-		\item Alternatively, we recommend fitting an analytic function to the ``running integral''. For example, Zhang et al. recommended fitting the ``running integral'' to a double-exponential function. In this case, it is important to include a description of how the fit is performed, i.e. the objective function, weighting model, range of data included, etc. Zhang et al. recommend that the data be weighted by the inverse of the standard deviation with respect to time. The form of their weighting model is $w \propto t^{-b}$, where $w$ is the weight, $t$ is the time, and $b$ is the weighting exponent. If such a model is utilized, we recommend that the author quantifies uncertainty in the estimated viscosity due to the value of $b$, the weighting exponent. For example, Zhang et al. compared two different values of $b$ in Figures 7, 12, and 13. They also suggest that to improve the fit a cut-off time be implemented. They provide a heurestic that the cut-off time be that when the standard deviation is 40\% the plateau value. Regardless of how the cut-off is determined, it is important to quantify the degree to which the estimated viscosity depends on this parameter. For example, Zhang et al. reported that a cut-off at 30\% or 20\% decreased viscosity by 0.8\% and 6.1\%, respectively. The variability that is observed depends strongly on the system. If such a method is employed, we recommend that the author demonstrate the cut-off time dependence. For example, plots of the estimated viscosity with respect to the weighting exponent and cut-off time, such as those shown in Figure \ref{fig:GK_tcut_b}, provide a quantitative measure of confidence in the viscosity value.
+		\item A slightly ambiguous but common practice is to report an average that is obtained over a region of time. Due to large fluctuations at long times, the initial plateau at short times (around 10 ps) is typically the region of choice \cite{Fanourgakis2012,Chen2009}. However, it is important to explain how this time interval was selected (i.e. visual inspection, test of convergence, etc.) and to quantify how much the estimated viscosity would change if the region over which the average is calculated was modified.
+		\item We recommend fitting an analytic function to the ``running integral''. For example, \cite{ReyCastro2006} and \cite{Zhang2015} recommended fitting the ``running integral'' to a double-exponential function \begin{equation}
+		\eta(t) = A \alpha \tau_1 \left(1-\exp{(-t/\tau_1)}\right) + A (1-\alpha) \tau_2 \left(1-\exp{(-t/\tau_2)}\right)
+		\end{equation}
+		where $A, \alpha, \tau_1, $ and $\tau_2$ are fitting parameters. In this case, it is important to include a description of how the fit is performed, i.e. the objective function, weighting model, range of data included, etc. \cite{Zhang2015} recommend that the data be weighted by the inverse of the standard deviation with respect to time. The form of their weighting model is $w \propto t^{-b}$, where $w$ is the weight, $t$ is the time, and $b$ is the weighting exponent. If such a model is utilized, we recommend that the author quantifies uncertainty in the estimated viscosity due to the value of $b$, the weighting exponent. For example, \cite{Zhang2015} compared two different values of $b$ in Figures 7, 12, and 13 (a fixed value of $b=2$ is used by \cite{ReyCastro2006}). \cite{Zhang2015} also suggest that to improve the fit a cut-off time be implemented. They provide a heurestic that the cut-off time be that when the standard deviation is 40\% the plateau value. Regardless of how the cut-off is determined, it is important to quantify the degree to which the estimated viscosity depends on this parameter. For example, Zhang et al. reported that a cut-off at 30\% or 20\% decreased viscosity by 0.8\% and 6.1\%, respectively. The variability that is observed depends strongly on the system. If such a method is employed, we recommend that the author demonstrate the cut-off time dependence. For example, plots of the estimated viscosity with respect to the weighting exponent and cut-off time, such as those shown in Figure \ref{fig:GK_tcut_b}, provide a quantitative measure of confidence in the viscosity value.
+		\item An alternative method is to fit a model to the autocorrelation function before calculating the ``running integral.'' The integral can be evaluated in the limit as $t \to \infty$ from the model fit. This helps to overcome large fluctuations at long times and, thereby, reduces uncertainties. A common function for this purpose is
+		\begin{equation} \label{eq:ACF_fit}
+		f(t)/f(0) = (1-C)cos(\omega t)\exp{(-t/\tau_f)^{\beta_f}} + C\exp{(-t/\tau_s)^{\beta_s}}
+		\end{equation}
+		where $C, \omega, \tau_f, \tau_s, \beta_f, \beta_s$ are fitting parameters. $\omega$ is the frequency of rapid pressure oscillations, $\tau_f$ and $\beta_f$ are the time constant and exponent of fast relaxation in a stretched-exponential approximation, $\tau_s$ and $\beta_s$ are constants for slow relaxation and $C$ is the pre-factor that determines the weight between fast and slow relaxation \cite{GROMACS}. This method has been implemented successfully by \cite{Fanourgakis2012}. Figure \ref{fig:FanourgakisFig1}, from \cite{Fanourgakis2012}, demonstrates that Equation \ref{eq:ACF_fit} can reliably fit the autocorrelation function. However, similar to the methods discussed previously, it is important to quantify the variability in viscosity that arises from how this model is fit. For example, we recommend bootstrapping the uncertainties of the model fit. Furthermore, if a weighting function or cut-off time is implemented the impact of these parameters should be discussed. 
 	\end{enumerate}   
-	\item Force fields: systematic consideration of the intra- vs. inter- molecular potential models; UA, vs. AUA vs. EA differences may be significant. For charged systems, polarizable force fields might be needed to get accurate results. Some studies have suggested that united-atom models are not capable of accurately reproducing viscosity and, therefore, anisotropic-united-atom or all-atom models are needed \cite{Allen1987,Payal2012,Mondello1997}. However, other studies have shown that with the appropriate tuning of the united-atom force field parameters viscosity can be accurately predicted without significant deprecation of other properties \cite{Gordon2006}.
-	\item An alternative method to overcome large fluctuations and reduce uncertainties is to fit a model to the autocorrelation function and integrate the model fit. A common function for this purpose is
-	\begin{equation}
-	f(t)/f(0) = (1-C)cos(\omega t)\exp{(-t/\tau_f)^\beta_f} + C\exp{(-t/tau_s)^\beta_s}
-	\end{equation}
-	where $C, \omega, \tau_f, \tau_s, \beta_f, \beta_s$ are fitting parameters. $\omega$ is the frequency of rapid pressure oscillations, $\tau_f$ and $\beta_f$ are the time constant and exponent of fast relaxation in a stretched-exponential approximation, $\tau_s$ and $\beta_s$ are constants for slow relaxation and $C$ is the pre-factor that determines the weight between fast and slow relaxation \cite{GROMACS}. This method has been implemented successfully by \cite{Fanourgakis2012}.
+	\item Force fields: systematic consideration of the intra- vs. inter- molecular potential models; UA, vs. AUA vs. EA differences may be significant. For charged systems, polarizable force fields might be needed to get accurate results. Some studies have suggested that united-atom models are not capable of accurately reproducing viscosity and, therefore, anisotropic-united-atom or all-atom models are needed \cite{Allen1987,Payal2012,Mondello1997}. However, other studies have shown that with the appropriate tuning of the united-atom force field parameters viscosity can be accurately predicted without significant deprecation of other properties \cite{Gordon2006}. \cite{Ungerer2007} discusses different test cases (i.e. state points, compound structures) where united-atom or anisotropic-united-atom models are adequate and inadequate for predicting viscosity.
+	\item The GROMACS manual reports that viscosity ``is very dependent on the treatment of the electrostatics. Using a (short) cut-off results in large noise on the off-diagonal pressure elements, which can increase the calculated viscosity by an order of magnitude.''
 	
 \end{enumerate}
 
@@ -340,6 +354,13 @@ Although the popularity of NEMD methods has increases in recent years, \cite{Che
 	\includegraphics[width=3.2in]{figures/GreenKubo_tcut_b_dependence.pdf}
 	\caption{Uncertainty quantification of cut-off time and weighting exponent for method proposed by Zhang et al. Results are shown for a system of 400 united-atom ethane molecules, simulated with the \cite{Potoff2009} model at saturated liquid density for a temperature of 137 K. Top panel plots the Green-Kubo running integral as average of 100 replicates, each of 1 ns duration. The dashed lines represent different estimates of uncertainty attributed to the cut-off time or the weighting exponent. Middle panel plots the estimated viscosity as a function of cut-off time for a fixed weighting exponent. Bottom panel plots the estimated viscosity as a function of the weighting exponent for two different cut-off times. For longer cut-off times, the viscosity depends strongly on the weighting exponent (around $\pm 2$\%) while shorter times are much less dependent (around $\pm 0.1$\%). For the recommended weighting exponent, the cut-off time can cause the viscosity to vary by around $\pm 2$\%. Note that these results may depend strongly on the state point and number of molecules.}
 	\label{fig:GK_tcut_b}
+\end{figure}
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=3.2in]{figures/FanourgakisFig1.png}
+	\caption{}
+	\label{fig:FanourgakisFig1}
 \end{figure}
 
 \subsection{Equilibrium Einstein Approach for Viscosity}

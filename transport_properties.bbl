@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\urlprefix}{}
 \providecommand{\doiprefix}{doi: }
@@ -15,6 +15,24 @@ LAMMPS Users' Workshop;.
 \newblock Computer simulation of liquids.
 \newblock Oxford England New York: Clarendon Press ; Oxford University Press;
   1987.
+
+\bibitem[{Chen et~al.(2009)Ting Chen and Berend Smit and Alexis T.
+  Bell}]{Chen2009}
+\textbf{\color{LiveCoMSMediumGrey} Chen T}, Smit B, Bell AT.
+\newblock Are pressure fluctuation-based equilibrium methods really worse than
+  nonequilibrium methods for calculating viscosities?
+\newblock The Journal of Chemical Physics.  2009; 131(24):246101.
+\newblock \urlprefix\url{https://doi.org/10.1063/1.3274802},
+  \href{10.1063/1.3274802}{\doiprefix \detokenize{10.1063/1.3274802}}.
+
+\bibitem[{Fanourgakis et~al.(2012)Fanourgakis, George S. and Medina, J. S. and
+  Prosmiti, R.}]{Fanourgakis2012}
+\textbf{\color{LiveCoMSMediumGrey} Fanourgakis GS}, Medina JS, Prosmiti R.
+\newblock Determining the Bulk Viscosity of Rigid Water Models.
+\newblock The Journal of Physical Chemistry A.  2012; 116(10):2564--2570.
+\newblock \urlprefix\url{http://dx.doi.org/10.1021/jp211952y},
+  \href{10.1021/jp211952y}{\doiprefix \detokenize{10.1021/jp211952y}}, pMID:
+  22352421.
 
 \bibitem[{Frenkel and Smit(2002)Frenkel, Daan and Smit, Berend}]{Frenkel2002}
 \textbf{\color{LiveCoMSMediumGrey} Frenkel D}, Smit B.
@@ -53,6 +71,24 @@ LAMMPS Users' Workshop;.
 \newblock The Journal of Physical Chemistry B.  2000; 104(32):7774--7783.
 \newblock \urlprefix\url{http://dx.doi.org/10.1021/jp000966x},
   \href{10.1021/jp000966x}{\doiprefix \detokenize{10.1021/jp000966x}}.
+
+\bibitem[{Kondratyuk et~al.(2016)N D Kondratyuk and G E Norman and V V
+  Stegailov}]{Kondratyuk2016}
+\textbf{\color{LiveCoMSMediumGrey} Kondratyuk ND}, Norman GE, Stegailov VV.
+\newblock Rheology of liquid n-triacontane: Molecular dynamics simulation.
+\newblock Journal of Physics: Conference Series.  2016; 774(1):012039.
+\newblock \urlprefix\url{http://stacks.iop.org/1742-6596/774/i=1/a=012039}.
+
+\bibitem[{Liu et~al.(2012)Liu, Hongjun and Maginn, Edward and Visser, Ann E.
+  and Bridges, Nicholas J. and Fox, Elise B.}]{Liu2012}
+\textbf{\color{LiveCoMSMediumGrey} Liu H}, Maginn E, Visser AE, Bridges NJ, Fox
+  EB.
+\newblock Thermal and Transport Properties of Six Ionic Liquids: An
+  Experimental and Molecular Dynamics Study.
+\newblock Industrial \& Engineering Chemistry Research.  2012;
+  51(21):7242--7254.
+\newblock \urlprefix\url{http://dx.doi.org/10.1021/ie300222a},
+  \href{10.1021/ie300222a}{\doiprefix \detokenize{10.1021/ie300222a}}.
 
 \bibitem[{Mondello and Grest(1997)Maurizio Mondello and Gary S.
   Grest}]{Mondello1997}
@@ -107,6 +143,14 @@ LAMMPS Users' Workshop;.
 \newblock \urlprefix\url{https://doi.org/10.1080/08927022.2012.702423},
   \href{10.1080/08927022.2012.702423}{\doiprefix
   \detokenize{10.1080/08927022.2012.702423}}.
+
+\bibitem[{Potoff and Bernard-Brunel(2009)Potoff, J. J. and Bernard-Brunel, D.
+  A.}]{Potoff2009}
+\textbf{\color{LiveCoMSMediumGrey} Potoff JJ}, Bernard-Brunel DA.
+\newblock Mie Potentials for Phase Equilibria Calculations: {Applications} to
+  Alkanes and Perfluoroalkanes.
+\newblock Journal of Physical Chemistry B.  2009; 113(44):14725--14731.
+\newblock \href{10.1021/jp9072137}{\doiprefix \detokenize{10.1021/jp9072137}}.
 
 \bibitem[{Tenney and Maginn(2010)Craig M. Tenney and Edward J.
   Maginn}]{Tenney2010}

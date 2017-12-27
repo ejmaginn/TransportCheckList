@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  22 DEC 2017 11:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  26 DEC 2017 17:33
 entering extended mode
 **./transport_properties.tex
 (transport_properties.tex
@@ -2199,954 +2199,105 @@ Package natbib Warning: Citation `Leach2001' on page 2 undefined on input line
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <8> not available
 (Font)              Font shape `T1/fos/b/n' tried instead on input line 191.
 
+Overfull \vbox (1.00256pt too high) has occurred while \output is active []
 
-LaTeX Warning: Command \r invalid in math mode on input line 202.
 
-! Improper \spacefactor.
-<recently read> \spacefactor 
-                             
-l.202 		Self-diffusion     & $D$ & $\r$
-                                                 & $\int_{0}^{\infty}dt\lang...
-You can refer to \spacefactor only in horizontal mode;
-you can refer to \prevdepth only in vertical mode; and
-neither of these is meaningful inside \write. So
-I'm forgetting what you said and using zero instead.
+[3] [4] <figures/KondratyukFig2.png, id=186, 534.49687pt x 492.33937pt>
+File: figures/KondratyukFig2.png Graphic file (type png)
 
-! Extra }, or forgotten $.
-\MT@orig@add@accent ...@spacefactor \spacefactor }
-                                                  \accent #1 #2\egroup \spac...
-l.202 		Self-diffusion     & $D$ & $\r$
-                                                 & $\int_{0}^{\infty}dt\lang...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+<use figures/KondratyukFig2.png>
+Package pdftex.def Info: figures/KondratyukFig2.png used on input line 256.
+(pdftex.def)             Requested size: 231.26378pt x 213.02399pt.
+ [5 <./figures/KondratyukFig2.png>] [6]
 
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.202 		Self-diffusion     & $D$ & $\r$
-                                                 & $\int_{0}^{\infty}dt\lang...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
+Package natbib Warning: Citation `GROMACS' on page 7 undefined on input line 30
+5.
 
-! Missing { inserted.
-<to be read again> 
-                   $
-l.202 		Self-diffusion     & $D$ & $\r$
-                                                 & $\int_{0}^{\infty}dt\lang...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
+<figures/MoultosFig3.png, id=249, 390.70969pt x 272.51813pt>
+File: figures/MoultosFig3.png Graphic file (type png)
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.202 		Self-diffusion     & $D$ & $\r$
-                                                 & $\int_{0}^{\infty}dt\lang...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+<use figures/MoultosFig3.png>
+Package pdftex.def Info: figures/MoultosFig3.png used on input line 312.
+(pdftex.def)             Requested size: 231.26378pt x 161.30408pt.
 
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.202 		Self-diffusion     & $D$ & $\r$
-                                                 & $\int_{0}^{\infty}dt\lang...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+<figures/ZhangFig9.png, id=250, 393.72093pt x 266.49562pt>
+File: figures/ZhangFig9.png Graphic file (type png)
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.202 		Self-diffusion     & $D$ & $\r$          &
-                                                   $\int_{0}^{\infty}dt\lang...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
+<use figures/ZhangFig9.png>
+Package pdftex.def Info: figures/ZhangFig9.png used on input line 319.
+(pdftex.def)             Requested size: 231.26378pt x 156.53163pt.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.202 		Self-diffusion     & $D$ & $\r$          &
-                                                   $\int_{0}^{\infty}dt\lang...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+<figures/ZhangFig8.png, id=251, 365.86688pt x 536.0025pt>
+File: figures/ZhangFig8.png Graphic file (type png)
 
+<use figures/ZhangFig8.png>
+Package pdftex.def Info: figures/ZhangFig8.png used on input line 326.
+(pdftex.def)             Requested size: 231.26378pt x 338.81203pt.
 
-LaTeX Warning: Command \r invalid in math mode on input line 202.
+<figures/PayalFig2.png, id=252, 360.59718pt x 302.63063pt>
+File: figures/PayalFig2.png Graphic file (type png)
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.202 ...lim_{t\to\infty} \frac{1}{2t}\langle |\r_
-                                                  i(t)-\r_i(0)|^2 \rangle$   \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+<use figures/PayalFig2.png>
+Package pdftex.def Info: figures/PayalFig2.png used on input line 333.
+(pdftex.def)             Requested size: 231.26378pt x 194.08467pt.
 
-! Missing { inserted.
-<to be read again> 
-                   \global 
-l.202 ...lim_{t\to\infty} \frac{1}{2t}\langle |\r_
-                                                  i(t)-\r_i(0)|^2 \rangle$   \\
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
+<figures/GreenKubo_tcut_b_dependence.pdf, id=253, 433.62pt x 867.24pt>
+File: figures/GreenKubo_tcut_b_dependence.pdf Graphic file (type pdf)
 
-! Improper \spacefactor.
-<recently read> \spacefactor 
-                             
-l.202 ...lim_{t\to\infty} \frac{1}{2t}\langle |\r_
-                                                  i(t)-\r_i(0)|^2 \rangle$   \\
-You can refer to \spacefactor only in horizontal mode;
-you can refer to \prevdepth only in vertical mode; and
-neither of these is meaningful inside \write. So
-I'm forgetting what you said and using zero instead.
+<use figures/GreenKubo_tcut_b_dependence.pdf>
+Package pdftex.def Info: figures/GreenKubo_tcut_b_dependence.pdf used on input 
+line 340.
+(pdftex.def)             Requested size: 231.26378pt x 462.53305pt.
+LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <8> not available
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 341.
+ [7] [8 <./figures/MoultosFig3.png> <./figures/ZhangFig9.png>]
+Overfull \vbox (2.88884pt too high) has occurred while \output is active []
 
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.202 ...lim_{t\to\infty} \frac{1}{2t}\langle |\r_
-                                                  i(t)-\r_i(0)|^2 \rangle$   \\
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
 
-! Missing { inserted.
-<to be read again> 
-                   _
-l.202 ...lim_{t\to\infty} \frac{1}{2t}\langle |\r_
-                                                  i(t)-\r_i(0)|^2 \rangle$   \\
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
+[9 <./figures/ZhangFig8.png> <./figures/PayalFig2.png>] [10 <./figures/GreenKub
+o_tcut_b_dependence.pdf>] [11] (transport_properties.bbl [12]
+Underfull \hbox (badness 1248) in paragraph at lines 138--146
+[][]\T1/fos/b/n/8 Payal RS[]\T1/fos/m/n/8 (+20) , Bal-a-sub-ra-ma-nian S, Rudra
+ I, Tan-don K, Mahlke I, Doyle D, Crack-nell R.  Shear vis-cos-ity
+ []
 
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.202 ...lim_{t\to\infty} \frac{1}{2t}\langle |\r_
-                                                  i(t)-\r_i(0)|^2 \rangle$   \\
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
+)
 
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.202 ...lim_{t\to\infty} \frac{1}{2t}\langle |\r_
-                                                  i(t)-\r_i(0)|^2 \rangle$   \\
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+Package natbib Warning: There were undefined citations.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 202.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.202 ...o\infty} \frac{1}{2t}\langle |\r_i(t)-\r_
-                                                  i(0)|^2 \rangle$   \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing { inserted.
-<to be read again> 
-                   \global 
-l.202 ...o\infty} \frac{1}{2t}\langle |\r_i(t)-\r_
-                                                  i(0)|^2 \rangle$   \\
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! Improper \spacefactor.
-<recently read> \spacefactor 
-                             
-l.202 ...o\infty} \frac{1}{2t}\langle |\r_i(t)-\r_
-                                                  i(0)|^2 \rangle$   \\
-You can refer to \spacefactor only in horizontal mode;
-you can refer to \prevdepth only in vertical mode; and
-neither of these is meaningful inside \write. So
-I'm forgetting what you said and using zero instead.
-
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.202 ...o\infty} \frac{1}{2t}\langle |\r_i(t)-\r_
-                                                  i(0)|^2 \rangle$   \\
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   _
-l.202 ...o\infty} \frac{1}{2t}\langle |\r_i(t)-\r_
-                                                  i(0)|^2 \rangle$   \\
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.202 ...o\infty} \frac{1}{2t}\langle |\r_i(t)-\r_
-                                                  i(0)|^2 \rangle$   \\
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.202 ...o\infty} \frac{1}{2t}\langle |\r_i(t)-\r_
-                                                  i(0)|^2 \rangle$   \\
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.202 ...}{2t}\langle |\r_i(t)-\r_i(0)|^2 \rangle$
-                                                     \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Misplaced \cr.
-\reserved@c ->\ifnum 0=`{}\fi \cr 
-                                  
-l.203 		S
-         hear viscosity     & $\eta$       & $\alpha \dot{\beta}$           ...
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.203 		Shear viscosity     &
-                              $\eta$       & $\alpha \dot{\beta}$           ...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.203 		Shear viscosity     & $\eta$       &
-                                             $\alpha \dot{\beta}$           ...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.203 ...       & $\alpha \dot{\beta}$           &
-                                                   $\frac{V}{k_bT} \int_{0}^...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.203 ...beta}(t) P_{\alpha,\beta}(0)\rangle$    &
-                                                   $ \lim_{t\to\infty} \frac...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced \cr.
-\reserved@c ->\ifnum 0=`{}\fi \cr 
-                                  
-l.204 		\bottomrule
-                   
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced \noalign.
-\bottomrule ->\noalign 
-                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
-l.204 		\bottomrule
-                   
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.205 	\end
-           {tabular}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.205 	\end
-           {tabular}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.205 	\end
-           {tabular}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.205 	\end
-           {tabular}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.205 	\end
-           {tabular}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.205 	\end
-           {tabular}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.205 	\end
-           {tabular}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.205 	\end
-           {tabular}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.205 	\end
-           {tabular}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.205 	\end
-           {tabular}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.205 	\end
-           {tabular}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.205 	\end
-           {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.205 	\end
-           {tabular}
-(That makes 100 errors; please try again.) 
+AED: lastpage setting LastPage
+[13] (transport_properties.suppinfo)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 427.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 427.
+ (transport_properties.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 427.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 427.
+Package rerunfilecheck Info: File `transport_properties.out' has not changed.
+(rerunfilecheck)             Checksum: DCFE598D78C154D7BE297C514C3C4580;1180.
+ ) 
 Here is how much of TeX's memory you used:
- 27411 strings out of 493333
- 496484 string characters out of 3139198
- 739849 words of memory out of 3000000
- 30304 multiletter control sequences out of 15000+200000
- 124236 words of font info for 269 fonts, out of 3000000 for 9000
+ 27856 strings out of 493333
+ 505064 string characters out of 3139198
+ 741209 words of memory out of 3000000
+ 30415 multiletter control sequences out of 15000+200000
+ 157842 words of font info for 490 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,18n,45p,10437b,925s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,12n,55p,10437b,925s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-04.enc}{C:/Pro
+gram Files/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-02.enc}{C:/Program File
+s/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-01.enc}{C:/Program Files/MiKTeX 
+2.9/fonts/enc/dvips/opensans/opensans-03.enc}<C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/opensans/OpenSans-Bold.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/opensans/OpenSans-BoldItalic.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/opensans/OpenSans-Regular.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/stix/stix-mathcal.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/stix/stix-mathex.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/stix/sti
+x-mathit.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/stix/stix-mathrm.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/stix/stix-mathsf.pfb>
+Output written on transport_properties.pdf (13 pages, 453027 bytes).
+PDF statistics:
+ 503 PDF objects out of 1000 (max. 8388607)
+ 131 named destinations out of 1000 (max. 500000)
+ 48279 words of extra memory for PDF output out of 51595 (max. 10000000)
 
-!  ==> Fatal error occurred, no output PDF file produced!

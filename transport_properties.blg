@@ -2,9 +2,12 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: transport_properties.
 The style file: vancouver-livecoms.bst
 Database file #1: transport_properties.bib
 Warning--I didn't find a database entry for "Leach2001"
+Warning--I didn't find a database entry for "GROMACS"
 Warning--to sort, need author or key in LAMMPS
 Warning--empty author in LAMMPS
 Warning--empty author and editor in LAMMPS
 Warning--missing publisher in LAMMPS
 Warning--there's a month but no year in LAMMPS
-(There were 6 warnings)
+You can't pop an empty literal stack for entry Potoff2009
+while executing---line 1927 of file vancouver-livecoms.bst
+(There was 1 error message)

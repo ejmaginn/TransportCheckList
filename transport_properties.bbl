@@ -1,9 +1,14 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\urlprefix}{}
 \providecommand{\doiprefix}{doi: }
 
-\bibitem[{LAM(????)}]{LAMMPS}
+\bibitem[{Hes(????)}]{HessForum}
+[gmx-users[ how to calculate the viscosity of the bulk;.
+\newblock
+  \url{https://mailman-1.sys.kth.se/pipermail/gromacs.org_gmx-users/2009-February/039411.html}.
+
+\bibitem[{LAM(????)}]{LAMMPS_NEMD}
 LAMMPS Users' Workshop;.
 \newblock
   \url{http://lammps.sandia.gov/workshops/Feb10/Craig_Tenney/rnemd-lammps2010.pdf},
@@ -48,6 +53,10 @@ LAMMPS Users' Workshop;.
 \newblock \urlprefix\url{https://doi.org/10.1063/1.2208359},
   \href{10.1063/1.2208359}{\doiprefix \detokenize{10.1063/1.2208359}}.
 
+\bibitem[{GROMACS(2016)}]{GROMACS}
+\textbf{\color{LiveCoMSMediumGrey} GROMACS}.
+\newblock GROMACS Reference Manual; 2016.
+
 \bibitem[{Hess(2002)Berk Hess}]{Hess2002}
 \textbf{\color{LiveCoMSMediumGrey} Hess B}.
 \newblock Determining the shear viscosity of model liquids from molecular
@@ -79,6 +88,16 @@ LAMMPS Users' Workshop;.
 \newblock Journal of Physics: Conference Series.  2016; 774(1):012039.
 \newblock \urlprefix\url{http://stacks.iop.org/1742-6596/774/i=1/a=012039}.
 
+\bibitem[{LAMMPS(2017)}]{LAMMPS}
+\textbf{\color{LiveCoMSMediumGrey} LAMMPS}.
+\newblock LAMMPS Users Manual.
+\newblock Sandia National Laboratories; 2017.
+
+\bibitem[{Leach(2001)Leach, Andrew R.}]{Leach2001}
+\textbf{\color{LiveCoMSMediumGrey} Leach AR}.
+\newblock {Molecular modelling : principles and applications}.
+\newblock 2 ed. Pearson Prentice Hall; 2001.
+
 \bibitem[{Liu et~al.(2012)Liu, Hongjun and Maginn, Edward and Visser, Ann E.
   and Bridges, Nicholas J. and Fox, Elise B.}]{Liu2012}
 \textbf{\color{LiveCoMSMediumGrey} Liu H}, Maginn E, Visser AE, Bridges NJ, Fox
@@ -89,6 +108,16 @@ LAMMPS Users' Workshop;.
   51(21):7242--7254.
 \newblock \urlprefix\url{http://dx.doi.org/10.1021/ie300222a},
   \href{10.1021/ie300222a}{\doiprefix \detokenize{10.1021/ie300222a}}.
+
+\bibitem[{Ma et~al.(2017)Jie Ma and Zhendian Zhang and Yan Xiang and Fenglei
+  Cao and Huai Sun}]{Ma2017}
+\textbf{\color{LiveCoMSMediumGrey} Ma J}, Zhang Z, Xiang Y, Cao F, Sun H.
+\newblock On the prediction of transport properties of ionic liquid using
+  1-n-butylmethylpyridinium tetrafluoroborate as an example.
+\newblock Molecular Simulation.  2017; 43(18):1502--1512.
+\newblock \urlprefix\url{https://doi.org/10.1080/08927022.2017.1321760},
+  \href{10.1080/08927022.2017.1321760}{\doiprefix
+  \detokenize{10.1080/08927022.2017.1321760}}.
 
 \bibitem[{Mondello and Grest(1997)Maurizio Mondello and Gary S.
   Grest}]{Mondello1997}
@@ -147,7 +176,7 @@ LAMMPS Users' Workshop;.
 \bibitem[{Potoff and Bernard-Brunel(2009)Potoff, J. J. and Bernard-Brunel, D.
   A.}]{Potoff2009}
 \textbf{\color{LiveCoMSMediumGrey} Potoff JJ}, Bernard-Brunel DA.
-\newblock Mie Potentials for Phase Equilibria Calculations: {Applications} to
+\newblock Mie Potentials for Phase Equilibria Calculations: Applications to
   Alkanes and Perfluoroalkanes.
 \newblock Journal of Physical Chemistry B.  2009; 113(44):14725--14731.
 \newblock \href{10.1021/jp9072137}{\doiprefix \detokenize{10.1021/jp9072137}}.

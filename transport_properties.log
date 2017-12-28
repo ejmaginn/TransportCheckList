@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  27 DEC 2017 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  28 DEC 2017 13:21
 entering extended mode
 **./transport_properties.tex
 (transport_properties.tex
@@ -2184,115 +2184,102 @@ Package microtype Info: Loading generic protrusion settings for font family
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <7> not available
 (Font)              Font shape `T1/fos/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 65.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 70.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <9> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 103.
-
-
-Package natbib Warning: Citation `Leach2001' on page 2 undefined on input line 
-105.
-
-[2]
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 104.
+ [2]
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <8> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 193.
- <figures/ChenFig1.png, id=157, 450.18187pt x 307.1475pt>
-File: figures/ChenFig1.png Graphic file (type png)
-
-<use figures/ChenFig1.png>
-Package pdftex.def Info: figures/ChenFig1.png used on input line 224.
-(pdftex.def)             Requested size: 231.26378pt x 157.7867pt.
- [3] [4 <./figures/ChenFig1.png>]
-<figures/KondratyukFig2.png, id=193, 534.49687pt x 492.33937pt>
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 203.
+ [3] [4]
+<figures/KondratyukFig2.png, id=212, 534.49687pt x 492.33937pt>
 File: figures/KondratyukFig2.png Graphic file (type png)
 
 <use figures/KondratyukFig2.png>
-Package pdftex.def Info: figures/KondratyukFig2.png used on input line 266.
+Package pdftex.def Info: figures/KondratyukFig2.png used on input line 277.
 (pdftex.def)             Requested size: 231.26378pt x 213.02399pt.
  [5] [6 <./figures/KondratyukFig2.png>]
-[7]
-
-Package natbib Warning: Citation `GROMACS' on page 8 undefined on input line 31
-6.
-
-<figures/MoultosFig3.png, id=294, 390.70969pt x 272.51813pt>
+[7] [8] <figures/MoultosFig3.png, id=354, 390.70969pt x 272.51813pt>
 File: figures/MoultosFig3.png Graphic file (type png)
 
 <use figures/MoultosFig3.png>
-Package pdftex.def Info: figures/MoultosFig3.png used on input line 326.
+Package pdftex.def Info: figures/MoultosFig3.png used on input line 347.
 (pdftex.def)             Requested size: 231.26378pt x 161.30408pt.
 
-<figures/ZhangFig9.png, id=295, 393.72093pt x 266.49562pt>
+<figures/ZhangFig9.png, id=355, 393.72093pt x 266.49562pt>
 File: figures/ZhangFig9.png Graphic file (type png)
 
 <use figures/ZhangFig9.png>
-Package pdftex.def Info: figures/ZhangFig9.png used on input line 333.
+Package pdftex.def Info: figures/ZhangFig9.png used on input line 354.
 (pdftex.def)             Requested size: 231.26378pt x 156.53163pt.
 
-<figures/ZhangFig8.png, id=296, 365.86688pt x 536.0025pt>
+<figures/ZhangFig8.png, id=356, 365.86688pt x 536.0025pt>
 File: figures/ZhangFig8.png Graphic file (type png)
 
 <use figures/ZhangFig8.png>
-Package pdftex.def Info: figures/ZhangFig8.png used on input line 340.
+Package pdftex.def Info: figures/ZhangFig8.png used on input line 361.
 (pdftex.def)             Requested size: 231.26378pt x 338.81203pt.
 
-<figures/PayalFig2.png, id=297, 360.59718pt x 302.63063pt>
+<figures/PayalFig2.png, id=357, 360.59718pt x 302.63063pt>
 File: figures/PayalFig2.png Graphic file (type png)
 
 <use figures/PayalFig2.png>
-Package pdftex.def Info: figures/PayalFig2.png used on input line 347.
+Package pdftex.def Info: figures/PayalFig2.png used on input line 368.
 (pdftex.def)             Requested size: 231.26378pt x 194.08467pt.
 
-<figures/GreenKubo_tcut_b_dependence.pdf, id=298, 433.62pt x 867.24pt>
+<figures/GreenKubo_tcut_b_dependence.pdf, id=358, 433.62pt x 867.24pt>
 File: figures/GreenKubo_tcut_b_dependence.pdf Graphic file (type pdf)
 
 <use figures/GreenKubo_tcut_b_dependence.pdf>
 Package pdftex.def Info: figures/GreenKubo_tcut_b_dependence.pdf used on input 
-line 354.
+line 375.
 (pdftex.def)             Requested size: 231.26378pt x 462.53305pt.
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <8> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 355.
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 376.
 
-<figures/FanourgakisFig1.png, id=301, 435.12563pt x 395.97937pt>
+<figures/FanourgakisFig1.png, id=361, 435.12563pt x 395.97937pt>
 File: figures/FanourgakisFig1.png Graphic file (type png)
 
 <use figures/FanourgakisFig1.png>
-Package pdftex.def Info: figures/FanourgakisFig1.png used on input line 361.
+Package pdftex.def Info: figures/FanourgakisFig1.png used on input line 382.
 (pdftex.def)             Requested size: 231.26378pt x 210.46019pt.
- [8] [9 <./figures/MoultosFig3.png> <./figures/ZhangFig9.png>] [10 <./figures/Z
-hangFig8.png> <./figures/PayalFig2.png>]
-[11 <./figures/GreenKubo_tcut_b_dependence.pdf>] [12 <./figures/FanourgakisFig1
-.png>] (transport_properties.bbl [13]
-Underfull \hbox (badness 1248) in paragraph at lines 138--146
+
+<figures/ChenFig1.png, id=362, 450.18187pt x 307.1475pt>
+File: figures/ChenFig1.png Graphic file (type png)
+
+<use figures/ChenFig1.png>
+Package pdftex.def Info: figures/ChenFig1.png used on input line 389.
+(pdftex.def)             Requested size: 231.26378pt x 157.7867pt.
+ [9 <./figures/MoultosFig3.png> <./figures/ZhangFig9.png>] [10 <./figures/Zhang
+Fig8.png> <./figures/PayalFig2.png>] [11 <./figures/GreenKubo_tcut_b_dependence
+.pdf>] [12 <./figures/FanourgakisFig1.png> <./figures/ChenFig1.png>] [13] (tran
+sport_properties.bbl [14]
+Underfull \hbox (badness 1248) in paragraph at lines 167--175
 [][]\T1/fos/b/n/8 Payal RS[]\T1/fos/m/n/8 (+20) , Bal-a-sub-ra-ma-nian S, Rudra
  I, Tan-don K, Mahlke I, Doyle D, Crack-nell R.  Shear vis-cos-ity
  []
 
-[14])
-
-Package natbib Warning: There were undefined citations.
-
-
+[15]) 
 AED: lastpage setting LastPage
-[15] (transport_properties.suppinfo)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 448.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 448.
+[16] (transport_properties.suppinfo)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 476.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 476.
  (transport_properties.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 448.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 448.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 476.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 476.
 Package rerunfilecheck Info: File `transport_properties.out' has not changed.
-(rerunfilecheck)             Checksum: 712B241880A5E552F0865CAA99D2A805;1180.
+(rerunfilecheck)             Checksum: B97C33FB528154F50A187730967CA327;1185.
  ) 
 Here is how much of TeX's memory you used:
- 27909 strings out of 493333
- 506125 string characters out of 3139198
- 741790 words of memory out of 3000000
- 30432 multiletter control sequences out of 15000+200000
- 159902 words of font info for 510 fonts, out of 3000000 for 9000
+ 27932 strings out of 493333
+ 506357 string characters out of 3139198
+ 741509 words of memory out of 3000000
+ 30448 multiletter control sequences out of 15000+200000
+ 157889 words of font info for 501 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,12n,55p,10437b,996s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,12n,55p,10437b,998s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-04.enc}{C:/Pro
 gram Files/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-02.enc}{C:/Program File
 s/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-01.enc}{C:/Program Files/MiKTeX 
@@ -2304,9 +2291,9 @@ pe1/public/stix/stix-mathcal.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/stix/stix-mathex.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/stix/sti
 x-mathit.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/stix/stix-mathrm.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/stix/stix-mathsf.pfb>
-Output written on transport_properties.pdf (15 pages, 640642 bytes).
+Output written on transport_properties.pdf (16 pages, 655313 bytes).
 PDF statistics:
- 560 PDF objects out of 1000 (max. 8388607)
- 141 named destinations out of 1000 (max. 500000)
+ 625 PDF objects out of 1000 (max. 8388607)
+ 158 named destinations out of 1000 (max. 500000)
  48289 words of extra memory for PDF output out of 51595 (max. 10000000)
 

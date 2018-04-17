@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  16 APR 2018 16:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  17 APR 2018 11:46
 entering extended mode
 **./EMD_diffusivity_viscosity_restructured.tex
 (EMD_diffusivity_viscosity_restructured.tex
@@ -2144,29 +2144,29 @@ File: figures/MoultosFig1.png Graphic file (type png)
 Package pdftex.def Info: figures/MoultosFig1.png used on input line 567.
 (pdftex.def)             Requested size: 231.26378pt x 162.01357pt.
 
-<figures/KondratyukFig2.png, id=402, 534.49687pt x 492.33937pt>
+<figures/KondratyukFig2.png, id=402, 532.99126pt x 490.83376pt>
 File: figures/KondratyukFig2.png Graphic file (type png)
 
 <use figures/KondratyukFig2.png>
 Package pdftex.def Info: figures/KondratyukFig2.png used on input line 615.
-(pdftex.def)             Requested size: 231.26378pt x 213.02399pt.
+(pdftex.def)             Requested size: 231.26378pt x 212.97171pt.
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
 [7 <./figures/MoultosFig1.png>]
-Overfull \vbox (0.53249pt too high) has occurred while \output is active []
+Overfull \vbox (0.48021pt too high) has occurred while \output is active []
 
 
-<figures/ZhangFig8.png, id=429, 365.86688pt x 536.0025pt>
+<figures/ZhangFig8.png, id=430, 365.86688pt x 536.0025pt>
 File: figures/ZhangFig8.png Graphic file (type png)
 
 <use figures/ZhangFig8.png>
 Package pdftex.def Info: figures/ZhangFig8.png used on input line 727.
 (pdftex.def)             Requested size: 231.26378pt x 338.81203pt.
 
-<figures/ZhangFig10.png, id=437, 342.5297pt x 249.93375pt>
+<figures/ZhangFig10.png, id=438, 342.5297pt x 249.93375pt>
 File: figures/ZhangFig10.png Graphic file (type png)
 
 <use figures/ZhangFig10.png>
@@ -2178,31 +2178,31 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  []
 
 [8 <./figures/KondratyukFig2.png>]
-Overfull \vbox (5.59042pt too high) has occurred while \output is active []
+Overfull \vbox (16.3904pt too high) has occurred while \output is active []
 
 
-<figures/MoultosFig3.png, id=453, 390.70969pt x 272.51813pt>
+<figures/MoultosFig3.png, id=455, 390.70969pt x 272.51813pt>
 File: figures/MoultosFig3.png Graphic file (type png)
 
 <use figures/MoultosFig3.png>
 Package pdftex.def Info: figures/MoultosFig3.png used on input line 758.
 (pdftex.def)             Requested size: 231.26378pt x 161.30408pt.
 
-<figures/ZhangFig9.png, id=456, 393.72093pt x 266.49562pt>
+<figures/ZhangFig9.png, id=458, 393.72093pt x 266.49562pt>
 File: figures/ZhangFig9.png Graphic file (type png)
 
 <use figures/ZhangFig9.png>
 Package pdftex.def Info: figures/ZhangFig9.png used on input line 765.
 (pdftex.def)             Requested size: 231.26378pt x 156.53163pt.
 
-<figures/HessFig5.png, id=463, 345.54094pt x 274.77657pt>
+<figures/HessFig5.png, id=465, 345.54094pt x 274.77657pt>
 File: figures/HessFig5.png Graphic file (type png)
 
 <use figures/HessFig5.png>
 Package pdftex.def Info: figures/HessFig5.png used on input line 776.
 (pdftex.def)             Requested size: 231.26378pt x 183.90646pt.
 
-<figures/ChenFig1.png, id=466, 450.18187pt x 307.1475pt>
+<figures/ChenFig1.png, id=468, 450.18187pt x 307.1475pt>
 File: figures/ChenFig1.png Graphic file (type png)
 
 <use figures/ChenFig1.png>
@@ -2223,14 +2223,14 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  []
 
 [10 <./figures/ZhangFig9.png> <./figures/HessFig5.png> <./figures/ChenFig1.png>
-] <figures/FanourgakisFig1.png, id=494, 435.12563pt x 395.97937pt>
+] <figures/FanourgakisFig1.png, id=496, 435.12563pt x 395.97937pt>
 File: figures/FanourgakisFig1.png Graphic file (type png)
 
 <use figures/FanourgakisFig1.png>
 Package pdftex.def Info: figures/FanourgakisFig1.png used on input line 831.
 (pdftex.def)             Requested size: 231.26378pt x 210.46019pt.
 
-<figures/ZhangFig7_12.png, id=509, 378.66469pt x 567.62062pt>
+<figures/ZhangFig7_12.png, id=511, 378.66469pt x 567.62062pt>
 File: figures/ZhangFig7_12.png Graphic file (type png)
 
 <use figures/ZhangFig7_12.png>
@@ -2329,11 +2329,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 28523 strings out of 493333
- 519221 string characters out of 3139198
- 784757 words of memory out of 3000000
+ 28535 strings out of 493333
+ 519473 string characters out of 3139198
+ 784863 words of memory out of 3000000
  30964 multiletter control sequences out of 15000+200000
- 123844 words of font info for 499 fonts, out of 3000000 for 9000
+ 124874 words of font info for 509 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,15n,52p,10455b,925s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-02.enc}{C:/Pro
@@ -2355,10 +2355,10 @@ public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msa
 m10.pfb>
-Output written on EMD_diffusivity_viscosity_restructured.pdf (13 pages, 852101 
+Output written on EMD_diffusivity_viscosity_restructured.pdf (13 pages, 853553 
 bytes).
 PDF statistics:
- 668 PDF objects out of 1000 (max. 8388607)
+ 670 PDF objects out of 1000 (max. 8388607)
  124 named destinations out of 1000 (max. 500000)
  74096 words of extra memory for PDF output out of 74296 (max. 10000000)
 

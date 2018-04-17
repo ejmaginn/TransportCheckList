@@ -498,7 +498,7 @@ Note that, although the best practice is to start each independent replicate at 
 
 \subsubsection{Improved precision} \label{sec:General: Improve precision}
 
-In practice, several tricks-of-the-trade are employed to reduce fluctuations and, thereby, the standard deviation. For self-diffusivity, it is a standard practice to average the mean-square-displacement or velocity autocorrelation function over all $N$ molecules (see Table \ref{tab:EMD_equations}). For shear viscosity, it is not possible to average over the number of particles because viscosity is a collective property that depends on the pressure/stress tensor of the system. For this reason, diffusivity estimates are much more precise than viscosity estimates, and additional tactics are typically employed to improve the viscosity precision, namely, large amounts of replicate simulations.
+In practice, several tricks-of-the-trade are employed to reduce fluctuations and, thereby, the standard deviation $(\sigma)$. For self-diffusivity, it is a standard practice to average the mean-square-displacement or velocity autocorrelation function over all $N$ molecules (see Table \ref{tab:EMD_equations}). For shear viscosity, it is not possible to average over the number of particles because viscosity is a collective property that depends on the pressure/stress tensor of the system. For this reason, diffusivity estimates are much more precise than viscosity estimates, and additional tactics are typically employed to improve the viscosity precision, namely, large amounts of replicate simulations.
 
 For self-diffusivity, it is also standard practice to average the x, y, and z displacements or velocities. For viscosity, the recommended practice is to use multiple components from the pressure/stress tensor. For example, although early studies only implemented a single off-diagonal component (typically xy), the common practice in recent studies is to use all three off-diagonal (xy, yz, zx) and sometimes three additional modified diagonal terms of the pressure/stress tensor (see Sec.\ \ref{sec:Viscosity:General: Improved precision}). 
 
@@ -613,7 +613,7 @@ In order to obtain reliable estimates of $D$, it is important to consider how th
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{KondratyukFig2.png}
-	\caption{Log-log plot of MSD with respect to time. Copied from Figure 2 of Ref. \cite{Kondratyuk2016}. The gray dashed lines are the long-range asymptotes of the MSD, as determined by the authors. For further details, see Ref. \cite{Kondratyuk2016}.} %The color for each line corresponds to different torsional force field parameters. The red dash-dot line shows the LAMMPS averaging methodology.
+	\caption{Log-log plot of MSD with respect to time. Copied from Figure 2 of Ref. \cite{Kondratyuk2016}. The gray dashed lines are the long-time asymptotes of the MSD, as determined by the authors. For further details, see Ref. \cite{Kondratyuk2016}.} %The color for each line corresponds to different torsional force field parameters. The red dash-dot line shows the LAMMPS averaging methodology.
 	\label{fig:KondratyukFig2}
 \end{figure}
 	
@@ -688,7 +688,7 @@ For systems that require anisotropic pressure control (e.g. membranes, etc.), us
 
 Calculating diffusion in membrane systems with periodic boundary conditions require some additional consideration, e.g. Saffman-Delbruck model \cite{Camley2015,Venable2017}.
 
-The standard non-bonded long-range cut-off corrections are not straightforward problematic when computing diffusivity in a heterogeneous system. 
+The standard non-bonded long-range cut-off corrections are not straightforward when computing diffusivity in a heterogeneous system. 
 
 %Handling potential truncation: shifted force, shifted potential, cutoff, long range corrections. We need to come up with recommendations on this.
 
@@ -725,7 +725,7 @@ Figure \ref{fig:ZhangFig8}, borrowed from Ref. \cite{Zhang2015}, demonstrates th
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{ZhangFig8.png}
-	\caption{Viscosity dependence on simulation length. Copied from Figure 8 of Ref.\ \cite{Zhang2015}. Different lines and symbols correspond to different simulation length, i.e. trajectory time. For further details, see Ref. \cite{Zhang2015}.}
+	\caption{Viscosity dependence on simulation length. Copied from Figure 8 of Ref.\ \cite{Zhang2015}. Different lines and symbols correspond to different simulation length, i.e. trajectory time. The inset in the top panel plots the standard deviation, $\sigma$. For further details, see Ref. \cite{Zhang2015}.}
 	\label{fig:ZhangFig8}
 \end{figure}
 
@@ -763,7 +763,7 @@ Figures \ref{fig:MoultosFig3}-\ref{fig:ZhangFig9} from Refs. \cite{Moultos2016} 
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{ZhangFig9.png}
-	\caption{Finite size effects for viscosity obtained with Green-Kubo approach. Copied from Figure 9 of Ref. \cite{Zhang2015}. Different colors correspond to different number of molecules. For further details, see Ref. \cite{Zhang2015}.}
+	\caption{Finite size effects for viscosity obtained with Green-Kubo approach. Copied from Figure 9 of Ref. \cite{Zhang2015}. Different colors correspond to different number of molecules. The inset plots the standard deviation, $\sigma$. For further details, see Ref. \cite{Zhang2015}.}
 	\label{fig:ZhangFig9}
 \end{figure}
 
@@ -838,7 +838,7 @@ The method we recommend is to fit an analytic function directly to the ``running
 \end{equation}
 where $A, \alpha, \tau_1, $ and $\tau_2$ are fitting parameters. The primary advantage over the previous approach is that uncertainties in the model fit do not propagate through the integration. It is important to include a description of how the fit is performed, i.e. the objective function, weighting model, range of data included, etc. 
 
-Ref. \cite{Zhang2015} recommends that the data be weighted by the inverse of the standard deviation with respect to time. They fit the standard deviation to a weighting model of the form $w \propto t^{-b}$, where $w$ is the weight, $t$ is the time, and $b$ is the weighting exponent. If such a model is utilized, the resulting estimate of $\eta$ may depend strongly on $b$, the weighting exponent. For example, Figure \ref{fig:ZhangFig7_12}, borrowed from Ref. \cite{Zhang2015}, compares $\eta$ for two different values of $b$ in the weighting model, namely, when $b$ is a predetermined value of 0.5 and when $b$ is fit to the standard deviation in the replicate averages. Note that Ref. \cite{ReyCastro2006} recommended a value of $b=2$. Ref. \cite{Zhang2015} demonstrated that for $b=2$ the estimated value of $\eta$ for [BMIM][Tf$_2$N] at 350 K is approximately 11 cP (compared to $\approx 19$ cP in the bottom panel of Figure \ref{fig:ZhangFig7_12}). For these reasons, we recommend that the author quantifies the uncertainty in the estimated viscosity due to the value of $b$. Propagating the uncertainty in $\eta$ from $b$ can be accomplished by implementing a two-step bootstrap method. First, a distribution of $b$ values are obtained by bootstrapping the fit of the weighting model to the standard deviation. Second, a distribution of $\eta$ values are computed by fitting Equation \ref{eq: Double exponential} with each value of $b$ from the distribution generated in the previous step.
+Ref. \cite{Zhang2015} recommends that the data be weighted by the inverse of the standard deviation $(\sigma)$ with respect to time. They fit $\sigma$ to a model $A t^b$, where $t$ is time and $A$ and $b$ are fitting parameters. This fit is used to develop a weighting model of the form $w \propto t^{-b}$, where $w$ is the weight and $b$ is the weighting exponent obtained from the $\sigma$ model fit. If such a model is utilized, the resulting estimate of $\eta$ may depend strongly on $b$, the weighting exponent. For example, Figure \ref{fig:ZhangFig7_12}, borrowed from Ref. \cite{Zhang2015}, compares $\eta$ for two different values of $b$ in the weighting model, namely, when $b$ is a predetermined value of 0.5 and when $b$ is fit to $\sigma$ in the replicate averages. Note that Ref. \cite{ReyCastro2006} recommended a value of $b=2$. Ref. \cite{Zhang2015} demonstrated that for $b=2$ the estimated value of $\eta$ for [BMIM][Tf$_2$N] at 350 K is approximately 11 cP (compared to $\approx 19$ cP in the bottom panel of Figure \ref{fig:ZhangFig7_12}). For these reasons, we recommend that the author quantifies the uncertainty in the estimated viscosity due to the value of $b$. Propagating the uncertainty in $\eta$ from $b$ can be accomplished by implementing a two-step bootstrap method. First, a distribution of $b$ values are obtained by bootstrapping the $\sigma$ model fit. Second, a distribution of $\eta$ values are computed by fitting Equation \ref{eq: Double exponential} with each value of $b$ from the distribution generated in the previous step.
 
 %Figure 13 of Ref. \cite{Zhang2015} shows that the estimated value of $\eta$ for [BMIM][Tf$_2$N] at 350 K (corresponding to the bottom panel of Figure \ref{fig:ZhangFig7_12}) is approximately 11 cP utilizing the value of $b=2$ recommended by Ref. \cite{ReyCastro2006}.
 

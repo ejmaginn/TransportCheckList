@@ -2,9 +2,25 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: EMD_diffusivity_visco
 The style file: vancouver-livecoms.bst
 Database file #1: transport_properties.bib
 Warning--to sort, need author or key in PanaNotes
-Warning--to sort, need author or key in ShellNotes
-Warning--to sort, need author or key in MaginnNotes
 Warning--to sort, need author or key in KofkeNotes
+Warning--to sort, need author or key in MaginnNotes
+Warning--to sort, need author or key in ShellNotes
+Name 1 in "Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds." has a comma at the end for entry ShenSRSW
+while executing---line 1853 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds." for entry ShenSRSW
+while executing---line 1853 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds." for entry ShenSRSW
+while executing---line 1853 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds." for entry ShenSRSW
+while executing---line 1853 of file vancouver-livecoms.bst
+Name 1 in "Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds." has a comma at the end for entry ShenSRSW
+while executing---line 1853 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds." for entry ShenSRSW
+while executing---line 1853 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds." for entry ShenSRSW
+while executing---line 1853 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds." for entry ShenSRSW
+while executing---line 1853 of file vancouver-livecoms.bst
 Warning--empty author in PanaNotes
 Warning--empty author and editor in PanaNotes
 Warning--missing publisher in PanaNotes
@@ -21,4 +37,15 @@ Warning--empty author in ShellNotes
 Warning--empty author and editor in ShellNotes
 Warning--missing publisher in ShellNotes
 Warning--there's a month but no year in ShellNotes
-(There were 20 warnings)
+Name 1 in "Shen, V. K. , Siderius, D. W. , Krekelberg, W. P. , and Hatch, H. W. , Eds. " has a comma at the end for entry ShenSRSW
+while executing---line 1927 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V. K. , Siderius, D. W. , Krekelberg, W. P. , and Hatch, H. W. , Eds. " for entry ShenSRSW
+while executing---line 1927 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V. K. , Siderius, D. W. , Krekelberg, W. P. , and Hatch, H. W. , Eds. " for entry ShenSRSW
+while executing---line 1927 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V. K. , Siderius, D. W. , Krekelberg, W. P. , and Hatch, H. W. , Eds. " for entry ShenSRSW
+while executing---line 1927 of file vancouver-livecoms.bst
+Warning--empty author and editor in ShenSRSW
+Warning--missing publisher in ShenSRSW
+Warning--there's a month but no year in ShenSRSW
+(There were 12 error messages)

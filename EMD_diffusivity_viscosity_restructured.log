@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  17 APR 2018 11:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  25 APR 2018 14:30
 entering extended mode
 **./EMD_diffusivity_viscosity_restructured.tex
 (EMD_diffusivity_viscosity_restructured.tex
@@ -1796,21 +1796,21 @@ Package: translator 2010/06/12 ver 1.10
 appings.tex"))) (EMD_diffusivity_viscosity_restructured.aux)
 \openout1 = `EMD_diffusivity_viscosity_restructured.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Try loading font information for T1+fos on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Try loading font information for T1+fos on input line 63.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\opensans\t1fos.fd"
 File: t1fos.fd 2011/11/11 Fontinst v1.927 font definitions for T1/fos.
@@ -1843,7 +1843,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Info: Redefining \microtypecontext on input line 61.
+LaTeX Info: Redefining \microtypecontext on input line 63.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1899,8 +1899,8 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 61.
-Package hyperref Info: Link coloring ON on input line 61.
+(lastpage)             ! on input line 63.
+Package hyperref Info: Link coloring ON on input line 63.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1909,9 +1909,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count359
 )
-LaTeX Info: Redefining \ref on input line 61.
-LaTeX Info: Redefining \pageref on input line 61.
-LaTeX Info: Redefining \nameref on input line 61.
+LaTeX Info: Redefining \ref on input line 63.
+LaTeX Info: Redefining \pageref on input line 63.
+LaTeX Info: Redefining \nameref on input line 63.
 
 (EMD_diffusivity_viscosity_restructured.out)
 (EMD_diffusivity_viscosity_restructured.out)
@@ -1921,7 +1921,7 @@ LaTeX Info: Redefining \nameref on input line 61.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 61.
+. Activating mapping `default' on line 63.
 .................................................
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
@@ -2011,7 +2011,7 @@ File: siunitx-abbreviations.cfg 2017/08/02 v2.7j siunitx: Abbreviated units
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 61.
+LaTeX Font Info:    Try loading font information for U+msa on input line 63.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -2019,7 +2019,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 61.
+LaTeX Font Info:    Try loading font information for U+msb on input line 63.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2037,33 +2037,41 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <9> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 74.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 76.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <22> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 74.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 76.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <10> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 74.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 76.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <7> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 74.
-LaTeX Font Info:    Try loading font information for OMS+fos on input line 74.
-LaTeX Font Info:    No file OMSfos.fd. on input line 74.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 76.
+LaTeX Font Info:    Try loading font information for OMS+fos on input line 76.
+LaTeX Font Info:    No file OMSfos.fd. on input line 76.
 
 
 LaTeX Font Warning: Font shape `OMS/fos/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textdagger' on input line 74.
+(Font)              for symbol `textdagger' on input line 76.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
 
  []
 
-LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <12> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 121.
 
-Overfull \hbox (4.78078pt too wide) in paragraph at lines 123--124
-\T1/fos/m/n/9 (-20) They in-volve mean squared dis-place-ments (MSDs) of molecu
-les
- []
+LaTeX Warning: Optional argument of \twocolumn too tall on page 1.
+
+
+Overfull \vbox (27.0pt too high) has occurred while \output is active []
+
+
+
+LaTeX Warning: Text page 1 contains only floats.
+
+
+Overfull \vbox (27.0pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (16.0pt too high) has occurred while \output is active []
 
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
@@ -2074,32 +2082,47 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
 
 
 ]
+LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <12> not available
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 123.
+
+Overfull \hbox (4.78078pt too wide) in paragraph at lines 125--126
+\T1/fos/m/n/9 (-20) They in-volve mean squared dis-place-ments (MSDs) of molecu
+les
+ []
+
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <8> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 223.
-LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 316.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 316.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 316.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 361.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 361.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 405.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 405.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 449.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 449.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 226.
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
 [2]
+LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 324.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 324.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 324.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 372.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 372.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 419.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 419.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 466.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 466.
+ <figures/PayalFig2.png, id=326, 360.59718pt x 302.63063pt>
+File: figures/PayalFig2.png Graphic file (type png)
+
+<use figures/PayalFig2.png>
+Package pdftex.def Info: figures/PayalFig2.png used on input line 499.
+(pdftex.def)             Requested size: 231.26378pt x 194.08467pt.
+
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
@@ -2109,25 +2132,18 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[4] <figures/PayalFig2.png, id=336, 360.59718pt x 302.63063pt>
-File: figures/PayalFig2.png Graphic file (type png)
-
-<use figures/PayalFig2.png>
-Package pdftex.def Info: figures/PayalFig2.png used on input line 482.
-(pdftex.def)             Requested size: 231.26378pt x 194.08467pt.
-
-Overfull \hbox (1.74263pt too wide) in paragraph at lines 487--488
-[]\T1/fos/m/n/9 (-20) Also, the un-cer-tainty is in-versely pro-por-tional to t
-he square
- []
-
-
+[4]
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[5 <./figures/PayalFig2.png>]
-Overfull \hbox (0.52283pt too wide) in paragraph at lines 550--551
+[5]
+Overfull \hbox (6.0pt too wide) has occurred while \output is active
+ [][][][][][][]| 
+ []
+
+[6 <./figures/PayalFig2.png>]
+Overfull \hbox (0.52283pt too wide) in paragraph at lines 574--575
 \T1/fos/m/n/9 (-20) diffusivity as it is ro-bust and the most com-monly used me
 thod.
  []
@@ -2137,112 +2153,121 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[6] <figures/MoultosFig1.png, id=395, 407.27156pt x 285.31593pt>
+[7] <figures/MoultosFig1.png, id=420, 407.27156pt x 285.31593pt>
 File: figures/MoultosFig1.png Graphic file (type png)
 
 <use figures/MoultosFig1.png>
-Package pdftex.def Info: figures/MoultosFig1.png used on input line 567.
+Package pdftex.def Info: figures/MoultosFig1.png used on input line 601.
 (pdftex.def)             Requested size: 231.26378pt x 162.01357pt.
 
-<figures/KondratyukFig2.png, id=402, 532.99126pt x 490.83376pt>
+Overfull \hbox (6.0pt too wide) has occurred while \output is active
+ [][][][][][][]| 
+ []
+
+[8 <./figures/MoultosFig1.png>]
+<figures/KondratyukFig2.png, id=443, 532.99126pt x 490.83376pt>
 File: figures/KondratyukFig2.png Graphic file (type png)
 
 <use figures/KondratyukFig2.png>
-Package pdftex.def Info: figures/KondratyukFig2.png used on input line 615.
+Package pdftex.def Info: figures/KondratyukFig2.png used on input line 650.
 (pdftex.def)             Requested size: 231.26378pt x 212.97171pt.
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[7 <./figures/MoultosFig1.png>]
-Overfull \vbox (0.48021pt too high) has occurred while \output is active []
-
-
-<figures/ZhangFig8.png, id=430, 365.86688pt x 536.0025pt>
+[9 <./figures/KondratyukFig2.png>]
+<figures/ZhangFig8.png, id=469, 365.86688pt x 536.0025pt>
 File: figures/ZhangFig8.png Graphic file (type png)
 
 <use figures/ZhangFig8.png>
-Package pdftex.def Info: figures/ZhangFig8.png used on input line 727.
+Package pdftex.def Info: figures/ZhangFig8.png used on input line 760.
 (pdftex.def)             Requested size: 231.26378pt x 338.81203pt.
 
-<figures/ZhangFig10.png, id=438, 342.5297pt x 249.93375pt>
+<figures/ZhangFig10.png, id=477, 342.5297pt x 249.93375pt>
 File: figures/ZhangFig10.png Graphic file (type png)
 
 <use figures/ZhangFig10.png>
-Package pdftex.def Info: figures/ZhangFig10.png used on input line 738.
+Package pdftex.def Info: figures/ZhangFig10.png used on input line 771.
 (pdftex.def)             Requested size: 231.26378pt x 168.75139pt.
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[8 <./figures/KondratyukFig2.png>]
-Overfull \vbox (16.3904pt too high) has occurred while \output is active []
-
-
-<figures/MoultosFig3.png, id=455, 390.70969pt x 272.51813pt>
+[10 <./figures/ZhangFig8.png>]
+<figures/MoultosFig3.png, id=494, 390.70969pt x 272.51813pt>
 File: figures/MoultosFig3.png Graphic file (type png)
 
 <use figures/MoultosFig3.png>
-Package pdftex.def Info: figures/MoultosFig3.png used on input line 758.
+Package pdftex.def Info: figures/MoultosFig3.png used on input line 793.
 (pdftex.def)             Requested size: 231.26378pt x 161.30408pt.
 
-<figures/ZhangFig9.png, id=458, 393.72093pt x 266.49562pt>
+<figures/ZhangFig9.png, id=497, 393.72093pt x 266.49562pt>
 File: figures/ZhangFig9.png Graphic file (type png)
 
 <use figures/ZhangFig9.png>
-Package pdftex.def Info: figures/ZhangFig9.png used on input line 765.
+Package pdftex.def Info: figures/ZhangFig9.png used on input line 800.
 (pdftex.def)             Requested size: 231.26378pt x 156.53163pt.
 
-<figures/HessFig5.png, id=465, 345.54094pt x 274.77657pt>
+Overfull \hbox (6.0pt too wide) has occurred while \output is active
+ [][][][][][][]| 
+ []
+
+[11 <./figures/ZhangFig10.png> <./figures/MoultosFig3.png> <./figures/ZhangFig9
+.png>] <figures/HessFig5.png, id=525, 345.54094pt x 274.77657pt>
 File: figures/HessFig5.png Graphic file (type png)
 
 <use figures/HessFig5.png>
-Package pdftex.def Info: figures/HessFig5.png used on input line 776.
+Package pdftex.def Info: figures/HessFig5.png used on input line 829.
 (pdftex.def)             Requested size: 231.26378pt x 183.90646pt.
 
-<figures/ChenFig1.png, id=468, 450.18187pt x 307.1475pt>
+<figures/ChenFig1.png, id=528, 450.18187pt x 307.1475pt>
 File: figures/ChenFig1.png Graphic file (type png)
 
 <use figures/ChenFig1.png>
-Package pdftex.def Info: figures/ChenFig1.png used on input line 783.
+Package pdftex.def Info: figures/ChenFig1.png used on input line 836.
 (pdftex.def)             Requested size: 231.26378pt x 157.7867pt.
 
-Overfull \hbox (6.0pt too wide) has occurred while \output is active
- [][][][][][][]| 
- []
-
-[9 <./figures/ZhangFig8.png> <./figures/ZhangFig10.png> <./figures/MoultosFig3.
-png>]
-Overfull \vbox (1.61241pt too high) has occurred while \output is active []
+Overfull \vbox (2.90906pt too high) has occurred while \output is active []
 
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[10 <./figures/ZhangFig9.png> <./figures/HessFig5.png> <./figures/ChenFig1.png>
-] <figures/FanourgakisFig1.png, id=496, 435.12563pt x 395.97937pt>
+[12 <./figures/HessFig5.png> <./figures/ChenFig1.png>]
+<figures/FanourgakisFig1.png, id=550, 431.36156pt x 395.97937pt>
 File: figures/FanourgakisFig1.png Graphic file (type png)
 
 <use figures/FanourgakisFig1.png>
-Package pdftex.def Info: figures/FanourgakisFig1.png used on input line 831.
-(pdftex.def)             Requested size: 231.26378pt x 210.46019pt.
+Package pdftex.def Info: figures/FanourgakisFig1.png used on input line 888.
+(pdftex.def)             Requested size: 231.26378pt x 212.29097pt.
 
-<figures/ZhangFig7_12.png, id=511, 378.66469pt x 567.62062pt>
+<figures/FernandezFig7.png, id=561, 387.69844pt x 352.31625pt>
+File: figures/FernandezFig7.png Graphic file (type png)
+
+<use figures/FernandezFig7.png>
+Package pdftex.def Info: figures/FernandezFig7.png used on input line 903.
+(pdftex.def)             Requested size: 231.26378pt x 210.1603pt.
+
+Overfull \hbox (6.0pt too wide) has occurred while \output is active
+ [][][][][][][]| 
+ []
+
+[13 <./figures/FanourgakisFig1.png> <./figures/FernandezFig7.png>]
+<figures/ZhangFig7_12.png, id=590, 378.66469pt x 567.62062pt>
 File: figures/ZhangFig7_12.png Graphic file (type png)
 
 <use figures/ZhangFig7_12.png>
-Package pdftex.def Info: figures/ZhangFig7_12.png used on input line 849.
+Package pdftex.def Info: figures/ZhangFig7_12.png used on input line 938.
 (pdftex.def)             Requested size: 231.26378pt x 346.67245pt.
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[11 <./figures/FanourgakisFig1.png> <./figures/ZhangFig7_12.png>]
-(EMD_diffusivity_viscosity_restructured.bbl
+[14 <./figures/ZhangFig7_12.png>] (EMD_diffusivity_viscosity_restructured.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 7--11
 []\T1/fos/m/n/8 (+20) Athanassios Pana-giotopou-los, The Uni-ver-sity of
  []
@@ -2290,20 +2315,43 @@ rties.pdf.
  []
 
 
+Underfull \hbox (badness 1365) in paragraph at lines 101--108
+[][]\T1/fos/b/n/8 Fernández GA[]\T1/fos/m/n/8 (+20) , Vrabec J, Hasse H.  Shear
+ vis-cos-ity and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--108
+\T1/fos/m/n/8 (+20) 793.  [][]$https : / / doi . org / 10 . 1080 / 089270205002
+52599$[][], [][]doi:
+ []
+
+
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[12]
-Underfull \hbox (badness 1789) in paragraph at lines 110--117
+[15]
+Underfull \hbox (badness 1789) in paragraph at lines 171--178
 \T1/fos/m/n/8 (+20) tetraflu-o-rob-o-rate as an ex-am-ple.  Molec-u-lar Sim-u-l
 a-tion.
  []
 
 
-Underfull \hbox (badness 1163) in paragraph at lines 154--162
+Underfull \hbox (badness 1163) in paragraph at lines 215--223
 \T1/fos/m/n/8 (+20) 1241.  [][]$https : / / doi . org / 10 . 1080 / 08927022 . 
 2012 . 702423$[][], [][]doi:
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 237--243
+[][]\T1/fos/b/n/8 Shen SD-WKWP V K[]\T1/fos/m/n/8 (+20) , Hatch E H W, NIST Sta
+n-dard Ref-er-
+ []
+
+
+Underfull \hbox (badness 2635) in paragraph at lines 237--243
+\T1/fos/m/n/8 (+20) Num-ber 173, Na-tional In-sti-tute of Stan-dards and Tech-
  []
 
 ) 
@@ -2313,32 +2361,33 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[13] (EMD_diffusivity_viscosity_restructured.suppinfo)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 925.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 925.
+[16] (EMD_diffusivity_viscosity_restructured.suppinfo)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1014.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1014.
 
 (EMD_diffusivity_viscosity_restructured.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 925.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 925.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1014.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1014.
+
 Package rerunfilecheck Info: File `EMD_diffusivity_viscosity_restructured.out' 
 has not changed.
-(rerunfilecheck)             Checksum: 474CFBA0386781041A2DAE9A645AC229;2900.
+(rerunfilecheck)             Checksum: A05218EF3562683E48E89544FE5F49BE;2893.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 28535 strings out of 493333
- 519473 string characters out of 3139198
- 784863 words of memory out of 3000000
- 30964 multiletter control sequences out of 15000+200000
- 124874 words of font info for 509 fonts, out of 3000000 for 9000
+ 28670 strings out of 493333
+ 521903 string characters out of 3139198
+ 792420 words of memory out of 3000000
+ 31002 multiletter control sequences out of 15000+200000
+ 132415 words of font info for 566 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,15n,52p,10455b,925s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,15n,47p,10455b,934s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-02.enc}{C:/Pro
-gram Files/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-04.enc}{C:/Program File
-s/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-03.enc}{C:/Program Files/MiKTeX 
+gram Files/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-03.enc}{C:/Program File
+s/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-04.enc}{C:/Program Files/MiKTeX 
 2.9/fonts/enc/dvips/opensans/opensans-01.enc}<C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/opensans/OpenSans-Bold.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/opensans/OpenSans-Italic.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
@@ -2347,18 +2396,18 @@ public/amsfonts/cmextra/cmex9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
 i8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msa
-m10.pfb>
-Output written on EMD_diffusivity_viscosity_restructured.pdf (13 pages, 853553 
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on EMD_diffusivity_viscosity_restructured.pdf (16 pages, 947678 
 bytes).
 PDF statistics:
- 670 PDF objects out of 1000 (max. 8388607)
- 124 named destinations out of 1000 (max. 500000)
- 74096 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 763 PDF objects out of 1000 (max. 8388607)
+ 142 named destinations out of 1000 (max. 500000)
+ 82293 words of extra memory for PDF output out of 89155 (max. 10000000)
 

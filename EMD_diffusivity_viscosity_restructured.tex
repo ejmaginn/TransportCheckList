@@ -122,7 +122,9 @@ There are two classes by which transport properties are predicted: equilibrium m
 
 \section{Introduction}
 
-Transport properties describe the rates at which mass, momentum, heat or charge move through a given substance. They involve mean squared displacements (MSDs) of molecules as the system evolves dynamically. In general, these properties can be computed by equilibrium molecular dynamics (EMD) or by non-equilibrium molecular dynamics (NEMD) methods. The EMD methods involve post-processing of a standard molecular dynamics (MD) trajectory while NEMD methods require modifications of the underlying equations of motion and/or boundary conditions of the system. Many codes such as LAMMPS \cite{LAMMPS} and GROMACS \cite{GROMACS} have analysis tools that automatically estimate transport properties from an EMD or NEMD simulation, but there are often insufficient checks as to whether the actual underlying simulations are adequate for making these estimates. For this reason, following best practices is imperative to ensure that meaningful predictions are obtained. The purpose of this document is to improve the quality of published results and to reduce the time required for a novice in the field to obtain meaningful and reliable results.
+Transport properties describe the rates at which mass, momentum, heat or charge move through a given substance. They involve mean squared displacements (MSDs) of molecules as the system evolves dynamically. In general, these properties can be computed by equilibrium molecular dynamics (EMD) or by non-equilibrium molecular dynamics (NEMD) methods. The EMD methods involve post-processing of a standard molecular dynamics (MD) trajectory while NEMD methods require modifications of the underlying equations of motion and/or boundary conditions of the system. Therefore, one advantage of EMD is that multiple transport properties can be obtained from a single simulation, whereas NEMD requires a separate simulation for each transport property of interest.
+
+Many codes such as LAMMPS \cite{LAMMPS} and GROMACS \cite{GROMACS} have analysis tools that automatically estimate transport properties from an EMD or NEMD simulation, but there are often insufficient checks as to whether the actual underlying simulations are adequate for making these estimates. For this reason, we strongly discourage using these analysis tools as a ``black box.'' Following best practices is imperative to ensure that meaningful predictions are obtained. The purpose of this document is to improve the quality of published results and to reduce the time required for a novice in the field to obtain meaningful and reliable results.
 
 In addition to the present manuscript, we highly recommend reviewing this list of existing resources:
 \begin{enumerate}
@@ -871,13 +873,17 @@ Although fluctuations in $\eta$ are significantly reduced by including multiple 
 
 It is imperative to report how the viscosity was estimated from Equation \ref{eq:Green-Kubo}. There are three common methods: average over a specified time interval, fit the autocorrelation function to a model and analytically integrate the model fit, or fit the ``running integral'' to a model and extrapolate the model to infinite time. We recommend the latter methodology but discuss each approach below.
 
+\subsubsection*{Average over time interval}
+
 A slightly ambiguous but common practice is to report an average shear viscosity that is obtained over a specified time interval. Due to large fluctuations at long times, the initial plateau of the integral at short times (around 10--100 ps) is typically the region of choice, see Refs. \cite{Fanourgakis2012,Chen2009}. However, it is important to explain how this time interval was selected (i.e. visual inspection, test of convergence, magnitude of fluctuations, etc.) and to quantify how much the estimated viscosity changes if the time interval were modified.
+
+\subsubsection*{Model fit to autocorrelation function}
 
 An alternative method is to fit a model to the autocorrelation function before calculating the ``running integral.'' The integral of the model fit can then be evaluated in the limit as $t \to \infty$. This helps to overcome large fluctuations at long times and, thereby, reduces uncertainties. The primary difficulty is finding a model that can adequately match the autocorrelation function without introducing bias into the estimate of viscosity. A common function found in the literature is
 \begin{equation} \label{eq:ACF_fit}
-\frac{S_{\rm ACF}(t)}{S_{\rm ACF}(0)} = (1-C)cos(\omega t)\exp{(-t/\tau_f)^{\beta_f}} + C\exp{(-t/\tau_s)^{\beta_s}}
+\frac{S^{\rm f}_{\rm ACF}(t)}{S^{\rm f}_{\rm ACF}(0)} = (1-C)cos(\omega t)\exp{(-t/\tau_f)^{\beta_f}} + C\exp{(-t/\tau_s)^{\beta_s}}
 \end{equation}
-where $C, \omega, \tau_f, \tau_s, \beta_f, \beta_s$ (and sometimes $S_{\rm ACF}(0)$) are fitting parameters. $\omega$ is the frequency of rapid pressure oscillations, $\tau_f$ and $\beta_f$ are the time constant and exponent of fast relaxation in a stretched-exponential approximation, $\tau_s$ and $\beta_s$ are constants for slow relaxation, $C$ is the pre-factor that determines the weight between fast and slow relaxation, $S_{\rm ACF}(t)$ is the stress autocorrelation function at time $t$, and $S_{\rm ACF}(0)$ is the initial (time-zero) autocorrelation function \cite{GROMACS}.
+where $C, \omega, \tau_f, \tau_s, \beta_f, \beta_s$ (and sometimes $S^{\rm f}_{\rm ACF}(0)$) are fitting parameters. $\omega$ is the frequency of rapid pressure oscillations, $\tau_f$ and $\beta_f$ are the time constant and exponent of fast relaxation in a stretched-exponential approximation, $\tau_s$ and $\beta_s$ are constants for slow relaxation, $C$ is the pre-factor that determines the weight between fast and slow relaxation, $S^{\rm f}_{\rm ACF}(t)$ is the stress autocorrelation function at time $t$, and $S^{\rm f}_{\rm ACF}(0)$ is the initial (time-zero) autocorrelation function \cite{GROMACS}.
 
 %Figure \ref{fig:FanourgakisFig1}, from Ref.  \cite{Fanourgakis2012}, demonstrates that Equation \ref{eq:ACF_fit} can reliably fit the autocorrelation function for this system. However, small deviations in the model fit can lead to significant bias in the estimated viscosity. Similar to the methods discussed previously, it is important to quantify the variability in viscosity that arises from the model fit. For example, we recommend bootstrapping the uncertainties of the model fit. Furthermore, if a weighting function or cut-off time is implemented when fitting Equation \ref{eq:ACF_fit}, the impact of these parameters should be discussed.
 
@@ -886,7 +892,7 @@ Figure \ref{fig:FanourgakisFig1}, from Ref. \cite{Fanourgakis2012}, demonstrates
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{FanourgakisFig1.png}
-	\caption{Fit of autocorrelation function to Equation \ref{eq:ACF_fit}. Copied from Figure 1 of Ref. \cite{Fanourgakis2012}. S$_{\rm ACF}$ and S$^{\rm f}_{\rm ACF}$ correspond to the raw autocorrelation function and the fit to Equation \ref{eq:ACF_fit}, respectively. The red dotted line and blue dashed--dotted line correspond to the fast and slow autocorrelation components, respectively, i.e. the first and second terms of Equation \ref{eq:ACF_fit}. For further details, see Ref. \cite{Fanourgakis2012}.{\bf need to get permissions for this figure}.}
+	\caption{Fit of autocorrelation function to Equation \ref{eq:ACF_fit}. Reproduced with permission from J. Phys. Chem. A. 116 (10), pp 2564-2570. Copyright 2012 ACS Publications \cite{Fanourgakis2012}. S$_{\rm ACF}$ and S$^{\rm f}_{\rm ACF}$ correspond to the raw autocorrelation function and the fit to Equation \ref{eq:ACF_fit}, respectively. The red dotted line and blue dashed--dotted line correspond to the fast and slow autocorrelation components, respectively, i.e. the first and second terms of Equation \ref{eq:ACF_fit}. For further details, see Ref. \cite{Fanourgakis2012}.}
 	\label{fig:FanourgakisFig1}
 \end{figure}
 
@@ -901,7 +907,7 @@ The hybrid integration approach is especially preferred when $S_{\rm ACF}$ is hi
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{FernandezFig7.png}
-	\caption{Fit of autocorrelation function ($\Phi_{\eta}(t)$) to $a \exp(-t/b)$. Copied from Figure 7 of Ref. \cite{Fernandez2005}. Solid line is the raw autocorrelation function while the dashed line is the model fit for $t > 0.0015$ ps. For further details, see Ref. \cite{Fernandez2005}.{\bf need to get permissions for this figure}.}
+	\caption{Fit of autocorrelation function ($\Phi_{\eta}(t)$) to $a \exp(-t/b)$. Copied from Figure 7 of Ref. \cite{Fernandez2005}. Solid line is the raw autocorrelation function while the dashed line is the model fit for $t > 0.015$ ps. For further details, see Ref. \cite{Fernandez2005}.{\bf Note: When I went to Taylor and Francis to request re-use of this figure, they asked for 315 dollars. I think we need a substitute.}}
 	\label{fig:FernandezFig7}
 \end{figure}
 
@@ -913,6 +919,8 @@ Similar to the methods discussed previously, it is important to quantify the var
 
 %
 %Notice in Figure \ref{fig:FanourgakisFig1} that Equation \ref{eq:ACF_fit} is not capable of fitting the stress autocorrelation function $(S_{\rm ACF})$ over the entire time scale, specifically, large deviations are observed at short time.     is integrated the long tail non-converging nature of the  to the ACF deviates  is that  
+
+\subsubsection*{Model fit to running integral}
 
 The method we recommend for obtaining viscosity from EMD is to fit an analytic function directly to the ``running integral''. The primary advantage of fitting a model to the ``running integral'' over the previous approach of fitting a model to the autocorrelation function (i.e. Equation \ref{eq:ACF_fit}) is that uncertainties in the model fit do not propagate through the integration. 
 
@@ -943,6 +951,15 @@ Ref. \cite{Zhang2015} recommends that the data be weighted by the inverse of the
 \end{figure}
 
 Ref. \cite{Zhang2015} also suggests that a cut-off time be implemented to improve the fit. They provide a heurestic that the cut-off time correspond to when the standard deviation is 40\% of the plateau value. Regardless of how the cut-off is determined, it is important to quantify the degree to which the estimated viscosity depends on this parameter. For example, Zhang et al. reported that the viscosity decreased by 0.8\% and 6.1\% when using a cut-off time corresponding to a standard deviation of 30\% or 20\% the plateau value, respectively. However, the magnitude of variability depends strongly on the system. We recommend that the author quantify the cut-off time dependence.
+
+Furthermore, Ref. \cite{Zhang2015} recommends excluding short-time data from the fitting procedure. In Figure \ref{fig:ZhangFig4}, borrowed from Ref. \cite{Zhang2015}, we observe large oscillations at very short times, ca. $t < 2$ ps. A weighting function with a $t^{-b}$ form assigns an inappropriately large weight to these short-time data points. Therefore, it is important to exclude data in this short-time region from the model fitting. 
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=3.2in]{ZhangFig4.png}
+	\caption{Large fluctuations at very short time. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite{Zhang2015}.}
+	\label{fig:ZhangFig4}
+\end{figure}  
 
 %For example, plots of the estimated viscosity with respect to the weighting exponent and cut-off time, such as those shown in Figure \ref{fig:GK_tcut_b}, provide a quantitative measure of confidence in the viscosity value.
 

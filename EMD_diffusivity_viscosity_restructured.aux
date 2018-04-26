@@ -19,7 +19,10 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \@LN@col{1}
-\babel@aux{english}{}
+\select@language{english}
+\@writefile{toc}{\select@language{english}}
+\@writefile{lof}{\select@language{english}}
+\@writefile{lot}{\select@language{english}}
 \@LN@col{2}
 \citation{LAMMPS}
 \citation{GROMACS}
@@ -105,11 +108,11 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}Finite size effects}{8}{subsubsection.5.1.2}}
 \newlabel{sec:Self-Diffusivity:General: Finite size}{{5.1.2}{8}{Finite size effects}{subsubsection.5.1.2}{}}
 \newlabel{eq:YH-correction}{{3}{8}{Finite size effects}{equation.5.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Self-Diffusivity: Einstein}{8}{subsection.5.2}}
-\newlabel{sec:Self-Diffusivity Einstein}{{5.2}{8}{Self-Diffusivity: Einstein}{subsection.5.2}{}}
 \@LN@col{2}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces System size dependence of self-diffusivity obtained with Einstein approach. Reproduced with permission from J. Chem. Phys. 145, 074109 (2016). Copyright 2016 AIP Publishing \cite  {Moultos2016}. Blue dashed lines are obtained by extrapolating the MD results to the infinite system size, i.e. $N^{-1/3} \to 0$. Red diamonds are the values of $D$ after correcting for finite size effects, i.e. Equation \ref  {eq:YH-correction}. The red dashed line is an average of these corrected values of $D$. For further details, see Ref. \cite  {Moultos2016}.\relax }}{8}{figure.caption.7}}
 \newlabel{fig:MoultosFig1}{{2}{8}{System size dependence of self-diffusivity obtained with Einstein approach. Reproduced with permission from J. Chem. Phys. 145, 074109 (2016). Copyright 2016 AIP Publishing \cite {Moultos2016}. Blue dashed lines are obtained by extrapolating the MD results to the infinite system size, i.e. $N^{-1/3} \to 0$. Red diamonds are the values of $D$ after correcting for finite size effects, i.e. Equation \ref {eq:YH-correction}. The red dashed line is an average of these corrected values of $D$. For further details, see Ref. \cite {Moultos2016}.\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Self-Diffusivity: Einstein}{8}{subsection.5.2}}
+\newlabel{sec:Self-Diffusivity Einstein}{{5.2}{8}{Self-Diffusivity: Einstein}{subsection.5.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Output frequency}{8}{subsubsection.5.2.1}}
 \newlabel{sec:Self-Diffusivity:Einstein: Output frequency}{{5.2.1}{8}{Output frequency}{subsubsection.5.2.1}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Simulation length}{8}{subsubsection.5.2.2}}
@@ -190,7 +193,6 @@
 \citation{Payal2012}
 \citation{Zhang2015}
 \citation{Fanourgakis2012,Chen2009}
-\citation{GROMACS}
 \@LN@col{1}
 \newlabel{eq:Einwonder}{{6}{12}{Improved precision}{equation.6.6}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Green-Kubo viscosity plot. Copied from Figure 5 of Ref. \cite  {Hess2002}. Dashed lines represent a single off-diagonal element of the pressure tensor while solid line is the average of the three off-diagonal elements. For further details, see Ref. \cite  {Hess2002}.{\bf  need to get permissions for this figure}.\relax }}{12}{figure.caption.13}}
@@ -202,21 +204,22 @@
 \newlabel{sec:Viscosity Green-Kubo}{{6.2}{12}{Viscosity: Green-Kubo}{subsection.6.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}Data analysis}{12}{subsubsection.6.2.1}}
 \newlabel{sec:Viscosity:Green-Kubo: Data analysis}{{6.2.1}{12}{Data analysis}{subsubsection.6.2.1}{}}
-\newlabel{eq:ACF_fit}{{7}{12}{Data analysis}{equation.6.7}{}}
+\citation{GROMACS}
 \citation{Fanourgakis2012}
 \citation{Fanourgakis2012}
 \citation{Fanourgakis2012}
 \citation{Fernandez2005}
 \citation{Fernandez2005}
 \citation{Fernandez2005}
+\@LN@col{1}
+\newlabel{eq:ACF_fit}{{7}{13}{}{equation.6.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Fit of autocorrelation function to Equation \ref  {eq:ACF_fit}. Reproduced with permission from J. Phys. Chem. A. 116 (10), pp 2564-2570. Copyright 2012 ACS Publications \cite  {Fanourgakis2012}. S$_{\rm  ACF}$ and S$^{\rm  f}_{\rm  ACF}$ correspond to the raw autocorrelation function and the fit to Equation \ref  {eq:ACF_fit}, respectively. The red dotted line and blue dashed--dotted line correspond to the fast and slow autocorrelation components, respectively, i.e. the first and second terms of Equation \ref  {eq:ACF_fit}. For further details, see Ref. \cite  {Fanourgakis2012}.\relax }}{13}{figure.caption.15}}
+\newlabel{fig:FanourgakisFig1}{{10}{13}{Fit of autocorrelation function to Equation \ref {eq:ACF_fit}. Reproduced with permission from J. Phys. Chem. A. 116 (10), pp 2564-2570. Copyright 2012 ACS Publications \cite {Fanourgakis2012}. S$_{\rm ACF}$ and S$^{\rm f}_{\rm ACF}$ correspond to the raw autocorrelation function and the fit to Equation \ref {eq:ACF_fit}, respectively. The red dotted line and blue dashed--dotted line correspond to the fast and slow autocorrelation components, respectively, i.e. the first and second terms of Equation \ref {eq:ACF_fit}. For further details, see Ref. \cite {Fanourgakis2012}.\relax }{figure.caption.15}{}}
+\@LN@col{2}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Fit of autocorrelation function ($\Phi _{\eta }(t)$) to $a \qopname  \relax o{exp}(-t/b)$. Copied from Figure 7 of Ref. \cite  {Fernandez2005}. Solid line is the raw autocorrelation function while the dashed line is the model fit for $t > 0.015$ ps. For further details, see Ref. \cite  {Fernandez2005}.{\bf  Note: When I went to Taylor and Francis to request re-use of this figure, they asked for 315 dollars. I think we need a substitute.}\relax }}{13}{figure.caption.16}}
+\newlabel{fig:FernandezFig7}{{11}{13}{Fit of autocorrelation function ($\Phi _{\eta }(t)$) to $a \exp (-t/b)$. Copied from Figure 7 of Ref. \cite {Fernandez2005}. Solid line is the raw autocorrelation function while the dashed line is the model fit for $t > 0.015$ ps. For further details, see Ref. \cite {Fernandez2005}.{\bf Note: When I went to Taylor and Francis to request re-use of this figure, they asked for 315 dollars. I think we need a substitute.}\relax }{figure.caption.16}{}}
 \citation{ReyCastro2006}
 \citation{Zhang2015}
-\@LN@col{1}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Fit of autocorrelation function to Equation \ref  {eq:ACF_fit}. Copied from Figure 1 of Ref. \cite  {Fanourgakis2012}. S$_{\rm  ACF}$ and S$^{\rm  f}_{\rm  ACF}$ correspond to the raw autocorrelation function and the fit to Equation \ref  {eq:ACF_fit}, respectively. The red dotted line and blue dashed--dotted line correspond to the fast and slow autocorrelation components, respectively, i.e. the first and second terms of Equation \ref  {eq:ACF_fit}. For further details, see Ref. \cite  {Fanourgakis2012}.{\bf  need to get permissions for this figure}.\relax }}{13}{figure.caption.15}}
-\newlabel{fig:FanourgakisFig1}{{10}{13}{Fit of autocorrelation function to Equation \ref {eq:ACF_fit}. Copied from Figure 1 of Ref. \cite {Fanourgakis2012}. S$_{\rm ACF}$ and S$^{\rm f}_{\rm ACF}$ correspond to the raw autocorrelation function and the fit to Equation \ref {eq:ACF_fit}, respectively. The red dotted line and blue dashed--dotted line correspond to the fast and slow autocorrelation components, respectively, i.e. the first and second terms of Equation \ref {eq:ACF_fit}. For further details, see Ref. \cite {Fanourgakis2012}.{\bf need to get permissions for this figure}.\relax }{figure.caption.15}{}}
-\@LN@col{2}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Fit of autocorrelation function ($\Phi _{\eta }(t)$) to $a \qopname  \relax o{exp}(-t/b)$. Copied from Figure 7 of Ref. \cite  {Fernandez2005}. Solid line is the raw autocorrelation function while the dashed line is the model fit for $t > 0.0015$ ps. For further details, see Ref. \cite  {Fernandez2005}.{\bf  need to get permissions for this figure}.\relax }}{13}{figure.caption.16}}
-\newlabel{fig:FernandezFig7}{{11}{13}{Fit of autocorrelation function ($\Phi _{\eta }(t)$) to $a \exp (-t/b)$. Copied from Figure 7 of Ref. \cite {Fernandez2005}. Solid line is the raw autocorrelation function while the dashed line is the model fit for $t > 0.0015$ ps. For further details, see Ref. \cite {Fernandez2005}.{\bf need to get permissions for this figure}.\relax }{figure.caption.16}{}}
 \citation{Borodin2009}
 \citation{Zhang2015}
 \citation{Zhang2015}
@@ -225,24 +228,29 @@
 \citation{Zhang2015}
 \citation{Zhang2015}
 \@LN@col{1}
-\newlabel{eq: Double exponential}{{8}{14}{Data analysis}{equation.6.8}{}}
-\newlabel{eq:Borodin}{{9}{14}{Data analysis}{equation.6.9}{}}
+\newlabel{eq: Double exponential}{{8}{14}{}{equation.6.8}{}}
+\newlabel{eq:Borodin}{{9}{14}{}{equation.6.9}{}}
 \@LN@col{2}
 \@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Viscosity dependence on the exponent of the weighting model, $b$. $b = 0.52$ for Ethanol at 298K, top panel, while $b$ is between $0.60$--$0.73$ for [BMIM][Tf$_2$N] at 350 K, bottom panel. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537\IeC {\textendash }3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite  {Zhang2015}.\relax }}{14}{figure.caption.17}}
 \newlabel{fig:ZhangFig7_12}{{12}{14}{Viscosity dependence on the exponent of the weighting model, $b$. $b = 0.52$ for Ethanol at 298K, top panel, while $b$ is between $0.60$--$0.73$ for [BMIM][Tf$_2$N] at 350 K, bottom panel. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite {Zhang2015}.\relax }{figure.caption.17}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Viscosity: Einstein}{14}{subsection.6.3}}
-\newlabel{sec:Viscosity Einstein}{{6.3}{14}{Viscosity: Einstein}{subsection.6.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Data analysis}{14}{subsubsection.6.3.1}}
-\newlabel{sec:Viscosity:Einstein: Data analysis}{{6.3.1}{14}{Data analysis}{subsubsection.6.3.1}{}}
-\citation{GROMACS,Hess2002}
-\citation{Shirts2013,Fanourgakis2012}
 \citation{Zhang2015}
+\citation{Zhang2015}
+\citation{Zhang2015}
+\citation{GROMACS,Hess2002}
 \@LN@col{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Large fluctuations at very short time. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537\IeC {\textendash }3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite  {Zhang2015}.\relax }}{15}{figure.caption.18}}
+\newlabel{fig:ZhangFig4}{{13}{15}{Large fluctuations at very short time. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite {Zhang2015}.\relax }{figure.caption.18}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Viscosity: Einstein}{15}{subsection.6.3}}
+\newlabel{sec:Viscosity Einstein}{{6.3}{15}{Viscosity: Einstein}{subsection.6.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Data analysis}{15}{subsubsection.6.3.1}}
+\newlabel{sec:Viscosity:Einstein: Data analysis}{{6.3.1}{15}{Data analysis}{subsubsection.6.3.1}{}}
+\@LN@col{2}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Viscosity: Special topics}{15}{subsection.6.4}}
 \newlabel{sec:Viscosity Special topics}{{6.4}{15}{Viscosity: Special topics}{subsection.6.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {7}Conclusions}{15}{section.7}}
 \newlabel{Conclusions}{{7}{15}{Conclusions}{section.7}{}}
-\@LN@col{2}
+\citation{Shirts2013,Fanourgakis2012}
+\citation{Zhang2015}
 \bibdata{transport_properties}
 \bibcite{PanaNotes}{{1}{????}{{Pan}}{{}}}
 \bibcite{KofkeNotes}{{2}{????}{{Kof}}{{}}}
@@ -259,6 +267,9 @@
 \bibcite{Fanourgakis2012}{{13}{2012}{{Fanourgakis et~al.}}{{Fanourgakis, George S. and Medina, J. S. and Prosmiti, R.}}}
 \bibcite{Fernandez2005}{{14}{2005}{{Fern{\'a}ndez et~al.}}{{G. A. Fern{\'a}ndez and J. Vrabec and H. Hasse}}}
 \bibcite{Frenkel2002}{{15}{2002}{{Frenkel and Smit}}{{Frenkel, Daan and Smit, Berend}}}
+\@LN@col{1}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Acknowledgments}{16}{section.8}}
+\@LN@col{2}
 \bibcite{GROMACS}{{16}{2016}{{GROMACS}}{{}}}
 \bibcite{Haile1992}{{17}{1992}{{Haile}}{{Haile, J. M. =}}}
 \bibcite{Hess2002}{{18}{2002}{{Hess}}{{Berk Hess}}}
@@ -269,9 +280,6 @@
 \bibcite{Liu2012}{{23}{2012}{{Liu et~al.}}{{Liu, Hongjun and Maginn, Edward and Visser, Ann E. and Bridges, Nicholas J. and Fox, Elise B.}}}
 \bibcite{Ma2017}{{24}{2017}{{Ma et~al.}}{{Jie Ma and Zhendian Zhang and Yan Xiang and Fenglei Cao and Huai Sun}}}
 \bibcite{Mondello1997}{{25}{1997}{{Mondello and Grest}}{{Maurizio Mondello and Gary S. Grest}}}
-\@LN@col{1}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Acknowledgments}{16}{section.8}}
-\@LN@col{2}
 \bibcite{Moultos2016}{{26}{2016}{{Moultos et~al.}}{{Othonas A. Moultos and Yong Zhang and Ioannis N. Tsimpanogiannis and Ioannis G. Economou and Edward J. Maginn}}}
 \bibcite{Nieto2015}{{27}{2015}{{Nieto-Draghi et~al.}}{{Nieto-Draghi, Carlos and Fayet, Guillaume and Creton, Benoit and Rozanska, Xavier and Rotureau, Patricia and de Hemptinne, Jean-Charles and Ungerer, Philippe and Rousseau, Bernard and Adamo, Carlo}}}
 \bibcite{Payal2012}{{28}{2012}{{Payal et~al.}}{{Rajdeep Singh Payal and S. Balasubramanian and Indranil Rudra and Kunj Tandon and Ingo Mahlke and David Doyle and Roger Cracknell}}}

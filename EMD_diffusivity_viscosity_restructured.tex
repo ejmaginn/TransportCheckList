@@ -25,7 +25,7 @@
 
 \author[1*,\authfn{1}\authfn{3}]{Edward J. Maginn}
 \author[2\authfn{1}\authfn{6}]{Richard A. Messerly}
-\author[3\authfn{1}\authfn{7}]{Daniel Midname Carlson}
+\author[3\authfn{1}\authfn{7}]{Daniel J. Carlson}
 \author[4\authfn{1}\authfn{4}]{Daniel R. Roe}
 \author[5\authfn{1}\authfn{5}]{J. Richard Elliott}
 
@@ -40,7 +40,7 @@
 \corr{Roe's email}{DR}
 \corr{Elliott's email}{JRE}
 \corr{richard.messerly@nist.gov}{RAM}
-\corr{Carlson's email}{DC}
+\corr{daniel.j.carlson@byu.edu}{DC}
 
 \contrib[\authfn{1}]{These authors contributed equally to this work}
 \contrib[\authfn{2}]{These authors also contributed to this work}
@@ -1003,6 +1003,14 @@ The number of replicates needed has not been rigorously investigated as it has f
 The GROMACS manual reports that viscosity ``is very dependent on the treatment of the electrostatics. Using a (short) cut-off results in large noise on the off-diagonal pressure elements, which can increase the calculated viscosity by an order of magnitude.'' \cite{GROMACS,Hess2002}
 
 \section{Conclusions} \label{Conclusions}
+
+Molecular simulation is commonly used to predict transport properties, however, without careful simulation design and acute analysis, results may not be meaningful. For example, an EMD simulation with an insufficient number of molecules can severely underestimate self-diffusivity. This work outlines the best practices in the design and analysis of MD simulations for transport properties.
+
+For self-diffusivity, it is suggested that the Einstein method is employed. In liquid systems, the NVE ensemble is suggested over the NVT ensemble due to the potential interference of the thermostats in self-diffusivity prediction. Uncertainty is reduced by running multiple independent simulations, allowing for a more thorough sampling of the system's possible states. Multiple runs at different system sizes can be used to extrapolate the infinite system size limit prediction for self-diffusivity. Atom positions are recommended to be outputted 1000 times over a production run, however, the user can choose to output less frequently to reduce file size or more frequently for potentially increased accuracy. To ensure simulations are run long enough for the dynamics of the system to be fully emulated, the user can run a series of simulations at differing lengths, and observe deviation in estimated self-diffusivity with changes in simulation time. The system's degree of exploration of configuration space can be estimated by calculating the MSD of the molecules and comparing it to the radius of gyration and box length. The MSD should be greater than the radius of gyration, and ideally, on the order of the box length. In post-simulation analysis, best practice improves precision by averaging the velocity autocorrelation function over all molecules and over multiple time origins. Some judgment by the user is necessary to decide where the slope is measured for the Einstein approach, and it is important that the user communicate the approach used and justify how the decision was made. Measures should be taken to rigorously estimate the precision of the self-diffusivity prediction, a method of bootstrapping these uncertainties is detailed in this work.
+
+For viscosity, the Green-Kubo approach is recommended, although the Einstein method may be preferred with certain systems. It is worth noting that NEMD simulations are highly preferred for moderate to high viscosity materials (more than 20 cP or so). The NVE ensemble is suggested, but some success has been found using the NVT ensemble \cite{Shirts2013,Fanourgakis2012}. Because it is a collective property, viscosity requires significantly more data than self-diffusivity. The simulation length of each trajectory should typically be at least an order of magnitude greater than the Green-Kubo integral plateau time. This can be more precisely determined by comparing the Green-Kubo integrals of varying simulation lengths. Due to their slower dynamics, more viscous materials require longer simulation times. Stress tensor components are recommended to be outputted every 5-10 fs. System size seems to be of little impact on viscosity prediction (see Figures \ref{fig:MoultosFig3}-\ref{fig:ZhangFig9}), however, it is still recommended that the user justify their choice of system size by plotting $N^{-1/3}$ versus predicted viscosity. Any trend observed would suggest system size effects, and an infinite system size result could be estimated from a linear fit. In post-simulation data processing, it is recommended to average over all six independent components of the stress tensor to enhance precision. The number of replicates a system needs can vary greatly depending on the compound, number of molecules, temperature, and simulation length. Replicates required can be investigated by plotting variance in viscosity versus number of replicates (on the order of 10-30), wherein a trend may indicate that more replicates are needed. It is recommended that the viscosity is estimated from the Green-Kubo equation by fitting the running integral to a double-exponential function as specified by Zhang et al. \cite{Zhang2015} (see Section \ref{sec:Viscosity:Green-Kubo: Data analysis}).
+
+The focus of the current work is outlining best practices in EMD for self-diffusivity and viscosity prediction. This work may be expanded on in the future with NEMD techniques or best practices for other transport properties.
 
 \section{Acknowledgments}
 

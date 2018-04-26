@@ -8,6 +8,22 @@ Warning--to sort, need author or key in PanaNotes
 Warning--to sort, need author or key in KofkeNotes
 Warning--to sort, need author or key in MaginnNotes
 Warning--to sort, need author or key in ShellNotes
+Name 1 in "Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds." has a comma at the end for entry ShenSRSW
+while executing---line 1853 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds." for entry ShenSRSW
+while executing---line 1853 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds." for entry ShenSRSW
+while executing---line 1853 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds." for entry ShenSRSW
+while executing---line 1853 of file vancouver-livecoms.bst
+Name 1 in "Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds." has a comma at the end for entry ShenSRSW
+while executing---line 1853 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds." for entry ShenSRSW
+while executing---line 1853 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds." for entry ShenSRSW
+while executing---line 1853 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds." for entry ShenSRSW
+while executing---line 1853 of file vancouver-livecoms.bst
 Warning--empty author in PanaNotes
 Warning--empty author and editor in PanaNotes
 Warning--missing publisher in PanaNotes
@@ -24,45 +40,56 @@ Warning--empty author in ShellNotes
 Warning--empty author and editor in ShellNotes
 Warning--missing publisher in ShellNotes
 Warning--there's a month but no year in ShellNotes
-You've used 31 entries,
+Name 1 in "Shen, V. K. , Siderius, D. W. , Krekelberg, W. P. , and Hatch, H. W. , Eds. " has a comma at the end for entry ShenSRSW
+while executing---line 1927 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V. K. , Siderius, D. W. , Krekelberg, W. P. , and Hatch, H. W. , Eds. " for entry ShenSRSW
+while executing---line 1927 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V. K. , Siderius, D. W. , Krekelberg, W. P. , and Hatch, H. W. , Eds. " for entry ShenSRSW
+while executing---line 1927 of file vancouver-livecoms.bst
+Too many commas in name 1 of "Shen, V. K. , Siderius, D. W. , Krekelberg, W. P. , and Hatch, H. W. , Eds. " for entry ShenSRSW
+while executing---line 1927 of file vancouver-livecoms.bst
+Warning--empty author and editor in ShenSRSW
+Warning--missing publisher in ShenSRSW
+Warning--there's a month but no year in ShenSRSW
+You've used 34 entries,
             3492 wiz_defined-function locations,
-            967 strings with 12556 characters,
-and the built_in function-call counts, 61712 in all, are:
-= -- 7957
-> -- 543
-< -- 14
-+ -- 315
-- -- 172
-* -- 5426
-:= -- 6833
-add.period$ -- 111
-call.type$ -- 31
-change.case$ -- 224
-chr.to.int$ -- 31
-cite$ -- 59
-duplicate$ -- 6076
-empty$ -- 5511
-format.name$ -- 239
-if$ -- 14131
+            992 strings with 13366 characters,
+and the built_in function-call counts, 67986 in all, are:
+= -- 8770
+> -- 594
+< -- 15
++ -- 353
+- -- 188
+* -- 5981
+:= -- 7529
+add.period$ -- 122
+call.type$ -- 34
+change.case$ -- 246
+chr.to.int$ -- 34
+cite$ -- 65
+duplicate$ -- 6695
+empty$ -- 6068
+format.name$ -- 263
+if$ -- 15564
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 307
-newline$ -- 179
-num.names$ -- 81
-pop$ -- 598
+missing$ -- 338
+newline$ -- 196
+num.names$ -- 90
+pop$ -- 661
 preamble$ -- 1
-purify$ -- 210
+purify$ -- 230
 quote$ -- 0
-skip$ -- 507
+skip$ -- 555
 stack$ -- 0
-substring$ -- 10433
-swap$ -- 726
+substring$ -- 11498
+swap$ -- 797
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 264
-warning$ -- 20
-while$ -- 253
+type$ -- 291
+warning$ -- 23
+while$ -- 279
 width$ -- 0
-write$ -- 458
-(There were 20 warnings)
+write$ -- 504
+(There were 12 error messages)

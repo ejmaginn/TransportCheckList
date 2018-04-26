@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\urlprefix}{}
 \providecommand{\doiprefix}{doi: }
@@ -40,16 +40,6 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
   {9}({7}):{2887--2899}.
 \newblock \href{{10.1021/ct400109a}}{\doiprefix
   \detokenize{{10.1021/ct400109a}}}.
-
-\bibitem[{Borodin et~al.(2009)Borodin, Oleg and Smith, Grant D. and Kim,
-  Hojin}]{Borodin2009}
-\textbf{\color{LiveCoMSMediumGrey} Borodin O}, Smith GD, Kim H.
-\newblock Viscosity of a Room Temperature Ionic Liquid: Predictions from
-  Nonequilibrium and Equilibrium Molecular Dynamics Simulations.
-\newblock The Journal of Physical Chemistry B.  2009; 113(14):4771--4774.
-\newblock \urlprefix\url{https://doi.org/10.1021/jp810016e},
-  \href{10.1021/jp810016e}{\doiprefix \detokenize{10.1021/jp810016e}}, pMID:
-  19275203.
 
 \bibitem[{Camley et~al.(2015)Brian A. Camley and Michael G. Lerner and Richard
   W. Pastor and Frank L. H. Brown}]{Camley2015}
@@ -95,16 +85,6 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock \urlprefix\url{http://dx.doi.org/10.1021/jp211952y},
   \href{10.1021/jp211952y}{\doiprefix \detokenize{10.1021/jp211952y}}, pMID:
   22352421.
-
-\bibitem[{Fern{\'a}ndez et~al.(2005)G. A. Fern{\'a}ndez and J. Vrabec and H.
-  Hasse}]{Fernandez2005}
-\textbf{\color{LiveCoMSMediumGrey} Fern{\'a}ndez GA}, Vrabec J, Hasse H.
-\newblock Shear viscosity and thermal conductivity of quadrupolar real fluids
-  from molecular simulation.
-\newblock Molecular Simulation.  2005; 31(11):787--793.
-\newblock \urlprefix\url{https://doi.org/10.1080/08927020500252599},
-  \href{10.1080/08927020500252599}{\doiprefix
-  \detokenize{10.1080/08927020500252599}}.
 
 \bibitem[{Frenkel and Smit(2002)Frenkel, Daan and Smit, Berend}]{Frenkel2002}
 \textbf{\color{LiveCoMSMediumGrey} Frenkel D}, Smit B.
@@ -231,15 +211,6 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock \urlprefix\url{http://dx.doi.org/10.1021/jp062885s},
   \href{10.1021/jp062885s}{\doiprefix \detokenize{10.1021/jp062885s}}, pMID:
   16854152.
-
-\bibitem[{Shen and Hatch(????)Shen, V.K., Siderius, D.W., Krekelberg, W.P., and
-  Hatch, H.W., Eds.}]{ShenSRSW}
-\textbf{\color{LiveCoMSMediumGrey} Shen SDWKWP V~K}, Hatch E H~W, {NIST
-  Standard Reference Simulation Website, NIST Standard Reference Database
-  Number 173, National Institute of Standards and Technology, Gaithersburg MD,
-  20899};.
-\newblock Accessed: 2018-04-25.
-\newblock http://doi.org/10.18434/T4M88Q.
 
 \bibitem[{Ungerer et~al.(2007)Philippe Ungerer and Carlos Nieto-Draghi and
   Bernard Rousseau and Göktug Ahunbay and Véronique Lachet}]{Ungerer2007}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{36}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\urlprefix}{}
 \providecommand{\doiprefix}{doi: }
@@ -176,6 +176,14 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
   \href{10.1080/08927022.2017.1321760}{\doiprefix
   \detokenize{10.1080/08927022.2017.1321760}}.
 
+\bibitem[{Martin and Siepmann(1998)Martin, M. G. and Siepmann, J.
+  I.}]{Martin1998}
+\textbf{\color{LiveCoMSMediumGrey} Martin MG}, Siepmann JI.
+\newblock Transferable potentials for phase equilibria. 1. {United-atom}
+  description of n-alkanes.
+\newblock The Journal of Physical Chemistry B.  1998; 102(14):2569--2577.
+\newblock \href{10.1021/Jp972543+}{\doiprefix \detokenize{10.1021/Jp972543+}}.
+
 \bibitem[{Mondello and Grest(1997)Maurizio Mondello and Gary S.
   Grest}]{Mondello1997}
 \textbf{\color{LiveCoMSMediumGrey} Mondello M}, Grest GS.
@@ -240,6 +248,16 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
   20899};.
 \newblock Accessed: 2018-04-25.
 \newblock http://doi.org/10.18434/T4M88Q.
+
+\bibitem[{van~der Spoel et~al.(1998)David van der Spoel and Paul J. van Maaren
+  and Herman J. C. Berendsen}]{vanderSpoel1998}
+\textbf{\color{LiveCoMSMediumGrey} van~der Spoel D}, van Maaren PJ, Berendsen
+  HJC.
+\newblock A systematic study of water models for molecular simulation:
+  Derivation of water models optimized for use with a reaction field.
+\newblock The Journal of Chemical Physics.  1998; 108(24):10220--10230.
+\newblock \urlprefix\url{https://doi.org/10.1063/1.476482},
+  \href{10.1063/1.476482}{\doiprefix \detokenize{10.1063/1.476482}}.
 
 \bibitem[{Ungerer et~al.(2007)Philippe Ungerer and Carlos Nieto-Draghi and
   Bernard Rousseau and Göktug Ahunbay and Véronique Lachet}]{Ungerer2007}

@@ -37,6 +37,8 @@ Warning--empty author in ShellNotes
 Warning--empty author and editor in ShellNotes
 Warning--missing publisher in ShellNotes
 Warning--there's a month but no year in ShellNotes
+You can't pop an empty literal stack for entry Martin1998
+while executing---line 1927 of file vancouver-livecoms.bst
 Name 1 in "Shen, V. K. , Siderius, D. W. , Krekelberg, W. P. , and Hatch, H. W. , Eds. " has a comma at the end for entry ShenSRSW
 while executing---line 1927 of file vancouver-livecoms.bst
 Too many commas in name 1 of "Shen, V. K. , Siderius, D. W. , Krekelberg, W. P. , and Hatch, H. W. , Eds. " for entry ShenSRSW
@@ -48,4 +50,4 @@ while executing---line 1927 of file vancouver-livecoms.bst
 Warning--empty author and editor in ShenSRSW
 Warning--missing publisher in ShenSRSW
 Warning--there's a month but no year in ShenSRSW
-(There were 12 error messages)
+(There were 13 error messages)

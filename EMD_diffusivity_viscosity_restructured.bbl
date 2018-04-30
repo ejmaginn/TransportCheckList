@@ -1,4 +1,4 @@
-\begin{thebibliography}{36}
+\begin{thebibliography}{38}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\urlprefix}{}
 \providecommand{\doiprefix}{doi: }
@@ -30,6 +30,14 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \textbf{\color{LiveCoMSMediumGrey} Allen MP}, Tildesley DJ.
 \newblock Computer simulation of liquids.
 \newblock Second ed. Oxford England: Oxford University Press; 2017.
+
+\bibitem[{Andersen(1980)Hans C. Andersen}]{Andersen1980}
+\textbf{\color{LiveCoMSMediumGrey} Andersen HC}.
+\newblock Molecular dynamics simulations at constant pressure and/or
+  temperature.
+\newblock The Journal of Chemical Physics.  1980; 72(4):2384--2393.
+\newblock \urlprefix\url{https://doi.org/10.1063/1.439486},
+  \href{10.1063/1.439486}{\doiprefix \detokenize{10.1063/1.439486}}.
 
 \bibitem[{Basconi and Shirts({2013})Basconi, Joseph E. and Shirts, Michael
   R.}]{Shirts2013}
@@ -66,8 +74,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock Are pressure fluctuation-based equilibrium methods really worse than
   nonequilibrium methods for calculating viscosities?
 \newblock The Journal of Chemical Physics.  2009; 131(24):246101.
-\newblock \urlprefix\url{https://doi.org/10.1063/1.3274802},
-  \href{10.1063/1.3274802}{\doiprefix \detokenize{10.1063/1.3274802}}.
+\newblock \href{10.1063/1.3274802}{\doiprefix \detokenize{10.1063/1.3274802}}.
 
 \bibitem[{Daivis and Evans(1994)Daivis, P. J. and Evans, D. J.}]{Daivis:1994}
 \textbf{\color{LiveCoMSMediumGrey} Daivis PJ}, Evans DJ.
@@ -95,6 +102,15 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock \urlprefix\url{http://dx.doi.org/10.1021/jp211952y},
   \href{10.1021/jp211952y}{\doiprefix \detokenize{10.1021/jp211952y}}, pMID:
   22352421.
+
+\bibitem[{Feller et~al.(1995)Scott E. Feller and Yuhong Zhang and Richard W.
+  Pastor and Bernard R. Brooks}]{Feller1995}
+\textbf{\color{LiveCoMSMediumGrey} Feller SE}, Zhang Y, Pastor RW, Brooks BR.
+\newblock Constant pressure molecular dynamics simulation: The Langevin piston
+  method.
+\newblock The Journal of Chemical Physics.  1995; 103(11):4613--4621.
+\newblock \urlprefix\url{https://doi.org/10.1063/1.470648},
+  \href{10.1063/1.470648}{\doiprefix \detokenize{10.1063/1.470648}}.
 
 \bibitem[{Fern{\'a}ndez et~al.(2005)G. A. Fern{\'a}ndez and J. Vrabec and H.
   Hasse}]{Fernandez2005}

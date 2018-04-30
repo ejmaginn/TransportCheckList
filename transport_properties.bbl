@@ -27,8 +27,7 @@ LAMMPS Users' Workshop;.
 \newblock Are pressure fluctuation-based equilibrium methods really worse than
   nonequilibrium methods for calculating viscosities?
 \newblock The Journal of Chemical Physics.  2009; 131(24):246101.
-\newblock \urlprefix\url{https://doi.org/10.1063/1.3274802},
-  \href{10.1063/1.3274802}{\doiprefix \detokenize{10.1063/1.3274802}}.
+\newblock \href{10.1063/1.3274802}{\doiprefix \detokenize{10.1063/1.3274802}}.
 
 \bibitem[{Fanourgakis et~al.(2012)Fanourgakis, George S. and Medina, J. S. and
   Prosmiti, R.}]{Fanourgakis2012}

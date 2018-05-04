@@ -3,16 +3,19 @@
 \providecommand{\urlprefix}{}
 \providecommand{\doiprefix}{doi: }
 
+\bibitem[{LAMMPS(2017)}]{LAMMPS}
+\textbf{\color{LiveCoMSMediumGrey} LAMMPS}.
+\newblock LAMMPS Users Manual.
+\newblock Sandia National Laboratories; 2017.
+
+\bibitem[{GROMACS(2016)}]{GROMACS}
+\textbf{\color{LiveCoMSMediumGrey} GROMACS}.
+\newblock GROMACS Reference Manual; 2016.
+
 \bibitem[{Hes(????)}]{HessForum}
 [gmx-users[ how to calculate the viscosity of the bulk;.
 \newblock
   \url{https://mailman-1.sys.kth.se/pipermail/gromacs.org_gmx-users/2009-February/039411.html}.
-
-\bibitem[{LAM(????)}]{LAMMPS_NEMD}
-LAMMPS Users' Workshop;.
-\newblock
-  \url{http://lammps.sandia.gov/workshops/Feb10/Craig_Tenney/rnemd-lammps2010.pdf},
-  \url{http://lammps.sandia.gov/tutorials/sor13/SoR_09-Common_NonEquilibrium_Calculations.pdf}.
 
 \bibitem[{Allen and Tildesley(1987)Allen, M. P. and Tildesley, D.
   J.}]{Allen1987}
@@ -21,40 +24,16 @@ LAMMPS Users' Workshop;.
 \newblock Oxford England New York: Clarendon Press ; Oxford University Press;
   1987.
 
-\bibitem[{Chen et~al.(2009)Ting Chen and Berend Smit and Alexis T.
-  Bell}]{Chen2009}
-\textbf{\color{LiveCoMSMediumGrey} Chen T}, Smit B, Bell AT.
-\newblock Are pressure fluctuation-based equilibrium methods really worse than
-  nonequilibrium methods for calculating viscosities?
-\newblock The Journal of Chemical Physics.  2009; 131(24):246101.
-\newblock \href{10.1063/1.3274802}{\doiprefix \detokenize{10.1063/1.3274802}}.
-
-\bibitem[{Fanourgakis et~al.(2012)Fanourgakis, George S. and Medina, J. S. and
-  Prosmiti, R.}]{Fanourgakis2012}
-\textbf{\color{LiveCoMSMediumGrey} Fanourgakis GS}, Medina JS, Prosmiti R.
-\newblock Determining the Bulk Viscosity of Rigid Water Models.
-\newblock The Journal of Physical Chemistry A.  2012; 116(10):2564--2570.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/jp211952y},
-  \href{10.1021/jp211952y}{\doiprefix \detokenize{10.1021/jp211952y}}, pMID:
-  22352421.
-
 \bibitem[{Frenkel and Smit(2002)Frenkel, Daan and Smit, Berend}]{Frenkel2002}
 \textbf{\color{LiveCoMSMediumGrey} Frenkel D}, Smit B.
 \newblock Understanding molecular simulation : from algorithms to applications.
 \newblock 2nd ed. Computational science series, San Diego: Academic Press;
   2002.
 
-\bibitem[{Gordon(2006)Peter A. Gordon}]{Gordon2006}
-\textbf{\color{LiveCoMSMediumGrey} Gordon PA}.
-\newblock Development of intermolecular potentials for predicting transport
-  properties of hydrocarbons.
-\newblock The Journal of Chemical Physics.  2006; 125(1):014504.
-\newblock \urlprefix\url{https://doi.org/10.1063/1.2208359},
-  \href{10.1063/1.2208359}{\doiprefix \detokenize{10.1063/1.2208359}}.
-
-\bibitem[{GROMACS(2016)}]{GROMACS}
-\textbf{\color{LiveCoMSMediumGrey} GROMACS}.
-\newblock GROMACS Reference Manual; 2016.
+\bibitem[{Leach(2001)Leach, Andrew R.}]{Leach2001}
+\textbf{\color{LiveCoMSMediumGrey} Leach AR}.
+\newblock {Molecular modelling : principles and applications}.
+\newblock 2 ed. Pearson Prentice Hall; 2001.
 
 \bibitem[{Hess(2002)Berk Hess}]{Hess2002}
 \textbf{\color{LiveCoMSMediumGrey} Hess B}.
@@ -62,90 +41,30 @@ LAMMPS Users' Workshop;.
   dynamics simulations.
 \newblock The Journal of Chemical Physics.  2002; 116(1):209--217.
 \newblock \urlprefix\url{http://aip.scitation.org/doi/abs/10.1063/1.1421362},
-  \href{10.1063/1.1421362}{\doiprefix \detokenize{10.1063/1.1421362}}.
+  \href{https://dx.doi.org/10.1063/1.1421362}{\doiprefix
+  \detokenize{10.1063/1.1421362}}.
 
-\bibitem[{Hieber and Chiang(1992)Hieber, C. A. and Chiang, H. H.}]{Hieber1992}
-\textbf{\color{LiveCoMSMediumGrey} Hieber CA}, Chiang HH.
-\newblock Shear-rate-dependence modeling of polymer melt viscosity.
-\newblock Polymer Engineering \& Science.  1992; 32(14):931--938.
-\newblock \urlprefix\url{http://dx.doi.org/10.1002/pen.760321404},
-  \href{10.1002/pen.760321404}{\doiprefix \detokenize{10.1002/pen.760321404}}.
+\bibitem[{Chen et~al.(2009)Ting Chen and Berend Smit and Alexis T.
+  Bell}]{Chen2009}
+\textbf{\color{LiveCoMSMediumGrey} Chen T}, Smit B, Bell AT.
+\newblock Are pressure fluctuation-based equilibrium methods really worse than
+  nonequilibrium methods for calculating viscosities?
+\newblock The Journal of Chemical Physics.  2009; 131(24):246101.
+\newblock \href{https://dx.doi.org/10.1063/1.3274802}{\doiprefix
+  \detokenize{10.1063/1.3274802}}.
 
-\bibitem[{Kioupis and Maginn(2000)Kioupis, Loukas I. and Maginn, Edward
-  J.}]{Kioupis2000}
-\textbf{\color{LiveCoMSMediumGrey} Kioupis LI}, Maginn EJ.
-\newblock Impact of Molecular Architecture on the High-Pressure Rheology of
-  Hydrocarbon Fluids.
-\newblock The Journal of Physical Chemistry B.  2000; 104(32):7774--7783.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/jp000966x},
-  \href{10.1021/jp000966x}{\doiprefix \detokenize{10.1021/jp000966x}}.
-
-\bibitem[{Kondratyuk et~al.(2016)N D Kondratyuk and G E Norman and V V
-  Stegailov}]{Kondratyuk2016}
-\textbf{\color{LiveCoMSMediumGrey} Kondratyuk ND}, Norman GE, Stegailov VV.
-\newblock Rheology of liquid n-triacontane: Molecular dynamics simulation.
-\newblock Journal of Physics: Conference Series.  2016; 774(1):012039.
-\newblock \urlprefix\url{http://stacks.iop.org/1742-6596/774/i=1/a=012039}.
-
-\bibitem[{LAMMPS(2017)}]{LAMMPS}
-\textbf{\color{LiveCoMSMediumGrey} LAMMPS}.
-\newblock LAMMPS Users Manual.
-\newblock Sandia National Laboratories; 2017.
-
-\bibitem[{Leach(2001)Leach, Andrew R.}]{Leach2001}
-\textbf{\color{LiveCoMSMediumGrey} Leach AR}.
-\newblock {Molecular modelling : principles and applications}.
-\newblock 2 ed. Pearson Prentice Hall; 2001.
-
-\bibitem[{Liu et~al.(2012)Liu, Hongjun and Maginn, Edward and Visser, Ann E.
-  and Bridges, Nicholas J. and Fox, Elise B.}]{Liu2012}
-\textbf{\color{LiveCoMSMediumGrey} Liu H}, Maginn E, Visser AE, Bridges NJ, Fox
-  EB.
-\newblock Thermal and Transport Properties of Six Ionic Liquids: An
-  Experimental and Molecular Dynamics Study.
-\newblock Industrial \& Engineering Chemistry Research.  2012;
-  51(21):7242--7254.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/ie300222a},
-  \href{10.1021/ie300222a}{\doiprefix \detokenize{10.1021/ie300222a}}.
-
-\bibitem[{Ma et~al.(2017)Jie Ma and Zhendian Zhang and Yan Xiang and Fenglei
-  Cao and Huai Sun}]{Ma2017}
-\textbf{\color{LiveCoMSMediumGrey} Ma J}, Zhang Z, Xiang Y, Cao F, Sun H.
-\newblock On the prediction of transport properties of ionic liquid using
-  1-n-butylmethylpyridinium tetrafluoroborate as an example.
-\newblock Molecular Simulation.  2017; 43(18):1502--1512.
-\newblock \urlprefix\url{https://doi.org/10.1080/08927022.2017.1321760},
-  \href{10.1080/08927022.2017.1321760}{\doiprefix
-  \detokenize{10.1080/08927022.2017.1321760}}.
-
-\bibitem[{Mondello and Grest(1997)Maurizio Mondello and Gary S.
-  Grest}]{Mondello1997}
-\textbf{\color{LiveCoMSMediumGrey} Mondello M}, Grest GS.
-\newblock Viscosity calculations of n-alkanes by equilibrium molecular
-  dynamics.
-\newblock The Journal of Chemical Physics.  1997; 106(22):9327--9336.
-\newblock \urlprefix\url{https://doi.org/10.1063/1.474002},
-  \href{10.1063/1.474002}{\doiprefix \detokenize{10.1063/1.474002}}.
-
-\bibitem[{Moultos et~al.(2016)Othonas A. Moultos and Yong Zhang and Ioannis N.
-  Tsimpanogiannis and Ioannis G. Economou and Edward J. Maginn}]{Moultos2016}
-\textbf{\color{LiveCoMSMediumGrey} Moultos OA}, Zhang Y, Tsimpanogiannis IN,
-  Economou IG, Maginn EJ.
-\newblock System-size corrections for self-diffusion coefficients calculated
-  from molecular dynamics simulations: The case of CO2, n-alkanes, and
-  poly(ethylene glycol) dimethyl ethers.
-\newblock The Journal of Chemical Physics.  2016; 145(7):074109.
-\newblock \urlprefix\url{http://dx.doi.org/10.1063/1.4960776},
-  \href{10.1063/1.4960776}{\doiprefix \detokenize{10.1063/1.4960776}}.
-
-\bibitem[{M\"uller-Plathe(1999)M\"uller-Plathe, Florian}]{Muller1999}
-\textbf{\color{LiveCoMSMediumGrey} M\"uller-Plathe F}.
-\newblock Reversing the perturbation in nonequilibrium molecular dynamics: An
-  easy way to calculate the shear viscosity of fluids.
-\newblock Phys Rev E.  1999 May; 59:4894--4898.
-\newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.59.4894},
-  \href{10.1103/PhysRevE.59.4894}{\doiprefix
-  \detokenize{10.1103/PhysRevE.59.4894}}.
+\bibitem[{Ungerer et~al.(2007)Philippe Ungerer and Carlos Nieto-Draghi and
+  Bernard Rousseau and Göktug Ahunbay and Véronique Lachet}]{Ungerer2007}
+\textbf{\color{LiveCoMSMediumGrey} Ungerer P}, Nieto-Draghi C, Rousseau B,
+  Ahunbay G, Lachet V.
+\newblock Molecular simulation of the thermophysical properties of fluids: From
+  understanding toward quantitative predictions.
+\newblock Journal of Molecular Liquids.  2007; 134(1):71 -- 89.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S016773220600331X},
+  \href{https://dx.doi.org/https://doi.org/10.1016/j.molliq.2006.12.019}{\doiprefix
+  \detokenize{https://doi.org/10.1016/j.molliq.2006.12.019}}, eMLG/JMLG 2005
+  Special Issue.
 
 \bibitem[{Nieto-Draghi et~al.(2015)Nieto-Draghi, Carlos and Fayet, Guillaume
   and Creton, Benoit and Rozanska, Xavier and Rotureau, Patricia and de
@@ -157,8 +76,77 @@ LAMMPS Users' Workshop;.
   Properties of Chemicals for Regulatory Purposes.
 \newblock Chemical Reviews.  2015; 115(24):13093--13164.
 \newblock \urlprefix\url{http://dx.doi.org/10.1021/acs.chemrev.5b00215},
-  \href{10.1021/acs.chemrev.5b00215}{\doiprefix
+  \href{https://dx.doi.org/10.1021/acs.chemrev.5b00215}{\doiprefix
   \detokenize{10.1021/acs.chemrev.5b00215}}, pMID: 26624238.
+
+\bibitem[{Kondratyuk et~al.(2016)N D Kondratyuk and G E Norman and V V
+  Stegailov}]{Kondratyuk2016}
+\textbf{\color{LiveCoMSMediumGrey} Kondratyuk ND}, Norman GE, Stegailov VV.
+\newblock Rheology of liquid n-triacontane: Molecular dynamics simulation.
+\newblock Journal of Physics: Conference Series.  2016; 774(1):012039.
+\newblock \urlprefix\url{http://stacks.iop.org/1742-6596/774/i=1/a=012039}.
+
+\bibitem[{Liu et~al.(2012)Liu, Hongjun and Maginn, Edward and Visser, Ann E.
+  and Bridges, Nicholas J. and Fox, Elise B.}]{Liu2012}
+\textbf{\color{LiveCoMSMediumGrey} Liu H}, Maginn E, Visser AE, Bridges NJ, Fox
+  EB.
+\newblock Thermal and Transport Properties of Six Ionic Liquids: An
+  Experimental and Molecular Dynamics Study.
+\newblock Industrial \& Engineering Chemistry Research.  2012;
+  51(21):7242--7254.
+\newblock \urlprefix\url{http://dx.doi.org/10.1021/ie300222a},
+  \href{https://dx.doi.org/10.1021/ie300222a}{\doiprefix
+  \detokenize{10.1021/ie300222a}}.
+
+\bibitem[{Mondello and Grest(1997)Maurizio Mondello and Gary S.
+  Grest}]{Mondello1997}
+\textbf{\color{LiveCoMSMediumGrey} Mondello M}, Grest GS.
+\newblock Viscosity calculations of n-alkanes by equilibrium molecular
+  dynamics.
+\newblock The Journal of Chemical Physics.  1997; 106(22):9327--9336.
+\newblock \urlprefix\url{https://doi.org/10.1063/1.474002},
+  \href{https://dx.doi.org/10.1063/1.474002}{\doiprefix
+  \detokenize{10.1063/1.474002}}.
+
+\bibitem[{Yeh and Hummer(2004)Yeh, In-Chul and Hummer, Gerhard}]{Yeh2004}
+\textbf{\color{LiveCoMSMediumGrey} Yeh IC}, Hummer G.
+\newblock System-Size Dependence of Diffusion Coefficients and Viscosities from
+  Molecular Dynamics Simulations with Periodic Boundary Conditions.
+\newblock The Journal of Physical Chemistry B.  2004; 108(40):15873--15879.
+\newblock \urlprefix\url{http://dx.doi.org/10.1021/jp0477147},
+  \href{https://dx.doi.org/10.1021/jp0477147}{\doiprefix
+  \detokenize{10.1021/jp0477147}}.
+
+\bibitem[{Moultos et~al.(2016)Othonas A. Moultos and Yong Zhang and Ioannis N.
+  Tsimpanogiannis and Ioannis G. Economou and Edward J. Maginn}]{Moultos2016}
+\textbf{\color{LiveCoMSMediumGrey} Moultos OA}, Zhang Y, Tsimpanogiannis IN,
+  Economou IG, Maginn EJ.
+\newblock System-size corrections for self-diffusion coefficients calculated
+  from molecular dynamics simulations: The case of CO2, n-alkanes, and
+  poly(ethylene glycol) dimethyl ethers.
+\newblock The Journal of Chemical Physics.  2016; 145(7):074109.
+\newblock \urlprefix\url{http://dx.doi.org/10.1063/1.4960776},
+  \href{https://dx.doi.org/10.1063/1.4960776}{\doiprefix
+  \detokenize{10.1063/1.4960776}}.
+
+\bibitem[{Fanourgakis et~al.(2012)Fanourgakis, George S. and Medina, J. S. and
+  Prosmiti, R.}]{Fanourgakis2012}
+\textbf{\color{LiveCoMSMediumGrey} Fanourgakis GS}, Medina JS, Prosmiti R.
+\newblock Determining the Bulk Viscosity of Rigid Water Models.
+\newblock The Journal of Physical Chemistry A.  2012; 116(10):2564--2570.
+\newblock \urlprefix\url{http://dx.doi.org/10.1021/jp211952y},
+  \href{https://dx.doi.org/10.1021/jp211952y}{\doiprefix
+  \detokenize{10.1021/jp211952y}}, pMID: 22352421.
+
+\bibitem[{Zhang et~al.(2015)Zhang, Yong and Otani, Akihito and Maginn, Edward
+  J.}]{Zhang2015}
+\textbf{\color{LiveCoMSMediumGrey} Zhang Y}, Otani A, Maginn EJ.
+\newblock Reliable Viscosity Calculation from Equilibrium Molecular Dynamics
+  Simulations: A Time Decomposition Method.
+\newblock Journal of Chemical Theory and Computation.  2015; 11(8):3537--3546.
+\newblock \urlprefix\url{http://dx.doi.org/10.1021/acs.jctc.5b00351},
+  \href{https://dx.doi.org/10.1021/acs.jctc.5b00351}{\doiprefix
+  \detokenize{10.1021/acs.jctc.5b00351}}, pMID: 26574439.
 
 \bibitem[{Payal et~al.(2012)Rajdeep Singh Payal and S. Balasubramanian and
   Indranil Rudra and Kunj Tandon and Ingo Mahlke and David Doyle and Roger
@@ -169,16 +157,18 @@ LAMMPS Users' Workshop;.
   quantitative tests for n-decane and n-hexadecane.
 \newblock Molecular Simulation.  2012; 38(14-15):1234--1241.
 \newblock \urlprefix\url{https://doi.org/10.1080/08927022.2012.702423},
-  \href{10.1080/08927022.2012.702423}{\doiprefix
+  \href{https://dx.doi.org/10.1080/08927022.2012.702423}{\doiprefix
   \detokenize{10.1080/08927022.2012.702423}}.
 
-\bibitem[{Potoff and Bernard-Brunel(2009)Potoff, J. J. and Bernard-Brunel, D.
-  A.}]{Potoff2009}
-\textbf{\color{LiveCoMSMediumGrey} Potoff JJ}, Bernard-Brunel DA.
-\newblock Mie Potentials for Phase Equilibria Calculations: Applications to
-  Alkanes and Perfluoroalkanes.
-\newblock Journal of Physical Chemistry B.  2009; 113(44):14725--14731.
-\newblock \href{10.1021/jp9072137}{\doiprefix \detokenize{10.1021/jp9072137}}.
+\bibitem[{Ma et~al.(2017)Jie Ma and Zhendian Zhang and Yan Xiang and Fenglei
+  Cao and Huai Sun}]{Ma2017}
+\textbf{\color{LiveCoMSMediumGrey} Ma J}, Zhang Z, Xiang Y, Cao F, Sun H.
+\newblock On the prediction of transport properties of ionic liquid using
+  1-n-butylmethylpyridinium tetrafluoroborate as an example.
+\newblock Molecular Simulation.  2017; 43(18):1502--1512.
+\newblock \urlprefix\url{https://doi.org/10.1080/08927022.2017.1321760},
+  \href{https://dx.doi.org/10.1080/08927022.2017.1321760}{\doiprefix
+  \detokenize{10.1080/08927022.2017.1321760}}.
 
 \bibitem[{Rey-Castro and Vega(2006)Rey-Castro, Carlos and Vega, Lourdes
   F.}]{ReyCastro2006}
@@ -188,8 +178,59 @@ LAMMPS Users' Workshop;.
   Temperature.
 \newblock The Journal of Physical Chemistry B.  2006; 110(29):14426--14435.
 \newblock \urlprefix\url{http://dx.doi.org/10.1021/jp062885s},
-  \href{10.1021/jp062885s}{\doiprefix \detokenize{10.1021/jp062885s}}, pMID:
-  16854152.
+  \href{https://dx.doi.org/10.1021/jp062885s}{\doiprefix
+  \detokenize{10.1021/jp062885s}}, pMID: 16854152.
+
+\bibitem[{Gordon(2006)Peter A. Gordon}]{Gordon2006}
+\textbf{\color{LiveCoMSMediumGrey} Gordon PA}.
+\newblock Development of intermolecular potentials for predicting transport
+  properties of hydrocarbons.
+\newblock The Journal of Chemical Physics.  2006; 125(1):014504.
+\newblock \urlprefix\url{https://doi.org/10.1063/1.2208359},
+  \href{https://dx.doi.org/10.1063/1.2208359}{\doiprefix
+  \detokenize{10.1063/1.2208359}}.
+
+\bibitem[{Potoff and Bernard-Brunel(2009)Potoff, J. J. and Bernard-Brunel, D.
+  A.}]{Potoff2009}
+\textbf{\color{LiveCoMSMediumGrey} Potoff JJ}, Bernard-Brunel DA.
+\newblock Mie Potentials for Phase Equilibria Calculations: Applications to
+  Alkanes and Perfluoroalkanes.
+\newblock Journal of Physical Chemistry B.  2009; 113(44):14725--14731.
+\newblock \href{https://dx.doi.org/10.1021/jp9072137}{\doiprefix
+  \detokenize{10.1021/jp9072137}}.
+
+\bibitem[{Hieber and Chiang(1992)Hieber, C. A. and Chiang, H. H.}]{Hieber1992}
+\textbf{\color{LiveCoMSMediumGrey} Hieber CA}, Chiang HH.
+\newblock Shear-rate-dependence modeling of polymer melt viscosity.
+\newblock Polymer Engineering \& Science.  1992; 32(14):931--938.
+\newblock \urlprefix\url{http://dx.doi.org/10.1002/pen.760321404},
+  \href{https://dx.doi.org/10.1002/pen.760321404}{\doiprefix
+  \detokenize{10.1002/pen.760321404}}.
+
+\bibitem[{Kioupis and Maginn(2000)Kioupis, Loukas I. and Maginn, Edward
+  J.}]{Kioupis2000}
+\textbf{\color{LiveCoMSMediumGrey} Kioupis LI}, Maginn EJ.
+\newblock Impact of Molecular Architecture on the High-Pressure Rheology of
+  Hydrocarbon Fluids.
+\newblock The Journal of Physical Chemistry B.  2000; 104(32):7774--7783.
+\newblock \urlprefix\url{http://dx.doi.org/10.1021/jp000966x},
+  \href{https://dx.doi.org/10.1021/jp000966x}{\doiprefix
+  \detokenize{10.1021/jp000966x}}.
+
+\bibitem[{M\"uller-Plathe(1999)M\"uller-Plathe, Florian}]{Muller1999}
+\textbf{\color{LiveCoMSMediumGrey} M\"uller-Plathe F}.
+\newblock Reversing the perturbation in nonequilibrium molecular dynamics: An
+  easy way to calculate the shear viscosity of fluids.
+\newblock Phys Rev E.  1999 May; 59:4894--4898.
+\newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.59.4894},
+  \href{https://dx.doi.org/10.1103/PhysRevE.59.4894}{\doiprefix
+  \detokenize{10.1103/PhysRevE.59.4894}}.
+
+\bibitem[{LAM(????)}]{LAMMPS_NEMD}
+LAMMPS Users' Workshop;.
+\newblock
+  \url{http://lammps.sandia.gov/workshops/Feb10/Craig_Tenney/rnemd-lammps2010.pdf},
+  \url{http://lammps.sandia.gov/tutorials/sor13/SoR_09-Common_NonEquilibrium_Calculations.pdf}.
 
 \bibitem[{Tenney and Maginn(2010)Craig M. Tenney and Edward J.
   Maginn}]{Tenney2010}
@@ -198,37 +239,7 @@ LAMMPS Users' Workshop;.
   viscosity using reverse nonequilibrium molecular dynamics.
 \newblock The Journal of Chemical Physics.  2010; 132(1):014103.
 \newblock \urlprefix\url{http://dx.doi.org/10.1063/1.3276454},
-  \href{10.1063/1.3276454}{\doiprefix \detokenize{10.1063/1.3276454}}.
-
-\bibitem[{Ungerer et~al.(2007)Philippe Ungerer and Carlos Nieto-Draghi and
-  Bernard Rousseau and Göktug Ahunbay and Véronique Lachet}]{Ungerer2007}
-\textbf{\color{LiveCoMSMediumGrey} Ungerer P}, Nieto-Draghi C, Rousseau B,
-  Ahunbay G, Lachet V.
-\newblock Molecular simulation of the thermophysical properties of fluids: From
-  understanding toward quantitative predictions.
-\newblock Journal of Molecular Liquids.  2007; 134(1):71 -- 89.
-\newblock
-  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S016773220600331X},
-  \href{https://doi.org/10.1016/j.molliq.2006.12.019}{\doiprefix
-  \detokenize{https://doi.org/10.1016/j.molliq.2006.12.019}}, eMLG/JMLG 2005
-  Special Issue.
-
-\bibitem[{Yeh and Hummer(2004)Yeh, In-Chul and Hummer, Gerhard}]{Yeh2004}
-\textbf{\color{LiveCoMSMediumGrey} Yeh IC}, Hummer G.
-\newblock System-Size Dependence of Diffusion Coefficients and Viscosities from
-  Molecular Dynamics Simulations with Periodic Boundary Conditions.
-\newblock The Journal of Physical Chemistry B.  2004; 108(40):15873--15879.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/jp0477147},
-  \href{10.1021/jp0477147}{\doiprefix \detokenize{10.1021/jp0477147}}.
-
-\bibitem[{Zhang et~al.(2015)Zhang, Yong and Otani, Akihito and Maginn, Edward
-  J.}]{Zhang2015}
-\textbf{\color{LiveCoMSMediumGrey} Zhang Y}, Otani A, Maginn EJ.
-\newblock Reliable Viscosity Calculation from Equilibrium Molecular Dynamics
-  Simulations: A Time Decomposition Method.
-\newblock Journal of Chemical Theory and Computation.  2015; 11(8):3537--3546.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/acs.jctc.5b00351},
-  \href{10.1021/acs.jctc.5b00351}{\doiprefix
-  \detokenize{10.1021/acs.jctc.5b00351}}, pMID: 26574439.
+  \href{https://dx.doi.org/10.1063/1.3276454}{\doiprefix
+  \detokenize{10.1063/1.3276454}}.
 
 \end{thebibliography}

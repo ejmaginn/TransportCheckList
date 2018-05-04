@@ -1,16 +1,14 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: transport_properties.aux
 The style file: vancouver-livecoms.bst
 Database file #1: transport_properties.bib
-Warning--to sort, need author or key in HessForum
-Warning--to sort, need author or key in LAMMPS_NEMD
 Warning--empty author in HessForum
 Warning--empty author and editor in HessForum
 Warning--missing publisher in HessForum
 Warning--there's a month but no year in HessForum
+You can't pop an empty literal stack for entry Potoff2009
+while executing---line 1927 of file vancouver-livecoms.bst
 Warning--empty author in LAMMPS_NEMD
 Warning--empty author and editor in LAMMPS_NEMD
 Warning--missing publisher in LAMMPS_NEMD
 Warning--there's a month but no year in LAMMPS_NEMD
-You can't pop an empty literal stack for entry Potoff2009
-while executing---line 1927 of file vancouver-livecoms.bst
 (There was 1 error message)

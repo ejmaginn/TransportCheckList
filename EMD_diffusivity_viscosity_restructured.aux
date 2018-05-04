@@ -18,14 +18,15 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\bibstyle{unsrt}
 \@LN@col{1}
 \select@language{english}
 \@writefile{toc}{\select@language{english}}
 \@writefile{lof}{\select@language{english}}
 \@writefile{lot}{\select@language{english}}
 \@LN@col{2}
-\citation{LAMMPS}
-\citation{GROMACS}
+\citation{LAMMPS,GROMACS,AMBER2018,NAMD}
+\citation{Roe2013,MDTraj,VMD}
 \citation{Allen2017}
 \citation{Frenkel2002}
 \citation{Leach2001}
@@ -47,10 +48,12 @@
 \newlabel{eq:Einstein}{{2}{2}{Equilibrium Molecular Dynamics (EMD) for Estimating Transport Properties}{equation.2.2}{}}
 \citation{Fanourgakis2012}
 \citation{Shirts2013}
-\citation{Payal2012}
-\citation{Zhang2015}
-\citation{Ma2017}
-\citation{Payal2012}
+\citation{Berendsen1984}
+\citation{Bussi2007}
+\citation{Nose1984}
+\citation{Andersen1980}
+\citation{Hess2008}
+\citation{Fanourgakis2012,Shirts2013}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Equilibrium molecular dynamics equations.\relax }}{3}{table.caption.1}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{tab:EMD_equations}{{1}{3}{Equilibrium molecular dynamics equations.\relax }{table.caption.1}{}}
@@ -64,10 +67,14 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Correct Ensemble}{3}{subsubsection.4.1.1}}
 \newlabel{sec:General: Correct Ensemble}{{4.1.1}{3}{Correct Ensemble}{subsubsection.4.1.1}{}}
 \@LN@col{2}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Replicate simulations}{3}{subsubsection.4.1.2}}
-\newlabel{sec:General: Replicate simulations}{{4.1.2}{3}{Replicate simulations}{subsubsection.4.1.2}{}}
+\citation{Payal2012}
+\citation{Zhang2015}
+\citation{Ma2017}
+\citation{Payal2012}
 \citation{Zhang2015}
 \@LN@col{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Replicate simulations}{6}{subsubsection.4.1.2}}
+\newlabel{sec:General: Replicate simulations}{{4.1.2}{6}{Replicate simulations}{subsubsection.4.1.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}General transport: Post-simulation analysis}{6}{subsection.4.2}}
 \newlabel{sec:General: Post-simulation}{{4.2}{6}{General transport: Post-simulation analysis}{subsection.4.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Improved precision}{6}{subsubsection.4.2.1}}
@@ -75,95 +82,91 @@
 \@LN@col{2}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}Clear communication}{6}{subsubsection.4.2.2}}
 \newlabel{sec:General: Clear communication}{{4.2.2}{6}{Clear communication}{subsubsection.4.2.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}Uncertainty quantification}{6}{subsubsection.4.2.3}}
-\newlabel{sec:General: Uncertainty}{{4.2.3}{6}{Uncertainty quantification}{subsubsection.4.2.3}{}}
-\newlabel{item:Bootstrap Distribution}{{5}{6}{Uncertainty quantification}{Item.25}{}}
 \citation{Haile1992}
 \citation{ShenSRSW}
 \citation{Kondratyuk2016,Liu2012,Mondello1997}
 \citation{Mondello1997}
 \citation{Mondello1997}
-\citation{Moultos2016}
-\citation{Daivis:1995}
 \@LN@col{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}Uncertainty quantification}{7}{subsubsection.4.2.3}}
+\newlabel{sec:General: Uncertainty}{{4.2.3}{7}{Uncertainty quantification}{subsubsection.4.2.3}{}}
+\newlabel{item:Bootstrap Distribution}{{5}{7}{Uncertainty quantification}{Item.25}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}General transport: Common pitfalls}{7}{subsection.4.3}}
 \newlabel{sec:General: Common pitfalls}{{4.3}{7}{General transport: Common pitfalls}{subsection.4.3}{}}
+\@LN@col{2}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}General transport: Validation}{7}{subsection.4.4}}
 \newlabel{sec:General: Validation}{{4.4}{7}{General transport: Validation}{subsection.4.4}{}}
-\@LN@col{2}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Self-Diffusivity}{7}{section.5}}
 \newlabel{sec:Self-Diffusivity}{{5}{7}{Self-Diffusivity}{section.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Self-Diffusivity: General}{7}{subsection.5.1}}
 \newlabel{sec:Self-Diffusivity General}{{5.1}{7}{Self-Diffusivity: General}{subsection.5.1}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1}Data analysis}{7}{subsubsection.5.1.1}}
 \newlabel{sec:Self-Diffusivity:General: Data analysis}{{5.1.1}{7}{Data analysis}{subsubsection.5.1.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}Finite size effects}{7}{subsubsection.5.1.2}}
-\newlabel{sec:Self-Diffusivity:General: Finite size}{{5.1.2}{7}{Finite size effects}{subsubsection.5.1.2}{}}
+\citation{Moultos2016}
+\citation{Daivis:1995}
 \citation{Yeh2004}
 \citation{Kikugawa:2015}
 \citation{Moultos2016}
 \citation{Moultos2016}
-\citation{Kondratyuk2016}
-\citation{Kondratyuk2016}
-\citation{Kondratyuk2016}
 \@LN@col{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}Finite size effects}{8}{subsubsection.5.1.2}}
+\newlabel{sec:Self-Diffusivity:General: Finite size}{{5.1.2}{8}{Finite size effects}{subsubsection.5.1.2}{}}
 \newlabel{eq:YH-correction}{{3}{8}{Finite size effects}{equation.5.3}{}}
+\@LN@col{2}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces System size dependence of self-diffusivity obtained with Einstein approach. Reproduced with permission from J. Chem. Phys. 145, 074109 (2016). Copyright 2016 AIP Publishing \cite  {Moultos2016}. Blue dashed lines are obtained by extrapolating the MD results to the infinite system size, i.e. $N^{-1/3} \to 0$. Red diamonds are the values of $D$ after correcting for finite size effects, i.e. Equation \ref  {eq:YH-correction}. The red dashed line is an average of these corrected values of $D$. For further details, see Ref. \cite  {Moultos2016}.\relax }}{8}{figure.caption.6}}
 \newlabel{fig:MoultosFig1}{{1}{8}{System size dependence of self-diffusivity obtained with Einstein approach. Reproduced with permission from J. Chem. Phys. 145, 074109 (2016). Copyright 2016 AIP Publishing \cite {Moultos2016}. Blue dashed lines are obtained by extrapolating the MD results to the infinite system size, i.e. $N^{-1/3} \to 0$. Red diamonds are the values of $D$ after correcting for finite size effects, i.e. Equation \ref {eq:YH-correction}. The red dashed line is an average of these corrected values of $D$. For further details, see Ref. \cite {Moultos2016}.\relax }{figure.caption.6}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Self-Diffusivity: Einstein}{8}{subsection.5.2}}
 \newlabel{sec:Self-Diffusivity Einstein}{{5.2}{8}{Self-Diffusivity: Einstein}{subsection.5.2}{}}
-\@LN@col{2}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Output frequency}{8}{subsubsection.5.2.1}}
 \newlabel{sec:Self-Diffusivity:Einstein: Output frequency}{{5.2.1}{8}{Output frequency}{subsubsection.5.2.1}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Simulation length}{8}{subsubsection.5.2.2}}
 \newlabel{sec:Self-Diffusivity:Einstein: Simulation length}{{5.2.2}{8}{Simulation length}{subsubsection.5.2.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Data analysis}{8}{subsubsection.5.2.3}}
-\newlabel{sec:Self-Diffusivity:Einstein: Data analysis}{{5.2.3}{8}{Data analysis}{subsubsection.5.2.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Self-Diffusivity: Green-Kubo}{8}{subsection.5.3}}
-\newlabel{sec:Self-Diffusivity Green-Kubo}{{5.3}{8}{Self-Diffusivity: Green-Kubo}{subsection.5.3}{}}
+\citation{Kondratyuk2016}
+\citation{Kondratyuk2016}
+\citation{Kondratyuk2016}
 \citation{GROMACS}
 \citation{Andersen1980}
 \citation{Feller1995}
 \citation{Camley2015,Venable2017}
 \citation{Chen2009}
-\citation{Hess2002}
-\citation{Hess2002}
 \@LN@col{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Data analysis}{9}{subsubsection.5.2.3}}
+\newlabel{sec:Self-Diffusivity:Einstein: Data analysis}{{5.2.3}{9}{Data analysis}{subsubsection.5.2.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Log-log plot of MSD with respect to time. Copied from Figure 2 of Ref. \cite  {Kondratyuk2016}. The gray dashed lines are the long-time asymptotes of the MSD, as determined by the authors. For further details, see Ref. \cite  {Kondratyuk2016}.\relax }}{9}{figure.caption.7}}
 \newlabel{fig:KondratyukFig2}{{2}{9}{Log-log plot of MSD with respect to time. Copied from Figure 2 of Ref. \cite {Kondratyuk2016}. The gray dashed lines are the long-time asymptotes of the MSD, as determined by the authors. For further details, see Ref. \cite {Kondratyuk2016}.\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Self-Diffusivity: Green-Kubo}{9}{subsection.5.3}}
+\newlabel{sec:Self-Diffusivity Green-Kubo}{{5.3}{9}{Self-Diffusivity: Green-Kubo}{subsection.5.3}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}Output frequency}{9}{subsubsection.5.3.1}}
 \newlabel{sec:Self-Diffusivity:Green-Kubo: Output frequency}{{5.3.1}{9}{Output frequency}{subsubsection.5.3.1}{}}
+\@LN@col{2}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Simulation length}{9}{subsubsection.5.3.2}}
 \newlabel{sec:Self-Diffusivity:Green-Kubo: Simulation length}{{5.3.2}{9}{Simulation length}{subsubsection.5.3.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Data analysis}{9}{subsubsection.5.3.3}}
 \newlabel{sec:Self-Diffusivity:Green-Kubo: Data analysis}{{5.3.3}{9}{Data analysis}{subsubsection.5.3.3}{}}
-\@LN@col{2}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Self-Diffusivity: Special topics}{9}{subsection.5.4}}
 \newlabel{sec:Self-Diffusivity Special topics}{{5.4}{9}{Self-Diffusivity: Special topics}{subsection.5.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Viscosity}{9}{section.6}}
-\newlabel{sec:Viscosity}{{6}{9}{Viscosity}{section.6}{}}
+\citation{Hess2002}
+\citation{Hess2002}
 \citation{Zhang2015}
 \citation{Zhang2015}
 \citation{Zhang2015}
 \citation{Zhang2015}
+\@LN@col{1}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Viscosity}{10}{section.6}}
+\newlabel{sec:Viscosity}{{6}{10}{Viscosity}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Viscosity: General}{10}{subsection.6.1}}
+\newlabel{sec:Viscosity General}{{6.1}{10}{Viscosity: General}{subsection.6.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.1}Simulation length}{10}{subsubsection.6.1.1}}
+\newlabel{sec:Viscosity:General: Simulation length}{{6.1.1}{10}{Simulation length}{subsubsection.6.1.1}{}}
+\@LN@col{2}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Viscosity dependence on simulation length. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537\IeC {\textendash }3546. Copyright (2015) American Chemical Society Ref.\ \cite  {Zhang2015}. Different lines and symbols correspond to different simulation length, i.e. trajectory time. The inset in the top panel plots the standard deviation, $\sigma $. For further details, see Ref. \cite  {Zhang2015}.\relax }}{10}{figure.caption.8}}
+\newlabel{fig:ZhangFig8}{{3}{10}{Viscosity dependence on simulation length. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society Ref.\ \cite {Zhang2015}. Different lines and symbols correspond to different simulation length, i.e. trajectory time. The inset in the top panel plots the standard deviation, $\sigma $. For further details, see Ref. \cite {Zhang2015}.\relax }{figure.caption.8}{}}
 \citation{Zhang2015}
 \citation{Zhang2015}
 \citation{Moultos2016}
 \citation{Zhang2015}
 \citation{Daivis:1995}
 \citation{Daivis:1995}
-\@LN@col{1}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Viscosity: General}{10}{subsection.6.1}}
-\newlabel{sec:Viscosity General}{{6.1}{10}{Viscosity: General}{subsection.6.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.1}Simulation length}{10}{subsubsection.6.1.1}}
-\newlabel{sec:Viscosity:General: Simulation length}{{6.1.1}{10}{Simulation length}{subsubsection.6.1.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.2}Output frequency}{10}{subsubsection.6.1.2}}
-\newlabel{sec:Viscosity:General: Output frequency}{{6.1.2}{10}{Output frequency}{subsubsection.6.1.2}{}}
-\@LN@col{2}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Viscosity dependence on simulation length. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537\IeC {\textendash }3546. Copyright (2015) American Chemical Society Ref.\ \cite  {Zhang2015}. Different lines and symbols correspond to different simulation length, i.e. trajectory time. The inset in the top panel plots the standard deviation, $\sigma $. For further details, see Ref. \cite  {Zhang2015}.\relax }}{10}{figure.caption.8}}
-\newlabel{fig:ZhangFig8}{{3}{10}{Viscosity dependence on simulation length. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society Ref.\ \cite {Zhang2015}. Different lines and symbols correspond to different simulation length, i.e. trajectory time. The inset in the top panel plots the standard deviation, $\sigma $. For further details, see Ref. \cite {Zhang2015}.\relax }{figure.caption.8}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.3}Finite size effects}{10}{subsubsection.6.1.3}}
-\newlabel{sec:Viscosity:General: Finite size}{{6.1.3}{10}{Finite size effects}{subsubsection.6.1.3}{}}
 \citation{Moultos2016}
 \citation{Moultos2016}
 \citation{Zhang2015}
@@ -171,6 +174,20 @@
 \citation{Hess2002}
 \citation{Evans:90,Daivis:1994}
 \citation{Daivis:1994}
+\@LN@col{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Plateau time dependence on viscosity. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537\IeC {\textendash }3546. Copyright (2015) American Chemical Society Ref.\ \cite  {Zhang2015}. Different lines correspond to different temperatures and, thus, different viscosities. For further details, see Ref. \cite  {Zhang2015}.\relax }}{11}{figure.caption.9}}
+\newlabel{fig:ZhangFig10}{{4}{11}{Plateau time dependence on viscosity. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society Ref.\ \cite {Zhang2015}. Different lines correspond to different temperatures and, thus, different viscosities. For further details, see Ref. \cite {Zhang2015}.\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.2}Output frequency}{11}{subsubsection.6.1.2}}
+\newlabel{sec:Viscosity:General: Output frequency}{{6.1.2}{11}{Output frequency}{subsubsection.6.1.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.3}Finite size effects}{11}{subsubsection.6.1.3}}
+\newlabel{sec:Viscosity:General: Finite size}{{6.1.3}{11}{Finite size effects}{subsubsection.6.1.3}{}}
+\@LN@col{2}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Finite size effects for viscosity obtained with Green-Kubo approach. Reproduced with permission from J. Chem. Phys. 145, 074109 (2016). Copyright 2016 AIP Publishing \cite  {Moultos2016}. Different symbols correspond to different types of glymes (Gi). Dashed lines are average value for each glyme from various system sizes $(N)$. For further details, see Ref. \cite  {Moultos2016}.\relax }}{11}{figure.caption.10}}
+\newlabel{fig:MoultosFig3}{{5}{11}{Finite size effects for viscosity obtained with Green-Kubo approach. Reproduced with permission from J. Chem. Phys. 145, 074109 (2016). Copyright 2016 AIP Publishing \cite {Moultos2016}. Different symbols correspond to different types of glymes (Gi). Dashed lines are average value for each glyme from various system sizes $(N)$. For further details, see Ref. \cite {Moultos2016}.\relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Finite size effects for viscosity obtained with Green-Kubo approach. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537\IeC {\textendash }3546. Copyright (2015) American Chemical Society Ref. \cite  {Zhang2015}. Different colors correspond to different number of molecules. The inset plots the standard deviation, $\sigma $. For further details, see Ref. \cite  {Zhang2015}.\relax }}{11}{figure.caption.11}}
+\newlabel{fig:ZhangFig9}{{6}{11}{Finite size effects for viscosity obtained with Green-Kubo approach. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society Ref. \cite {Zhang2015}. Different colors correspond to different number of molecules. The inset plots the standard deviation, $\sigma $. For further details, see Ref. \cite {Zhang2015}.\relax }{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.4}Improved precision}{11}{subsubsection.6.1.4}}
+\newlabel{sec:Viscosity:General: Improved precision}{{6.1.4}{11}{Improved precision}{subsubsection.6.1.4}{}}
 \citation{Liu2012,Borodin2009,Mondello1997}
 \citation{Chen2009}
 \citation{Chen2009}
@@ -178,36 +195,22 @@
 \citation{Hess2002}
 \citation{Chen2009}
 \citation{Chen2009}
-\@LN@col{1}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Plateau time dependence on viscosity. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537\IeC {\textendash }3546. Copyright (2015) American Chemical Society Ref.\ \cite  {Zhang2015}. Different lines correspond to different temperatures and, thus, different viscosities. For further details, see Ref. \cite  {Zhang2015}.\relax }}{11}{figure.caption.9}}
-\newlabel{fig:ZhangFig10}{{4}{11}{Plateau time dependence on viscosity. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society Ref.\ \cite {Zhang2015}. Different lines correspond to different temperatures and, thus, different viscosities. For further details, see Ref. \cite {Zhang2015}.\relax }{figure.caption.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Finite size effects for viscosity obtained with Green-Kubo approach. Reproduced with permission from J. Chem. Phys. 145, 074109 (2016). Copyright 2016 AIP Publishing \cite  {Moultos2016}. Different symbols correspond to different types of glymes (Gi). Dashed lines are average value for each glyme from various system sizes $(N)$. For further details, see Ref. \cite  {Moultos2016}.\relax }}{11}{figure.caption.10}}
-\newlabel{fig:MoultosFig3}{{5}{11}{Finite size effects for viscosity obtained with Green-Kubo approach. Reproduced with permission from J. Chem. Phys. 145, 074109 (2016). Copyright 2016 AIP Publishing \cite {Moultos2016}. Different symbols correspond to different types of glymes (Gi). Dashed lines are average value for each glyme from various system sizes $(N)$. For further details, see Ref. \cite {Moultos2016}.\relax }{figure.caption.10}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.4}Improved precision}{11}{subsubsection.6.1.4}}
-\newlabel{sec:Viscosity:General: Improved precision}{{6.1.4}{11}{Improved precision}{subsubsection.6.1.4}{}}
-\@LN@col{2}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Finite size effects for viscosity obtained with Green-Kubo approach. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537\IeC {\textendash }3546. Copyright (2015) American Chemical Society Ref. \cite  {Zhang2015}. Different colors correspond to different number of molecules. The inset plots the standard deviation, $\sigma $. For further details, see Ref. \cite  {Zhang2015}.\relax }}{11}{figure.caption.11}}
-\newlabel{fig:ZhangFig9}{{6}{11}{Finite size effects for viscosity obtained with Green-Kubo approach. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society Ref. \cite {Zhang2015}. Different colors correspond to different number of molecules. The inset plots the standard deviation, $\sigma $. For further details, see Ref. \cite {Zhang2015}.\relax }{figure.caption.11}{}}
-\newlabel{eq:GKwonder}{{4}{11}{Improved precision}{equation.6.4}{}}
-\newlabel{eq:Pwonder}{{5}{11}{Improved precision}{equation.6.5}{}}
-\newlabel{eq:Einwonder}{{6}{11}{Improved precision}{equation.6.6}{}}
 \citation{Martin1998}
 \citation{GROMACS}
 \citation{Payal2012}
 \citation{Zhang2015}
-\citation{Fanourgakis2012,Chen2009}
 \@LN@col{1}
+\newlabel{eq:GKwonder}{{4}{12}{Improved precision}{equation.6.4}{}}
+\newlabel{eq:Pwonder}{{5}{12}{Improved precision}{equation.6.5}{}}
+\newlabel{eq:Einwonder}{{6}{12}{Improved precision}{equation.6.6}{}}
+\newlabel{eq:GKwonder_replicates}{{7}{12}{Improved precision}{equation.6.7}{}}
+\newlabel{eq:Einwonder_replicates}{{8}{12}{Improved precision}{equation.6.8}{}}
+\@LN@col{2}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Green-Kubo viscosity plot. Reproduced from J. Chem. Phys., 2002, 116(1):209--217, with the permission of AIP Publishing \cite  {Hess2002}. Dashed lines represent a single off-diagonal element of the pressure tensor while solid line is the average of the three off-diagonal elements. For further details, see Ref. \cite  {Hess2002}.\relax }}{12}{figure.caption.12}}
 \newlabel{fig:HessFig5}{{7}{12}{Green-Kubo viscosity plot. Reproduced from J. Chem. Phys., 2002, 116(1):209--217, with the permission of AIP Publishing \cite {Hess2002}. Dashed lines represent a single off-diagonal element of the pressure tensor while solid line is the average of the three off-diagonal elements. For further details, see Ref. \cite {Hess2002}.\relax }{figure.caption.12}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Green-Kubo viscosity plot. Reproduced from J. Chem. Phys., 131, 246101 (2009), with the permission of AIP Publishing \cite  {Chen2009}. Red line is obtained by averaging the three off-diagonal elements while the black line is obtained from all six pressure tensor elements. For further details, see Ref. \cite  {Chen2009}.\relax }}{12}{figure.caption.13}}
 \newlabel{fig:ChenFig1}{{8}{12}{Green-Kubo viscosity plot. Reproduced from J. Chem. Phys., 131, 246101 (2009), with the permission of AIP Publishing \cite {Chen2009}. Red line is obtained by averaging the three off-diagonal elements while the black line is obtained from all six pressure tensor elements. For further details, see Ref. \cite {Chen2009}.\relax }{figure.caption.13}{}}
-\@LN@col{2}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Improvement with three stress tensor terms and 30 replicate runs. Simulations were performed with Gromacs 2018 for saturated liquid ethane at 137 K using the TraPPE-UA model \cite  {Martin1998}. Simulation details: velocity Verlet integrator, 2 fs time-step, 6 fs pressure tensor output frequency, 1 ns equilibration time, 1 ns production time, 400 molecule system, 1.4 nm non-bonded cut-off distance with analytic tail corrections, Nos{\'e}-Hoover thermostat with time constant of 1 ps, bond-lengths constrained with LINCS algorithm \cite  {GROMACS}.\relax }}{12}{figure.caption.14}}
-\newlabel{fig:Einstein_3terms_30replicates}{{9}{12}{Improvement with three stress tensor terms and 30 replicate runs. Simulations were performed with Gromacs 2018 for saturated liquid ethane at 137 K using the TraPPE-UA model \cite {Martin1998}. Simulation details: velocity Verlet integrator, 2 fs time-step, 6 fs pressure tensor output frequency, 1 ns equilibration time, 1 ns production time, 400 molecule system, 1.4 nm non-bonded cut-off distance with analytic tail corrections, Nos{\'e}-Hoover thermostat with time constant of 1 ps, bond-lengths constrained with LINCS algorithm \cite {GROMACS}.\relax }{figure.caption.14}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Viscosity: Green-Kubo}{12}{subsection.6.2}}
-\newlabel{sec:Viscosity Green-Kubo}{{6.2}{12}{Viscosity: Green-Kubo}{subsection.6.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}Data analysis}{12}{subsubsection.6.2.1}}
-\newlabel{sec:Viscosity:Green-Kubo: Data analysis}{{6.2.1}{12}{Data analysis}{subsubsection.6.2.1}{}}
+\citation{Fanourgakis2012,Chen2009}
 \citation{GROMACS}
 \citation{Fanourgakis2012}
 \citation{Fanourgakis2012}
@@ -220,10 +223,14 @@
 \citation{Shirts2013}
 \citation{Fernandez2005}
 \@LN@col{1}
-\newlabel{eq:ACF_fit}{{7}{13}{}{equation.6.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Improvement with three stress tensor terms and 30 replicate runs. Simulations were performed with Gromacs 2018 for saturated liquid ethane at 137 K using the TraPPE-UA model \cite  {Martin1998}. Simulation details: velocity Verlet integrator, 2 fs time-step, 6 fs pressure tensor output frequency, 1 ns equilibration time, 1 ns production time, 400 molecule system, 1.4 nm non-bonded cut-off distance with analytic tail corrections, Nos{\'e}-Hoover thermostat with time constant of 1 ps, bond-lengths constrained with LINCS algorithm \cite  {GROMACS}.\relax }}{13}{figure.caption.14}}
+\newlabel{fig:Einstein_3terms_30replicates}{{9}{13}{Improvement with three stress tensor terms and 30 replicate runs. Simulations were performed with Gromacs 2018 for saturated liquid ethane at 137 K using the TraPPE-UA model \cite {Martin1998}. Simulation details: velocity Verlet integrator, 2 fs time-step, 6 fs pressure tensor output frequency, 1 ns equilibration time, 1 ns production time, 400 molecule system, 1.4 nm non-bonded cut-off distance with analytic tail corrections, Nos{\'e}-Hoover thermostat with time constant of 1 ps, bond-lengths constrained with LINCS algorithm \cite {GROMACS}.\relax }{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Viscosity: Green-Kubo}{13}{subsection.6.2}}
+\newlabel{sec:Viscosity Green-Kubo}{{6.2}{13}{Viscosity: Green-Kubo}{subsection.6.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}Data analysis}{13}{subsubsection.6.2.1}}
+\newlabel{sec:Viscosity:Green-Kubo: Data analysis}{{6.2.1}{13}{Data analysis}{subsubsection.6.2.1}{}}
 \@LN@col{2}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Fit of autocorrelation function to Equation \ref  {eq:ACF_fit}. Reproduced with permission from J. Phys. Chem. A., 2012, 116 (10), pp 2564--2570. Copyright (2012) ACS Publications \cite  {Fanourgakis2012}. S$_{\rm  ACF}$ and S$^{\rm  f}_{\rm  ACF}$ correspond to the raw autocorrelation function and the fit to Equation \ref  {eq:ACF_fit}, respectively. The red dotted line and blue dashed--dotted line correspond to the fast and slow autocorrelation components, respectively, i.e. the first and second terms of Equation \ref  {eq:ACF_fit}. For further details, see Ref. \cite  {Fanourgakis2012}.\relax }}{13}{figure.caption.15}}
-\newlabel{fig:FanourgakisFig1}{{10}{13}{Fit of autocorrelation function to Equation \ref {eq:ACF_fit}. Reproduced with permission from J. Phys. Chem. A., 2012, 116 (10), pp 2564--2570. Copyright (2012) ACS Publications \cite {Fanourgakis2012}. S$_{\rm ACF}$ and S$^{\rm f}_{\rm ACF}$ correspond to the raw autocorrelation function and the fit to Equation \ref {eq:ACF_fit}, respectively. The red dotted line and blue dashed--dotted line correspond to the fast and slow autocorrelation components, respectively, i.e. the first and second terms of Equation \ref {eq:ACF_fit}. For further details, see Ref. \cite {Fanourgakis2012}.\relax }{figure.caption.15}{}}
+\newlabel{eq:ACF_fit}{{9}{13}{}{equation.6.9}{}}
 \citation{ReyCastro2006}
 \citation{Zhang2015}
 \citation{Borodin2009}
@@ -234,77 +241,91 @@
 \citation{Zhang2015}
 \citation{Zhang2015}
 \@LN@col{1}
-\newlabel{eq: Double exponential}{{8}{14}{}{equation.6.8}{}}
-\newlabel{eq:Borodin}{{9}{14}{}{equation.6.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Fit of autocorrelation function to Equation \ref  {eq:ACF_fit}. Reproduced with permission from J. Phys. Chem. A., 2012, 116 (10), pp 2564--2570. Copyright (2012) ACS Publications \cite  {Fanourgakis2012}. S$_{\rm  ACF}$ and S$^{\rm  f}_{\rm  ACF}$ correspond to the raw autocorrelation function and the fit to Equation \ref  {eq:ACF_fit}, respectively. The red dotted line and blue dashed--dotted line correspond to the fast and slow autocorrelation components, respectively, i.e. the first and second terms of Equation \ref  {eq:ACF_fit}. For further details, see Ref. \cite  {Fanourgakis2012}.\relax }}{14}{figure.caption.15}}
+\newlabel{fig:FanourgakisFig1}{{10}{14}{Fit of autocorrelation function to Equation \ref {eq:ACF_fit}. Reproduced with permission from J. Phys. Chem. A., 2012, 116 (10), pp 2564--2570. Copyright (2012) ACS Publications \cite {Fanourgakis2012}. S$_{\rm ACF}$ and S$^{\rm f}_{\rm ACF}$ correspond to the raw autocorrelation function and the fit to Equation \ref {eq:ACF_fit}, respectively. The red dotted line and blue dashed--dotted line correspond to the fast and slow autocorrelation components, respectively, i.e. the first and second terms of Equation \ref {eq:ACF_fit}. For further details, see Ref. \cite {Fanourgakis2012}.\relax }{figure.caption.15}{}}
+\newlabel{eq: Double exponential}{{10}{14}{}{equation.6.10}{}}
 \@LN@col{2}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Viscosity dependence on the exponent of the weighting model, $b$. $b = 0.52$ for Ethanol at 298K, top panel, while $b$ is between $0.60$ to $0.73$ for [BMIM][Tf$_2$N] at 350 K, bottom panel. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537\IeC {\textendash }3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite  {Zhang2015}.\relax }}{14}{figure.caption.16}}
-\newlabel{fig:ZhangFig7_12}{{11}{14}{Viscosity dependence on the exponent of the weighting model, $b$. $b = 0.52$ for Ethanol at 298K, top panel, while $b$ is between $0.60$ to $0.73$ for [BMIM][Tf$_2$N] at 350 K, bottom panel. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite {Zhang2015}.\relax }{figure.caption.16}{}}
+\newlabel{eq:Borodin}{{11}{14}{}{equation.6.11}{}}
 \citation{Zhang2015}
 \citation{Zhang2015}
 \citation{Zhang2015}
-\citation{GROMACS,Hess2002}
-\citation{GROMACS}
-\citation{GROMACS}
 \@LN@col{1}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Large fluctuations at very short time. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537\IeC {\textendash }3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite  {Zhang2015}.\relax }}{15}{figure.caption.17}}
-\newlabel{fig:ZhangFig4}{{12}{15}{Large fluctuations at very short time. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite {Zhang2015}.\relax }{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Viscosity dependence on the exponent of the weighting model, $b$. $b = 0.52$ for Ethanol at 298K, top panel, while $b$ is between $0.60$ to $0.73$ for [BMIM][Tf$_2$N] at 350 K, bottom panel. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537\IeC {\textendash }3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite  {Zhang2015}.\relax }}{15}{figure.caption.16}}
+\newlabel{fig:ZhangFig7_12}{{11}{15}{Viscosity dependence on the exponent of the weighting model, $b$. $b = 0.52$ for Ethanol at 298K, top panel, while $b$ is between $0.60$ to $0.73$ for [BMIM][Tf$_2$N] at 350 K, bottom panel. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite {Zhang2015}.\relax }{figure.caption.16}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Viscosity: Einstein}{15}{subsection.6.3}}
 \newlabel{sec:Viscosity Einstein}{{6.3}{15}{Viscosity: Einstein}{subsection.6.3}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Data analysis}{15}{subsubsection.6.3.1}}
 \newlabel{sec:Viscosity:Einstein: Data analysis}{{6.3.1}{15}{Data analysis}{subsubsection.6.3.1}{}}
 \@LN@col{2}
-\newlabel{eq:Einwonder_replicates}{{10}{15}{Data analysis}{equation.6.10}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Viscosity: Special topics}{15}{subsection.6.4}}
-\newlabel{sec:Viscosity Special topics}{{6.4}{15}{Viscosity: Special topics}{subsection.6.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusions}{15}{section.7}}
-\newlabel{Conclusions}{{7}{15}{Conclusions}{section.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Large fluctuations at very short time. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537\IeC {\textendash }3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite  {Zhang2015}.\relax }}{15}{figure.caption.17}}
+\newlabel{fig:ZhangFig4}{{12}{15}{Large fluctuations at very short time. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite {Zhang2015}.\relax }{figure.caption.17}{}}
+\citation{GROMACS,Hess2002}
+\citation{GROMACS}
+\citation{GROMACS}
+\@LN@col{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Dependence of $\eta $ on the time interval used to compute the Einstein slope. For example, ``start time'' $=$ 50 ps and ``end time'' $=$ 200 ps computes the slope from $t = 50$ to $200$ ps of $\displaystyle \frac  {V}{2 k_B T N_{\rm  reps}} \qopname  \relax m{lim}_{t\to \infty } \frac  {d}{dt} \DOTSB \sum@ \slimits@ _{n=1}^{N_{\rm  reps}} \left \delimiter "426830A \DOTSI \intop \ilimits@ _0^t \tau _{\alpha \beta ,n}(t') dt' \right \delimiter "526930B _{t_0}$. Panels a) and b) correspond to a single simulation and 30 replicate simulations. The same color scale is used in both panels, but Panel b) also includes a zoomed-in color bar. Simulation data are the same as those presented in Figure \ref  {fig:Einstein_3terms_30replicates}.\relax }}{16}{figure.caption.18}}
+\newlabel{fig:Einstein_slope_time_interval}{{13}{16}{Dependence of $\eta $ on the time interval used to compute the Einstein slope. For example, ``start time'' $=$ 50 ps and ``end time'' $=$ 200 ps computes the slope from $t = 50$ to $200$ ps of $\displaystyle \frac {V}{2 k_B T N_{\rm reps}} \lim _{t\to \infty } \frac {d}{dt} \sum _{n=1}^{N_{\rm reps}} \left \langle \int _0^t \tau _{\alpha \beta ,n}(t') dt' \right \rangle _{t_0}$. Panels a) and b) correspond to a single simulation and 30 replicate simulations. The same color scale is used in both panels, but Panel b) also includes a zoomed-in color bar. Simulation data are the same as those presented in Figure \ref {fig:Einstein_3terms_30replicates}.\relax }{figure.caption.18}{}}
+\@LN@col{2}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Viscosity: Special topics}{16}{subsection.6.4}}
+\newlabel{sec:Viscosity Special topics}{{6.4}{16}{Viscosity: Special topics}{subsection.6.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusions}{16}{section.7}}
+\newlabel{Conclusions}{{7}{16}{Conclusions}{section.7}{}}
 \citation{Shirts2013,Fanourgakis2012}
 \citation{Zhang2015}
 \bibdata{transport_properties}
-\bibcite{PanaNotes}{{1}{????}{{Pan}}{{}}}
-\bibcite{KofkeNotes}{{2}{????}{{Kof}}{{}}}
-\bibcite{MaginnNotes}{{3}{????}{{Mag}}{{}}}
-\bibcite{ShellNotes}{{4}{????}{{She}}{{}}}
-\bibcite{Allen2017}{{5}{2017}{{Allen and Tildesley}}{{Allen, M. P. and Tildesley, D. J.}}}
-\bibcite{Andersen1980}{{6}{1980}{{Andersen}}{{Hans C. Andersen}}}
-\bibcite{Shirts2013}{{7}{2013}{{Basconi and Shirts}}{{Basconi, Joseph E. and Shirts, Michael R.}}}
-\bibcite{Borodin2009}{{8}{2009}{{Borodin et~al.}}{{Borodin, Oleg and Smith, Grant D. and Kim, Hojin}}}
-\bibcite{Camley2015}{{9}{2015}{{Camley et~al.}}{{Brian A. Camley and Michael G. Lerner and Richard W. Pastor and Frank L. H. Brown}}}
-\bibcite{Chen2009}{{10}{2009}{{Chen et~al.}}{{Ting Chen and Berend Smit and Alexis T. Bell}}}
-\bibcite{Daivis:1994}{{11}{1994}{{Daivis and Evans}}{{Daivis, P. J. and Evans, D. J.}}}
-\bibcite{Daivis:1995}{{12}{1995}{{Daivis and Evans}}{{Daivis, P. J. and Evans, D. J.}}}
+\bibcite{LAMMPS}{{1}{2017}{{LAMMPS}}{{}}}
+\bibcite{GROMACS}{{2}{2016}{{GROMACS}}{{}}}
+\bibcite{AMBER2018}{{3}{????}{{D.A.~Case and Kollman}}{{D.A. Case, S.R. Brozell, D.S. Cerutti, T.E. Cheatham, III, V.W.D. Cruzeiro, T.A. Darden, R.E. Duke, D. Ghoreishi, H. Gohlke, A.W. Goetz, D. Greene, R Harris, N. Homeyer, S. Izadi, A. Kovalenko, T.S. Lee, S. LeGrand, P. Li, C. Lin, J. Liu, T. Luchko, R. Luo, D.J. Mermelstein, K.M. Merz, Y. Miao, G. Monard, H. Nguyen, I. Omelyan, A. Onufriev, F. Pan, R. Qi, D.R. Roe, A. Roitberg, C. Sagui, S. Schott-Verdugo, J. Shen, C.L. Simmerling, J. Smith, J. Swails, R.C. Walker, J. Wang, H. Wei, R.M. Wolf, X. Wu, L. Xiao, D.M. York and P.A. Kollman}}}
+\bibcite{NAMD}{{4}{2005}{{James C.~Phillips and Schulten}}{{James C. Phillips, Rosemary Braun, Wei Wang, James Gumbart, Emad Tajkhorshid, Elizabeth Villa, Christophe Chipot, Robert D. Skeel, Laxmikant Kale, and Klaus Schulten}}}
+\bibcite{Roe2013}{{5}{2013}{{Roe and Cheatham}}{{Roe, Daniel R. and Cheatham, Thomas E.}}}
+\bibcite{MDTraj}{{6}{2015}{{McGibbon et~al.}}{{Robert T. McGibbon and Kyle A. Beauchamp and Matthew P. Harrigan and Christoph Klein and Jason M. Swails and Carlos X. Hern\IeC {\'a}ndez and Christian R. Schwantes and Lee-Ping Wang and Thomas J. Lane and Vijay S. Pande}}}
+\bibcite{VMD}{{7}{1996}{{Humphrey et~al.}}{{William Humphrey and Andrew Dalke and Klaus Schulten}}}
+\bibcite{Allen2017}{{8}{2017}{{Allen and Tildesley}}{{Allen, M. P. and Tildesley, D. J.}}}
+\bibcite{Frenkel2002}{{9}{2002}{{Frenkel and Smit}}{{Frenkel, Daan and Smit, Berend}}}
 \@LN@col{1}
 \@LN@col{2}
-\bibcite{Evans:90}{{13}{1990}{{Evans and Morriss}}{{D. J. Evans and G. P. Morriss}}}
-\bibcite{Fanourgakis2012}{{14}{2012}{{Fanourgakis et~al.}}{{Fanourgakis, George S. and Medina, J. S. and Prosmiti, R.}}}
-\bibcite{Feller1995}{{15}{1995}{{Feller et~al.}}{{Scott E. Feller and Yuhong Zhang and Richard W. Pastor and Bernard R. Brooks}}}
-\bibcite{Fernandez2005}{{16}{2005}{{Fern{\'a}ndez et~al.}}{{G. A. Fern{\'a}ndez and J. Vrabec and H. Hasse}}}
-\bibcite{Frenkel2002}{{17}{2002}{{Frenkel and Smit}}{{Frenkel, Daan and Smit, Berend}}}
-\bibcite{GROMACS}{{18}{2016}{{GROMACS}}{{}}}
-\bibcite{Haile1992}{{19}{1992}{{Haile}}{{Haile, J. M. =}}}
-\bibcite{Hess2002}{{20}{2002}{{Hess}}{{Berk Hess}}}
-\bibcite{Kikugawa:2015}{{21}{2015}{{Kikugawa et~al.}}{{Kikugawa, Gota and Nakano, Takeo and Ohara, Taku}}}
-\bibcite{Kondratyuk2016}{{22}{2016}{{Kondratyuk et~al.}}{{N D Kondratyuk and G E Norman and V V Stegailov}}}
-\bibcite{LAMMPS}{{23}{2017}{{LAMMPS}}{{}}}
-\bibcite{Leach2001}{{24}{2001}{{Leach}}{{Leach, Andrew R.}}}
-\bibcite{Liu2012}{{25}{2012}{{Liu et~al.}}{{Liu, Hongjun and Maginn, Edward and Visser, Ann E. and Bridges, Nicholas J. and Fox, Elise B.}}}
-\bibcite{Ma2017}{{26}{2017}{{Ma et~al.}}{{Jie Ma and Zhendian Zhang and Yan Xiang and Fenglei Cao and Huai Sun}}}
-\bibcite{Martin1998}{{27}{1998}{{Martin and Siepmann}}{{Martin, M. G. and Siepmann, J. I.}}}
-\bibcite{Mondello1997}{{28}{1997}{{Mondello and Grest}}{{Maurizio Mondello and Gary S. Grest}}}
-\bibcite{Moultos2016}{{29}{2016}{{Moultos et~al.}}{{Othonas A. Moultos and Yong Zhang and Ioannis N. Tsimpanogiannis and Ioannis G. Economou and Edward J. Maginn}}}
-\bibcite{Nieto2015}{{30}{2015}{{Nieto-Draghi et~al.}}{{Nieto-Draghi, Carlos and Fayet, Guillaume and Creton, Benoit and Rozanska, Xavier and Rotureau, Patricia and de Hemptinne, Jean-Charles and Ungerer, Philippe and Rousseau, Bernard and Adamo, Carlo}}}
-\bibcite{Payal2012}{{31}{2012}{{Payal et~al.}}{{Rajdeep Singh Payal and S. Balasubramanian and Indranil Rudra and Kunj Tandon and Ingo Mahlke and David Doyle and Roger Cracknell}}}
-\bibcite{ReyCastro2006}{{32}{2006}{{Rey-Castro and Vega}}{{Rey-Castro, Carlos and Vega, Lourdes F.}}}
-\bibcite{ShenSRSW}{{33}{????}{{Shen and Hatch}}{{Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds.}}}
-\bibcite{vanderSpoel1998}{{34}{1998}{{van~der Spoel et~al.}}{{David van der Spoel and Paul J. van Maaren and Herman J. C. Berendsen}}}
-\bibcite{Ungerer2007}{{35}{2007}{{Ungerer et~al.}}{{Philippe Ungerer and Carlos Nieto-Draghi and Bernard Rousseau and G\IeC {\"o}ktug Ahunbay and V\IeC {\'e}ronique Lachet}}}
-\bibcite{Venable2017}{{36}{2017}{{Venable et~al.}}{{Venable, Richard M. and Ing{\'o}lfsson, Helgi I. and Lerner, Michael G. and Perrin, B. Scott and Camley, Brian A. and Marrink, Siewert J. and Brown, Frank L. H. and Pastor, Richard W.}}}
-\bibcite{Yeh2004}{{37}{2004}{{Yeh and Hummer}}{{Yeh, In-Chul and Hummer, Gerhard}}}
+\bibcite{Leach2001}{{10}{2001}{{Leach}}{{Leach, Andrew R.}}}
+\bibcite{PanaNotes}{{11}{????}{{Pan}}{{}}}
+\bibcite{KofkeNotes}{{12}{????}{{Kof}}{{}}}
+\bibcite{MaginnNotes}{{13}{????}{{Mag}}{{}}}
+\bibcite{ShellNotes}{{14}{????}{{She}}{{}}}
+\bibcite{Chen2009}{{15}{2009}{{Chen et~al.}}{{Ting Chen and Berend Smit and Alexis T. Bell}}}
+\bibcite{Hess2002}{{16}{2002}{{Hess}}{{Berk Hess}}}
+\bibcite{Nieto2015}{{17}{2015}{{Nieto-Draghi et~al.}}{{Nieto-Draghi, Carlos and Fayet, Guillaume and Creton, Benoit and Rozanska, Xavier and Rotureau, Patricia and de Hemptinne, Jean-Charles and Ungerer, Philippe and Rousseau, Bernard and Adamo, Carlo}}}
+\bibcite{Ungerer2007}{{18}{2007}{{Ungerer et~al.}}{{Philippe Ungerer and Carlos Nieto-Draghi and Bernard Rousseau and G\IeC {\"o}ktug Ahunbay and V\IeC {\'e}ronique Lachet}}}
+\bibcite{Fanourgakis2012}{{19}{2012}{{Fanourgakis et~al.}}{{Fanourgakis, George S. and Medina, J. S. and Prosmiti, R.}}}
+\bibcite{Shirts2013}{{20}{2013}{{Basconi and Shirts}}{{Basconi, Joseph E. and Shirts, Michael R.}}}
+\bibcite{Berendsen1984}{{21}{1984}{{Berendsen et~al.}}{{H. J. C. Berendsen and J. P. M. Postma and W. F. van Gunsteren and A. DiNola and J. R. Haak}}}
+\bibcite{Bussi2007}{{22}{2007}{{Bussi et~al.}}{{Giovanni Bussi and Davide Donadio and Michele Parrinello}}}
+\bibcite{Nose1984}{{23}{1984}{{Nos{\'e}}}{{Shuichi Nos{\'e}}}}
+\bibcite{Andersen1980}{{24}{1980}{{Andersen}}{{Hans C. Andersen}}}
+\bibcite{Hess2008}{{25}{2008}{{Hess et~al.}}{{Hess, Berk and Kutzner, Carsten and van der Spoel, David and Lindahl, Erik}}}
+\bibcite{Payal2012}{{26}{2012}{{Payal et~al.}}{{Rajdeep Singh Payal and S. Balasubramanian and Indranil Rudra and Kunj Tandon and Ingo Mahlke and David Doyle and Roger Cracknell}}}
+\bibcite{Zhang2015}{{27}{2015}{{Zhang et~al.}}{{Zhang, Yong and Otani, Akihito and Maginn, Edward J.}}}
+\bibcite{Ma2017}{{28}{2017}{{Ma et~al.}}{{Jie Ma and Zhendian Zhang and Yan Xiang and Fenglei Cao and Huai Sun}}}
+\bibcite{Haile1992}{{29}{1992}{{Haile}}{{Haile, J. M. =}}}
+\bibcite{ShenSRSW}{{30}{????}{{Shen and Hatch}}{{Shen, V.K., Siderius, D.W., Krekelberg, W.P., and Hatch, H.W., Eds.}}}
+\bibcite{Kondratyuk2016}{{31}{2016}{{Kondratyuk et~al.}}{{N D Kondratyuk and G E Norman and V V Stegailov}}}
+\bibcite{Liu2012}{{32}{2012}{{Liu et~al.}}{{Liu, Hongjun and Maginn, Edward and Visser, Ann E. and Bridges, Nicholas J. and Fox, Elise B.}}}
+\bibcite{Mondello1997}{{33}{1997}{{Mondello and Grest}}{{Maurizio Mondello and Gary S. Grest}}}
+\bibcite{Moultos2016}{{34}{2016}{{Moultos et~al.}}{{Othonas A. Moultos and Yong Zhang and Ioannis N. Tsimpanogiannis and Ioannis G. Economou and Edward J. Maginn}}}
 \@LN@col{1}
 \@LN@col{2}
-\bibcite{Zhang2015}{{38}{2015}{{Zhang et~al.}}{{Zhang, Yong and Otani, Akihito and Maginn, Edward J.}}}
+\bibcite{Daivis:1995}{{35}{1995}{{Daivis and Evans}}{{Daivis, P. J. and Evans, D. J.}}}
+\bibcite{Yeh2004}{{36}{2004}{{Yeh and Hummer}}{{Yeh, In-Chul and Hummer, Gerhard}}}
+\bibcite{Kikugawa:2015}{{37}{2015}{{Kikugawa et~al.}}{{Kikugawa, Gota and Nakano, Takeo and Ohara, Taku}}}
+\bibcite{Feller1995}{{38}{1995}{{Feller et~al.}}{{Scott E. Feller and Yuhong Zhang and Richard W. Pastor and Bernard R. Brooks}}}
+\bibcite{Camley2015}{{39}{2015}{{Camley et~al.}}{{Brian A. Camley and Michael G. Lerner and Richard W. Pastor and Frank L. H. Brown}}}
+\bibcite{Venable2017}{{40}{2017}{{Venable et~al.}}{{Venable, Richard M. and Ing{\'o}lfsson, Helgi I. and Lerner, Michael G. and Perrin, B. Scott and Camley, Brian A. and Marrink, Siewert J. and Brown, Frank L. H. and Pastor, Richard W.}}}
+\bibcite{Evans:90}{{41}{1990}{{Evans and Morriss}}{{D. J. Evans and G. P. Morriss}}}
+\bibcite{Daivis:1994}{{42}{1994}{{Daivis and Evans}}{{Daivis, P. J. and Evans, D. J.}}}
+\bibcite{Borodin2009}{{43}{2009}{{Borodin et~al.}}{{Borodin, Oleg and Smith, Grant D. and Kim, Hojin}}}
+\bibcite{Martin1998}{{44}{1998}{{Martin and Siepmann}}{{Martin, M. G. and Siepmann, J. I.}}}
+\bibcite{vanderSpoel1998}{{45}{1998}{{van~der Spoel et~al.}}{{David van der Spoel and Paul J. van Maaren and Herman J. C. Berendsen}}}
+\bibcite{Fernandez2005}{{46}{2005}{{Fern{\'a}ndez et~al.}}{{G. A. Fern{\'a}ndez and J. Vrabec and H. Hasse}}}
+\bibcite{ReyCastro2006}{{47}{2006}{{Rey-Castro and Vega}}{{Rey-Castro, Carlos and Vega, Lourdes F.}}}
 \@LN@col{1}
 \@LN@col{2}
-\newlabel{LastPage}{{}{18}{}{page.18}{}}
-\xdef\lastpage@lastpage{18}
-\xdef\lastpage@lastpageHy{18}
+\newlabel{LastPage}{{}{19}{}{page.19}{}}
+\xdef\lastpage@lastpage{19}
+\xdef\lastpage@lastpageHy{19}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  4 MAY 2018 14:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  7 MAY 2018 08:50
 entering extended mode
 **./EMD_diffusivity_viscosity_restructured.tex
 (EMD_diffusivity_viscosity_restructured.tex
@@ -2156,7 +2156,7 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  []
 
 [9 <./figures/KondratyukFig2.png>]
-<figures/ZhangFig8.png, id=482, 365.86688pt x 536.0025pt>
+<figures/ZhangFig8.png, id=481, 365.86688pt x 536.0025pt>
 File: figures/ZhangFig8.png Graphic file (type png)
 
 <use figures/ZhangFig8.png>
@@ -2168,21 +2168,21 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  []
 
 [10 <./figures/ZhangFig8.png>]
-<figures/ZhangFig10.png, id=498, 342.5297pt x 249.93375pt>
+<figures/ZhangFig10.png, id=497, 342.5297pt x 249.93375pt>
 File: figures/ZhangFig10.png Graphic file (type png)
 
 <use figures/ZhangFig10.png>
 Package pdftex.def Info: figures/ZhangFig10.png used on input line 792.
 (pdftex.def)             Requested size: 231.26378pt x 168.75139pt.
 
-<figures/MoultosFig3.png, id=507, 390.70969pt x 272.51813pt>
+<figures/MoultosFig3.png, id=506, 390.70969pt x 272.51813pt>
 File: figures/MoultosFig3.png Graphic file (type png)
 
 <use figures/MoultosFig3.png>
 Package pdftex.def Info: figures/MoultosFig3.png used on input line 814.
 (pdftex.def)             Requested size: 231.26378pt x 161.30408pt.
 
-<figures/ZhangFig9.png, id=510, 393.72093pt x 266.49562pt>
+<figures/ZhangFig9.png, id=509, 393.72093pt x 266.49562pt>
 File: figures/ZhangFig9.png Graphic file (type png)
 
 <use figures/ZhangFig9.png>
@@ -2194,21 +2194,21 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  []
 
 [11 <./figures/ZhangFig10.png> <./figures/MoultosFig3.png> <./figures/ZhangFig9
-.png>] <figures/HessFig5.png, id=534, 345.54094pt x 274.77657pt>
+.png>] <figures/HessFig5.png, id=533, 345.54094pt x 274.77657pt>
 File: figures/HessFig5.png Graphic file (type png)
 
 <use figures/HessFig5.png>
 Package pdftex.def Info: figures/HessFig5.png used on input line 850.
 (pdftex.def)             Requested size: 231.26378pt x 183.90646pt.
 
-<figures/ChenFig1.png, id=537, 450.18187pt x 307.1475pt>
+<figures/ChenFig1.png, id=536, 450.18187pt x 307.1475pt>
 File: figures/ChenFig1.png Graphic file (type png)
 
 <use figures/ChenFig1.png>
 Package pdftex.def Info: figures/ChenFig1.png used on input line 857.
 (pdftex.def)             Requested size: 231.26378pt x 157.7867pt.
 
-<figures/Einstein_3terms_30replicates.pdf, id=541, 1084.05pt x 1084.05pt>
+<figures/Einstein_3terms_30replicates.pdf, id=540, 1084.05pt x 1084.05pt>
 File: figures/Einstein_3terms_30replicates.pdf Graphic file (type pdf)
 
 <use figures/Einstein_3terms_30replicates.pdf>
@@ -2221,7 +2221,7 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  []
 
 [12 <./figures/HessFig5.png> <./figures/ChenFig1.png>]
-<figures/FanourgakisFig1.png, id=568, 431.36156pt x 395.97937pt>
+<figures/FanourgakisFig1.png, id=569, 431.36156pt x 395.97937pt>
 File: figures/FanourgakisFig1.png Graphic file (type png)
 
 <use figures/FanourgakisFig1.png>
@@ -2233,10 +2233,7 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  []
 
 [13 <./figures/Einstein_3terms_30replicates.pdf>]
-Overfull \vbox (2.507pt too high) has occurred while \output is active []
-
-
-<figures/ZhangFig7_12.png, id=690, 378.66469pt x 567.62062pt>
+<figures/ZhangFig7_12.png, id=691, 378.66469pt x 567.62062pt>
 File: figures/ZhangFig7_12.png Graphic file (type png)
 
 <use figures/ZhangFig7_12.png>
@@ -2248,14 +2245,25 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  []
 
 [14 <./figures/FanourgakisFig1.png>]
-<figures/ZhangFig4.png, id=706, 356.83313pt x 264.23718pt>
+<figures/ZhangFig4.png, id=707, 356.83313pt x 264.23718pt>
 File: figures/ZhangFig4.png Graphic file (type png)
 
 <use figures/ZhangFig4.png>
 Package pdftex.def Info: figures/ZhangFig4.png used on input line 1002.
 (pdftex.def)             Requested size: 231.26378pt x 171.25217pt.
 
-<figures/Einstein_slope_time_interval.png, id=714, 722.7pt x 1445.4pt>
+Overfull \vbox (11.37888pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (1.39792pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (6.0pt too wide) has occurred while \output is active
+ [][][][][][][]| 
+ []
+
+[15 <./figures/ZhangFig7_12.png> <./figures/ZhangFig4.png>]
+<figures/Einstein_slope_time_interval.png, id=722, 722.7pt x 1445.4pt>
 File: figures/Einstein_slope_time_interval.png Graphic file (type png)
 
 <use figures/Einstein_slope_time_interval.png>
@@ -2267,112 +2275,75 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[15 <./figures/ZhangFig7_12.png> <./figures/ZhangFig4.png>]
-Overfull \hbox (6.0pt too wide) has occurred while \output is active
- [][][][][][][]| 
- []
-
 [16 <./figures/Einstein_slope_time_interval.png>]
 (EMD_diffusivity_viscosity_restructured.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 25--29
-[][]\T1/fos/b/n/8 D A Case DSCTE-CIVWD-C-TADRED-DGH-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--29
-\T1/fos/b/n/8 GAWGDGRHNHSI-AK-T-SLSLPLCLJLTL-RLD-JMK-M-MYMGMH-
- []
-
-
-Overfull \hbox (6.04813pt too wide) in paragraph at lines 25--29
-\T1/fos/b/n/8 NIOAOFPRQDRRARCSSSVJSCLSJSJSRCWJWHWRMWXWLXDMY
- []
-
-
-Underfull \hbox (badness 3525) in paragraph at lines 34--42
-[][]\T1/fos/b/n/8 James C Phillips WWJGETEVC-CRD-SLK Rose-mary Braun[]\T1/fos/m
-/n/8 (+20) ,
- []
-
-
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 92--96
+Underfull \hbox (badness 10000) in paragraph at lines 95--99
 []\T1/fos/m/n/8 (+20) Athanassios Pana-giotopou-los, The Uni-ver-sity of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--96
+Underfull \hbox (badness 10000) in paragraph at lines 95--99
 \T1/fos/m/n/8 (+20) Prince-ton Class Notes;.  Ac-cessed: 2018-01-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--96
+Underfull \hbox (badness 10000) in paragraph at lines 95--99
 \T1/fos/m/n/8 (+20) 01.  http://paros.princeton.edu/cbe422/md2.pdf;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--101
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
 []\T1/fos/m/n/8 (+20) David Kofke, The Uni-ver-sity of Buf-falo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--101
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
 \T1/fos/m/n/8 (+20) Class Notes;.  Ac-cessed: 2018-01-01.
  []
 
 
-Overfull \hbox (19.56183pt too wide) in paragraph at lines 98--101
+Overfull \hbox (19.56183pt too wide) in paragraph at lines 101--104
 \T1/fos/m/n/8 (-20) http://www.eng.buffalo.edu/ kofke/ce530/Lectures/Lecture12.
 ppt.pdf. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--112
+Underfull \hbox (badness 10000) in paragraph at lines 111--115
 []\T1/fos/m/n/8 (+20) Scott Shell, The Uni-ver-sity of Cal-i-for-nia Santa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--112
+Underfull \hbox (badness 10000) in paragraph at lines 111--115
 \T1/fos/m/n/8 (+20) Barabara Class Notes;.  Ac-cessed: 2018-01-01.
  []
 
 
-Overfull \hbox (28.34285pt too wide) in paragraph at lines 108--112
+Overfull \hbox (28.34285pt too wide) in paragraph at lines 111--115
 \T1/fos/m/n/8 (-20) https://engineering.ucsb.edu/ shell/che210d/Computing_prope
 rties.pdf. 
  []
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 188--194
+Underfull \hbox (badness 1796) in paragraph at lines 191--197
 [][]\T1/fos/b/n/8 Bussi G[]\T1/fos/m/n/8 (+20) , Dona-dio D, Par-rinello M.  Ca
 non-i-cal sam-pling
  []
 
 
-Underfull \hbox (badness 1163) in paragraph at lines 227--235
+Underfull \hbox (badness 1163) in paragraph at lines 230--238
 \T1/fos/m/n/8 (+20) 1241.  [][]$https : / / doi . org / 10 . 1080 / 08927022 . 
 2012 . 702423$[][], [][]doi:
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 248--255
+Underfull \hbox (badness 1789) in paragraph at lines 251--258
 \T1/fos/m/n/8 (+20) tetraflu-o-rob-o-rate as an ex-am-ple.  Molec-u-lar Sim-u-l
 a-tion.
- []
-
-
-Underfull \hbox (badness 1077) in paragraph at lines 263--269
-[][]\T1/fos/b/n/8 Shen SD-WKWP V K[]\T1/fos/m/n/8 (+20) , Hatch E H W, NIST Sta
-n-dard Ref-er-
- []
-
-
-Underfull \hbox (badness 2635) in paragraph at lines 263--269
-\T1/fos/m/n/8 (+20) Num-ber 173, Na-tional In-sti-tute of Stan-dards and Tech-
  []
 
 
@@ -2381,13 +2352,13 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  []
 
 [18]
-Underfull \hbox (badness 1365) in paragraph at lines 410--417
+Underfull \hbox (badness 1365) in paragraph at lines 413--420
 [][]\T1/fos/b/n/8 Fernández GA[]\T1/fos/m/n/8 (+20) , Vrabec J, Hasse H.  Shear
  vis-cos-ity and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--417
+Underfull \hbox (badness 10000) in paragraph at lines 413--420
 \T1/fos/m/n/8 (+20) 793.  [][]$https : / / doi . org / 10 . 1080 / 089270205002
 52599$[][], [][]doi:
  []
@@ -2416,15 +2387,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 28764 strings out of 493333
- 523790 string characters out of 3139198
- 788198 words of memory out of 3000000
+ 28758 strings out of 493333
+ 523658 string characters out of 3139198
+ 788470 words of memory out of 3000000
  31043 multiletter control sequences out of 15000+200000
- 131866 words of font info for 592 fonts, out of 3000000 for 9000
+ 131351 words of font info for 587 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,16n,49p,10455b,958s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-03.enc}{C:/Pro
-gram Files/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-02.enc}{C:/Program File
+ 44i,16n,49p,10455b,956s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-02.enc}{C:/Pro
+gram Files/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-03.enc}{C:/Program File
 s/MiKTeX 2.9/fonts/enc/dvips/opensans/opensans-04.enc}{C:/Program Files/MiKTeX 
 2.9/fonts/enc/dvips/opensans/opensans-01.enc}<C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/opensans/OpenSans-Bold.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
@@ -2443,10 +2414,10 @@ c/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on EMD_diffusivity_viscosity_restructured.pdf (19 pages, 1139752
+Output written on EMD_diffusivity_viscosity_restructured.pdf (19 pages, 1139869
  bytes).
 PDF statistics:
- 944 PDF objects out of 1000 (max. 8388607)
+ 943 PDF objects out of 1000 (max. 8388607)
  160 named destinations out of 1000 (max. 500000)
  81778 words of extra memory for PDF output out of 89155 (max. 10000000)
 

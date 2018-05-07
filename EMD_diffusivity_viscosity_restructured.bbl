@@ -12,26 +12,29 @@
 \textbf{\color{LiveCoMSMediumGrey} GROMACS}.
 \newblock GROMACS Reference Manual; 2016.
 
-\bibitem[{D.A.~Case and Kollman(????)D.A. Case, S.R. Brozell, D.S. Cerutti,
-  T.E. Cheatham, III, V.W.D. Cruzeiro, T.A. Darden, R.E. Duke, D. Ghoreishi, H.
-  Gohlke, A.W. Goetz, D. Greene, R Harris, N. Homeyer, S. Izadi, A. Kovalenko,
-  T.S. Lee, S. LeGrand, P. Li, C. Lin, J. Liu, T. Luchko, R. Luo, D.J.
-  Mermelstein, K.M. Merz, Y. Miao, G. Monard, H. Nguyen, I. Omelyan, A.
-  Onufriev, F. Pan, R. Qi, D.R. Roe, A. Roitberg, C. Sagui, S. Schott-Verdugo,
-  J. Shen, C.L. Simmerling, J. Smith, J. Swails, R.C. Walker, J. Wang, H. Wei,
-  R.M. Wolf, X. Wu, L. Xiao, D.M. York and P.A. Kollman}]{AMBER2018}
-\textbf{\color{LiveCoMSMediumGrey} D~A~Case
-  DSCTECIVWDCTADREDDGHGAWGDGRHNHSIAKTSLSLPLCLJLTLRLDJMKMMYMGMHNIOAOFPRQDRRARCSSSVJSCLSJSJSRCWJWHWRMWXWLXDMY
-  S R~Brozell}, Kollman PA, {AMBER 2018, University of California, San
-  Francisco.};.
+\bibitem[{Case et~al.(????)D.A. Case and S.R. Brozell and D.S. Cerutti and T.E.
+  Cheatham and V.W.D. Cruzeiro and T.A. Darden and R.E. Duke and D. Ghoreishi
+  and H. Gohlke and A.W. Goetz and D. Greene and R Harris and N. Homeyer and S.
+  Izadi and A. Kovalenko and T.S. Lee and S. LeGrand and P. Li and C. Lin and
+  J. Liu and T. Luchko and R. Luo and D.J. Mermelstein and K.M. Merz and Y.
+  Miao and G. Monard and H. Nguyen and I. Omelyan and A. Onufriev and F. Pan
+  and R. Qi and D.R. Roe and A. Roitberg and C. Sagui and S. Schott-Verdugo and
+  J. Shen and C.L. Simmerling and J. Smith and J. Swails and R.C. Walker and J.
+  Wang and H. Wei and R.M. Wolf and X. Wu and L. Xiao and D.M. York and P.A.
+  Kollman}]{AMBER2018}
+\textbf{\color{LiveCoMSMediumGrey} Case DA}, Brozell SR, Cerutti DS, Cheatham
+  TE, Cruzeiro VWD, Darden TA, Duke RE, Ghoreishi D, Gohlke H, Goetz AW, Greene
+  D, Harris R, Homeyer N, Izadi S, Kovalenko A, Lee TS, LeGrand S, Li P, Lin C,
+  Liu J, et~al., {AMBER 2018, University of California, San Francisco.};.
 \newblock Accessed: 2018-05-4.
 \newblock http://ambermd.org/.
 
-\bibitem[{James C.~Phillips and Schulten(2005)James C. Phillips, Rosemary
-  Braun, Wei Wang, James Gumbart, Emad Tajkhorshid, Elizabeth Villa, Christophe
-  Chipot, Robert D. Skeel, Laxmikant Kale, and Klaus Schulten}]{NAMD}
-\textbf{\color{LiveCoMSMediumGrey} James C~Phillips WWJGETEVCCRDSLK
-  Rosemary~Braun}, Schulten K.
+\bibitem[{Phillips et~al.(2005)James C. Phillips and Rosemary Braun and Wei
+  Wang and James Gumbart and Emad Tajkhorshid and Elizabeth Villa and
+  Christophe Chipot and Robert D. Skeel and Laxmikant Kale and and Klaus
+  Schulten}]{NAMD}
+\textbf{\color{LiveCoMSMediumGrey} Phillips JC}, Braun R, Wang W, Gumbart J,
+  Tajkhorshid E, Villa E, Chipot C, Skeel RD, Kale L, , Schulten K.
 \newblock Scalable molecular dynamics with NAMD.
 \newblock Journal of Computational Chemistry.  2005; 26(1):1781 --1802.
 \newblock \href{https://dx.doi.org/10.1002/jcc.20289}{\doiprefix
@@ -258,12 +261,12 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock Molecular Dynamics Simulation: Elementary Methods.
 \newblock New York: John Wiley and Sons, Inc.; 1992.
 
-\bibitem[{Shen and Hatch(????)Shen, V.K., Siderius, D.W., Krekelberg, W.P., and
-  Hatch, H.W., Eds.}]{ShenSRSW}
-\textbf{\color{LiveCoMSMediumGrey} Shen SDWKWP V~K}, Hatch E H~W, {NIST
-  Standard Reference Simulation Website, NIST Standard Reference Database
-  Number 173, National Institute of Standards and Technology, Gaithersburg MD,
-  20899};.
+\bibitem[{Shen et~al.(????)Shen, V.K. and Siderius, D.W. and Krekelberg, W.P.
+  and and Hatch, H.W. and Eds.}]{ShenSRSW}
+\textbf{\color{LiveCoMSMediumGrey} Shen VK}, Siderius DW, Krekelberg WP, ,
+  Hatch HW, Eds, {NIST Standard Reference Simulation Website, NIST Standard
+  Reference Database Number 173, National Institute of Standards and
+  Technology, Gaithersburg MD, 20899};.
 \newblock Accessed: 2018-04-25.
 \newblock http://doi.org/10.18434/T4M88Q.
 

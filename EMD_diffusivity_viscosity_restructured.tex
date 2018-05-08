@@ -154,8 +154,8 @@ In addition to the present manuscript, we highly recommend reviewing this list o
 	\end{enumerate}
 	\item Software manuals
 	\begin{enumerate}
-		\item Ref. \cite{GROMACS}
 		\item Ref. \cite{LAMMPS}
+		\item Ref. \cite{GROMACS}
 		\item Ref. \cite{AMBER2018}
 	\end{enumerate}
 \end{enumerate}
@@ -1062,7 +1062,7 @@ For example, Figure \ref{fig:Einstein_slope_time_interval} helps visualize the u
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{Einstein_slope_time_interval.png}
-	\caption{Dependence of $\eta$ on the time interval used to compute the Einstein slope. For example, ``start time'' $=$ 50 ps and ``end time'' $=$ 200 ps computes the slope from $t = 50$ to $200$ ps of $\displaystyle \frac{V}{2 k_B T N_{\rm reps}} \lim_{t\to\infty} \frac{d}{dt} \sum_{n=1}^{N_{\rm reps}} \left\langle \int_0^t \tau_{\alpha\beta,n}(t') dt' \right\rangle_{t_0}$. Panels a) and b) correspond to a single simulation and 30 replicate simulations. The same color scale is used in both panels, but Panel b) also includes a zoomed-in color bar. Simulation data are the same as those presented in Figure \ref{fig:Einstein_3terms_30replicates}.}
+	\caption{Dependence of $\eta$ on the time interval used to compute the Einstein slope. For example, ``start time'' $=$ 50 ps and ``end time'' $=$ 200 ps computes the slope from $t = 50$ to $200$ ps of $\displaystyle \frac{V}{2 k_B T N_{\rm reps}} \sum_{n=1}^{N_{\rm reps}} \left\langle \int_0^t \tau_{\alpha\beta,n}(t') dt' \right\rangle_{t_0}$. Panels a) and b) correspond to a single simulation and 30 replicate simulations. The same color scale is used in both panels, but Panel b) also includes a zoomed-in color bar. Simulation data are the same as those presented in Figure \ref{fig:Einstein_3terms_30replicates}.}
 	\label{fig:Einstein_slope_time_interval}
 \end{figure}
 

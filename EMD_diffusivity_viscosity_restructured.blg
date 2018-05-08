@@ -5,13 +5,18 @@ Illegal, another \bibstyle command---line 21 of file EMD_diffusivity_viscosity_r
  :          {unsrt}
 I'm skipping whatever remains of this command
 Database file #1: transport_properties.bib
-Repeated entry---line 665 of file transport_properties.bib
+Repeated entry---line 685 of file transport_properties.bib
  : @article{Andersen1980
  :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 738 of file transport_properties.bib
+ : @article{Nose1984
+ :                  ,
 I'm skipping whatever remains of this entry
 Warning--empty author and editor in AMBER2018
 Warning--missing publisher in AMBER2018
 Warning--there's a month but no year in AMBER2018
+Warning--empty year in Brooks2009
 Warning--empty author in PanaNotes
 Warning--empty author and editor in PanaNotes
 Warning--missing publisher in PanaNotes
@@ -33,4 +38,4 @@ Warning--missing publisher in ShenSRSW
 Warning--there's a month but no year in ShenSRSW
 You can't pop an empty literal stack for entry Martin1998
 while executing---line 1927 of file vancouver-livecoms.bst
-(There were 3 error messages)
+(There were 4 error messages)

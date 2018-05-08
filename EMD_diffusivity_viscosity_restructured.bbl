@@ -1,4 +1,4 @@
-\begin{thebibliography}{47}
+\begin{thebibliography}{48}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\urlprefix}{}
 \providecommand{\doiprefix}{doi: }
@@ -42,6 +42,23 @@
   Computational Biophysics Group in the Beckman Institute for Advanced Science
   and Technology at the University of Illinois at Urbana-Champaign.
   http://www.ks.uiuc.edu/Research/namd/.
+
+\bibitem[{R. et~al.(????)Brooks B. R. and Brooks C. L. and Mackerell A. D. and
+  Nilsson L. and Petrella R. J. and Roux B. and Won Y. and Archontis G. and
+  Bartels C. and Boresch S. and Caflisch A. and Caves L. and Cui Q. and Dinner
+  A. R. and Feig M. and Fischer S. and Gao J. and Hodoscek M. and Im W. and
+  Kuczera K. and Lazaridis T. and Ma J. and Ovchinnikov V. and Paci E. and
+  Pastor R. W. and Post C. B. and Pu J. Z. and Schaefer M. and Tidor B. and
+  Venable R. M. and Woodcock H. L. and Wu X. and Yang W. and York D. M. and
+  Karplus M.}]{Brooks2009}
+\textbf{\color{LiveCoMSMediumGrey} R BB}, L BC, D MA, L N, J PR, B R, Y W, G A,
+  C B, S B, A C, L C, Q C, R DA, M F, S F, J G, M H, W I, K K, et~al.
+\newblock CHARMM: The biomolecular simulation program.
+\newblock Journal of Computational Chemistry. ; 30(10):1545--1614.
+\newblock
+  \urlprefix\url{https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.21287},
+  \href{https://dx.doi.org/10.1002/jcc.21287}{\doiprefix
+  \detokenize{10.1002/jcc.21287}}.
 
 \bibitem[{Roe and Cheatham(2013)Roe, Daniel R. and Cheatham, Thomas
   E.}]{Roe2013}
@@ -335,25 +352,13 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock \href{https://dx.doi.org/{10.1063/1.4926841}}{\doiprefix
   \detokenize{{10.1063/1.4926841}}}.
 
-\bibitem[{Feller et~al.(1995)Scott E. Feller and Yuhong Zhang and Richard W.
-  Pastor and Bernard R. Brooks}]{Feller1995}
-\textbf{\color{LiveCoMSMediumGrey} Feller SE}, Zhang Y, Pastor RW, Brooks BR.
-\newblock Constant pressure molecular dynamics simulation: The Langevin piston
-  method.
-\newblock The Journal of Chemical Physics.  1995; 103(11):4613--4621.
-\newblock \urlprefix\url{https://doi.org/10.1063/1.470648},
-  \href{https://dx.doi.org/10.1063/1.470648}{\doiprefix
-  \detokenize{10.1063/1.470648}}.
-
-\bibitem[{Camley et~al.(2015)Brian A. Camley and Michael G. Lerner and Richard
-  W. Pastor and Frank L. H. Brown}]{Camley2015}
-\textbf{\color{LiveCoMSMediumGrey} Camley BA}, Lerner MG, Pastor RW, Brown FLH.
-\newblock Strong influence of periodic boundary conditions on lateral diffusion
-  in lipid bilayer membranes.
-\newblock The Journal of Chemical Physics.  2015; 143(24):243113.
-\newblock \urlprefix\url{https://doi.org/10.1063/1.4932980},
-  \href{https://dx.doi.org/10.1063/1.4932980}{\doiprefix
-  \detokenize{10.1063/1.4932980}}.
+\bibitem[{Hoover(1985)Hoover, William G.}]{Hoover1985}
+\textbf{\color{LiveCoMSMediumGrey} Hoover WG}.
+\newblock Canonical dynamics: Equilibrium phase-space distributions.
+\newblock Phys Rev A.  1985 Mar; 31:1695--1697.
+\newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevA.31.1695},
+  \href{https://dx.doi.org/10.1103/PhysRevA.31.1695}{\doiprefix
+  \detokenize{10.1103/PhysRevA.31.1695}}.
 
 \bibitem[{Venable et~al.(2017)Venable, Richard M. and Ing{\'o}lfsson, Helgi I.
   and Lerner, Michael G. and Perrin, B. Scott and Camley, Brian A. and Marrink,
@@ -366,6 +371,16 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock \urlprefix\url{https://doi.org/10.1021/acs.jpcb.6b09111},
   \href{https://dx.doi.org/10.1021/acs.jpcb.6b09111}{\doiprefix
   \detokenize{10.1021/acs.jpcb.6b09111}}, pMID: 27966982.
+
+\bibitem[{Camley et~al.(2015)Brian A. Camley and Michael G. Lerner and Richard
+  W. Pastor and Frank L. H. Brown}]{Camley2015}
+\textbf{\color{LiveCoMSMediumGrey} Camley BA}, Lerner MG, Pastor RW, Brown FLH.
+\newblock Strong influence of periodic boundary conditions on lateral diffusion
+  in lipid bilayer membranes.
+\newblock The Journal of Chemical Physics.  2015; 143(24):243113.
+\newblock \urlprefix\url{https://doi.org/10.1063/1.4932980},
+  \href{https://dx.doi.org/10.1063/1.4932980}{\doiprefix
+  \detokenize{10.1063/1.4932980}}.
 
 \bibitem[{Evans and Morriss(1990)D. J. Evans and G. P. Morriss}]{Evans:90}
 \textbf{\color{LiveCoMSMediumGrey} Evans DJ}, Morriss GP.

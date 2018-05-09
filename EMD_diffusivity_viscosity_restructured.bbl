@@ -1,4 +1,4 @@
-\begin{thebibliography}{48}
+\begin{thebibliography}{49}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\urlprefix}{}
 \providecommand{\doiprefix}{doi: }
@@ -43,22 +43,40 @@
   and Technology at the University of Illinois at Urbana-Champaign.
   http://www.ks.uiuc.edu/Research/namd/.
 
-\bibitem[{R. et~al.(????)Brooks B. R. and Brooks C. L. and Mackerell A. D. and
-  Nilsson L. and Petrella R. J. and Roux B. and Won Y. and Archontis G. and
-  Bartels C. and Boresch S. and Caflisch A. and Caves L. and Cui Q. and Dinner
-  A. R. and Feig M. and Fischer S. and Gao J. and Hodoscek M. and Im W. and
-  Kuczera K. and Lazaridis T. and Ma J. and Ovchinnikov V. and Paci E. and
-  Pastor R. W. and Post C. B. and Pu J. Z. and Schaefer M. and Tidor B. and
-  Venable R. M. and Woodcock H. L. and Wu X. and Yang W. and York D. M. and
-  Karplus M.}]{Brooks2009}
-\textbf{\color{LiveCoMSMediumGrey} R BB}, L BC, D MA, L N, J PR, B R, Y W, G A,
-  C B, S B, A C, L C, Q C, R DA, M F, S F, J G, M H, W I, K K, et~al.
+\bibitem[{Brooks et~al.(????)B. R. Brooks and C. L. Brooks and A. D. Mackerell
+  and L. Nilsson and R. J. Petrella and B. Roux and Y. Won and G. Archontis and
+  C. Bartels and S. Boresch and A. Caflisch and L. Caves and Q. Cui and A. R.
+  Dinner and M. Feig and S. Fischer and J. Gao and M. Hodoscek and W. Im and K.
+  Kuczera and T. Lazaridis and J. Ma and V. Ovchinnikov and E. Paci and R. W.
+  Pastor and C. B. Post and J. Z. Pu and M. Schaefer and B. Tidor and R. M.
+  Venable and H. L. Woodcock and X. Wu and W. Yang and D. M. York and M.
+  Karplus}]{Brooks2009}
+\textbf{\color{LiveCoMSMediumGrey} Brooks BR}, Brooks CL, Mackerell AD, Nilsson
+  L, Petrella RJ, Roux B, Won Y, Archontis G, Bartels C, Boresch S, Caflisch A,
+  Caves L, Cui Q, Dinner AR, Feig M, Fischer S, Gao J, Hodoscek M, Im W,
+  Kuczera K, et~al.
 \newblock CHARMM: The biomolecular simulation program.
 \newblock Journal of Computational Chemistry. ; 30(10):1545--1614.
 \newblock
   \urlprefix\url{https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.21287},
   \href{https://dx.doi.org/10.1002/jcc.21287}{\doiprefix
   \detokenize{10.1002/jcc.21287}}.
+
+\bibitem[{Rutkai et~al.(2017)G{\'a}bor Rutkai and Andreas K{\"o}ster and
+  Gabriela Guevara-Carrion and Tatjana Janzen and Michael Schappals and Colin
+  W. Glass and Martin Bernreuther and Amer Wafai and Simon Stephan and
+  Maximilian Kohns and Steffen Reiser and Stephan Deublein and Martin Horsch
+  and Hans Hasse and Jadran Vrabec}]{ms2}
+\textbf{\color{LiveCoMSMediumGrey} Rutkai G}, K{\"o}ster A, Guevara-Carrion G,
+  Janzen T, Schappals M, Glass CW, Bernreuther M, Wafai A, Stephan S, Kohns M,
+  Reiser S, Deublein S, Horsch M, Hasse H, Vrabec J.
+\newblock ms2: A molecular simulation tool for thermodynamic properties,
+  release 3.0.
+\newblock Computer Physics Communications.  2017; 221:343 -- 351.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0010465517302527},
+  \href{https://dx.doi.org/https://doi.org/10.1016/j.cpc.2017.07.025}{\doiprefix
+  \detokenize{https://doi.org/10.1016/j.cpc.2017.07.025}}.
 
 \bibitem[{Roe and Cheatham(2013)Roe, Daniel R. and Cheatham, Thomas
   E.}]{Roe2013}

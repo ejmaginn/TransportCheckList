@@ -9,10 +9,6 @@ Repeated entry---line 685 of file transport_properties.bib
  : @article{Andersen1980
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 738 of file transport_properties.bib
- : @article{Nose1984
- :                  ,
-I'm skipping whatever remains of this entry
 Warning--empty author and editor in AMBER2018
 Warning--missing publisher in AMBER2018
 Warning--there's a month but no year in AMBER2018
@@ -38,4 +34,4 @@ Warning--missing publisher in ShenSRSW
 Warning--there's a month but no year in ShenSRSW
 You can't pop an empty literal stack for entry Martin1998
 while executing---line 1927 of file vancouver-livecoms.bst
-(There were 4 error messages)
+(There were 3 error messages)

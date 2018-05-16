@@ -1,16 +1,19 @@
-\begin{thebibliography}{49}
+\begin{thebibliography}{51}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\urlprefix}{}
 \providecommand{\doiprefix}{doi: }
 
-\bibitem[{LAMMPS(2017)}]{LAMMPS}
+\bibitem[{LAMMPS(2017, http://lammps.sandia.gov/doc/Manual.html)}]{LAMMPS}
 \textbf{\color{LiveCoMSMediumGrey} LAMMPS}.
 \newblock LAMMPS Users Manual.
-\newblock Sandia National Laboratories; 2017.
+\newblock Sandia National Laboratories; 2017,
+  http://lammps.sandia.gov/doc/Manual.html.
 
-\bibitem[{GROMACS(2016)}]{GROMACS}
+\bibitem[{GROMACS(2018,
+  http://manual.gromacs.org/documentation/2018/index.html)}]{GROMACS}
 \textbf{\color{LiveCoMSMediumGrey} GROMACS}.
-\newblock GROMACS Reference Manual; 2016.
+\newblock GROMACS Reference Manual; 2018,
+  http://manual.gromacs.org/documentation/2018/index.html.
 
 \bibitem[{Case et~al.(????)D.A. Case and S.R. Brozell and D.S. Cerutti and T.E.
   Cheatham and V.W.D. Cruzeiro and T.A. Darden and R.E. Duke and D. Ghoreishi
@@ -57,24 +60,13 @@
   Kuczera K, et~al.
 \newblock CHARMM: The biomolecular simulation program.
 \newblock Journal of Computational Chemistry. ; 30(10):1545--1614.
-\newblock
-  \urlprefix\url{https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.21287},
-  \href{https://dx.doi.org/10.1002/jcc.21287}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1002/jcc.21287}{\doiprefix
   \detokenize{10.1002/jcc.21287}}.
 
-\bibitem[{Rutkai et~al.(2017)G{\'a}bor Rutkai and Andreas K{\"o}ster and
-  Gabriela Guevara-Carrion and Tatjana Janzen and Michael Schappals and Colin
-  W. Glass and Martin Bernreuther and Amer Wafai and Simon Stephan and
-  Maximilian Kohns and Steffen Reiser and Stephan Deublein and Martin Horsch
-  and Hans Hasse and Jadran Vrabec}]{ms2}
-\textbf{\color{LiveCoMSMediumGrey} Rutkai G}, K{\"o}ster A, Guevara-Carrion G,
-  Janzen T, Schappals M, Glass CW, Bernreuther M, Wafai A, Stephan S, Kohns M,
-  Reiser S, Deublein S, Horsch M, Hasse H, Vrabec J.
-\newblock ms2: A molecular simulation tool for thermodynamic properties,
-  release 3.0.
+\bibitem[{ms2(2017)}]{ms2}
+ms2: A molecular simulation tool for thermodynamic properties, release 3.0.
 \newblock Computer Physics Communications.  2017; 221:343 -- 351.
 \newblock
-  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0010465517302527},
   \href{https://dx.doi.org/https://doi.org/10.1016/j.cpc.2017.07.025}{\doiprefix
   \detokenize{https://doi.org/10.1016/j.cpc.2017.07.025}}.
 
@@ -126,11 +118,16 @@
 \newblock {Molecular modelling : principles and applications}.
 \newblock 2 ed. Pearson Prentice Hall; 2001.
 
+\bibitem[{Haile(1992)Haile, J. M. =}]{Haile1992}
+\textbf{\color{LiveCoMSMediumGrey} Haile JM}.
+\newblock Molecular Dynamics Simulation: Elementary Methods.
+\newblock New York: John Wiley and Sons, Inc.; 1992.
+
 \bibitem[{Pan(????)}]{PanaNotes}
 Athanassios Panagiotopoulos, The University of Princeton Class Notes;.
 \newblock Accessed: 2018-01-01.
-\newblock https://paros.princeton.edu/cbe422/md2.pdf;
-  https://paros.princeton.edu/cbe520/Transport.pdf.
+\newblock http://paros.princeton.edu/cbe422/md2.pdf;
+  http://paros.princeton.edu/cbe520/Transport.pdf.
 
 \bibitem[{Kof(????)}]{KofkeNotes}
 David Kofke, The University of Buffalo Class Notes;.
@@ -163,8 +160,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock Determining the shear viscosity of model liquids from molecular
   dynamics simulations.
 \newblock The Journal of Chemical Physics.  2002; 116(1):209--217.
-\newblock \urlprefix\url{http://aip.scitation.org/doi/abs/10.1063/1.1421362},
-  \href{https://dx.doi.org/10.1063/1.1421362}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1063/1.1421362}{\doiprefix
   \detokenize{10.1063/1.1421362}}.
 
 \bibitem[{Nieto-Draghi et~al.(2015)Nieto-Draghi, Carlos and Fayet, Guillaume
@@ -176,19 +172,14 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock A General Guidebook for the Theoretical Prediction of Physicochemical
   Properties of Chemicals for Regulatory Purposes.
 \newblock Chemical Reviews.  2015; 115(24):13093--13164.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/acs.chemrev.5b00215},
-  \href{https://dx.doi.org/10.1021/acs.chemrev.5b00215}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1021/acs.chemrev.5b00215}{\doiprefix
   \detokenize{10.1021/acs.chemrev.5b00215}}, pMID: 26624238.
 
-\bibitem[{Ungerer et~al.(2007)Philippe Ungerer and Carlos Nieto-Draghi and
-  Bernard Rousseau and Göktug Ahunbay and Véronique Lachet}]{Ungerer2007}
-\textbf{\color{LiveCoMSMediumGrey} Ungerer P}, Nieto-Draghi C, Rousseau B,
-  Ahunbay G, Lachet V.
-\newblock Molecular simulation of the thermophysical properties of fluids: From
+\bibitem[{Ung(2007)}]{Ungerer2007}
+Molecular simulation of the thermophysical properties of fluids: From
   understanding toward quantitative predictions.
 \newblock Journal of Molecular Liquids.  2007; 134(1):71 -- 89.
 \newblock
-  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S016773220600331X},
   \href{https://dx.doi.org/https://doi.org/10.1016/j.molliq.2006.12.019}{\doiprefix
   \detokenize{https://doi.org/10.1016/j.molliq.2006.12.019}}, eMLG/JMLG 2005
   Special Issue.
@@ -198,8 +189,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \textbf{\color{LiveCoMSMediumGrey} Fanourgakis GS}, Medina JS, Prosmiti R.
 \newblock Determining the Bulk Viscosity of Rigid Water Models.
 \newblock The Journal of Physical Chemistry A.  2012; 116(10):2564--2570.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/jp211952y},
-  \href{https://dx.doi.org/10.1021/jp211952y}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1021/jp211952y}{\doiprefix
   \detokenize{10.1021/jp211952y}}, pMID: 22352421.
 
 \bibitem[{Basconi and Shirts({2013})Basconi, Joseph E. and Shirts, Michael
@@ -218,8 +208,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
   WF, DiNola A, Haak JR.
 \newblock Molecular dynamics with coupling to an external bath.
 \newblock The Journal of Chemical Physics.  1984; 81(8):3684--3690.
-\newblock \urlprefix\url{https://doi.org/10.1063/1.448118},
-  \href{https://dx.doi.org/10.1063/1.448118}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1063/1.448118}{\doiprefix
   \detokenize{10.1063/1.448118}}.
 
 \bibitem[{Bussi et~al.(2007)Giovanni Bussi and Davide Donadio and Michele
@@ -227,8 +216,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \textbf{\color{LiveCoMSMediumGrey} Bussi G}, Donadio D, Parrinello M.
 \newblock Canonical sampling through velocity rescaling.
 \newblock The Journal of Chemical Physics.  2007; 126(1):014101.
-\newblock \urlprefix\url{https://doi.org/10.1063/1.2408420},
-  \href{https://dx.doi.org/10.1063/1.2408420}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1063/1.2408420}{\doiprefix
   \detokenize{10.1063/1.2408420}}.
 
 \bibitem[{Nos{\'e}(1984)Shuichi Nos{\'e}}]{Nose1984}
@@ -236,8 +224,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock A unified formulation of the constant temperature molecular dynamics
   methods.
 \newblock The Journal of Chemical Physics.  1984; 81(1):511--519.
-\newblock \urlprefix\url{https://doi.org/10.1063/1.447334},
-  \href{https://dx.doi.org/10.1063/1.447334}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1063/1.447334}{\doiprefix
   \detokenize{10.1063/1.447334}}.
 
 \bibitem[{Andersen(1980)Hans C. Andersen}]{Andersen1980}
@@ -245,8 +232,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock Molecular dynamics simulations at constant pressure and/or
   temperature.
 \newblock The Journal of Chemical Physics.  1980; 72(4):2384--2393.
-\newblock \urlprefix\url{https://doi.org/10.1063/1.439486},
-  \href{https://dx.doi.org/10.1063/1.439486}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1063/1.439486}{\doiprefix
   \detokenize{10.1063/1.439486}}.
 
 \bibitem[{Hess et~al.(2008)Hess, Berk and Kutzner, Carsten and van der Spoel,
@@ -256,8 +242,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock GROMACS 4{:} Algorithms for Highly Efficient, Load-Balanced, and
   Scalable Molecular Simulation.
 \newblock Journal of Chemical Theory and Computation.  2008; 4(3):435--447.
-\newblock \urlprefix\url{https://doi.org/10.1021/ct700301q},
-  \href{https://dx.doi.org/10.1021/ct700301q}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1021/ct700301q}{\doiprefix
   \detokenize{10.1021/ct700301q}}, pMID: 26620784.
 
 \bibitem[{Payal et~al.(2012)Rajdeep Singh Payal and S. Balasubramanian and
@@ -268,8 +253,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock Shear viscosity of linear alkanes through molecular simulations:
   quantitative tests for n-decane and n-hexadecane.
 \newblock Molecular Simulation.  2012; 38(14-15):1234--1241.
-\newblock \urlprefix\url{https://doi.org/10.1080/08927022.2012.702423},
-  \href{https://dx.doi.org/10.1080/08927022.2012.702423}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1080/08927022.2012.702423}{\doiprefix
   \detokenize{10.1080/08927022.2012.702423}}.
 
 \bibitem[{Zhang et~al.(2015)Zhang, Yong and Otani, Akihito and Maginn, Edward
@@ -278,8 +262,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock Reliable Viscosity Calculation from Equilibrium Molecular Dynamics
   Simulations: A Time Decomposition Method.
 \newblock Journal of Chemical Theory and Computation.  2015; 11(8):3537--3546.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/acs.jctc.5b00351},
-  \href{https://dx.doi.org/10.1021/acs.jctc.5b00351}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1021/acs.jctc.5b00351}{\doiprefix
   \detokenize{10.1021/acs.jctc.5b00351}}, pMID: 26574439.
 
 \bibitem[{Ma et~al.(2017)Jie Ma and Zhendian Zhang and Yan Xiang and Fenglei
@@ -288,14 +271,26 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock On the prediction of transport properties of ionic liquid using
   1-n-butylmethylpyridinium tetrafluoroborate as an example.
 \newblock Molecular Simulation.  2017; 43(18):1502--1512.
-\newblock \urlprefix\url{https://doi.org/10.1080/08927022.2017.1321760},
-  \href{https://dx.doi.org/10.1080/08927022.2017.1321760}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1080/08927022.2017.1321760}{\doiprefix
   \detokenize{10.1080/08927022.2017.1321760}}.
 
-\bibitem[{Haile(1992)Haile, J. M. =}]{Haile1992}
-\textbf{\color{LiveCoMSMediumGrey} Haile JM}.
-\newblock Molecular Dynamics Simulation: Elementary Methods.
-\newblock New York: John Wiley and Sons, Inc.; 1992.
+\bibitem[{Taylor and Kuyatt(1994)Barry N. Taylor and Chris E. Kuyatt}]{GUM}
+\textbf{\color{LiveCoMSMediumGrey} Taylor BN}, Kuyatt CE.
+\newblock {NIST} Guidelines for Evaluating and Expressing the Uncertainty of
+  {NIST} Measurement Results Cover.
+\newblock {NIST} Technical Note 1297.  1994; p. 1--9.
+
+\bibitem[{Grossfield et~al.(2018)Alan Grossfield and Paul N. Patrone and Daniel
+  R. Roe and Andrew J. Schultz and Daniel W. Siderius and Daniel M.
+  Zuckerman}]{Grossfield2018}
+\textbf{\color{LiveCoMSMediumGrey} Grossfield A}, Patrone PN, Roe DR, Schultz
+  AJ, Siderius DW, Zuckerman DM.
+\newblock Best Practices for Quantification of Uncertainty and Sampling Quality
+  in Molecular Simulations: v1.0.
+\newblock Living Journal of Computational Molecular Science.  2018; A LiveCoMS
+  Best Practices Guide.
+\newblock
+  \urlprefix\url{https://github.com/dmzuckerman/Sampling-Uncertainty/blob/master/main.pdf}.
 
 \bibitem[{Shen et~al.(????)Shen, V.K. and Siderius, D.W. and Krekelberg, W.P.
   and and Hatch, H.W. and Eds.}]{ShenSRSW}
@@ -306,12 +301,11 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock Accessed: 2018-04-25.
 \newblock http://doi.org/10.18434/T4M88Q.
 
-\bibitem[{Kondratyuk et~al.(2016)N D Kondratyuk and G E Norman and V V
+\bibitem[{Kondratyuk et~al.(????)N D Kondratyuk and G E Norman and V V
   Stegailov}]{Kondratyuk2016}
 \textbf{\color{LiveCoMSMediumGrey} Kondratyuk ND}, Norman GE, Stegailov VV.
 \newblock Rheology of liquid n-triacontane: Molecular dynamics simulation.
-\newblock Journal of Physics: Conference Series.  2016; 774(1):012039.
-\newblock \urlprefix\url{http://stacks.iop.org/1742-6596/774/i=1/a=012039}.
+\newblock Journal of Physics: Conference Series. ; 774(1):012039.
 
 \bibitem[{Liu et~al.(2012)Liu, Hongjun and Maginn, Edward and Visser, Ann E.
   and Bridges, Nicholas J. and Fox, Elise B.}]{Liu2012}
@@ -321,8 +315,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
   Experimental and Molecular Dynamics Study.
 \newblock Industrial \& Engineering Chemistry Research.  2012;
   51(21):7242--7254.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/ie300222a},
-  \href{https://dx.doi.org/10.1021/ie300222a}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1021/ie300222a}{\doiprefix
   \detokenize{10.1021/ie300222a}}.
 
 \bibitem[{Mondello and Grest(1997)Maurizio Mondello and Gary S.
@@ -331,8 +324,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock Viscosity calculations of n-alkanes by equilibrium molecular
   dynamics.
 \newblock The Journal of Chemical Physics.  1997; 106(22):9327--9336.
-\newblock \urlprefix\url{https://doi.org/10.1063/1.474002},
-  \href{https://dx.doi.org/10.1063/1.474002}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1063/1.474002}{\doiprefix
   \detokenize{10.1063/1.474002}}.
 
 \bibitem[{Moultos et~al.(2016)Othonas A. Moultos and Yong Zhang and Ioannis N.
@@ -343,8 +335,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
   from molecular dynamics simulations: The case of CO2, n-alkanes, and
   poly(ethylene glycol) dimethyl ethers.
 \newblock The Journal of Chemical Physics.  2016; 145(7):074109.
-\newblock \urlprefix\url{http://dx.doi.org/10.1063/1.4960776},
-  \href{https://dx.doi.org/10.1063/1.4960776}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1063/1.4960776}{\doiprefix
   \detokenize{10.1063/1.4960776}}.
 
 \bibitem[{Daivis and Evans(1995)Daivis, P. J. and Evans, D. J.}]{Daivis:1995}
@@ -358,8 +349,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock System-Size Dependence of Diffusion Coefficients and Viscosities from
   Molecular Dynamics Simulations with Periodic Boundary Conditions.
 \newblock The Journal of Physical Chemistry B.  2004; 108(40):15873--15879.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/jp0477147},
-  \href{https://dx.doi.org/10.1021/jp0477147}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1021/jp0477147}{\doiprefix
   \detokenize{10.1021/jp0477147}}.
 
 \bibitem[{Kikugawa et~al.({2015})Kikugawa, Gota and Nakano, Takeo and Ohara,
@@ -375,8 +365,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \textbf{\color{LiveCoMSMediumGrey} Hoover WG}.
 \newblock Canonical dynamics: Equilibrium phase-space distributions.
 \newblock Phys Rev A.  1985 Mar; 31:1695--1697.
-\newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevA.31.1695},
-  \href{https://dx.doi.org/10.1103/PhysRevA.31.1695}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1103/PhysRevA.31.1695}{\doiprefix
   \detokenize{10.1103/PhysRevA.31.1695}}.
 
 \bibitem[{Venable et~al.(2017)Venable, Richard M. and Ing{\'o}lfsson, Helgi I.
@@ -387,8 +376,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock Lipid and Peptide Diffusion in Bilayers: The Saffman–Delbrück
   Model and Periodic Boundary Conditions.
 \newblock The Journal of Physical Chemistry B.  2017; 121(15):3443--3457.
-\newblock \urlprefix\url{https://doi.org/10.1021/acs.jpcb.6b09111},
-  \href{https://dx.doi.org/10.1021/acs.jpcb.6b09111}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1021/acs.jpcb.6b09111}{\doiprefix
   \detokenize{10.1021/acs.jpcb.6b09111}}, pMID: 27966982.
 
 \bibitem[{Camley et~al.(2015)Brian A. Camley and Michael G. Lerner and Richard
@@ -397,8 +385,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock Strong influence of periodic boundary conditions on lateral diffusion
   in lipid bilayer membranes.
 \newblock The Journal of Chemical Physics.  2015; 143(24):243113.
-\newblock \urlprefix\url{https://doi.org/10.1063/1.4932980},
-  \href{https://dx.doi.org/10.1063/1.4932980}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1063/1.4932980}{\doiprefix
   \detokenize{10.1063/1.4932980}}.
 
 \bibitem[{Evans and Morriss(1990)D. J. Evans and G. P. Morriss}]{Evans:90}
@@ -418,8 +405,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock Viscosity of a Room Temperature Ionic Liquid: Predictions from
   Nonequilibrium and Equilibrium Molecular Dynamics Simulations.
 \newblock The Journal of Physical Chemistry B.  2009; 113(14):4771--4774.
-\newblock \urlprefix\url{https://doi.org/10.1021/jp810016e},
-  \href{https://dx.doi.org/10.1021/jp810016e}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1021/jp810016e}{\doiprefix
   \detokenize{10.1021/jp810016e}}, pMID: 19275203.
 
 \bibitem[{Martin and Siepmann(1998)Martin, M. G. and Siepmann, J.
@@ -438,8 +424,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock A systematic study of water models for molecular simulation:
   Derivation of water models optimized for use with a reaction field.
 \newblock The Journal of Chemical Physics.  1998; 108(24):10220--10230.
-\newblock \urlprefix\url{https://doi.org/10.1063/1.476482},
-  \href{https://dx.doi.org/10.1063/1.476482}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1063/1.476482}{\doiprefix
   \detokenize{10.1063/1.476482}}.
 
 \bibitem[{Fern{\'a}ndez et~al.(2005)G. A. Fern{\'a}ndez and J. Vrabec and H.
@@ -448,8 +433,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock Shear viscosity and thermal conductivity of quadrupolar real fluids
   from molecular simulation.
 \newblock Molecular Simulation.  2005; 31(11):787--793.
-\newblock \urlprefix\url{https://doi.org/10.1080/08927020500252599},
-  \href{https://dx.doi.org/10.1080/08927020500252599}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1080/08927020500252599}{\doiprefix
   \detokenize{10.1080/08927020500252599}}.
 
 \bibitem[{Rey-Castro and Vega(2006)Rey-Castro, Carlos and Vega, Lourdes
@@ -459,8 +443,7 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
   Chloride from Equilibrium Molecular Dynamics Simulation. The Effect of
   Temperature.
 \newblock The Journal of Physical Chemistry B.  2006; 110(29):14426--14435.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/jp062885s},
-  \href{https://dx.doi.org/10.1021/jp062885s}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1021/jp062885s}{\doiprefix
   \detokenize{10.1021/jp062885s}}, pMID: 16854152.
 
 \end{thebibliography}

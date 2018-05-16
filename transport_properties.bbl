@@ -3,14 +3,17 @@
 \providecommand{\urlprefix}{}
 \providecommand{\doiprefix}{doi: }
 
-\bibitem[{LAMMPS(2017)}]{LAMMPS}
+\bibitem[{LAMMPS(2017, http://lammps.sandia.gov/doc/Manual.html)}]{LAMMPS}
 \textbf{\color{LiveCoMSMediumGrey} LAMMPS}.
 \newblock LAMMPS Users Manual.
-\newblock Sandia National Laboratories; 2017.
+\newblock Sandia National Laboratories; 2017,
+  http://lammps.sandia.gov/doc/Manual.html.
 
-\bibitem[{GROMACS(2016)}]{GROMACS}
+\bibitem[{GROMACS(2018,
+  http://manual.gromacs.org/documentation/2018/index.html)}]{GROMACS}
 \textbf{\color{LiveCoMSMediumGrey} GROMACS}.
-\newblock GROMACS Reference Manual; 2016.
+\newblock GROMACS Reference Manual; 2018,
+  http://manual.gromacs.org/documentation/2018/index.html.
 
 \bibitem[{Hes(????)}]{HessForum}
 [gmx-users[ how to calculate the viscosity of the bulk;.
@@ -40,8 +43,7 @@
 \newblock Determining the shear viscosity of model liquids from molecular
   dynamics simulations.
 \newblock The Journal of Chemical Physics.  2002; 116(1):209--217.
-\newblock \urlprefix\url{http://aip.scitation.org/doi/abs/10.1063/1.1421362},
-  \href{https://dx.doi.org/10.1063/1.1421362}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1063/1.1421362}{\doiprefix
   \detokenize{10.1063/1.1421362}}.
 
 \bibitem[{Chen et~al.(2009)Ting Chen and Berend Smit and Alexis T.
@@ -53,15 +55,11 @@
 \newblock \href{https://dx.doi.org/10.1063/1.3274802}{\doiprefix
   \detokenize{10.1063/1.3274802}}.
 
-\bibitem[{Ungerer et~al.(2007)Philippe Ungerer and Carlos Nieto-Draghi and
-  Bernard Rousseau and Göktug Ahunbay and Véronique Lachet}]{Ungerer2007}
-\textbf{\color{LiveCoMSMediumGrey} Ungerer P}, Nieto-Draghi C, Rousseau B,
-  Ahunbay G, Lachet V.
-\newblock Molecular simulation of the thermophysical properties of fluids: From
+\bibitem[{Ung(2007)}]{Ungerer2007}
+Molecular simulation of the thermophysical properties of fluids: From
   understanding toward quantitative predictions.
 \newblock Journal of Molecular Liquids.  2007; 134(1):71 -- 89.
 \newblock
-  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S016773220600331X},
   \href{https://dx.doi.org/https://doi.org/10.1016/j.molliq.2006.12.019}{\doiprefix
   \detokenize{https://doi.org/10.1016/j.molliq.2006.12.019}}, eMLG/JMLG 2005
   Special Issue.
@@ -75,16 +73,14 @@
 \newblock A General Guidebook for the Theoretical Prediction of Physicochemical
   Properties of Chemicals for Regulatory Purposes.
 \newblock Chemical Reviews.  2015; 115(24):13093--13164.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/acs.chemrev.5b00215},
-  \href{https://dx.doi.org/10.1021/acs.chemrev.5b00215}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1021/acs.chemrev.5b00215}{\doiprefix
   \detokenize{10.1021/acs.chemrev.5b00215}}, pMID: 26624238.
 
-\bibitem[{Kondratyuk et~al.(2016)N D Kondratyuk and G E Norman and V V
+\bibitem[{Kondratyuk et~al.(????)N D Kondratyuk and G E Norman and V V
   Stegailov}]{Kondratyuk2016}
 \textbf{\color{LiveCoMSMediumGrey} Kondratyuk ND}, Norman GE, Stegailov VV.
 \newblock Rheology of liquid n-triacontane: Molecular dynamics simulation.
-\newblock Journal of Physics: Conference Series.  2016; 774(1):012039.
-\newblock \urlprefix\url{http://stacks.iop.org/1742-6596/774/i=1/a=012039}.
+\newblock Journal of Physics: Conference Series. ; 774(1):012039.
 
 \bibitem[{Liu et~al.(2012)Liu, Hongjun and Maginn, Edward and Visser, Ann E.
   and Bridges, Nicholas J. and Fox, Elise B.}]{Liu2012}
@@ -94,8 +90,7 @@
   Experimental and Molecular Dynamics Study.
 \newblock Industrial \& Engineering Chemistry Research.  2012;
   51(21):7242--7254.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/ie300222a},
-  \href{https://dx.doi.org/10.1021/ie300222a}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1021/ie300222a}{\doiprefix
   \detokenize{10.1021/ie300222a}}.
 
 \bibitem[{Mondello and Grest(1997)Maurizio Mondello and Gary S.
@@ -104,8 +99,7 @@
 \newblock Viscosity calculations of n-alkanes by equilibrium molecular
   dynamics.
 \newblock The Journal of Chemical Physics.  1997; 106(22):9327--9336.
-\newblock \urlprefix\url{https://doi.org/10.1063/1.474002},
-  \href{https://dx.doi.org/10.1063/1.474002}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1063/1.474002}{\doiprefix
   \detokenize{10.1063/1.474002}}.
 
 \bibitem[{Yeh and Hummer(2004)Yeh, In-Chul and Hummer, Gerhard}]{Yeh2004}
@@ -113,8 +107,7 @@
 \newblock System-Size Dependence of Diffusion Coefficients and Viscosities from
   Molecular Dynamics Simulations with Periodic Boundary Conditions.
 \newblock The Journal of Physical Chemistry B.  2004; 108(40):15873--15879.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/jp0477147},
-  \href{https://dx.doi.org/10.1021/jp0477147}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1021/jp0477147}{\doiprefix
   \detokenize{10.1021/jp0477147}}.
 
 \bibitem[{Moultos et~al.(2016)Othonas A. Moultos and Yong Zhang and Ioannis N.
@@ -125,8 +118,7 @@
   from molecular dynamics simulations: The case of CO2, n-alkanes, and
   poly(ethylene glycol) dimethyl ethers.
 \newblock The Journal of Chemical Physics.  2016; 145(7):074109.
-\newblock \urlprefix\url{http://dx.doi.org/10.1063/1.4960776},
-  \href{https://dx.doi.org/10.1063/1.4960776}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1063/1.4960776}{\doiprefix
   \detokenize{10.1063/1.4960776}}.
 
 \bibitem[{Fanourgakis et~al.(2012)Fanourgakis, George S. and Medina, J. S. and
@@ -134,8 +126,7 @@
 \textbf{\color{LiveCoMSMediumGrey} Fanourgakis GS}, Medina JS, Prosmiti R.
 \newblock Determining the Bulk Viscosity of Rigid Water Models.
 \newblock The Journal of Physical Chemistry A.  2012; 116(10):2564--2570.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/jp211952y},
-  \href{https://dx.doi.org/10.1021/jp211952y}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1021/jp211952y}{\doiprefix
   \detokenize{10.1021/jp211952y}}, pMID: 22352421.
 
 \bibitem[{Zhang et~al.(2015)Zhang, Yong and Otani, Akihito and Maginn, Edward
@@ -144,8 +135,7 @@
 \newblock Reliable Viscosity Calculation from Equilibrium Molecular Dynamics
   Simulations: A Time Decomposition Method.
 \newblock Journal of Chemical Theory and Computation.  2015; 11(8):3537--3546.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/acs.jctc.5b00351},
-  \href{https://dx.doi.org/10.1021/acs.jctc.5b00351}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1021/acs.jctc.5b00351}{\doiprefix
   \detokenize{10.1021/acs.jctc.5b00351}}, pMID: 26574439.
 
 \bibitem[{Payal et~al.(2012)Rajdeep Singh Payal and S. Balasubramanian and
@@ -156,8 +146,7 @@
 \newblock Shear viscosity of linear alkanes through molecular simulations:
   quantitative tests for n-decane and n-hexadecane.
 \newblock Molecular Simulation.  2012; 38(14-15):1234--1241.
-\newblock \urlprefix\url{https://doi.org/10.1080/08927022.2012.702423},
-  \href{https://dx.doi.org/10.1080/08927022.2012.702423}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1080/08927022.2012.702423}{\doiprefix
   \detokenize{10.1080/08927022.2012.702423}}.
 
 \bibitem[{Ma et~al.(2017)Jie Ma and Zhendian Zhang and Yan Xiang and Fenglei
@@ -166,8 +155,7 @@
 \newblock On the prediction of transport properties of ionic liquid using
   1-n-butylmethylpyridinium tetrafluoroborate as an example.
 \newblock Molecular Simulation.  2017; 43(18):1502--1512.
-\newblock \urlprefix\url{https://doi.org/10.1080/08927022.2017.1321760},
-  \href{https://dx.doi.org/10.1080/08927022.2017.1321760}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1080/08927022.2017.1321760}{\doiprefix
   \detokenize{10.1080/08927022.2017.1321760}}.
 
 \bibitem[{Rey-Castro and Vega(2006)Rey-Castro, Carlos and Vega, Lourdes
@@ -177,8 +165,7 @@
   Chloride from Equilibrium Molecular Dynamics Simulation. The Effect of
   Temperature.
 \newblock The Journal of Physical Chemistry B.  2006; 110(29):14426--14435.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/jp062885s},
-  \href{https://dx.doi.org/10.1021/jp062885s}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1021/jp062885s}{\doiprefix
   \detokenize{10.1021/jp062885s}}, pMID: 16854152.
 
 \bibitem[{Gordon(2006)Peter A. Gordon}]{Gordon2006}
@@ -186,8 +173,7 @@
 \newblock Development of intermolecular potentials for predicting transport
   properties of hydrocarbons.
 \newblock The Journal of Chemical Physics.  2006; 125(1):014504.
-\newblock \urlprefix\url{https://doi.org/10.1063/1.2208359},
-  \href{https://dx.doi.org/10.1063/1.2208359}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1063/1.2208359}{\doiprefix
   \detokenize{10.1063/1.2208359}}.
 
 \bibitem[{Potoff and Bernard-Brunel(2009)Potoff, J. J. and Bernard-Brunel, D.
@@ -199,13 +185,10 @@
 \newblock \href{https://dx.doi.org/10.1021/jp9072137}{\doiprefix
   \detokenize{10.1021/jp9072137}}.
 
-\bibitem[{Hieber and Chiang(1992)Hieber, C. A. and Chiang, H. H.}]{Hieber1992}
+\bibitem[{Hieber and Chiang(????)Hieber, C. A. and Chiang, H. H.}]{Hieber1992}
 \textbf{\color{LiveCoMSMediumGrey} Hieber CA}, Chiang HH.
 \newblock Shear-rate-dependence modeling of polymer melt viscosity.
-\newblock Polymer Engineering \& Science.  1992; 32(14):931--938.
-\newblock \urlprefix\url{http://dx.doi.org/10.1002/pen.760321404},
-  \href{https://dx.doi.org/10.1002/pen.760321404}{\doiprefix
-  \detokenize{10.1002/pen.760321404}}.
+\newblock Polymer Engineering \& Science. ; 32(14).
 
 \bibitem[{Kioupis and Maginn(2000)Kioupis, Loukas I. and Maginn, Edward
   J.}]{Kioupis2000}
@@ -213,8 +196,7 @@
 \newblock Impact of Molecular Architecture on the High-Pressure Rheology of
   Hydrocarbon Fluids.
 \newblock The Journal of Physical Chemistry B.  2000; 104(32):7774--7783.
-\newblock \urlprefix\url{http://dx.doi.org/10.1021/jp000966x},
-  \href{https://dx.doi.org/10.1021/jp000966x}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1021/jp000966x}{\doiprefix
   \detokenize{10.1021/jp000966x}}.
 
 \bibitem[{M\"uller-Plathe(1999)M\"uller-Plathe, Florian}]{Muller1999}
@@ -222,8 +204,7 @@
 \newblock Reversing the perturbation in nonequilibrium molecular dynamics: An
   easy way to calculate the shear viscosity of fluids.
 \newblock Phys Rev E.  1999 May; 59:4894--4898.
-\newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.59.4894},
-  \href{https://dx.doi.org/10.1103/PhysRevE.59.4894}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1103/PhysRevE.59.4894}{\doiprefix
   \detokenize{10.1103/PhysRevE.59.4894}}.
 
 \bibitem[{LAM(????)}]{LAMMPS_NEMD}
@@ -238,8 +219,7 @@ LAMMPS Users' Workshop;.
 \newblock Limitations and recommendations for the calculation of shear
   viscosity using reverse nonequilibrium molecular dynamics.
 \newblock The Journal of Chemical Physics.  2010; 132(1):014103.
-\newblock \urlprefix\url{http://dx.doi.org/10.1063/1.3276454},
-  \href{https://dx.doi.org/10.1063/1.3276454}{\doiprefix
+\newblock \href{https://dx.doi.org/10.1063/1.3276454}{\doiprefix
   \detokenize{10.1063/1.3276454}}.
 
 \end{thebibliography}

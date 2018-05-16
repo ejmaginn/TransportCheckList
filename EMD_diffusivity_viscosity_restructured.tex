@@ -23,11 +23,11 @@
 
 %Edward Maginn (ejmaginn), Richard Elliott, Sunny Hwang, Daniel Roe (GitHub: drroe), Rich Messerly (ramess101)
 
-\author[1*,\authfn{3}]{Edward J. Maginn}
-\author[2*\authfn{6}]{Richard A. Messerly}
-\author[3\authfn{7}]{Daniel J. Carlson}
-\author[4\authfn{4}]{Daniel R. Roe}
-\author[5\authfn{5}]{J. Richard Elliott}
+\author[1*]{Edward J. Maginn}
+\author[2*]{Richard A. Messerly}
+\author[3]{Daniel J. Carlson}
+\author[4]{Daniel R. Roe}
+\author[5]{J. Richard Elliott}
 
 
 \affil[1]{Department of Chemical and Biomolecular Engineering, The University of Notre Dame}
@@ -136,6 +136,7 @@ In addition to the present manuscript, we highly recommend reviewing this list o
 		\item Ref. \cite{Allen2017}, pages 73--79, 274--281, and 292--296
 		\item Ref. \cite{Frenkel2002}, pages 87--90 and 509--523
 		\item Ref. \cite{Leach2001}, pages 374--382
+		\item Ref. \cite{Haile1992}, pages 189--192 and 485--488
 	\end{enumerate}
 	\item Class notes
 	\begin{enumerate}
@@ -143,7 +144,6 @@ In addition to the present manuscript, we highly recommend reviewing this list o
 		\item Ref. \cite{KofkeNotes}
 		\item Ref. \cite{MaginnNotes}
 		\item Ref. \cite{ShellNotes}
-
 	\end{enumerate}
 	\item Published articles
 	\begin{enumerate}
@@ -544,6 +544,8 @@ As no single best practice can be recommended for the region over which the slop
 
 \subsubsection{Uncertainty quantification} \label{sec:General: Uncertainty}
 
+Providing meaningful estimates of uncertainty is a pivotal, but often overlooked, step in reporting molecular simulation results. For this reason, in addition to the discussion provided below, we recommend a close study of Refs. \citenum{GUM,Grossfield2018}.
+
 Replicates can provide a rigorous uncertainty assessment. We recommend bootstrapping the uncertainties by randomly sampling which replicates are included in the data analysis procedure:
 
 \begin{enumerate}
@@ -788,7 +790,7 @@ Figure \ref{fig:ZhangFig8}, borrowed from Ref. \cite{Zhang2015}, demonstrates th
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{ZhangFig8.png}
-	\caption{Viscosity dependence on simulation length. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society Ref.\ \cite{Zhang2015}. Different lines and symbols correspond to different simulation length, i.e. trajectory time. The inset in the top panel plots the standard deviation, $\sigma$. For further details, see Ref. \cite{Zhang2015}.}
+	\caption{Viscosity dependence on simulation length. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society Ref.\ \cite{Zhang2015}. Different lines and symbols correspond to different simulation lengths, i.e. trajectory times. The inset in the top panel plots the standard deviation, $\sigma$. For further details, see Ref. \cite{Zhang2015}.}
 	\label{fig:ZhangFig8}
 \end{figure}
 
@@ -828,7 +830,7 @@ To test for system size dependence, one can run a series of simulations over a r
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{ZhangFig9.png}
-	\caption{Finite size effects for viscosity obtained with Green-Kubo approach. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society  Ref. \cite{Zhang2015}. Different colors correspond to different number of molecules. The inset plots the standard deviation, $\sigma$. For further details, see Ref. \cite{Zhang2015}.}
+	\caption{Finite size effects for viscosity obtained with Green-Kubo approach. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society  Ref. \cite{Zhang2015}. Different colors correspond to different numbers of molecules. The inset plots the standard deviation, $\sigma$. For further details, see Ref. \cite{Zhang2015}.}
 	\label{fig:ZhangFig9}
 \end{figure}
 

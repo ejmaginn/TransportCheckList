@@ -240,15 +240,17 @@ For self-diffusivity, $\xi$ is the Cartesian atom position $(r_{\alpha})$ and th
 		\toprule
 		Property & $\gamma$          & $\xi$                        & Green-Kubo (Equation \ref{eq:Green-Kubo})    & Einstein (Equation \ref{eq:Einstein})     \\
 		\midrule
-		Self-diffusivity     & $D$ & $r_{\alpha}$          & $ \displaystyle \frac{1}{d} \int_{0}^{\infty}dt\left\langle \frac{1}{N} \sum_{i=1}^{N} v_{\alpha,i}(t) v_{\alpha,i}(0)\right\rangle_{t_0}$    & $ \displaystyle \frac{1}{2d} \lim_{t\to\infty} \frac{d}{dt} \left\langle \frac{1}{N} \sum_{i=1}^{N} |r_{\alpha,i}(t)-r_{\alpha,i}(0)|^2 \right\rangle_{t_0}$   \\
+		Self-diffusivity     & $D$ & $r_{\alpha}$          & $ \displaystyle \frac{1}{\rm d} \int_{0}^{\infty}dt\left\langle \frac{1}{N} \sum_{i=1}^{N} v_{\alpha,i}(t) v_{\alpha,i}(0)\right\rangle_{t_0}$    & $ \displaystyle \frac{1}{\rm 2d} \lim_{t\to\infty} \frac{d}{dt} \left\langle \frac{1}{N} \sum_{i=1}^{N} |r_{\alpha,i}(t)-r_{\alpha,i}(0)|^2 \right\rangle_{t_0}$   \\
 		Shear viscosity     & $\eta$       & $r_\alpha v_\beta$           & $ \displaystyle \frac{V}{k_bT} \int_{0}^{\infty}dt\left\langle \tau_{\alpha,\beta}(t) \tau_{\alpha,\beta}(0)\right\rangle_{t_0}$    & $ \displaystyle \frac{V}{2k_bT} \lim_{t\to\infty} \frac{d}{dt} \left\langle \left(\int_{0}^{t}dt' \tau_{\alpha,\beta}(t')\right)^2 \right\rangle_{t_0}$  \\
 		\bottomrule
 	\end{tabular}
 	\newline
 	%$P_{\alpha,\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( \frac{p_{\alpha,i}(t)p_{\beta,i}(t)}{m} + \alpha_i(t) \ddot{\beta_i}(t) \right)$
 	$\alpha$, $\beta = x, y, $ or $z$ Cartesian coordinates of the atoms or molecule center of mass \newline
-	$d =$ dimensionality (1,2, or 3) \newline
+	$\rm d =$ dimensionality (1,2, or 3) \newline
 	$N=$ number of atoms or molecules (see Sec.\ \ref{sec:General: Clear communication}) \newline
+%	$V=$ volume \newline
+	$k_b=$ Boltzmann constant \newline
 	$\tau_{\alpha,\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( m v_{\alpha,i}(t) v_{\beta,i}(t) + r_{\alpha,i}(t) f_{\beta,i}(t) \right) , \alpha \ne \beta$ \newline
 	$f_{\beta,i}$ is the force acting on particle $i$ in direction $\beta$ \newline
 	$\langle \cdots \rangle_{t_0}$ denotes an average over time origins (see Sec.\ \ref{sec:General: Improve precision})
@@ -305,6 +307,7 @@ This section provides an overview of the checklist items for each property $(D$ 
 			\begin{itemize}
 				\item Improve precision by averaging over:
 				\begin{itemize}
+					\item Multiple time origins. See Sec.\ \ref{sec:General: Improve precision}.
 					\item $N$ molecules. See Sec.\ \ref{sec:General: Improve precision}.
 					\item Three dimensions (xx, yy, zz). See Sec.\ \ref{sec:General: Improve precision}.
 					\item Multiple replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations}.
@@ -332,6 +335,54 @@ This section provides an overview of the checklist items for each property $(D$ 
 \end{Checklists*}
 
 \begin{Checklists*}[p!]
+	\begin{checklist}{Checklist for Computing Viscosity with Green-Kubo Equilibrium Approach}
+		\begin{itemize}
+			\item
+			\textbf{Simulation set-up.} No amount of data analysis can compensate for a poorly designed experiment. It is imperative that the simulation sufficiently samples the relevant region of phase space.
+			\begin{itemize}
+				\item Sample from the correct ensemble. See Sec.\ \ref{sec:General: Correct Ensemble}.
+				\item Increase the information extracted from simulation results.
+				\begin{itemize}
+					\item Perform multiple replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations}.
+					\item Ensure that simulations are sufficiently long. See Sec.\ \ref{sec:Viscosity:General: Simulation length}.
+					\item Increase the output frequency. See Sec.\ \ref{sec:Viscosity:General: Output frequency}.
+				\end{itemize}
+				\item Check for system size effects. See Sec.\ \ref{sec:Viscosity:General: Finite size}.
+			\end{itemize}
+			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
+			
+			\item
+			\textbf{Post-simulation data analysis.} Data analysis is key for obtaining reproducible and meaningful estimates of $\eta$.
+			\begin{itemize}
+				\item Improve precision by averaging over multiple:
+				\begin{itemize}
+					\item Time origins. See Sec.\ \ref{sec:General: Improve precision}.
+					\item Stress tensor elements (three off-diagonal or all six). See Sec.\ \ref{sec:Viscosity:General: Improved precision}.
+					\item Replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations} and \ref{sec:Viscosity:General: Improved precision}.
+				\end{itemize}
+				\item Clearly communicate how $\eta$ is obtained from Equation \ref{eq:Green-Kubo}. See Secs.\ \ref{sec:General: Clear communication} and \ref{sec:Viscosity:Green-Kubo: Data analysis}.
+				\item Report the uncertainty in $\eta$:
+				\begin{itemize}
+					\item Bootstrap replicate simulations. See Sec.\ \ref{sec:General: Uncertainty}.
+					\item Perform sensitivity analysis, i.e. variation in $\eta$ with respect to the time cut-off, fitting model, etc. See Sec.\ \ref{sec:Viscosity:Green-Kubo: Data analysis}.
+				\end{itemize}
+			\end{itemize}
+			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
+			
+			\item
+			\textbf{Common pitfalls.} Double-check that your results are not plagued by one of the common pitfalls. See Sec.\ \ref{sec:General: Common pitfalls}.
+			
+			\item
+			\textbf{Validation.} Compare your results with those from a reputable source. See Sec.\ \ref{sec:General: Validation}.
+			
+			\item
+			\textbf{Special topics.} Check if your system of interest requires some special considerations. See Sec.\ \ref{sec:Viscosity Special topics}.
+			
+		\end{itemize}
+	\end{checklist}
+\end{Checklists*}
+
+\begin{Checklists*}[p!]
 	\begin{checklist}{Checklist for Computing Self-Diffusivity with Green-Kubo Equilibrium Approach}
 		\begin{itemize}
 			\item
@@ -353,6 +404,7 @@ This section provides an overview of the checklist items for each property $(D$ 
 			\begin{itemize}
 				\item Improve precision by averaging over:
 				\begin{itemize}
+					\item Multiple time origins. See Sec.\ \ref{sec:General: Improve precision}.
 					\item $N$ molecules. See Sec.\ \ref{sec:General: Improve precision}.
 					\item Three dimensions (xx, yy, zz). See Sec.\ \ref{sec:General: Improve precision}.
 					\item Multiple replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations}.
@@ -380,53 +432,6 @@ This section provides an overview of the checklist items for each property $(D$ 
 \end{Checklists*}
 
 \begin{Checklists*}[p!]
-	\begin{checklist}{Checklist for Computing Viscosity with Green-Kubo Equilibrium Approach}
-		\begin{itemize}
-			\item
-			\textbf{Simulation set-up.} No amount of data analysis can compensate for a poorly designed experiment. It is imperative that the simulation sufficiently samples the relevant region of phase space.
-			\begin{itemize}
-				\item Sample from the correct ensemble. See Sec.\ \ref{sec:General: Correct Ensemble}.
-				\item Increase the information extracted from simulation results.
-				\begin{itemize}
-					\item Perform multiple replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations}.
-					\item Ensure that simulations are sufficiently long. See Sec.\ \ref{sec:Viscosity:General: Simulation length}.
-					\item Increase the output frequency. See Sec.\ \ref{sec:Viscosity:General: Output frequency}.
-				\end{itemize}
-				\item Check for system size effects. See Sec.\ \ref{sec:Viscosity:General: Finite size}.
-			\end{itemize}
-			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
-
-			\item
-			\textbf{Post-simulation data analysis.} Data analysis is key for obtaining reproducible and meaningful estimates of $\eta$.
-			\begin{itemize}
-				\item Improve precision by averaging over multiple:
-				\begin{itemize}
-					\item Stress tensor elements (three off-diagonal or all six). See Sec.\ \ref{sec:Viscosity:General: Improved precision}.
-					\item Replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations} and \ref{sec:Viscosity:General: Improved precision}.
-				\end{itemize}
-				\item Clearly communicate how $\eta$ is obtained from Equation \ref{eq:Green-Kubo}. See Secs.\ \ref{sec:General: Clear communication} and \ref{sec:Viscosity:Green-Kubo: Data analysis}.
-				\item Report the uncertainty in $\eta$:
-				\begin{itemize}
-					\item Bootstrap replicate simulations. See Sec.\ \ref{sec:General: Uncertainty}.
-					\item Perform sensitivity analysis, i.e. variation in $\eta$ with respect to the time cut-off, fitting model, etc. See Sec.\ \ref{sec:Viscosity:Green-Kubo: Data analysis}.
-				\end{itemize}
-			\end{itemize}
-			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
-
-			\item
-			\textbf{Common pitfalls.} Double-check that your results are not plagued by one of the common pitfalls. See Sec.\ \ref{sec:General: Common pitfalls}.
-
-			\item
-			\textbf{Validation.} Compare your results with those from a reputable source. See Sec.\ \ref{sec:General: Validation}.
-
-			\item
-			\textbf{Special topics.} Check if your system of interest requires some special considerations. See Sec.\ \ref{sec:Viscosity Special topics}.
-
-		\end{itemize}
-	\end{checklist}
-\end{Checklists*}
-
-\begin{Checklists*}[p!]
 	\begin{checklist}{Checklist for Computing Viscosity with Einstein Equilibrium Approach}
 		\begin{itemize}
 			\item
@@ -448,6 +453,7 @@ This section provides an overview of the checklist items for each property $(D$ 
 			\begin{itemize}
 				\item Improve precision by averaging over multiple:
 				\begin{itemize}
+					\item Time origins. See Sec.\ \ref{sec:General: Improve precision}.
 					\item Stress tensor elements (three off-diagonal or all six). See Sec.\ \ref{sec:Viscosity:General: Improved precision}.
 					\item Replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations} and \ref{sec:Viscosity:General: Improved precision}.
 				\end{itemize}
@@ -486,11 +492,11 @@ For a liquid solution, it is safest to run in the microcanonical ($NVE$, constan
 	\item $NVE$ ensemble where the final configuration of the $NVT$ run is used as the initial configuration
 \end{enumerate}
 % Do we really just want the last configuration? Should we randomly select a configuration from production? Or a few configurations to run in parallel? Or somehow find an "average" configuration? My concern is just, what if the last configuration happens to be a higher energy sample (or lower probability if coming at it from a Monte Carlo point of view)? -ramess101
-The average pressure and temperature for the $NVE$ production run are computed and should be close to (but not exactly the same) as the input $P$ and $T$ to the original $NPT$ run. These average pressures and temperatures must be reported along with the self-diffusivity and viscosity.
+It is important that each step consist of both an equilibration and production period. The average pressure and temperature for the $NVE$ production run are computed and should be close to (but not exactly the same) as the input $P$ and $T$ to the original $NPT$ run. These average pressures and temperatures must be reported along with the self-diffusivity and/or viscosity.
 
 %The user should generate multiple starting states that can be used to determine error estimation (see item \ref{item:uncertainty}).
 
-Note that, although the best practice is to use the $NVE$ ensemble (Steps 1 to 3), it is common to see values reported using the $NPT$ (just Step 1) or $NVT$ (Steps 1 and 2) ensemble. We strongly discourage the use of the $NPT$ ensemble alone, because barostats (which alter positions through volume changes) greatly affect the dynamics of a system. In contrast, the $NVT$ ensemble has been implemented successfully for transport property calculations and is quite common, especially for viscosity. For example, Fanourgakis et al. reported that the $NVT$ and $NVE$ ensembles provide nearly identical results for viscosity \cite{Fanourgakis2012}. A study by Basconi and Shirts \cite{Shirts2013} reached a similar conclusion, and provides guidelines for how thermostats should be applied when computing transport properties. To summarize their results, $NVT$ simulations with velocity-scaling thermostats (e.g. Berendsen \cite{Berendsen1984}, stochastic rescaling \cite{Bussi2007}, and Nose{\'e}-Hoover \cite{Nose1984} thermostats) and a wide range of coupling strengths (0.1, 1, and 10 ps) provide $D$ and $\eta$ values that are statistically indistinguishable from the $NVE$ ensemble estimates. By contrast, velocity-randomizing algorithms (e.g. Andersen thermostat \cite{Andersen1980} and Langevin dynamics \cite{Hess2008}) with strong coupling (0.1 and 1 ps) dramatically decrease $D$ and increase $\eta$ relative to the $NVE$ ensemble values. Therefore, we recommend using either the $NVT$ or $NVE$ ensemble, with $NVE$ being preferred. If $NVT$ simulations are used, we recommend judiciously selecting the thermostat and coupling strength by consulting Refs. \cite{Fanourgakis2012,Shirts2013}.
+Note that, although the best practice is to use the $NVE$ ensemble (Steps 1 to 3), it is common to see values reported using the $NPT$ (just Step 1) or $NVT$ (Steps 1 and 2) ensemble. We strongly discourage the use of the $NPT$ ensemble alone, because barostats (which alter positions through volume changes) greatly affect the dynamics of a system. In contrast, the $NVT$ ensemble has been implemented successfully for transport property calculations and is quite common, especially for viscosity. For example, Fanourgakis et al. reported that the $NVT$ and $NVE$ ensembles provide nearly identical results for viscosity \cite{Fanourgakis2012}. A study by Basconi and Shirts \cite{Shirts2013} reached a similar conclusion, and provides guidelines for how thermostats should be applied when computing transport properties. To summarize their results, $NVT$ simulations with velocity-scaling thermostats (e.g. Berendsen \cite{Berendsen1984}, stochastic rescaling \cite{Bussi2007}, and Nos{\'e}-Hoover \cite{Nose1984} thermostats) and a wide range of coupling strengths (0.1, 1, and 10 ps) provide $D$ and $\eta$ values that are statistically indistinguishable from the $NVE$ ensemble estimates. By contrast, velocity-randomizing algorithms (e.g. Andersen thermostat \cite{Andersen1980} and Langevin dynamics \cite{Hess2008}) with strong coupling (0.1 and 1 ps) dramatically decrease $D$ and increase $\eta$ relative to the $NVE$ ensemble values. Therefore, we recommend using either the $NVT$ or $NVE$ ensemble, with $NVE$ being preferred. If $NVT$ simulations are used, we recommend judiciously selecting the thermostat and coupling strength by consulting Refs. \cite{Fanourgakis2012,Shirts2013}.
 
 %Furthermore, although most studies use the average density in Step 2, it is important to consider the uncertainty in $D$ or $\eta$ that arises from the uncertainty in $\rho$. Although it is not common to account for this source of uncertainty, we recommend %RAM: This issue is not as important as long as you report the uncertainty in P and/or T in your final simulation.
 
@@ -541,14 +547,16 @@ As no single best practice can be recommended for the region over which the slop
 Replicates can provide a rigorous uncertainty assessment. We recommend bootstrapping the uncertainties by randomly sampling which replicates are included in the data analysis procedure:
 
 \begin{enumerate}
-	\item Randomly select (with replacement) a set of replicate simulations
+	\item Randomly select (with replacement) a set of replicate simulations \label{item:Random selection}
 	\item Calculate the relevant average quantity from this random set, i.e. $\langle\dot{\xi}(t)\dot{\xi}(0)\rangle$ for Green-Kubo or $\langle (\xi(t)-\xi(0))^2 \rangle$ for Einstein
 	\item Compute transport property $(\gamma)$ from Equations \ref{eq:Green-Kubo} or \ref{eq:Einstein}
-	\item Repeat steps 1 to 3 thousands of times
+	\item Repeat steps 1 through 3 several hundred times \label{item:Loop}
 	\item Generate distribution of the estimated values for $D$ or $\eta$ \label{item:Bootstrap Distribution}
-	\item Determine lower and upper uncertainty bounds of $D$ or $\eta$ at desired confidence level, $1-\alpha$
+	\item Determine lower and upper uncertainty bounds of $D$ or $\eta$ at desired confidence level, $1-\alpha$ \label{item:Confidence interval}
 \end{enumerate}
-The final step requires the probability density function (PDF, or alternatively the cumulative distribution function, CDF) for $D$ or $\eta$. The bootstrapped distribution of $D$ or $\eta$ obtained in Step \ref{item:Bootstrap Distribution} is used to approximate the PDF, which is typically expressed as either a histogram or by fitting to a normal distribution. Solving for the lower and upper bounds of $D$ or $\eta$ can be performed in several different ways, but the two-sided tail approach is most common. With this approach, the lower and upper bounds correspond to the values that yield $\alpha/2 \times 100$\% of the integrated PDF in the lower and upper tails. We recommend using $\alpha = 0.05$, corresponding to a 95\% confidence interval.
+In step \ref{item:Random selection}, the resampled set should be the same size as the original set of replicates, i.e. $N_{\rm boots} = N_{\rm reps}$. For this reason, replacement after each random selection is key to ensure that a different set is resampled for each cycle (step \ref{item:Loop}). Note that this approach is typically most reliable when $N_{\rm reps} \ge 20$. However, we recommend this approach even if only a few replicate simulations are performed to at least have a rough estimate of the uncertainty.
+ 
+Step \ref{item:Confidence interval} requires the probability density function (PDF, or alternatively the cumulative distribution function, CDF) for $D$ or $\eta$. The bootstrapped distribution of $D$ or $\eta$ obtained in Step \ref{item:Bootstrap Distribution} is used to approximate the PDF, which is typically expressed as either a histogram or by fitting to a normal distribution. Solving for the lower and upper bounds of $D$ or $\eta$ can be performed in several different ways, but the two-sided tail approach is most common. With this approach, the lower and upper bounds correspond to the values that yield $\alpha/2 \times 100$\% of the integrated PDF in the lower and upper tails. We recommend using $\alpha = 0.05$, corresponding to a 95\% confidence interval.
 
 %Compute statistical uncertainty by running independent replicates (using multiple starting states from $NPT$ run at desired temperature) and taking the standard deviation (what do the uncertainty people say?) How many replicates do we recommend? \label{item:uncertainty}
 %
@@ -876,7 +884,7 @@ For example, Figure \ref{fig:Einstein_3terms_30replicates} demonstrates that ave
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{Einstein_3terms_30replicates.pdf}
-	\caption{Improvement with three stress tensor terms and 30 replicate runs. Simulations were performed with Gromacs 2018 for saturated liquid ethane at 137 K using the TraPPE-UA model \cite{Martin1998}. Simulation details: velocity Verlet integrator, 2 fs time-step, 6 fs pressure tensor output frequency, 1 ns equilibration time, 1 ns production time, 400 molecule system, 1.4 nm non-bonded cut-off distance with analytic tail corrections, Nos{\'e}-Hoover thermostat with time constant of 1 ps, bond-lengths constrained with LINCS algorithm \cite{GROMACS}.}
+	\caption{Improvement with three stress tensor terms and 30 replicate runs. Simulations were performed with Gromacs 2018 for saturated liquid ethane at 137 K using the TraPPE-UA model \cite{Martin1998}. Simulation details: velocity Verlet integrator, 2 fs time-step, 6 fs pressure tensor output frequency, 12 time origins, 1 ns equilibration time, 1 ns production time, 400 molecule system, 1.4 nm non-bonded cut-off distance with analytic tail corrections, Nos{\'e}-Hoover thermostat with time constant of 1 ps, bond-lengths constrained with LINCS algorithm \cite{GROMACS}.}
 	\label{fig:Einstein_3terms_30replicates}
 \end{figure}
 
@@ -994,7 +1002,7 @@ Ref. \cite{Zhang2015} recommends that the data be weighted by the inverse of the
 	\label{fig:ZhangFig7_12}
 \end{figure}
 
-Ref. \cite{Zhang2015} also suggests that a cut-off time be implemented to improve the fit. They provide a heurestic that the cut-off time correspond to when the standard deviation is 40\% of the plateau value. Regardless of how the cut-off is determined, it is important to quantify the degree to which the estimated viscosity depends on this parameter. For example, Zhang et al. reported that the viscosity decreased by 0.8\% and 6.1\% when using a cut-off time corresponding to a standard deviation of 30\% or 20\% the plateau value, respectively. However, the magnitude of variability depends strongly on the system. We recommend that the author quantify the cut-off time dependence.
+Ref. \cite{Zhang2015} also suggests that a cut-off time be implemented to improve the fit. They provide a heuristic that the cut-off time correspond to when the standard deviation is 40\% of the plateau value. Regardless of how the cut-off is determined, it is important to quantify the degree to which the estimated viscosity depends on this parameter. For example, Zhang et al. reported that the viscosity decreased by 0.8\% and 6.1\% when using a cut-off time corresponding to a standard deviation of 30\% or 20\% the plateau value, respectively. However, the magnitude of variability depends strongly on the system. We recommend that the author quantify the cut-off time dependence.
 
 Furthermore, Ref. \cite{Zhang2015} recommends excluding short-time data from the fitting procedure. In Figure \ref{fig:ZhangFig4}, borrowed from Ref. \cite{Zhang2015}, we observe large oscillations at very short times, ca. $t < 2$ ps. A weighting function with a $t^{-b}$ form assigns an inappropriately large weight to these short-time data points. Therefore, it is important to exclude data in this short-time region from the model fitting. 
 
@@ -1026,7 +1034,7 @@ Furthermore, Ref. \cite{Zhang2015} recommends excluding short-time data from the
 %		\item The method we recommend is to fit an analytic function directly to the ``running integral''. For example, \cite{ReyCastro2006} and \cite{Zhang2015} recommended fitting the ``running integral'' to a double-exponential function \begin{equation}
 %		\eta(t) = A \alpha \tau_1 \left(1-\exp{(-t/\tau_1)}\right) + A (1-\alpha) \tau_2 \left(1-\exp{(-t/\tau_2)}\right)
 %		\end{equation}
-%		where $A, \alpha, \tau_1, $ and $\tau_2$ are fitting parameters. The primary advantage over the previous approach is that uncertainties in the model fit do not propagate through the integration. It is important to include a description of how the fit is performed, i.e. the objective function, weighting model, range of data included, etc. \cite{Zhang2015} recommend that the data be weighted by the inverse of the standard deviation with respect to time. They fit the standard deviation to a weighting model of the form $w \propto t^{-b}$, where $w$ is the weight, $t$ is the time, and $b$ is the weighting exponent. If such a model is utilized, we recommend that the author quantifies the uncertainty in the estimated viscosity due to the value of $b$, the weighting exponent. For example, \cite{Zhang2015} compared two different values of $b$ in Figures 7, 12, and 13 (a fixed value of $b=2$ is used by \cite{ReyCastro2006}). \cite{Zhang2015} also suggest that to improve the fit a cut-off time be implemented. They provide a heurestic that the cut-off time correspond to when the standard deviation is 40\% the plateau value. Regardless of how the cut-off is determined, it is important to quantify the degree to which the estimated viscosity depends on this parameter. For example, Zhang et al. reported that the viscosity decreased by 0.8\% and 6.1\% when using a cut-off time corresponding to a standard deviation of 30\% or 20\% the plateau value, respectively. However, the magnitude of variability depends strongly on the system. We recommend that the author demonstrate the cut-off time dependence. For example, plots of the estimated viscosity with respect to the weighting exponent and cut-off time, such as those shown in Figure \ref{fig:GK_tcut_b}, provide a quantitative measure of confidence in the viscosity value.
+%		where $A, \alpha, \tau_1, $ and $\tau_2$ are fitting parameters. The primary advantage over the previous approach is that uncertainties in the model fit do not propagate through the integration. It is important to include a description of how the fit is performed, i.e. the objective function, weighting model, range of data included, etc. \cite{Zhang2015} recommend that the data be weighted by the inverse of the standard deviation with respect to time. They fit the standard deviation to a weighting model of the form $w \propto t^{-b}$, where $w$ is the weight, $t$ is the time, and $b$ is the weighting exponent. If such a model is utilized, we recommend that the author quantifies the uncertainty in the estimated viscosity due to the value of $b$, the weighting exponent. For example, \cite{Zhang2015} compared two different values of $b$ in Figures 7, 12, and 13 (a fixed value of $b=2$ is used by \cite{ReyCastro2006}). \cite{Zhang2015} also suggest that to improve the fit a cut-off time be implemented. They provide a heuristic that the cut-off time correspond to when the standard deviation is 40\% the plateau value. Regardless of how the cut-off is determined, it is important to quantify the degree to which the estimated viscosity depends on this parameter. For example, Zhang et al. reported that the viscosity decreased by 0.8\% and 6.1\% when using a cut-off time corresponding to a standard deviation of 30\% or 20\% the plateau value, respectively. However, the magnitude of variability depends strongly on the system. We recommend that the author demonstrate the cut-off time dependence. For example, plots of the estimated viscosity with respect to the weighting exponent and cut-off time, such as those shown in Figure \ref{fig:GK_tcut_b}, provide a quantitative measure of confidence in the viscosity value.
 %	\end{enumerate}
 %RAM: Again, I think we want to avoid any discussion of force field accuracy
 %	\item Force fields: systematic consideration of the intra- vs. inter- molecular potential models; UA, vs. AUA vs. EA differences may be significant. For charged systems, polarizable force fields might be needed to get accurate results. Some studies have suggested that united-atom models are not capable of accurately reproducing viscosity and, therefore, anisotropic-united-atom or all-atom models are needed \cite{Allen1987,Payal2012,Mondello1997}. However, other studies have shown that with the appropriate tuning of the united-atom force field parameters viscosity can be accurately predicted without significant deprecation of other properties \cite{Gordon2006}. \cite{Ungerer2007} discusses different test cases (i.e. state points, compound structures) where united-atom or anisotropic-united-atom models are adequate and inadequate for predicting viscosity.
@@ -1055,14 +1063,14 @@ Furthermore, Ref. \cite{Zhang2015} recommends excluding short-time data from the
 
 Since the Einstein relation is valid in the limit of infinite time, in theory the slope should only be computed at long time. Unfortunately, by contrast with self-diffusivity, the long-time trend from a single run is often non-linear (recall Figure \ref{fig:Einstein_3terms_30replicates}). Replicate simulations are typically necessary to obtain a well-behaved long-time trend. For example, Figure \ref{fig:Einstein_3terms_30replicates} demonstrates that the replicate-averaged Einstein integral is approximately linear over a large time interval (using 30 replicate simulations). Therefore, if sufficient replicates are used it is possible to compute a reliable slope (viscosity) at the long-time limit.
 
-However, as observed in the inset of Figure \ref{fig:Einstein_3terms_30replicates}, the Einstein integral becomes nearly linear for a single simulation after a few ps. For these reasons, it is common to fit the slope from a single simulation over an intermediate time interval, e.g. 5 to 50 ps. We only recommend calculating the slope from an intermediate time interval if performing a large number of replicate simulations is too computationally expensive. Also, as mentioned in Sec. \ref{sec:Viscosity General}, the Einstein approach is likely preferred over the Green-Kubo approach only in this scenario. With a single simulation (or a small number of replicate simulations), we recommend that the author explain why the slope was calculated using a given intermediate time interval and how much variability is introduced if a different region is selected. 
+However, as observed in the inset of Figure \ref{fig:Einstein_3terms_30replicates}, the Einstein integral becomes nearly linear for a single simulation after a few ps. For these reasons, it is common to fit the slope from a single simulation over an intermediate time interval, e.g. 5 to 50 ps. We only recommend calculating the slope from an intermediate time interval if performing a large number of replicate simulations is too computationally expensive. Also, as mentioned in Sec. \ref{sec:Viscosity}, the Einstein approach is likely preferred over the Green-Kubo approach only in this scenario. With a single simulation (or a small number of replicate simulations), we recommend that the author explain why the slope was calculated using a given intermediate time interval and how much variability is introduced if a different region is selected. 
 
 For example, Figure \ref{fig:Einstein_slope_time_interval} helps visualize the uncertainty in $\eta$ due to the time interval used to compute the slope. Panels a) and b) are obtained from the respective single and 30 replicate simulation results presented previously in Figure \ref{fig:Einstein_3terms_30replicates}. Panel a) demonstrates that determining $\eta$ from a single run depends strongly on the time interval, while Panel b) shows that $\eta$ is much less dependent on the time interval when obtained from 30 replicate simulations.
 
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{Einstein_slope_time_interval.png}
-	\caption{Dependence of $\eta$ on the time interval used to compute the Einstein slope. For example, ``start time'' $=$ 50 ps and ``end time'' $=$ 200 ps computes the slope from $t = 50$ to $200$ ps of $\displaystyle \frac{V}{2 k_B T N_{\rm reps}} \sum_{n=1}^{N_{\rm reps}} \left\langle \int_0^t \tau_{\alpha\beta,n}(t') dt' \right\rangle_{t_0}$. Panels a) and b) correspond to a single simulation and 30 replicate simulations. The same color scale is used in both panels, but Panel b) also includes a zoomed-in color bar. Simulation data are the same as those presented in Figure \ref{fig:Einstein_3terms_30replicates}.}
+	\caption{Dependence of $\eta$ on the time interval used to compute the Einstein slope. For example, ``start time'' $=$ 50 ps and ``end time'' $=$ 200 ps computes the slope from $t = 50$ to $200$ ps of $\displaystyle \frac{V}{2 k_B T N_{\rm reps}} \sum_{n=1}^{N_{\rm reps}} \left\langle \int_0^t \tau_{\alpha\beta,n}(t') dt' \right\rangle_{t_0}$. Panels a) and b) correspond to a single simulation and 30 replicate simulations, respectively. The same color scale is used in both panels, but Panel b) also includes a zoomed-in color bar. Simulation data are the same as those presented in Figure \ref{fig:Einstein_3terms_30replicates}.}
 	\label{fig:Einstein_slope_time_interval}
 \end{figure}
 
@@ -1112,11 +1120,11 @@ Similarly, we suspect that the viscosity also depends on the van der Waals cut-o
 %
 %The focus of the current work is outlining best practices in EMD for self-diffusivity and viscosity prediction. This work may be expanded on in the future with NEMD techniques or best practices for other transport properties.
 
-Molecular simulation is commonly used to predict transport properties, however, without careful simulation design and acute analysis, results may not be meaningful. This work outlines the best practices in the design and analysis of equilibrium molecular dynamics simulations for self-diffusivity and viscosity prediction. We anticipate future studies discussing best practices for non-equilibrium molecular dynamics techniques or additional transport properties.
+Molecular simulation is commonly used to predict transport properties. However, without careful simulation design and acute analysis, results may not be meaningful. This work outlines the best practices in the design and analysis of equilibrium molecular dynamics simulations for self-diffusivity and viscosity prediction. We anticipate future studies discussing best practices for non-equilibrium molecular dynamics techniques or additional transport properties.
 
-For self-diffusivity, we recommend employing the Einstein method. In liquid systems, the $NVE$ ensemble is suggested over the $NVT$ ensemble due to the potential interference of the thermostats in self-diffusivity prediction. Uncertainty is reduced by running multiple independent simulations, allowing the system to more thoroughly sample the possible states. We recommend multiple runs at different system sizes to extrapolate the infinite system size limit prediction for self-diffusivity. Atom positions are recommended to be outputted 1000 times over a production run, however, the user can choose to output less frequently to reduce file size or more frequently for potentially increased accuracy. To ensure simulations are run long enough for the dynamics of the system to be fully emulated, the user can run a series of simulations at differing lengths, and observe deviation in estimated self-diffusivity with changes in simulation time. The degree of configuration space exploration can be estimated by calculating the mean squared displacements of the molecules and comparing to the radius of gyration and box length. The MSD should be greater than the radius of gyration, and ideally, on the order of the box length. In post-simulation analysis, best practice improves precision by averaging the velocity autocorrelation function over all molecules and over multiple time origins. Some judgment by the user is necessary to decide where the slope is measured for the Einstein approach, and it is important that the user communicate the approach used and justify how the decision was made. Measures should be taken to rigorously estimate the precision of the self-diffusivity prediction, where we recommend bootstrapping the uncertainties.
+For self-diffusivity, we recommend employing the Einstein method. In liquid systems, the $NVE$ ensemble is suggested over the $NVT$ ensemble due to the potential interference of the thermostats in self-diffusivity prediction. Uncertainty is reduced by running multiple independent simulations, allowing the system to more thoroughly sample the possible states. We recommend multiple runs at different system sizes to extrapolate the infinite system size limit prediction for self-diffusivity. Atom positions are recommended to be outputted 1000 times over a production run, however, the user can choose to output less frequently to reduce file size or more frequently for potentially increased accuracy. To ensure simulations are run long enough for the dynamics of the system to be fully emulated, the user can run a series of simulations at differing lengths, and observe deviation in estimated self-diffusivity with changes in simulation time. The degree of configuration space exploration can be estimated by calculating the mean squared displacements of the molecules and comparing to the radius of gyration and box length. The root MSD should be greater than the radius of gyration, and ideally, on the order of the box length. In post-simulation analysis, best practice improves precision by averaging the velocity autocorrelation function over all molecules and over multiple time origins. Some judgment by the user is necessary to decide where the slope is measured for the Einstein approach, and it is important that the user communicate the approach used and justify how the decision was made. Measures should be taken to rigorously estimate the precision of the self-diffusivity prediction, where we recommend bootstrapping the uncertainties.
 
-For viscosity, the Green-Kubo approach is recommended, although the Einstein method may be preferred with certain systems, i.e. if replicate simulations as too computationally expensive. It is worth noting that NEMD simulations are highly preferred for moderate to high viscosity materials (more than 20 to 50 cP). The $NVE$ ensemble is suggested, but some success has been found using the $NVT$ ensemble \cite{Shirts2013,Fanourgakis2012}. As a collective property, viscosity requires significantly more data than self-diffusivity. The simulation length of each trajectory should typically be at least an order of magnitude greater than the Green-Kubo integral plateau time. This can be more precisely determined by comparing the Green-Kubo integrals of varying simulation lengths. Due to their slower dynamics, more viscous materials require longer simulation times. Stress tensor components are recommended to be outputted every 5 to 10 fs. System size seems to be of little impact on viscosity prediction (see Figures \ref{fig:MoultosFig3}-\ref{fig:ZhangFig9}), however, it is still recommended that the user justify their choice of system size by plotting $N^{-1/3}$ versus predicted viscosity. Any trend observed would suggest system size effects, and an infinite system size result could be estimated from a linear fit. In post-simulation data processing, it is recommended to average over all six independent components of the stress tensor to enhance precision. The number of replicates a system needs can vary greatly depending on the compound, number of molecules, temperature, and simulation length. It is recommended that the viscosity is estimated from the Green-Kubo equation by fitting the running integral to a double-exponential function as specified by Zhang et al. \cite{Zhang2015} (see Section \ref{sec:Viscosity:Green-Kubo: Data analysis}).
+For viscosity, the Green-Kubo approach is recommended, although the Einstein method may be preferred with certain systems, i.e. if replicate simulations are too computationally expensive. It is worth noting that NEMD simulations are highly preferred for moderate to high viscosity materials (more than 20 to 50 cP). The $NVE$ ensemble is suggested, but some success has been found using the $NVT$ ensemble \cite{Shirts2013,Fanourgakis2012}. As a collective property, viscosity requires significantly more data than self-diffusivity. The simulation length of each trajectory should typically be at least an order of magnitude greater than the Green-Kubo integral plateau time. This can be more precisely determined by comparing the Green-Kubo integrals of varying simulation lengths. Due to their slower dynamics, more viscous materials require longer simulation times. Stress tensor components are recommended to be outputted every 5 to 10 fs. System size seems to be of little impact on viscosity prediction (see Figures \ref{fig:MoultosFig3}-\ref{fig:ZhangFig9}), however, it is still recommended that the user justify their choice of system size by plotting $N^{-1/3}$ versus predicted viscosity. Any trend observed would suggest system size effects, and an infinite system size result could be estimated from a linear fit. In post-simulation data processing, it is recommended to average over all six independent components of the stress tensor to enhance precision. The number of replicates a system needs can vary greatly depending on the compound, number of molecules, temperature, and simulation length. It is recommended that the viscosity is estimated from the Green-Kubo equation by fitting the running integral to a double-exponential function as specified by Zhang et al. \cite{Zhang2015} (see Section \ref{sec:Viscosity:Green-Kubo: Data analysis}).
 
 \section*{Acknowledgments}
 

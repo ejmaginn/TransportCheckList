@@ -129,24 +129,25 @@
 \bibitem[{Pan(????)}]{PanaNotes}
 Athanassios Panagiotopoulos, The University of Princeton Class Notes;.
 \newblock Accessed: 2018-01-01.
-\newblock http://paros.princeton.edu/cbe422/md2.pdf;
-  http://paros.princeton.edu/cbe520/Transport.pdf.
+\newblock https://paros.princeton.edu/cbe422/md2.pdf;
+  https://paros.princeton.edu/cbe520/Transport.pdf.
 
 \bibitem[{Kof(????)}]{KofkeNotes}
 David Kofke, The University of Buffalo Class Notes;.
 \newblock Accessed: 2018-01-01.
-\newblock http://www.eng.buffalo.edu/~kofke/ce530/Lectures/Lecture12.ppt.pdf.
+\newblock https://www.eng.buffalo.edu/\textasciitilde
+  kofke/ce530/Lectures/Lecture12.ppt.pdf.
 
 \bibitem[{Mag(????)}]{MaginnNotes}
 Ed Maginn, The University of Notre Dame Class Notes;.
 \newblock Accessed: 2018-01-01.
-\newblock https://www3.nd.edu/~ed/notes.pdf.
+\newblock https://www3.nd.edu/\textasciitilde ed/notes.pdf.
 
 \bibitem[{She(????)}]{ShellNotes}
 Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock Accessed: 2018-01-01.
-\newblock
-  https://engineering.ucsb.edu/~shell/che210d/Computing\_properties.pdf.
+\newblock https://engineering.ucsb.edu/\textasciitilde
+  shell/che210d/Computing\_properties.pdf.
 
 \bibitem[{Chen et~al.(2009)Ting Chen and Berend Smit and Alexis T.
   Bell}]{Chen2009}

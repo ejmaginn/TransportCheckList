@@ -624,9 +624,9 @@ FUNCTION {format.names}
       't :=
       nameptr #1 >
         {
-          nameptr #20
+          nameptr #50
           #1 + =
-          numnames #20
+          numnames #50
           > and
             { "others" 't :=
               #1 'namesleft := }
@@ -679,9 +679,9 @@ FUNCTION {format.names.auth}
       't :=
       nameptr #1 >
         {
-          nameptr #20
+          nameptr #50
           #1 + =
-          numnames #20
+          numnames #50
           > and
             { "others" 't :=
               #1 'namesleft := }

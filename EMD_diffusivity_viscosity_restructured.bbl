@@ -28,7 +28,11 @@
 \textbf{\color{LiveCoMSMediumGrey} Case DA}, Brozell SR, Cerutti DS, Cheatham
   TE, Cruzeiro VWD, Darden TA, Duke RE, Ghoreishi D, Gohlke H, Goetz AW, Greene
   D, Harris R, Homeyer N, Izadi S, Kovalenko A, Lee TS, LeGrand S, Li P, Lin C,
-  Liu J, et~al., {AMBER 2018, University of California, San Francisco.};.
+  Liu J, Luchko T, Luo R, Mermelstein DJ, Merz KM, Miao Y, Monard G, Nguyen H,
+  Omelyan I, Onufriev A, Pan F, Qi R, Roe DR, Roitberg A, Sagui C,
+  Schott-Verdugo S, Shen J, Simmerling CL, Smith J, Swails J, Walker RC, Wang
+  J, Wei H, Wolf RM, Wu X, Xiao L, York DM, Kollman PA, {AMBER 2018, University
+  of California, San Francisco.};.
 \newblock Accessed: 2018-05-4.
 \newblock http://ambermd.org/.
 
@@ -57,7 +61,9 @@
 \textbf{\color{LiveCoMSMediumGrey} Brooks BR}, Brooks CL, Mackerell AD, Nilsson
   L, Petrella RJ, Roux B, Won Y, Archontis G, Bartels C, Boresch S, Caflisch A,
   Caves L, Cui Q, Dinner AR, Feig M, Fischer S, Gao J, Hodoscek M, Im W,
-  Kuczera K, et~al.
+  Kuczera K, Lazaridis T, Ma J, Ovchinnikov V, Paci E, Pastor RW, Post CB, Pu
+  JZ, Schaefer M, Tidor B, Venable RM, Woodcock HL, Wu X, Yang W, York DM,
+  Karplus M.
 \newblock CHARMM: The biomolecular simulation program.
 \newblock Journal of Computational Chemistry. ; 30(10):1545--1614.
 \newblock \href{https://dx.doi.org/10.1002/jcc.21287}{\doiprefix
@@ -293,11 +299,11 @@ Molecular simulation of the thermophysical properties of fluids: From
   \urlprefix\url{https://github.com/dmzuckerman/Sampling-Uncertainty/blob/master/main.pdf}.
 
 \bibitem[{Shen et~al.(????)Shen, V.K. and Siderius, D.W. and Krekelberg, W.P.
-  and and Hatch, H.W. and Eds.}]{ShenSRSW}
-\textbf{\color{LiveCoMSMediumGrey} Shen VK}, Siderius DW, Krekelberg WP, ,
-  Hatch HW, Eds, {NIST Standard Reference Simulation Website, NIST Standard
-  Reference Database Number 173, National Institute of Standards and
-  Technology, Gaithersburg MD, 20899};.
+  and Hatch, H.W. and Eds.}]{ShenSRSW}
+\textbf{\color{LiveCoMSMediumGrey} Shen VK}, Siderius DW, Krekelberg WP, Hatch
+  HW, Eds, {NIST Standard Reference Simulation Website, NIST Standard Reference
+  Database Number 173, National Institute of Standards and Technology,
+  Gaithersburg MD, 20899};.
 \newblock Accessed: 2018-04-25.
 \newblock http://doi.org/10.18434/T4M88Q.
 

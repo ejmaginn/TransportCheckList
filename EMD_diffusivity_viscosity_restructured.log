@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  29 MAY 2018 22:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  30 MAY 2018 08:44
 entering extended mode
 **./EMD_diffusivity_viscosity_restructured.tex
 (EMD_diffusivity_viscosity_restructured.tex
@@ -2373,7 +2373,7 @@ has not changed.
 Here is how much of TeX's memory you used:
  28827 strings out of 493333
  525020 string characters out of 3139198
- 794779 words of memory out of 3000000
+ 794817 words of memory out of 3000000
  31051 multiletter control sequences out of 15000+200000
  141962 words of font info for 630 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2398,7 +2398,7 @@ c/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.p
 fb>
-Output written on EMD_diffusivity_viscosity_restructured.pdf (20 pages, 1134669
+Output written on EMD_diffusivity_viscosity_restructured.pdf (20 pages, 1134530
  bytes).
 PDF statistics:
  928 PDF objects out of 1000 (max. 8388607)

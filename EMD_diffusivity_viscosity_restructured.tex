@@ -13,7 +13,7 @@
 \usepackage[version=4]{mhchem}
 \usepackage{siunitx}
 \DeclareSIUnit\Molar{M}
-\newcommand{\versionnumber}{1.6}  % you should update the minor version number in preprints and major version number of submissions.
+\newcommand{\versionnumber}{1}  % you should update the minor version number in preprints and major version number of submissions.
 \newcommand{\githubrepository}{\url{https://github.com/ejmaginn/TransportCheckList}}  %this should be the main github repository for this article
 \graphicspath{{figures/}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -240,14 +240,14 @@ For self-diffusivity, $\xi$ is the Cartesian atom position $(r_{\alpha})$ and th
 		\toprule
 		Property & $\gamma$          & $\xi$                        & Green-Kubo (Equation \ref{eq:Green-Kubo})    & Einstein (Equation \ref{eq:Einstein})     \\
 		\midrule
-		Self-diffusivity     & $D$ & $r_{\alpha}$          & $ \displaystyle \frac{1}{\rm d} \int_{0}^{\infty}dt\left\langle \frac{1}{N} \sum_{i=1}^{N} v_{\alpha,i}(t) v_{\alpha,i}(0)\right\rangle_{t_0}$    & $ \displaystyle \frac{1}{\rm 2d} \lim_{t\to\infty} \frac{d}{dt} \left\langle \frac{1}{N} \sum_{i=1}^{N} |r_{\alpha,i}(t)-r_{\alpha,i}(0)|^2 \right\rangle_{t_0}$   \\
+		Self-diffusivity     & $D$ & $r_{\alpha}$          & $ \displaystyle \frac{1}{d_\alpha} \int_{0}^{\infty}dt\left\langle \frac{1}{N} \sum_{i=1}^{N} v_{\alpha,i}(t) v_{\alpha,i}(0)\right\rangle_{t_0}$    & $ \displaystyle \frac{1}{2d_\alpha} \lim_{t\to\infty} \frac{d}{dt} \left\langle \frac{1}{N} \sum_{i=1}^{N} |r_{\alpha,i}(t)-r_{\alpha,i}(0)|^2 \right\rangle_{t_0}$   \\
 		Shear viscosity     & $\eta$       & $r_\alpha v_\beta$           & $ \displaystyle \frac{V}{k_{\rm B}T} \int_{0}^{\infty}dt\left\langle \tau_{\alpha,\beta}(t) \tau_{\alpha,\beta}(0)\right\rangle_{t_0}$    & $ \displaystyle \frac{V}{2k_{\rm B}T} \lim_{t\to\infty} \frac{d}{dt} \left\langle \left(\int_{0}^{t}dt' \tau_{\alpha,\beta}(t')\right)^2 \right\rangle_{t_0}$  \\
 		\bottomrule
 	\end{tabular}
 	\newline
 	%$P_{\alpha,\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( \frac{p_{\alpha,i}(t)p_{\beta,i}(t)}{m} + \alpha_i(t) \ddot{\beta_i}(t) \right)$
 	$\alpha$, $\beta = x, y, $ or $z$ Cartesian coordinates of the atoms or molecule center of mass \newline
-	$\rm d =$ dimensionality (1, 2, or 3) \newline
+	$d_\alpha =$ dimensionality (1, 2, or 3) \newline
 	$N=$ number of atoms or molecules (see Sec.\ \ref{sec:General: Clear communication}) \newline
 %	$V=$ volume \newline
 	$k_{\rm B}=$ Boltzmann constant \newline
@@ -517,7 +517,7 @@ To smooth noise in the Green-Kubo integral or Einstein slope, we recommend gener
 %	\label{fig:PayalFig2}
 %\end{figure}
 
-The standard error of the mean is inversely proportional to the square root of the number of replicates (see Figure 7 of Ref. \cite{Zhang2015} and Figure 8 of Ref. \cite{Ma2017}), so increasing the number of replicates is a simple, fast, and direct way to reduce the uncertainty. For example, the fluctuations in $\eta$ are much smaller for the average of 10 replicates compared to that of a single longer simulation (see Figure 2 of Ref. \cite{Payal2012}). As fluctuations in $\eta$ are typically much larger than $D$, more replicate simulations are required for estimating viscosity (see Sec.\ \ref{sec:Viscosity:General: Improved precision}).
+The uncertainty (specifically, the standard error of the mean) is inversely proportional to the square root of the number of replicates (see Figure 7 of Ref. \cite{Zhang2015} and Figure 8 of Ref. \cite{Ma2017}). Therefore, increasing the number of replicates is a simple, fast, and direct way to reduce the uncertainty. For example, the fluctuations in $\eta$ are much smaller for the average of 10 replicates compared to that of a single longer simulation (see Figure 2 of Ref. \cite{Payal2012}). As fluctuations in $\eta$ are typically much larger than $D$, more replicate simulations are required for estimating viscosity (see Sec.\ \ref{sec:Viscosity:General: Improved precision}).
 
 In addition, replicate simulations are useful if a single simulation does not adequately sample phase space, i.e. is trapped in a local minimum or has slow dynamics. Furthermore, replicates can provide rigorous estimates of uncertainty (see Sec.\ \ref{sec:General: Uncertainty}).
 
@@ -547,7 +547,7 @@ As no single best practice can be recommended for the region over which the slop
 
 \subsubsection{Uncertainty quantification} \label{sec:General: Uncertainty}
 
-Providing meaningful estimates of uncertainty is a pivotal, but often overlooked, step in reporting molecular simulation results. For this reason, in addition to the discussion provided below, we recommend a close study of Refs. \citenum{GUM,Grossfield2018}. Although force field deficiencies can lead to large systematic deviations with respect to the ``true'' experimental value, we limit our discussion to random uncertainties associated with fluctuations in the simulation output and subsequent data analysis.
+Providing meaningful estimates of uncertainty is a pivotal, but often overlooked, step in reporting molecular simulation results. For this reason, in addition to the discussion provided below, we recommend a close study of Refs. \citenum{GUM,Grossfield2018}. Although force field deficiencies can lead to large systematic deviations with respect to the ``true'' experimental value, we limit our discussion to random uncertainties associated with fluctuations in the simulation output.
 
 Replicates can provide a rigorous uncertainty assessment. We recommend bootstrapping the uncertainties by randomly sampling which replicates are included in the data analysis procedure:
 

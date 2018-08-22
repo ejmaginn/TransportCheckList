@@ -69,8 +69,16 @@
 \newblock \href{https://dx.doi.org/10.1002/jcc.21287}{\doiprefix
   \detokenize{10.1002/jcc.21287}}.
 
-\bibitem[{ms2(2017)}]{ms2}
-ms2: A molecular simulation tool for thermodynamic properties, release 3.0.
+\bibitem[{Rutkai et~al.(2017)G{\'a}bor Rutkai and Andreas K{\"o}ster and
+  Gabriela Guevara-Carrion and Tatjana Janzen and Michael Schappals and Colin
+  W. Glass and Martin Bernreuther and Amer Wafai and Simon Stephan and
+  Maximilian Kohns and Steffen Reiser and Stephan Deublein and Martin Horsch
+  and Hans Hasse and Jadran Vrabec}]{ms2}
+\textbf{\color{LiveCoMSMediumGrey} Rutkai G}, K{\"o}ster A, Guevara-Carrion G,
+  Janzen T, Schappals M, Glass CW, Bernreuther M, Wafai A, Stephan S, Kohns M,
+  Reiser S, Deublein S, Horsch M, Hasse H, Vrabec J.
+\newblock ms2: A molecular simulation tool for thermodynamic properties,
+  release 3.0.
 \newblock Computer Physics Communications.  2017; 221:343 -- 351.
 \newblock
   \href{https://dx.doi.org/https://doi.org/10.1016/j.cpc.2017.07.025}{\doiprefix
@@ -147,7 +155,7 @@ Ed Maginn, The University of Notre Dame Class Notes;.
 \newblock https://www3.nd.edu/\textasciitilde ed/notes.pdf.
 
 \bibitem[{She(????)}]{ShellNotes}
-Scott Shell, The University of California Santa Barabara Class Notes;.
+Scott Shell, The University of California Santa Barbara Class Notes;.
 \newblock Accessed: 2018-01-01.
 \newblock https://engineering.ucsb.edu/\textasciitilde
   shell/che210d/Computing\_properties.pdf.
@@ -181,8 +189,11 @@ Scott Shell, The University of California Santa Barabara Class Notes;.
 \newblock \href{https://dx.doi.org/10.1021/acs.chemrev.5b00215}{\doiprefix
   \detokenize{10.1021/acs.chemrev.5b00215}}, pMID: 26624238.
 
-\bibitem[{Ung(2007)}]{Ungerer2007}
-Molecular simulation of the thermophysical properties of fluids: From
+\bibitem[{Ungerer et~al.(2007)Philippe Ungerer and Carlos Nieto-Draghi and
+  Bernard Rousseau and Göktug Ahunbay and Véronique Lachet}]{Ungerer2007}
+\textbf{\color{LiveCoMSMediumGrey} Ungerer P}, Nieto-Draghi C, Rousseau B,
+  Ahunbay G, Lachet V.
+\newblock Molecular simulation of the thermophysical properties of fluids: From
   understanding toward quantitative predictions.
 \newblock Journal of Molecular Liquids.  2007; 134(1):71 -- 89.
 \newblock
@@ -307,11 +318,11 @@ Molecular simulation of the thermophysical properties of fluids: From
 \newblock Accessed: 2018-04-25.
 \newblock http://doi.org/10.18434/T4M88Q.
 
-\bibitem[{Kondratyuk et~al.(????)N D Kondratyuk and G E Norman and V V
+\bibitem[{Kondratyuk et~al.(2016)N D Kondratyuk and G E Norman and V V
   Stegailov}]{Kondratyuk2016}
 \textbf{\color{LiveCoMSMediumGrey} Kondratyuk ND}, Norman GE, Stegailov VV.
 \newblock Rheology of liquid n-triacontane: Molecular dynamics simulation.
-\newblock Journal of Physics: Conference Series. ; 774(1):012039.
+\newblock Journal of Physics: Conference Series.  2016; 774(1):012039.
 
 \bibitem[{Liu et~al.(2012)Liu, Hongjun and Maginn, Edward and Visser, Ann E.
   and Bridges, Nicholas J. and Fox, Elise B.}]{Liu2012}

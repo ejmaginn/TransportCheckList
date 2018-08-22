@@ -1,4 +1,4 @@
-\begin{thebibliography}{57}
+\begin{thebibliography}{58}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\urlprefix}{}
 \providecommand{\doiprefix}{doi: }
@@ -393,6 +393,16 @@ Molecular simulation of the thermophysical properties of fluids: From
 \newblock The Journal of Chemical Physics.  2015; 143(24):243113.
 \newblock \href{https://dx.doi.org/10.1063/1.4932980}{\doiprefix
   \detokenize{10.1063/1.4932980}}.
+
+\bibitem[{Kim et~al.(2018)Kim, Kang-Sahn and Han, Myung Hoon and Kim, Changho
+  and Li, Zhen and Karniadakis, George Em and Lee, Eok Kyun}]{Kim2018}
+\textbf{\color{LiveCoMSMediumGrey} Kim KS}, Han MH, Kim C, Li Z, Karniadakis
+  GE, Lee EK.
+\newblock Nature of intrinsic uncertainties in equilibrium molecular dynamics
+  estimation of shear viscosity for simple and complex fluids.
+\newblock The Journal of Chemical Physics.  2018; 149(4):044510.
+\newblock \href{https://dx.doi.org/10.1063/1.5035119}{\doiprefix
+  \detokenize{10.1063/1.5035119}}.
 
 \bibitem[{Evans and Morriss(1990)D. J. Evans and G. P. Morriss}]{Evans:90}
 \textbf{\color{LiveCoMSMediumGrey} Evans DJ}, Morriss GP.

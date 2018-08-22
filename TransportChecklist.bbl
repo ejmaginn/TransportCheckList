@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{57}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\urlprefix}{}
 \providecommand{\doiprefix}{doi: }
@@ -423,6 +423,44 @@ Molecular simulation of the thermophysical properties of fluids: From
 \newblock \href{https://dx.doi.org/10.1021/Jp972543+}{\doiprefix
   \detokenize{10.1021/Jp972543+}}.
 
+\bibitem[{Swope et~al.(1982)Swope, William C. and Andersen, Hans C. and Berens,
+  Peter H. and Wilson, Kent R.}]{Swope1982}
+\textbf{\color{LiveCoMSMediumGrey} Swope WC}, Andersen HC, Berens PH, Wilson
+  KR.
+\newblock A computer simulation method for the calculation of equilibrium
+  constants for the formation of physical clusters of molecules{: A}pplication
+  to small water clusters.
+\newblock The Journal of Chemical Physics.  1982; 76(1):637--649.
+\newblock \href{https://dx.doi.org/10.1063/1.442716}{\doiprefix
+  \detokenize{10.1063/1.442716}}.
+
+\bibitem[{Hess et~al.(1998)Hess, Berk and Bekker, Henk and Berendsen, Herman J.
+  C. and Fraaije, Johannes G. E. M.}]{Hess1998}
+\textbf{\color{LiveCoMSMediumGrey} Hess B}, Bekker H, Berendsen HJC, Fraaije
+  JGEM.
+\newblock {LINCS: A} linear constraint solver for molecular simulations.
+\newblock Journal of Computational Chemistry.  1998; 18(12):1463--1472.
+\newblock
+  \href{https://dx.doi.org/10.1002/(SICI)1096-987X(199709)18:12<1463::AID-JCC4>3.0.CO;2-H}{\doiprefix
+  \detokenize{10.1002/(SICI)1096-987X(199709)18:12<1463::AID-JCC4>3.0.CO;2-H}}.
+
+\bibitem[{Hess(2008)Hess, Berk}]{Hess2008_PLINCS}
+\textbf{\color{LiveCoMSMediumGrey} Hess B}.
+\newblock {P-LINCS: A} Parallel Linear Constraint Solver for Molecular
+  Simulation.
+\newblock Journal of Chemical Theory and Computation.  2008; 4(1):116--122.
+\newblock \href{https://dx.doi.org/10.1021/ct700200b}{\doiprefix
+  \detokenize{10.1021/ct700200b}}.
+
+\bibitem[{Guo et~al.(2002)Guang-Jun Guo and Yi-Gang Zhang and Keith Refson and
+  Ya-Juan Zhao}]{GUANG2002}
+\textbf{\color{LiveCoMSMediumGrey} Guo GJ}, Zhang YG, Refson K, Zhao YJ.
+\newblock Viscosity and stress autocorrelation function in supercooled water: a
+  molecular dynamics study.
+\newblock Molecular Physics.  2002; 100(16):2617--2627.
+\newblock \href{https://dx.doi.org/10.1080/00268970210133477}{\doiprefix
+  \detokenize{10.1080/00268970210133477}}.
+
 \bibitem[{van~der Spoel et~al.(1998)David van der Spoel and Paul J. van Maaren
   and Herman J. C. Berendsen}]{vanderSpoel1998}
 \textbf{\color{LiveCoMSMediumGrey} van~der Spoel D}, van Maaren PJ, Berendsen
@@ -451,5 +489,23 @@ Molecular simulation of the thermophysical properties of fluids: From
 \newblock The Journal of Physical Chemistry B.  2006; 110(29):14426--14435.
 \newblock \href{https://dx.doi.org/10.1021/jp062885s}{\doiprefix
   \detokenize{10.1021/jp062885s}}, pMID: 16854152.
+
+\bibitem[{Levitt et~al.(1995)Michael Levitt and Miriam Hirshberg and Ruth
+  Sharon and Valerie Daggett}]{Levitt1995}
+\textbf{\color{LiveCoMSMediumGrey} Levitt M}, Hirshberg M, Sharon R, Daggett V.
+\newblock Potential energy function and parameters for simulations of the
+  molecular dynamics of proteins and nucleic acids in solution.
+\newblock Computer Physics Communications.  1995; 91(1):215 -- 231.
+\newblock \href{https://dx.doi.org/10.1016/0010-4655(95)00049-L}{\doiprefix
+  \detokenize{10.1016/0010-4655(95)00049-L}}.
+
+\bibitem[{van~der Spoel and van Maaren(2006)van der Spoel, David and van
+  Maaren, Paul J.}]{derSpoel2006}
+\textbf{\color{LiveCoMSMediumGrey} van~der Spoel D}, van Maaren PJ.
+\newblock The Origin of Layer Structure Artifacts in Simulations of Liquid
+  Water.
+\newblock Journal of Chemical Theory and Computation.  2006; 2(1):1--11.
+\newblock \href{https://dx.doi.org/10.1021/ct0502256}{\doiprefix
+  \detokenize{10.1021/ct0502256}}.
 
 \end{thebibliography}

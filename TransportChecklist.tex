@@ -577,7 +577,7 @@ Step \ref{item:Confidence interval} requires the probability density function (P
 
 \subsection{General transport: Common pitfalls} \label{sec:General: Common pitfalls}
 
-When simulating in the $NVE$ ensemble, it is imperative that the integrator conserve energy. The most common method to check for energy conservation is to systematically adjust the time step and plot the energy versus time. The energy should show little to no drift over the timescale of the simulation. Haile \cite{Haile1992} provides a detailed discussion of energy conservation and time step size (see Chapter 4.4 of his book). If constraints on bond lengths or angles are used, we also recommend checking to make sure that these constraints are maintained.
+When simulating in the $NVE$ ensemble, it is imperative that the integrator conserve energy. Performing simulations with single precision is one of the main causes for poor conservation of energy. For this reason, we recommend the use of full double precision or double/fixed precision. The most common method to check for energy conservation is to systematically adjust the time step and plot the energy versus time. The energy should show little to no drift over the timescale of the simulation. Haile \cite{Haile1992} provides a detailed discussion of energy conservation and time step size (see Chapter 4.4 of his book). If constraints on bond lengths or angles are used, we also recommend checking to make sure that these constraints are maintained.
 
 % (Link to document about initializing NVE in the right “ballpark.”)
 
@@ -889,7 +889,7 @@ For example, Figure \ref{fig:Einstein_3terms_30replicates} demonstrates that ave
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{Einstein_3terms_30replicates.pdf}
-	\caption{Improvement with three stress tensor terms and 30 replicate runs. Simulations were performed with Gromacs 2018 for saturated liquid ethane at 137 K using the TraPPE-UA model \cite{Martin1998}. Simulation details: velocity Verlet integrator, 2 fs time-step, 6 fs pressure tensor output frequency, 12 time origins, 1 ns equilibration time, 1 ns production time, 400 molecule system, 1.4 nm non-bonded cut-off distance with analytic tail corrections, Nos{\'e}-Hoover thermostat with time constant of 1 ps, bond-lengths constrained with LINCS algorithm \cite{GROMACS}.}
+	\caption{Improvement with three stress tensor terms and 30 replicate runs. Simulations were performed with Gromacs 2018 for saturated liquid ethane at 137 K using the TraPPE-UA model \cite{Martin1998}. Simulation details: velocity Verlet integrator \cite{Swope1982}, 2 fs time-step, 6 fs pressure tensor output frequency, 12 time origins, 1 ns equilibration time, 1 ns production time, 400 molecule system, 1.4 nm non-bonded cut-off distance with analytic tail corrections, Nos{\'e}-Hoover thermostat with time constant of 1 ps \cite{Hoover1985}, bond-lengths constrained with a linear constraint solver (LINCS) algorithm \cite{GROMACS,Hess1998,Hess2008_PLINCS}.}
 	\label{fig:Einstein_3terms_30replicates}
 \end{figure}
 
@@ -936,7 +936,7 @@ An alternative method is to fit a model to the autocorrelation function before c
 \begin{equation} \label{eq:ACF_fit}
 \frac{S^{\rm f}_{\rm ACF}(t)}{S^{\rm f}_{\rm ACF}(0)} = (1-C)\cos(\omega t)\exp{(-t/\tau_f)^{\beta_f}} + C\exp{(-t/\tau_s)^{\beta_s}}
 \end{equation}
-where $C, \omega, \tau_f, \tau_s, \beta_f, \beta_s$ (and sometimes $S^{\rm f}_{\rm ACF}(0)$) are fitting parameters. $\omega$ is the frequency of rapid pressure oscillations, $\tau_f$ and $\beta_f$ are the time constant and exponent of fast relaxation in a stretched-exponential approximation, $\tau_s$ and $\beta_s$ are constants for slow relaxation, $C$ is the pre-factor that determines the weight between fast and slow relaxation, $S^{\rm f}_{\rm ACF}(t)$ is the stress autocorrelation function at time $t$, and $S^{\rm f}_{\rm ACF}(0)$ is the initial (time-zero) autocorrelation function \cite{GROMACS}.
+where $C, \omega, \tau_f, \tau_s, \beta_f, \beta_s$ (and sometimes $S^{\rm f}_{\rm ACF}(0)$) are fitting parameters. $\omega$ is the frequency of rapid pressure oscillations, $\tau_f$ and $\beta_f$ are the time constant and exponent of fast relaxation in a stretched-exponential approximation, $\tau_s$ and $\beta_s$ are constants for slow relaxation, $C$ is the pre-factor that determines the weight between fast and slow relaxation, $S^{\rm f}_{\rm ACF}(t)$ is the stress autocorrelation function at time $t$, and $S^{\rm f}_{\rm ACF}(0)$ is the initial (time-zero) autocorrelation function \cite{GROMACS,GUANG2002}.
 
 %Figure \ref{fig:FanourgakisFig1}, from Ref.  \cite{Fanourgakis2012}, demonstrates that Equation \ref{eq:ACF_fit} can reliably fit the autocorrelation function for this system. However, small deviations in the model fit can lead to significant bias in the estimated viscosity. Similar to the methods discussed previously, it is important to quantify the variability in viscosity that arises from the model fit. For example, we recommend bootstrapping the uncertainties of the model fit. Furthermore, if a weighting function or cut-off time is implemented when fitting Equation \ref{eq:ACF_fit}, the impact of these parameters should be discussed.
 
@@ -1111,9 +1111,9 @@ In addition, we recommend bootstrapping the time interval uncertainty, i.e. comp
 
 \subsection{Viscosity: Special topics} \label{sec:Viscosity Special topics}
 
-The GROMACS manual reports that viscosity ``is very dependent on the treatment of the electrostatics. Using a (short) cut-off results in large noise on the off-diagonal pressure elements, which can increase the calculated viscosity by an order of magnitude.'' \cite{GROMACS,Hess2002} Therefore, when computing viscosities for systems with electrostatics, it is extremely important to investigate the effect of cut-off distance. This can be done by performing simulations with variable Coulombic cut-off lengths, typically 0.9, 1.2, and 1.4 nm. We also recommend investigating whether the estimated viscosity depends strongly on the algorithm for computing the electrostatics, e.g., particle mesh Ewald. \cite{GROMACS} 
+The GROMACS manual reports that viscosity ``is very dependent on the treatment of the electrostatics. Using a (short) cut-off results in large noise on the off-diagonal pressure elements, which can increase the calculated viscosity by an order of magnitude.'' \cite{GROMACS,Hess2002} Therefore, when computing viscosities for systems with electrostatics, it is extremely important to investigate the effect of cut-off distance. This can be done by performing simulations with variable Coulombic cut-off lengths, typically 0.9, 1.2, and 1.4 nm. We also recommend investigating whether the estimated viscosity depends strongly on the algorithm for computing the electrostatics, e.g., particle mesh Ewald. \cite{GROMACS.Darden1993} 
 
-Similarly, we suspect that the viscosity also depends on the van der Waals cut-off length and/or if a cut-and-shift, force-switch, or truncated (with or without tail corrections) potential is implemented \cite{GROMACS}. For these reasons, we strongly recommend reporting how the non-bonded (electrostatics and van der Waals) interactions are computed. 
+Similarly, we suspect that the viscosity also depends on the van der Waals cut-off length and/or if a cut-and-shift, force-switch, or truncated (with or without tail corrections) potential is implemented \cite{GROMACS,Levitt1995,derSpoel2006}. For these reasons, we strongly recommend reporting how the non-bonded (electrostatics and van der Waals) interactions are computed. 
 
 \section{Conclusions} \label{Conclusions}
 %RAM: I have commented out DJC original conclusion section, and copied a slightly modified version

@@ -1,4 +1,4 @@
-\begin{thebibliography}{58}
+\begin{thebibliography}{59}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\urlprefix}{}
 \providecommand{\doiprefix}{doi: }
@@ -510,6 +510,15 @@ Scott Shell, The University of California Santa Barbara Class Notes;.
 \newblock The Journal of Physical Chemistry B.  2006; 110(29):14426--14435.
 \newblock \href{https://dx.doi.org/10.1021/jp062885s}{\doiprefix
   \detokenize{10.1021/jp062885s}}, pMID: 16854152.
+
+\bibitem[{Darden et~al.(1993)Darden, Tom and York, Darrin and Pedersen,
+  Lee}]{Darden1993}
+\textbf{\color{LiveCoMSMediumGrey} Darden T}, York D, Pedersen L.
+\newblock Particle mesh Ewald: An {Nlog(N)} method for Ewald sums in large
+  systems.
+\newblock The Journal of Chemical Physics.  1993; 98(12):10089--10092.
+\newblock \href{https://dx.doi.org/10.1063/1.464397}{\doiprefix
+  \detokenize{10.1063/1.464397}}.
 
 \bibitem[{Levitt et~al.(1995)Michael Levitt and Miriam Hirshberg and Ruth
   Sharon and Valerie Daggett}]{Levitt1995}

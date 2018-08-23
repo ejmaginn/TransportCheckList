@@ -174,7 +174,6 @@ You're missing a field name---line 734 of file transport_properties.bib
  : %  url = {https://link.aps.org/doi/10.1103/PhysRevA.31.1695}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "GROMACS.Darden1993"
 Warning--empty author and editor in AMBER2018
 Warning--missing publisher in AMBER2018
 Warning--there's a month but no year in AMBER2018

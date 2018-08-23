@@ -260,7 +260,7 @@ Although both Equation \ref{eq:Green-Kubo} (Green-Kubo) and Equation \ref{eq:Ein
 
 \section{Checklist} \label{Checklist}
 
-This section provides an overview of the checklist items for each property $(D$ and $\eta)$ and method (Green-Kubo and Einstein). Detailed discussions for each checklist item are found in Sections \ref{sec:General}-\ref{sec:Viscosity}.
+An overview of the checklist items for each property $(D$ and $\eta)$ and method (Green-Kubo and Einstein) is found on the next page. Sections \ref{sec:General}-\ref{sec:Viscosity} provide a detailed discussion for each checklist item.
 
 %I envision this being a table that has links to the different sections for each property
 %\begin{enumerate}
@@ -285,25 +285,230 @@ This section provides an overview of the checklist items for each property $(D$ 
 %    \item Special considerations
 %\end{enumerate}
 
+%%% Original checklist
+%\begin{Checklists*}[p!]
+%	\begin{checklist}{Checklist for Computing Self-Diffusivity with Einstein Equilibrium Approach}
+%		\begin{itemize}
+%			\item
+%			\textbf{Simulation set-up.} No amount of data analysis can compensate for a poorly designed experiment. It is imperative that the simulation sufficiently samples the relevant region of phase space.
+%			\begin{itemize}
+%				\item Sample from the correct ensemble. See Sec.\ \ref{sec:General: Correct Ensemble}.
+%				\item Increase the information extracted from each replicate simulation.
+%				\begin{itemize}
+%					%\item Perform multiple replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations}.
+%					\item Ensure that simulations are sufficiently long. See Sec.\ \ref{sec:Self-Diffusivity:Einstein: Simulation length}.
+%					\item Increase the output frequency. See Sec.\ \ref{sec:Self-Diffusivity:Einstein: Output frequency}.
+%				\end{itemize}
+%				\item Check for system size effects. See Sec.\ \ref{sec:Self-Diffusivity:General: Finite size}
+%			\end{itemize}
+%			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
+%
+%			\item
+%			\textbf{Post-simulation data analysis.} Data analysis is key for obtaining reproducible and meaningful estimates of $D$.
+%			\begin{itemize}
+%				\item Improve precision by averaging over:
+%				\begin{itemize}
+%					\item Multiple time origins. See Sec.\ \ref{sec:General: Improve precision}.
+%					\item $N$ molecules. See Sec.\ \ref{sec:General: Improve precision}.
+%					\item Three dimensions ($x$, $y$, $z$). See Sec.\ \ref{sec:General: Improve precision}.
+%					\item Multiple replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations}.
+%				\end{itemize}
+%				\item Clearly communicate how $D$ is obtained from Equation \ref{eq:Einstein}. See Secs.\ \ref{sec:General: Clear communication}, \ref{sec:Self-Diffusivity:General: Data analysis}, and \ref{sec:Self-Diffusivity:Einstein: Data analysis}.
+%				\item Report the uncertainty in $D$:
+%				\begin{itemize}
+%					\item Bootstrap replicate simulations. See Sec.\ \ref{sec:General: Uncertainty}.
+%					\item Perform sensitivity analysis, e.g., the variability in $D$ with respect to the time interval. See Sec.\ \ref{sec:Self-Diffusivity:Einstein: Data analysis}.
+%				\end{itemize}
+%			\end{itemize}
+%		    \vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
+%
+%			\item
+%			\textbf{Common pitfalls.} Double-check that your results are not plagued by one of the common pitfalls. See Sec.\ \ref{sec:General: Common pitfalls}.
+%			
+%			\item
+%			\textbf{Validation.} Compare your results with those from a reputable source. See Sec.\ \ref{sec:General: Validation}.
+%
+%			\item
+%			\textbf{Special topics.} Check if your system of interest requires some special considerations. See Sec.\ \ref{sec:Self-Diffusivity Special topics}.
+%
+%		\end{itemize}
+%	\end{checklist}
+%\end{Checklists*}
+%
+%
+%\begin{Checklists*}[p!]
+%	\begin{checklist}{Checklist for Computing Self-Diffusivity with Green-Kubo Equilibrium Approach}
+%		\begin{itemize}
+%			\item
+%			\textbf{Simulation set-up.} No amount of data analysis can compensate for a poorly designed experiment. It is imperative that the simulation sufficiently samples the relevant region of phase space.
+%			\begin{itemize}
+%				\item Sample from the correct ensemble. See Sec.\ \ref{sec:General: Correct Ensemble}.
+%				\item Increase the information extracted from each replicate simulation.
+%				\begin{itemize}
+%					%\item Perform multiple replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations}.
+%					\item Ensure that simulations are sufficiently long. See Sec.\ \ref{sec:Self-Diffusivity:Green-Kubo: Simulation length}
+%					\item Increase the output frequency. See Sec.\ \ref{sec:Self-Diffusivity:Green-Kubo: Output frequency}.
+%				\end{itemize}
+%				\item Check for system size effects. See Sec.\ \ref{sec:Self-Diffusivity:General: Finite size}.
+%			\end{itemize}
+%			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
+%
+%			\item
+%			\textbf{Post-simulation data analysis.} Data analysis is key for obtaining reproducible and meaningful estimates of $D$.
+%			\begin{itemize}
+%				\item Improve precision by averaging over:
+%				\begin{itemize}
+%					\item Multiple time origins. See Sec.\ \ref{sec:General: Improve precision}.
+%					\item $N$ molecules. See Sec.\ \ref{sec:General: Improve precision}.
+%					\item Three dimensions ($x$, $y$, $z$). See Sec.\ \ref{sec:General: Improve precision}.
+%					\item Multiple replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations}.
+%				\end{itemize}
+%				\item Clearly communicate how $D$ is obtained from Equation \ref{eq:Green-Kubo}. See Secs.\ \ref{sec:General: Clear communication}, \ref{sec:Self-Diffusivity:General: Data analysis}, and \ref{sec:Self-Diffusivity:Green-Kubo: Data analysis}.
+%				\item Report the uncertainty in $D$:
+%				\begin{itemize}
+%					\item Bootstrap replicate simulations. See Sec.\ \ref{sec:General: Uncertainty}.
+%					\item Perform sensitivity analysis, e.g., the variability in $D$ with respect to the time interval. See Sec.\ \ref{sec:Self-Diffusivity:Green-Kubo: Data analysis}.
+%				\end{itemize}
+%			\end{itemize}
+%			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
+%
+%			\item
+%			\textbf{Common pitfalls.} Double-check that your results are not plagued by one of the common pitfalls. See Sec.\ \ref{sec:General: Common pitfalls}.
+%
+%			\item
+%			\textbf{Validation.} Compare your results with those from a reputable source. See Sec.\ \ref{sec:General: Validation}.
+%
+%			\item
+%			\textbf{Special topics.} Check if your system of interest requires unique considerations. See Sec.\ \ref{sec:Self-Diffusivity Special topics}.
+%
+%		\end{itemize}
+%	\end{checklist}
+%\end{Checklists*}
+%
+%\begin{Checklists*}[p!]
+%	\begin{checklist}{Checklist for Computing Viscosity with Green-Kubo Equilibrium Approach}
+%		\begin{itemize}
+%			\item
+%			\textbf{Simulation set-up.} No amount of data analysis can compensate for a poorly designed experiment. It is imperative that the simulation sufficiently samples the relevant region of phase space.
+%			\begin{itemize}
+%				\item Sample from the correct ensemble. See Sec.\ \ref{sec:General: Correct Ensemble}.
+%				\item Increase the information extracted from each replicate simulation.
+%				\begin{itemize}
+%					%\item Perform multiple replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations}.
+%					\item Ensure that simulations are sufficiently long. See Sec.\ \ref{sec:Viscosity:General: Simulation length}.
+%					\item Increase the output frequency. See Sec.\ \ref{sec:Viscosity:General: Output frequency}.
+%				\end{itemize}
+%				\item Check for system size effects. See Sec.\ \ref{sec:Viscosity:General: Finite size}.
+%			\end{itemize}
+%			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
+%			
+%			\item
+%			\textbf{Post-simulation data analysis.} Data analysis is key for obtaining reproducible and meaningful estimates of $\eta$.
+%			\begin{itemize}
+%				\item Improve precision by averaging over multiple:
+%				\begin{itemize}
+%					\item Time origins. See Sec.\ \ref{sec:General: Improve precision}.
+%					\item Stress tensor elements (three off-diagonal or all six). See Sec.\ \ref{sec:Viscosity:General: Improved precision}.
+%					\item Replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations} and \ref{sec:Viscosity:General: Improved precision}.
+%				\end{itemize}
+%				\item Clearly communicate how $\eta$ is obtained from Equation \ref{eq:Green-Kubo}. See Secs.\ \ref{sec:General: Clear communication} and \ref{sec:Viscosity:Green-Kubo: Data analysis}.
+%				\item Report the uncertainty in $\eta$:
+%				\begin{itemize}
+%					\item Bootstrap replicate simulations. See Sec.\ \ref{sec:General: Uncertainty}.
+%					\item Perform sensitivity analysis, e.g., the variability in $\eta$ with respect to the weighting model. See Sec.\ \ref{sec:Viscosity:Green-Kubo: Data analysis}.
+%				\end{itemize}
+%			\end{itemize}
+%			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
+%			
+%			\item
+%			\textbf{Common pitfalls.} Double-check that your results are not plagued by one of the common pitfalls. See Sec.\ \ref{sec:General: Common pitfalls}.
+%			
+%			\item
+%			\textbf{Validation.} Compare your results with those from a reputable source. See Sec.\ \ref{sec:General: Validation}.
+%			
+%			\item
+%			\textbf{Special topics.} Check if your system of interest requires some special considerations. See Sec.\ \ref{sec:Viscosity Special topics}.
+%			
+%		\end{itemize}
+%	\end{checklist}
+%\end{Checklists*}
+%
+%\begin{Checklists*}[p!]
+%	\begin{checklist}{Checklist for Computing Viscosity with Einstein Equilibrium Approach}
+%		\begin{itemize}
+%			\item
+%			\textbf{Simulation set-up.} No amount of data analysis can compensate for a poorly designed experiment. It is imperative that the simulation sufficiently samples the relevant region of phase space.
+%			\begin{itemize}
+%				\item Sample from the correct ensemble. See Sec.\ \ref{sec:General: Correct Ensemble}.
+%				\item Increase the information extracted from each replicate simulation.
+%				\begin{itemize}
+%					%\item Perform multiple replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations}.
+%					\item Ensure that simulations are sufficiently long. See Sec.\ \ref{sec:Viscosity:General: Simulation length}.
+%					\item Increase the output frequency. See Sec.\ \ref{sec:Viscosity:General: Output frequency}.
+%				\end{itemize}
+%				\item Check for system size effects. See Sec.\ \ref{sec:Viscosity:General: Finite size}.
+%			\end{itemize}
+%			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
+%
+%			\item
+%			\textbf{Post-simulation data analysis.} Data analysis is key for obtaining reproducible and meaningful estimates of $\eta$.
+%			\begin{itemize}
+%				\item Improve precision by averaging over multiple:
+%				\begin{itemize}
+%					\item Time origins. See Sec.\ \ref{sec:General: Improve precision}.
+%					\item Stress tensor elements (three off-diagonal or all six). See Sec.\ \ref{sec:Viscosity:General: Improved precision}.
+%					\item Replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations} and \ref{sec:Viscosity:General: Improved precision}.
+%				\end{itemize}
+%				\item Clearly communicate how $\eta$ is obtained from Equation \ref{eq:Einstein}. See Secs.\ \ref{sec:General: Clear communication} and \ref{sec:Viscosity:Einstein: Data analysis}.
+%				\item Report the uncertainty in $\eta$:
+%				\begin{itemize}
+%					\item Bootstrap replicate simulations. See Sec.\ \ref{sec:General: Uncertainty}.
+%					\item Perform sensitivity analysis, e.g., the variability in $\eta$ with respect to the time interval. See Sec.\ \ref{sec:Viscosity:Einstein: Data analysis}.
+%				\end{itemize}
+%			\end{itemize}
+%			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
+%
+%			\item
+%			\textbf{Common pitfalls.} Double-check that your results are not plagued by one of the common pitfalls. See Sec.\ \ref{sec:General: Common pitfalls}.
+%
+%			\item
+%			\textbf{Validation.} Compare your results with those from a reputable source. See Sec.\ \ref{sec:General: Validation}.
+%
+%			\item
+%			\textbf{Special topics.} Check if your system of interest requires some special considerations. See Sec.\ \ref{sec:Viscosity Special topics}.
+%
+%		\end{itemize}
+%	\end{checklist}
+%\end{Checklists*}
+
+%%% Combined Checklist
+
 \begin{Checklists*}[p!]
-	\begin{checklist}{Checklist for Computing Self-Diffusivity with Einstein Equilibrium Approach}
+\small
+	\begin{checklist}{Checklist for Computing Self-Diffusivity}
+\fontsize{9}{6}
 		\begin{itemize}
 			\item
 			\textbf{Simulation set-up.} No amount of data analysis can compensate for a poorly designed experiment. It is imperative that the simulation sufficiently samples the relevant region of phase space.
+			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
 			\begin{itemize}
 				\item Sample from the correct ensemble. See Sec.\ \ref{sec:General: Correct Ensemble}.
 				\item Increase the information extracted from each replicate simulation.
 				\begin{itemize}
 					%\item Perform multiple replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations}.
-					\item Ensure that simulations are sufficiently long. See Sec.\ \ref{sec:Self-Diffusivity:Einstein: Simulation length}.
-					\item Increase the output frequency. See Sec.\ \ref{sec:Self-Diffusivity:Einstein: Output frequency}.
+					\item Increase the output frequency. Einstein: see Sec.\ \ref{sec:Self-Diffusivity:Einstein: Output frequency}. Green-Kubo: see Sec.\ \ref{sec:Self-Diffusivity:Green-Kubo: Output frequency}.
+					\item Ensure that simulations are sufficiently long. Einstein: see Sec.\ \ref{sec:Self-Diffusivity:Einstein: Simulation length}. Green-Kubo: see Sec.\ \ref{sec:Self-Diffusivity:Green-Kubo: Simulation length}.
 				\end{itemize}
 				\item Check for system size effects. See Sec.\ \ref{sec:Self-Diffusivity:General: Finite size}
 			\end{itemize}
 			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
-
+			
+			\item
+			\textbf{Common pitfalls.} Double-check that your results are not plagued by one of the common pitfalls. See Sec.\ \ref{sec:General: Common pitfalls}.
+			
 			\item
 			\textbf{Post-simulation data analysis.} Data analysis is key for obtaining reproducible and meaningful estimates of $D$.
+			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
 			\begin{itemize}
 				\item Improve precision by averaging over:
 				\begin{itemize}
@@ -312,83 +517,34 @@ This section provides an overview of the checklist items for each property $(D$ 
 					\item Three dimensions ($x$, $y$, $z$). See Sec.\ \ref{sec:General: Improve precision}.
 					\item Multiple replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations}.
 				\end{itemize}
-				\item Clearly communicate how $D$ is obtained from Equation \ref{eq:Einstein}. See Secs.\ \ref{sec:General: Clear communication}, \ref{sec:Self-Diffusivity:General: Data analysis}, and \ref{sec:Self-Diffusivity:Einstein: Data analysis}.
+				\item Clearly communicate how $D$ is obtained from  Equation \ref{eq:Green-Kubo} (Green-Kubo) or Equation \ref{eq:Einstein} (Einstein). See Sec.\ \ref{sec:General: Clear communication}. Einstein: see Secs.\ \ref{sec:Self-Diffusivity:General: Data analysis} and \ref{sec:Self-Diffusivity:Einstein: Data analysis}. Green-Kubo: see Secs.\ \ref{sec:Self-Diffusivity:General: Data analysis} and \ref{sec:Self-Diffusivity:Green-Kubo: Data analysis}.
+				\item Correct for system size effects, i.e. Equation \ref{eq:YH-correction} in Sec.\ \ref{sec:Self-Diffusivity:General: Finite size}.
 				\item Report the uncertainty in $D$:
 				\begin{itemize}
 					\item Bootstrap replicate simulations. See Sec.\ \ref{sec:General: Uncertainty}.
-					\item Perform sensitivity analysis, e.g., the variability in $D$ with respect to the time interval. See Sec.\ \ref{sec:Self-Diffusivity:Einstein: Data analysis}.
+					\item Perform sensitivity analysis, e.g., the variability in $D$ with respect to the time interval. Einstein: see Sec.\ \ref{sec:Self-Diffusivity:Einstein: Data analysis}. Green-Kubo: see Sec.\ \ref{sec:Self-Diffusivity:Green-Kubo: Data analysis}.
 				\end{itemize}
 			\end{itemize}
-		    \vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
-
-			\item
-			\textbf{Common pitfalls.} Double-check that your results are not plagued by one of the common pitfalls. See Sec.\ \ref{sec:General: Common pitfalls}.
+			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
 			
 			\item
 			\textbf{Validation.} Compare your results with those from a reputable source. See Sec.\ \ref{sec:General: Validation}.
-
+			
 			\item
 			\textbf{Special topics.} Check if your system of interest requires some special considerations. See Sec.\ \ref{sec:Self-Diffusivity Special topics}.
-
-		\end{itemize}
-	\end{checklist}
-\end{Checklists*}
-
-
-\begin{Checklists*}[p!]
-	\begin{checklist}{Checklist for Computing Self-Diffusivity with Green-Kubo Equilibrium Approach}
-		\begin{itemize}
-			\item
-			\textbf{Simulation set-up.} No amount of data analysis can compensate for a poorly designed experiment. It is imperative that the simulation sufficiently samples the relevant region of phase space.
-			\begin{itemize}
-				\item Sample from the correct ensemble. See Sec.\ \ref{sec:General: Correct Ensemble}.
-				\item Increase the information extracted from each replicate simulation.
-				\begin{itemize}
-					%\item Perform multiple replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations}.
-					\item Ensure that simulations are sufficiently long. See Sec.\ \ref{sec:Self-Diffusivity:Green-Kubo: Simulation length}
-					\item Increase the output frequency. See Sec.\ \ref{sec:Self-Diffusivity:Green-Kubo: Output frequency}.
-				\end{itemize}
-				\item Check for system size effects. See Sec.\ \ref{sec:Self-Diffusivity:General: Finite size}.
-			\end{itemize}
-			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
-
-			\item
-			\textbf{Post-simulation data analysis.} Data analysis is key for obtaining reproducible and meaningful estimates of $D$.
-			\begin{itemize}
-				\item Improve precision by averaging over:
-				\begin{itemize}
-					\item Multiple time origins. See Sec.\ \ref{sec:General: Improve precision}.
-					\item $N$ molecules. See Sec.\ \ref{sec:General: Improve precision}.
-					\item Three dimensions ($x$, $y$, $z$). See Sec.\ \ref{sec:General: Improve precision}.
-					\item Multiple replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations}.
-				\end{itemize}
-				\item Clearly communicate how $D$ is obtained from Equation \ref{eq:Green-Kubo}. See Secs.\ \ref{sec:General: Clear communication}, \ref{sec:Self-Diffusivity:General: Data analysis}, and \ref{sec:Self-Diffusivity:Green-Kubo: Data analysis}.
-				\item Report the uncertainty in $D$:
-				\begin{itemize}
-					\item Bootstrap replicate simulations. See Sec.\ \ref{sec:General: Uncertainty}.
-					\item Perform sensitivity analysis, e.g., the variability in $D$ with respect to the time interval. See Sec.\ \ref{sec:Self-Diffusivity:Green-Kubo: Data analysis}.
-				\end{itemize}
-			\end{itemize}
-			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
-
-			\item
-			\textbf{Common pitfalls.} Double-check that your results are not plagued by one of the common pitfalls. See Sec.\ \ref{sec:General: Common pitfalls}.
-
-			\item
-			\textbf{Validation.} Compare your results with those from a reputable source. See Sec.\ \ref{sec:General: Validation}.
-
-			\item
-			\textbf{Special topics.} Check if your system of interest requires unique considerations. See Sec.\ \ref{sec:Self-Diffusivity Special topics}.
-
+			
 		\end{itemize}
 	\end{checklist}
 \end{Checklists*}
 
 \begin{Checklists*}[p!]
-	\begin{checklist}{Checklist for Computing Viscosity with Green-Kubo Equilibrium Approach}
+\small
+	\begin{checklist}{Checklist for Computing Viscosity}
+\fontsize{9}{6}
 		\begin{itemize}
 			\item
 			\textbf{Simulation set-up.} No amount of data analysis can compensate for a poorly designed experiment. It is imperative that the simulation sufficiently samples the relevant region of phase space.
+			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
 			\begin{itemize}
 				\item Sample from the correct ensemble. See Sec.\ \ref{sec:General: Correct Ensemble}.
 				\item Increase the information extracted from each replicate simulation.
@@ -402,7 +558,11 @@ This section provides an overview of the checklist items for each property $(D$ 
 			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
 			
 			\item
+			\textbf{Common pitfalls.} Double-check that your results are not plagued by one of the common pitfalls. See Sec.\ \ref{sec:General: Common pitfalls}.
+			
+			\item
 			\textbf{Post-simulation data analysis.} Data analysis is key for obtaining reproducible and meaningful estimates of $\eta$.
+			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
 			\begin{itemize}
 				\item Improve precision by averaging over multiple:
 				\begin{itemize}
@@ -410,17 +570,14 @@ This section provides an overview of the checklist items for each property $(D$ 
 					\item Stress tensor elements (three off-diagonal or all six). See Sec.\ \ref{sec:Viscosity:General: Improved precision}.
 					\item Replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations} and \ref{sec:Viscosity:General: Improved precision}.
 				\end{itemize}
-				\item Clearly communicate how $\eta$ is obtained from Equation \ref{eq:Green-Kubo}. See Secs.\ \ref{sec:General: Clear communication} and \ref{sec:Viscosity:Green-Kubo: Data analysis}.
+				\item Clearly communicate how $\eta$ is obtained from Equation \ref{eq:Green-Kubo} (Green-Kubo) or Equation \ref{eq:Einstein} (Einstein). See Sec.\ \ref{sec:General: Clear communication}. Green-Kubo: see Sec.\ \ref{sec:Viscosity:Green-Kubo: Data analysis}. Einstein: see Sec.\ \ref{sec:Viscosity:Einstein: Data analysis}.
 				\item Report the uncertainty in $\eta$:
 				\begin{itemize}
 					\item Bootstrap replicate simulations. See Sec.\ \ref{sec:General: Uncertainty}.
-					\item Perform sensitivity analysis, e.g., the variability in $\eta$ with respect to the weighting model. See Sec.\ \ref{sec:Viscosity:Green-Kubo: Data analysis}.
+					\item Perform sensitivity analysis, e.g., the variability in $\eta$ with respect to the weighting model. Green-Kubo: see Sec.\ \ref{sec:Viscosity:Green-Kubo: Data analysis}. Einstein: see Sec.\ \ref{sec:Viscosity:Einstein: Data analysis}.
 				\end{itemize}
 			\end{itemize}
 			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
-			
-			\item
-			\textbf{Common pitfalls.} Double-check that your results are not plagued by one of the common pitfalls. See Sec.\ \ref{sec:General: Common pitfalls}.
 			
 			\item
 			\textbf{Validation.} Compare your results with those from a reputable source. See Sec.\ \ref{sec:General: Validation}.
@@ -432,53 +589,8 @@ This section provides an overview of the checklist items for each property $(D$ 
 	\end{checklist}
 \end{Checklists*}
 
-\begin{Checklists*}[p!]
-	\begin{checklist}{Checklist for Computing Viscosity with Einstein Equilibrium Approach}
-		\begin{itemize}
-			\item
-			\textbf{Simulation set-up.} No amount of data analysis can compensate for a poorly designed experiment. It is imperative that the simulation sufficiently samples the relevant region of phase space.
-			\begin{itemize}
-				\item Sample from the correct ensemble. See Sec.\ \ref{sec:General: Correct Ensemble}.
-				\item Increase the information extracted from each replicate simulation.
-				\begin{itemize}
-					%\item Perform multiple replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations}.
-					\item Ensure that simulations are sufficiently long. See Sec.\ \ref{sec:Viscosity:General: Simulation length}.
-					\item Increase the output frequency. See Sec.\ \ref{sec:Viscosity:General: Output frequency}.
-				\end{itemize}
-				\item Check for system size effects. See Sec.\ \ref{sec:Viscosity:General: Finite size}.
-			\end{itemize}
-			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
+\normalsize
 
-			\item
-			\textbf{Post-simulation data analysis.} Data analysis is key for obtaining reproducible and meaningful estimates of $\eta$.
-			\begin{itemize}
-				\item Improve precision by averaging over multiple:
-				\begin{itemize}
-					\item Time origins. See Sec.\ \ref{sec:General: Improve precision}.
-					\item Stress tensor elements (three off-diagonal or all six). See Sec.\ \ref{sec:Viscosity:General: Improved precision}.
-					\item Replicate simulations. See Sec.\ \ref{sec:General: Replicate simulations} and \ref{sec:Viscosity:General: Improved precision}.
-				\end{itemize}
-				\item Clearly communicate how $\eta$ is obtained from Equation \ref{eq:Einstein}. See Secs.\ \ref{sec:General: Clear communication} and \ref{sec:Viscosity:Einstein: Data analysis}.
-				\item Report the uncertainty in $\eta$:
-				\begin{itemize}
-					\item Bootstrap replicate simulations. See Sec.\ \ref{sec:General: Uncertainty}.
-					\item Perform sensitivity analysis, e.g., the variability in $\eta$ with respect to the time interval. See Sec.\ \ref{sec:Viscosity:Einstein: Data analysis}.
-				\end{itemize}
-			\end{itemize}
-			\vspace{-0.325\baselineskip} %Line spacing after a sub-list is too large
-
-			\item
-			\textbf{Common pitfalls.} Double-check that your results are not plagued by one of the common pitfalls. See Sec.\ \ref{sec:General: Common pitfalls}.
-
-			\item
-			\textbf{Validation.} Compare your results with those from a reputable source. See Sec.\ \ref{sec:General: Validation}.
-
-			\item
-			\textbf{Special topics.} Check if your system of interest requires some special considerations. See Sec.\ \ref{sec:Viscosity Special topics}.
-
-		\end{itemize}
-	\end{checklist}
-\end{Checklists*}
 
 \section{General transport checklist items} \label{sec:General}
 
@@ -497,7 +609,9 @@ It is important that each step consist of both an equilibration and production p
 
 %The user should generate multiple starting states that can be used to determine error estimation (see item \ref{item:uncertainty}).
 
-Note that, although the best practice is to use the $NVE$ ensemble (Steps 1 to 3), it is common to see values reported using the $NPT$ ensemble (just Step 1) or $NVT$ ensemble (Steps 1 and 2). We strongly discourage the use of the $NPT$ ensemble alone, because barostats (which alter positions through volume changes) greatly affect the dynamics of a system. In contrast, the $NVT$ ensemble has been implemented successfully for transport property calculations and is quite common, especially for viscosity. For example, Fanourgakis \textit{et al.} reported that the $NVT$ and $NVE$ ensembles provide nearly identical results for viscosity \cite{Fanourgakis2012}. A study by Basconi and Shirts \cite{Shirts2013} reached a similar conclusion, and provides guidelines for how thermostats should be applied when computing transport properties. To summarize their results, $NVE$ ensemble estimates for $D$ and $\eta$ are statistically indistinguishable from those obtained by $NVT$ simulations with velocity-scaling thermostats (e.g., Berendsen \cite{Berendsen1984}, stochastic rescaling \cite{Bussi2007}, and Nos{\'e}-Hoover \cite{Nose1984} thermostats) and a wide range of thermostat coupling strengths (e.g., time constants of 0.1, 1, and 10 ps, where stronger coupling is achieved with a smaller time constant). By contrast, velocity-randomizing algorithms (e.g., Andersen thermostat \cite{Andersen1980} and Langevin dynamics \cite{Hess2008}) with strong coupling (time constants of 0.1 and 1 ps) dramatically decrease $D$ and increase $\eta$ relative to the $NVE$ ensemble values. Therefore, we recommend using either the $NVT$ or $NVE$ ensemble, with $NVE$ being preferred. If $NVT$ simulations are used, we recommend judiciously selecting the thermostat and coupling strength by consulting Refs. \cite{Fanourgakis2012,Shirts2013}.
+Note that, although the best practice is to use the $NVE$ ensemble (Steps 1 to 3), it is common to see values reported using the $NPT$ ensemble (just Step 1) or $NVT$ ensemble (Steps 1 and 2). We strongly discourage the use of the $NPT$ ensemble alone, because barostats (which alter positions through volume changes) greatly affect the dynamics of a system. In contrast, the $NVT$ ensemble has been implemented successfully for transport property calculations and is quite common, especially for viscosity. For example, Fanourgakis \textit{et al.} reported that the $NVT$ and $NVE$ ensembles provide nearly identical results for viscosity \cite{Fanourgakis2012}. 
+
+A study by Basconi and Shirts \cite{Shirts2013} reached a similar conclusion, and provides guidelines for how thermostats should be applied when computing transport properties. To summarize their results, $NVE$ ensemble estimates for $D$ and $\eta$ are statistically indistinguishable from those obtained by $NVT$ simulations with velocity-scaling thermostats (e.g., Berendsen \cite{Berendsen1984}, stochastic rescaling \cite{Bussi2007}, and Nos{\'e}-Hoover \cite{Nose1984} thermostats) and a wide range of thermostat coupling strengths (e.g., time constants of 0.1, 1, and 10 ps, where stronger coupling is achieved with a smaller time constant). By contrast, velocity-randomizing algorithms (e.g., Andersen thermostat \cite{Andersen1980} and Langevin dynamics \cite{Hess2008}) with strong coupling (time constants of 0.1 and 1 ps) dramatically decrease $D$ and increase $\eta$ relative to the $NVE$ ensemble values. Therefore, we recommend using either the $NVT$ or $NVE$ ensemble, with $NVE$ being preferred. If $NVT$ simulations are used, we recommend judiciously selecting the thermostat and coupling strength by consulting Refs. \cite{Fanourgakis2012,Shirts2013}.
 
 % provide $D$ and $\eta$ values that are statistically indistinguishable from the $NVE$ ensemble estimates.
 

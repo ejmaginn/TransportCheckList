@@ -140,10 +140,10 @@ In addition to the present manuscript, we highly recommend reviewing this list o
 	\end{enumerate}
 	\item Class notes
 	\begin{enumerate}
-		\item Panagiotopoulos. The University of Princeton Class Notes. \cite{PanaNotes}
-		\item Kofke. The University of Buffalo Class Notes. \cite{KofkeNotes}
-		\item Maginn. The University of Notre Dame Class Notes. \cite{MaginnNotes}
-		\item Shell. The University of California Santa Barbara Class Notes. \cite{ShellNotes}
+		\item Panagiotopoulos. The University of Princeton. \cite{PanaNotes}
+		\item Kofke. The University of Buffalo. \cite{KofkeNotes}
+		\item Maginn. The University of Notre Dame. \cite{MaginnNotes}
+		\item Shell. The University of California Santa Barbara. \cite{ShellNotes}
 	\end{enumerate}
 	\item Published articles
 	\begin{enumerate}
@@ -691,7 +691,9 @@ Step \ref{item:Confidence interval} requires the probability density function (P
 
 \subsection{General transport: Common pitfalls} \label{sec:General: Common pitfalls}
 
-When simulating in the $NVE$ ensemble, it is imperative that the integrator conserve energy. Performing simulations with single precision is one of the main causes for poor conservation of energy. For this reason, we recommend the use of full double precision or double/fixed precision. The most common method to check for energy conservation is to systematically adjust the time step and plot the energy versus time. The energy should show little to no drift over the timescale of the simulation. Haile \cite{Haile1992} provides a detailed discussion of energy conservation and time step size (see Chapter 4.4 of his book). If constraints on bond lengths or angles are used, we also recommend checking to make sure that these constraints are maintained.
+When simulating in the $NVE$ ensemble, it is imperative that the integrator conserve energy. Performing simulations with single precision is one of the main causes for poor conservation of energy due to the accumulation of round-off errors. For this reason, we recommend the use of full double precision or double/fixed precision. 
+
+The most common method to check for energy conservation is to systematically adjust the time step and plot the energy versus time. The energy should show little to no drift over the timescale of the simulation. Haile \cite{Haile1992} provides a detailed discussion of energy conservation and time step size (see Chapter 4.4 of his book). If constraints on bond lengths or angles are used, we also recommend checking to make sure that these constraints are maintained.
 
 % (Link to document about initializing NVE in the right “ballpark.”)
 
@@ -772,7 +774,9 @@ Regardless, the simulation must be long enough so that the molecules are in the 
 
 \subsubsection{Data analysis} \label{sec:Self-Diffusivity:Einstein: Data analysis}
 
-In order to obtain reliable estimates of $D$, it is important to consider how the linear regression is performed for the MSD with respect to time (Equation 2). Specifically, the time interval that is included in the regression can have a significant impact on the predicted value of $D$. We recommend that only the ``middle'' of the MSD be used in the fit. Short time must be excluded as it follows a ballistic trajectory, while very long time is excluded due to the increased noise. Currently, we are unaware of an objective approach for defining the ``middle'' region. Until such an approach exists, we recommend that the author reports how the region was selected and how much variability in $D$ can be attributed to the choice of this region. In addition, the uncertainty in the fit of the slope should be reported. A typical plot, borrowed from Ref. \cite{Kondratyuk2016}, is provided in Figure \ref{fig:KondratyukFig2}, where the linear regressions at long time are included.
+In order to obtain reliable estimates of $D$, it is important to consider how the linear regression is performed for the MSD with respect to time (Equation 2). Specifically, the time interval that is included in the regression can have a significant impact on the predicted value of $D$. We recommend that only the ``middle'' of the MSD be used in the fit. Short time must be excluded as it follows a ballistic trajectory, while very long time is excluded due to the increased noise. Currently, we are unaware of an objective approach for defining the ``middle'' region. Until such an approach exists, we recommend that the author reports how the region was selected and how much variability in $D$ can be attributed to the choice of this region. In addition, the uncertainty in the fit of the slope should be reported. 
+
+A typical log-log plot, borrowed from Ref. \cite{Kondratyuk2016}, is provided in Figure \ref{fig:KondratyukFig2}, where the linear regression to the ``middle'' region is included. From visual inspection, the ``ballistic'' short time interval ranges from the beginning of the simulation to approximately 100 ps. The ``middle'' region is identified by the linear regime with a slope of 1 (for a log-log plot) spanning from approximately 100 ps to 1000 ps. Note that the noisy ``long time'' simulation data (beyond 1000 ps) are not depicted in Figure \ref{fig:KondratyukFig2} and are excluded from the linear fit.
 
 %What about when the middle region is subdiffusive like in Figure \ref{fig:KondratyukFig2}?
 %How do you fit the MSD (what time interval do you use?) Short time is ballistic trajectory; very long time you get noise, so you need to fit to the “middle” of the MSD. We need to define protocols for how to objectively define this. You should compute the uncertainty in the fit of the slope. Report how the line was fit and associated variables. Is there literature on this? We need to come up with a recommendation for how to do this objectively and consistently.
@@ -782,7 +786,7 @@ In order to obtain reliable estimates of $D$, it is important to consider how th
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{KondratyukFig2.png}
-	\caption{Log-log plot of MSD with respect to time. Reproduced with permission from J. Phys. Conf. Ser. 774 (2016) 012039, under the Creative Commons Attribution 3.0 license \cite{Kondratyuk2016}. The gray dashed lines are the long-time asymptotes of the MSD, as determined by the authors. For further details, see Ref. \cite{Kondratyuk2016}. Note that $1$ \AA $\ = 10^{-10}$ m.}%The color for each line corresponds to different torsional force field parameters. The red dash-dot line shows the LAMMPS averaging methodology.
+	\caption{Log-log plot of MSD with respect to time. Reproduced with permission from J. Phys. Conf. Ser. 774 (2016) 012039, under the Creative Commons Attribution 3.0 license \cite{Kondratyuk2016}. The gray dashed lines are linear fits to the ``middle'' region of the MSD, as determined by the authors. For further details, see Ref. \cite{Kondratyuk2016}. Note that $1$ \AA $\ = 10^{-10}$ m.}%The color for each line corresponds to different torsional force field parameters. The red dash-dot line shows the LAMMPS averaging methodology.
 	\label{fig:KondratyukFig2}
 \end{figure}
 
@@ -804,6 +808,8 @@ In order to obtain reliable estimates of $D$, it is important to consider how th
 
 %RAM: I do not think that we need to talk about force field accuracy
 %FYI: Richard Elliot I developed a database for self-diffusivity that covered all experimental data from the literature as far as he could find. It is included as supporting information in Ind. Eng. Chem. Res. 2010, 49, 3411–3423. This paper provides a generalized correlation of the quantity rho*D (g/cm-s) of n-alkanes at all molecular weights, temperatures, and densities below the entanglement threshold. This semi-empirical correlation is used as the basis for correlating non-alkanes as well. Accuracy diminished for associating compounds, but experimental data were relatively few in number for associating compounds.
+
+\newpage
 
 \subsection{Self-diffusivity: Green-Kubo} \label{sec:Self-Diffusivity Green-Kubo}
 

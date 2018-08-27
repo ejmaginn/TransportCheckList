@@ -80,9 +80,8 @@
 \newblock ms2: A molecular simulation tool for thermodynamic properties,
   release 3.0.
 \newblock Computer Physics Communications.  2017; 221:343 -- 351.
-\newblock
-  \href{https://dx.doi.org/https://doi.org/10.1016/j.cpc.2017.07.025}{\doiprefix
-  \detokenize{https://doi.org/10.1016/j.cpc.2017.07.025}}.
+\newblock \href{https://dx.doi.org/10.1016/j.cpc.2017.07.025}{\doiprefix
+  \detokenize{10.1016/j.cpc.2017.07.025}}.
 
 \bibitem[{Roe and Cheatham(2013)Roe, Daniel R. and Cheatham, Thomas
   E.}]{Roe2013}
@@ -102,18 +101,16 @@
 \newblock MDTraj: A Modern Open Library for the Analysis of Molecular Dynamics
   Trajectories.
 \newblock Biophysical Journal.  2015; 109(8):1528 -- 1532.
-\newblock
-  \href{https://dx.doi.org/https://doi.org/10.1016/j.bpj.2015.08.015}{\doiprefix
-  \detokenize{https://doi.org/10.1016/j.bpj.2015.08.015}}.
+\newblock \href{https://dx.doi.org/10.1016/j.bpj.2015.08.015}{\doiprefix
+  \detokenize{10.1016/j.bpj.2015.08.015}}.
 
 \bibitem[{Humphrey et~al.(1996)William Humphrey and Andrew Dalke and Klaus
   Schulten}]{VMD}
 \textbf{\color{LiveCoMSMediumGrey} Humphrey W}, Dalke A, Schulten K.
 \newblock VMD: Visual molecular dynamics.
 \newblock Journal of Molecular Graphics.  1996; 14(1):33 -- 38.
-\newblock
-  \href{https://dx.doi.org/https://doi.org/10.1016/0263-7855(96)00018-5}{\doiprefix
-  \detokenize{https://doi.org/10.1016/0263-7855(96)00018-5}}.
+\newblock \href{https://dx.doi.org/10.1016/0263-7855(96)00018-5}{\doiprefix
+  \detokenize{10.1016/0263-7855(96)00018-5}}.
 
 \bibitem[{Allen and Tildesley(2017)Allen, M. P. and Tildesley, D.
   J.}]{Allen2017}
@@ -196,10 +193,8 @@ Scott Shell, The University of California Santa Barbara Class Notes;.
 \newblock Molecular simulation of the thermophysical properties of fluids: From
   understanding toward quantitative predictions.
 \newblock Journal of Molecular Liquids.  2007; 134(1):71 -- 89.
-\newblock
-  \href{https://dx.doi.org/https://doi.org/10.1016/j.molliq.2006.12.019}{\doiprefix
-  \detokenize{https://doi.org/10.1016/j.molliq.2006.12.019}}, eMLG/JMLG 2005
-  Special Issue.
+\newblock \href{https://dx.doi.org/10.1016/j.molliq.2006.12.019}{\doiprefix
+  \detokenize{10.1016/j.molliq.2006.12.019}}, eMLG/JMLG 2005 Special Issue.
 
 \bibitem[{Fanourgakis et~al.(2012)Fanourgakis, George S. and Medina, J. S. and
   Prosmiti, R.}]{Fanourgakis2012}

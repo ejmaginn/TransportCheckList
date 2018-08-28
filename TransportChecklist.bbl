@@ -1,4 +1,4 @@
-\begin{thebibliography}{59}
+\begin{thebibliography}{60}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\urlprefix}{}
 \providecommand{\doiprefix}{doi: }
@@ -303,6 +303,13 @@ Scott Shell, The University of California, Santa Barbara Class Notes;.
   Best Practices Guide.
 \newblock
   \urlprefix\url{https://github.com/dmzuckerman/Sampling-Uncertainty/blob/master/main.pdf}.
+
+\bibitem[{Efron(1979)Efron, B.}]{Efron1979}
+\textbf{\color{LiveCoMSMediumGrey} Efron B}.
+\newblock Bootstrap Methods: Another Look at the Jackknife.
+\newblock The Annals of Statistics.  1979; 7(1):1--26.
+\newblock \href{https://dx.doi.org/10.1214/aos/1176344552}{\doiprefix
+  \detokenize{10.1214/aos/1176344552}}.
 
 \bibitem[{Shen et~al.(????)Shen, V.K. and Siderius, D.W. and Krekelberg, W.P.
   and Hatch, H.W. and Eds.}]{ShenSRSW}

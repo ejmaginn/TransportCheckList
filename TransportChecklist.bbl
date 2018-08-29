@@ -1,4 +1,4 @@
-\begin{thebibliography}{60}
+\begin{thebibliography}{61}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\urlprefix}{}
 \providecommand{\doiprefix}{doi: }
@@ -286,12 +286,6 @@ Scott Shell, The University of California, Santa Barbara Class Notes;.
 \newblock \href{https://dx.doi.org/10.1080/08927022.2017.1321760}{\doiprefix
   \detokenize{10.1080/08927022.2017.1321760}}.
 
-\bibitem[{Taylor and Kuyatt(1994)Barry N. Taylor and Chris E. Kuyatt}]{GUM}
-\textbf{\color{LiveCoMSMediumGrey} Taylor BN}, Kuyatt CE.
-\newblock Guidelines for Evaluating and Expressing the Uncertainty of {NIST}
-  Measurement Results.
-\newblock {NIST} Technical Note 1297.  1994; p. 1--9.
-
 \bibitem[{Grossfield et~al.(2018)Alan Grossfield and Paul N. Patrone and Daniel
   R. Roe and Andrew J. Schultz and Daniel W. Siderius and Daniel M.
   Zuckerman}]{Grossfield2018}
@@ -303,6 +297,12 @@ Scott Shell, The University of California, Santa Barbara Class Notes;.
   Best Practices Guide.
 \newblock
   \urlprefix\url{https://github.com/dmzuckerman/Sampling-Uncertainty/blob/master/main.pdf}.
+
+\bibitem[{Taylor and Kuyatt(1994)Barry N. Taylor and Chris E. Kuyatt}]{GUM}
+\textbf{\color{LiveCoMSMediumGrey} Taylor BN}, Kuyatt CE.
+\newblock Guidelines for Evaluating and Expressing the Uncertainty of {NIST}
+  Measurement Results.
+\newblock {NIST} Technical Note 1297.  1994; p. 1--9.
 
 \bibitem[{Efron(1979)Efron, B.}]{Efron1979}
 \textbf{\color{LiveCoMSMediumGrey} Efron B}.
@@ -379,6 +379,14 @@ Scott Shell, The University of California, Santa Barbara Class Notes;.
 \newblock {J Chem Phys}.  {2015} {JUL 14}; {143}({2}).
 \newblock \href{https://dx.doi.org/{10.1063/1.4926841}}{\doiprefix
   \detokenize{{10.1063/1.4926841}}}.
+
+\bibitem[{Stillinger and Rahman(1974)Stillinger, Frank H. and Rahman,
+  Aneesur}]{Stillinger1974}
+\textbf{\color{LiveCoMSMediumGrey} Stillinger FH}, Rahman A.
+\newblock Improved simulation of liquid water by molecular dynamics.
+\newblock The Journal of Chemical Physics.  1974; 60(4):1545--1557.
+\newblock \href{https://dx.doi.org/10.1063/1.1681229}{\doiprefix
+  \detokenize{10.1063/1.1681229}}.
 
 \bibitem[{Hoover(1985)Hoover, William G.}]{Hoover1985}
 \textbf{\color{LiveCoMSMediumGrey} Hoover WG}.

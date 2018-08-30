@@ -241,7 +241,7 @@ For self-diffusivity, $\xi$ is the Cartesian atom position $(r_{\alpha})$ and th
 		Property & $\gamma$          & $\xi$                        & Green-Kubo (Equation \ref{eq:Green-Kubo})    & Einstein (Equation \ref{eq:Einstein})     \\
 		\midrule
 		Self-diffusivity     & $D$ & $r_{\alpha}$          & $ \displaystyle \frac{1}{d_\alpha} \int_{0}^{\infty}dt\left\langle \frac{1}{N} \sum_{i=1}^{N} v_{\alpha,i}(t) v_{\alpha,i}(0)\right\rangle_{t_0}$    & $ \displaystyle \frac{1}{2d_\alpha} \lim_{t\to\infty} \frac{d}{dt} \left\langle \frac{1}{N} \sum_{i=1}^{N} |r_{\alpha,i}(t)-r_{\alpha,i}(0)|^2 \right\rangle_{t_0}$   \\
-		Shear viscosity     & $\eta$       & $r_\alpha v_\beta$           & $ \displaystyle \frac{V}{k_{\rm B}T} \int_{0}^{\infty}dt\left\langle \tau_{\alpha,\beta}(t) \tau_{\alpha,\beta}(0)\right\rangle_{t_0}$    & $ \displaystyle \frac{V}{2k_{\rm B}T} \lim_{t\to\infty} \frac{d}{dt} \left\langle \left(\int_{0}^{t}dt' \tau_{\alpha,\beta}(t')\right)^2 \right\rangle_{t_0}$  \\
+		Shear viscosity     & $\eta$       & $r_\alpha v_\beta$           & $ \displaystyle \frac{V}{k_{\rm B}T} \int_{0}^{\infty}dt\left\langle \tau_{\alpha\beta}(t) \tau_{\alpha\beta}(0)\right\rangle_{t_0}$    & $ \displaystyle \frac{V}{2k_{\rm B}T} \lim_{t\to\infty} \frac{d}{dt} \left\langle \left(\int_{0}^{t}dt' \tau_{\alpha\beta}(t')\right)^2 \right\rangle_{t_0}$  \\
 		\bottomrule
 	\end{tabular}
 	\newline
@@ -251,7 +251,7 @@ For self-diffusivity, $\xi$ is the Cartesian atom position $(r_{\alpha})$ and th
 	$N=$ number of atoms or molecules (see Sec.\ \ref{sec:General: Clear communication}) \newline
 %	$V=$ volume \newline
 	$k_{\rm B}=$ Boltzmann constant \newline
-	$\tau_{\alpha,\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( m v_{\alpha,i}(t) v_{\beta,i}(t) + r_{\alpha,i}(t) f_{\beta,i}(t) \right) , \alpha \ne \beta$ \newline
+	$\tau_{\alpha\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( m v_{\alpha,i}(t) v_{\beta,i}(t) + r_{\alpha,i}(t) f_{\beta,i}(t) \right) , \alpha \ne \beta$ \newline
 	$f_{\beta,i}$ is the force acting on particle $i$ in direction $\beta$ \newline
 	$\langle \cdots \rangle_{t_0}$ denotes an average over time origins (see Sec.\ \ref{sec:General: Improve precision})
 \end{table*}
@@ -835,12 +835,18 @@ Simulations should be long enough that the Green-Kubo integral has reached a pla
 
 %Care must be taken to ensure that the VACF properly converges to 0 at long times, since the long-time ``tail'' of the VACF can contribute significantly to the integral \cite{GROMACS,Allen2017}. For example, water models at liquid conditions typically exhibit a decay-to-zero time on the order of 1 ps (see Figures 12-15 of Ref. \cite{Stillinger1974}). A trade-off exists when deciding the elapsed time between subsequent time origins (often referred to as the ``lag''). Specifically, if the lag is too short the VACF will not converge to 0, while long-time VACF tail introduces considerable noise in the integration when the lag is too long. A good rule of thumb for ensuring that the calculated VACF has been sampled adequately is to perform simulations that are a factor of 2 to 10 times longer than the estimated decay-to-zero time. The lag between time origins should then not exceed half the total simulation time.
 
-A trade-off exists when deciding the elapsed time between subsequent time origins (often referred to as the ``lag''). Specifically, when the lag is too short the VACF does not converge to 0 and, thus, the Green-Kubo integral does not converge to a finite value. By contrast, the long-time VACF tail introduces considerable noise in the integration when the lag is too long. Therefore, care must be taken to ensure that the VACF properly converges to 0 at long times, since the long-time ``tail'' of the VACF can contribute significantly to the integral \cite{GROMACS,Allen2017}. A good rule of thumb for ensuring that the calculated VACF has been sampled adequately is to perform simulations that are a factor of 2 to 10 times longer than the estimated decay-to-zero time. The lag between time origins should then not exceed half the total simulation time. For example, water models at liquid conditions typically exhibit a decay-to-zero time on the order of 1 ps (see Figures 12-15 of Ref. \cite{Stillinger1974}).
+%A trade-off exists when deciding the elapsed time between subsequent time origins (often referred to as the ``lag''). Specifically, when the lag is too short the VACF does not converge to 0 and, thus, the Green-Kubo integral does not converge to a finite value. By contrast, the long-time VACF tail introduces considerable noise in the integration when the lag is too long. Therefore, care must be taken to ensure that the VACF properly converges to 0 at long times, since the long-time ``tail'' of the VACF can contribute significantly to the integral \cite{GROMACS,Allen2017}. A good rule of thumb for ensuring that the calculated VACF has been sampled adequately is to perform simulations that are a factor of 2 to 10 times longer than the estimated decay-to-zero time. The lag between time origins should then not exceed half the total simulation time. For example, water models at liquid conditions typically exhibit a decay-to-zero time on the order of 1 ps (see Figures 12-15 of Ref. \cite{Stillinger1974}).
+
+A trade-off exists when deciding the elapsed time between subsequent time origins (often referred to as the ``lag''). Specifically, if the lag is too short the VACF will not converge to 0 and, thus, the Green-Kubo integral will not converge to the appropriate finite value. By contrast, if the lag is too long the long-time VACF ``tail'' will introduce considerable noise in the integration. A good rule of thumb for ensuring that the calculated VACF has been sampled adequately is to perform simulations that are approximately a factor of 20 times longer than the estimated decay-to-zero time. The lag between time origins should then be greater than the decay-to-zero time but not exceed half the total simulation time. For example, water models at liquid conditions typically exhibit a decay-to-zero time on the order of 1 ps, such that a simulation of 20 ps with a lag time between 1 and 10 ps should yield a well converged VACF (see Figures 12-15 of Ref. \cite{Stillinger1974}).
+
+% A good rule of thumb for ensuring that the calculated VACF has been sampled adequately is to perform simulations that are a factor of 2 to 10 times longer than the estimated decay-to-zero time. The lag between time origins should then not exceed half the total simulation time. For example, water models at liquid conditions typically exhibit a decay-to-zero time on the order of 1 ps, such that a simulation of 2 to 10 ps with a lag time no greater than 1 ps should be sufficient for obtaining a well converged VACF (see Figures 12-15 of Ref. \cite{Stillinger1974}).
+
+%For example, water models at liquid conditions typically exhibit a decay-to-zero time on the order of 1 ps (see Figures 12-15 of Ref. \cite{Stillinger1974}).
  
 
 \subsubsection{Data analysis} \label{sec:Self-Diffusivity:Green-Kubo: Data analysis}
 
-The most common method for computing the self-diffusivity from the VACF is to do a direct numerical integration of the VACF. If this is done, the author should provide details on how the integration was carried out (numerical procedure, algorithm, cut-off times, etc.). The running integral versus time is calculated and the self-diffusivity is estimated from the plateau value. As with the Einstein approach, a cut-off time is chosen to determine when the integral has converged. It is important to report how sensitive the estimate is to this cut-off time. 
+The most common method for computing the self-diffusivity from the VACF is to do a direct numerical integration of the VACF. If this is done, the author should provide details on how the integration was carried out (numerical procedure, algorithm, cut-off times, etc.). The running integral versus time is calculated and the self-diffusivity is estimated from the plateau value. Since the long-time ``tail'' of the VACF can contribute significantly to the integral \cite{GROMACS,Allen2017}, care must be taken to ensure that the VACF properly converges to 0 at long times. As with the Einstein approach, a cut-off time should be chosen to determine when the integral has converged. It is important to report how sensitive the estimate is to this cut-off time. 
 %RAM: I feel like this is unnecessary, since we already discuss in the introduction that both D and eta can be computed using either Einstein or Green-Kubo
 %Note that this procedure shares many features to computing the shear viscosity via a Green-Kubo approach; more details are provided in Sec.\ \ref{sec:Viscosity:Green-Kubo: Data analysis}.
 
@@ -990,7 +996,7 @@ To test for system size dependence, one can run a series of simulations over a r
 
 To improve statistical averaging, it is common to include multiple terms from the stress tensor. For example, Figure \ref{fig:HessFig5}, borrowed from Ref. \cite{Hess2002}, demonstrates the improvement of averaging the three off-diagonal elements of the pressure tensor, compared to a single off-diagonal element. To maximize simulation efficiency for an isotropic system, we recommend that users employ a generalized form of the Green-Kubo integral \citep{Evans:90, Daivis:1994}, which uses all six independent components of the stress tensor. Details are given in the Appendix of Ref. \cite{Daivis:1994}. This generalized integral is given by
 \begin{equation}
-  \eta = \frac{V}{10 k_{\rm B} T}  \int_0^\infty \left\langle \tau_{ij}^{\rm os}(0)\tau_{ij}^{\rm os}(t) \right\rangle_{t_0} dt
+  \eta = \frac{V}{10 k_{\rm B} T} \sum_i \sum_j \int_0^\infty \left\langle \tau_{ij}^{\rm os}(0)\tau_{ij}^{\rm os}(t) \right\rangle_{t_0} dt
   \label{eq:GKwonder}
 \end{equation}
 where the components $\tau_{ij}^{\rm os}$ of the traceless, symmetric part of the stress tensor are given by
@@ -1024,7 +1030,7 @@ We are not aware of any studies that rigorously quantify the improvement in prec
 
 Although fluctuations in $\eta$ are significantly reduced by including multiple terms from the stress tensor, the key to improved precision of viscosity estimates is to average several replicate simulations. For $N_{\rm reps}$ replicates, the Green-Kubo equation is
 \begin{equation}
-\eta = \frac{V}{10 k_{\rm B} T N_{\rm reps}} \sum_{n=1}^{N_{\rm reps}}  \int_0^\infty \left\langle \tau_{ij,n}^{\rm os}(0)\tau_{ij,n}^{\rm os}(t) \right\rangle_{t_0} dt
+\eta = \frac{V}{10 k_{\rm B} T N_{\rm reps}} \sum_{n=1}^{N_{\rm reps}} \sum_i \sum_j \int_0^\infty \left\langle \tau_{ij,n}^{\rm os}(0)\tau_{ij,n}^{\rm os}(t) \right\rangle_{t_0} dt
 \label{eq:GKwonder_replicates}
 \end{equation}
 and the Einstein relation becomes

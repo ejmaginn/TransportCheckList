@@ -181,7 +181,7 @@ In addition to the present manuscript, we highly recommend reviewing this list o
 		\item \DIFdelbegin \DIFdel{Ref}\DIFdelend \DIFaddbegin \DIFadd{Panagiotopoulos, The University of Princeton}\DIFaddend . \cite{PanaNotes}
 		\item \DIFdelbegin \DIFdel{Ref}\DIFdelend \DIFaddbegin \DIFadd{Kofke, The University of Buffalo}\DIFaddend . \cite{KofkeNotes}
 		\item \DIFdelbegin \DIFdel{Ref}\DIFdelend \DIFaddbegin \DIFadd{Maginn, The University of Notre Dame}\DIFaddend . \cite{MaginnNotes}
-		\item \DIFdelbegin \DIFdel{Ref}\DIFdelend \DIFaddbegin \DIFadd{Shell, The University of California Santa Barbara}\DIFaddend . \cite{ShellNotes}
+		\item \DIFdelbegin \DIFdel{Ref}\DIFdelend \DIFaddbegin \DIFadd{Shell, The University of California, Santa Barbara}\DIFaddend . \cite{ShellNotes}
 	\end{enumerate}
 	\item \DIFdelbegin \DIFdel{Published articles}\DIFdelend \DIFaddbegin \DIFadd{Peer-reviewed articles:
 	}\DIFaddend \begin{enumerate}
@@ -283,7 +283,7 @@ For self-diffusivity, $\xi$ is the Cartesian atom position $(r_{\alpha})$ and th
 		Property & $\gamma$          & $\xi$                        & Green-Kubo (Equation \ref{eq:Green-Kubo})    & Einstein (Equation \ref{eq:Einstein})     \\
 		\midrule
 		Self-diffusivity     & $D$ & $r_{\alpha}$          & $ \displaystyle \frac{1}{d_\alpha} \int_{0}^{\infty}dt\left\langle \frac{1}{N} \sum_{i=1}^{N} v_{\alpha,i}(t) v_{\alpha,i}(0)\right\rangle_{t_0}$    & $ \displaystyle \frac{1}{2d_\alpha} \lim_{t\to\infty} \frac{d}{dt} \left\langle \frac{1}{N} \sum_{i=1}^{N} |r_{\alpha,i}(t)-r_{\alpha,i}(0)|^2 \right\rangle_{t_0}$   \\
-		Shear viscosity     & $\eta$       & $r_\alpha v_\beta$           & $ \displaystyle \frac{V}{k_{\rm B}T} \int_{0}^{\infty}dt\left\langle \tau_{\alpha,\beta}(t) \tau_{\alpha,\beta}(0)\right\rangle_{t_0}$    & $ \displaystyle \frac{V}{2k_{\rm B}T} \lim_{t\to\infty} \frac{d}{dt} \left\langle \left(\int_{0}^{t}dt' \tau_{\alpha,\beta}(t')\right)^2 \right\rangle_{t_0}$  \\
+		Shear viscosity     & $\eta$       & $r_\alpha v_\beta$           & $ \displaystyle \frac{V}{k_{\rm B}T} \int_{0}^{\infty}dt\left\langle \tau_{\alpha\beta}(t) \tau_{\alpha\beta}(0)\right\rangle_{t_0}$  & $ \displaystyle \frac{V}{2k_{\rm B}T} \lim_{t\to\infty} \frac{d}{dt} \left\langle \left(\int_{0}^{t}dt' \tau_{\alpha\beta}(t')\right)^2 \right\rangle_{t_0}$ \\
 		\bottomrule
 	\end{tabular}
 	\newline
@@ -293,7 +293,7 @@ For self-diffusivity, $\xi$ is the Cartesian atom position $(r_{\alpha})$ and th
 	$N=$ number of atoms or molecules (see Sec.\ \ref{sec:General: Clear communication}) \newline
 %	$V=$ volume \newline
 	$k_{\rm B}=$ Boltzmann constant \newline
-	$\tau_{\alpha,\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( m v_{\alpha,i}(t) v_{\beta,i}(t) + r_{\alpha,i}(t) f_{\beta,i}(t) \right) , \alpha \ne \beta$ \newline
+	\DIFdelbeginFL \DIFdelFL{$\tau_{\alpha,\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( m v_{\alpha,i}(t) v_{\beta,i}(t) + r_{\alpha,i}(t) f_{\beta,i}(t) \right) , \alpha \ne \beta$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$\tau_{\alpha\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( m v_{\alpha,i}(t) v_{\beta,i}(t) + r_{\alpha,i}(t) f_{\beta,i}(t) \right) , \alpha \ne \beta$ }\DIFaddendFL \newline
 	$f_{\beta,i}$ is the force acting on particle $i$ in direction $\beta$ \newline
 	$\langle \cdots \rangle_{t_0}$ denotes an average over time origins (see Sec.\ \ref{sec:General: Improve precision})
 \end{table*}
@@ -1013,7 +1013,8 @@ Note that, although the best practice is to use the $NVE$ ensemble (Steps 1 to 3
 
 \subsubsection{Replicate simulations} \label{sec:General: Replicate simulations}
 
-To smooth noise in the Green-Kubo integral or Einstein slope, we recommend generating independent replicate trajectories (i.e.\DIFaddbegin \DIFadd{, }\DIFaddend different initial configurations or random seed to initialize velocities). The primary advantage of performing replicates as opposed to one longer simulation is the computational speed-up. Figure 2 in Ref. \cite{Payal2012} demonstrates that an average of 10 short replicate simulations converges to the same value as a single long simulation. Since these replicates can be performed in parallel, the time required to obtain the result is reduced, although the CPU time may be the same or more.
+To smooth noise in the Green-Kubo integral or Einstein slope, we recommend generating independent replicate trajectories (i.e.\DIFaddbegin \DIFadd{, }\DIFaddend different initial configurations or random \DIFdelbegin \DIFdel{seed }\DIFdelend \DIFaddbegin \DIFadd{seeds }\DIFaddend to initialize velocities). The primary advantage of performing replicates as opposed to one longer simulation is the computational speed-up. Figure 2 in Ref. \cite{Payal2012} demonstrates that an average of 10 short replicate simulations converges to the same value as a single long simulation. Since these replicates can be performed in parallel, the \DIFdelbegin \DIFdel{time required to obtain the result }\DIFdelend \DIFaddbegin \DIFadd{real time }\DIFaddend is reduced, although the CPU time may be the same or more. \DIFaddbegin \DIFadd{In addition, replicate simulations are useful if a single simulation does not adequately sample phase space, i.e., is trapped in a local minimum or has slow dynamics.
+}\DIFaddend 
 
 %\begin{figure}[htb!]
 %	\centering
@@ -1022,11 +1023,13 @@ To smooth noise in the Green-Kubo integral or Einstein slope, we recommend gener
 %	\label{fig:PayalFig2}
 %\end{figure}
 
-The uncertainty (specifically, the standard error of the mean) is inversely proportional to the square root of the number of replicates (see Figure 7 of Ref. \cite{Zhang2015} and Figure 8 of Ref. \cite{Ma2017}). Therefore, increasing the number of replicates is a simple, fast, and direct way to reduce the uncertainty. For example, the fluctuations in $\eta$ are much smaller for the average of 10 replicates compared to that of a single longer simulation (see Figure 2 of Ref. \cite{Payal2012}). As fluctuations in $\eta$ are typically much larger than $D$, more replicate simulations are required for estimating viscosity (see Sec.\ \ref{sec:Viscosity:General: Improved precision}).
+\DIFaddbegin \DIFadd{Furthermore, replicates can provide rigorous estimates of uncertainty (see Sec.\ \ref{sec:General: Uncertainty}). }\DIFaddend The uncertainty (specifically, the standard error of the mean) is inversely proportional to the square root of the number of replicates (see Figure 7 of Ref. \cite{Zhang2015} and Figure 8 of Ref. \cite{Ma2017}). Therefore, increasing the number of replicates is a simple, fast, and direct way to reduce the uncertainty. For example, the fluctuations in $\eta$ are much smaller for the average of 10 replicates compared to that of a single longer simulation (see Figure 2 of Ref. \cite{Payal2012}). As fluctuations in $\eta$ are typically much larger than $D$, more replicate simulations are required for estimating viscosity (see Sec.\ \ref{sec:Viscosity:General: Improved precision}).
 
-In addition, replicate simulations are useful if a single simulation does not adequately sample phase space, i.e.\DIFaddbegin \DIFadd{, }\DIFaddend is trapped in a local minimum or has slow dynamics. Furthermore, replicates can provide rigorous estimates of uncertainty (see Sec.\ \ref{sec:General: Uncertainty}).
+\DIFdelbegin \DIFdel{In addition, replicate simulations are useful if a single simulation does not adequately sample phase space, i.e. is trapped in a local minimum or has slow dynamics. Furthermore, replicates can provide rigorous estimates of uncertainty (see Sec.\ \ref{sec:General: Uncertainty}).
+}%DIFDELCMD < 
 
-Note that, although the best practice is to start each independent replicate at the $NPT$ step, it is common to use the same density ($NVT$ step) for each replicate. This approach is acceptable assuming that the authors provide the corresponding uncertainty in $P$ (see Sec.\ \ref{sec:General Simulation Setup}).
+%DIFDELCMD < %%%
+\DIFdelend Note that, although the best practice is to start each independent replicate at the $NPT$ step, it is common to use the same density ($NVT$ step) for each replicate. This approach is acceptable assuming that the authors provide the corresponding uncertainty in $P$ (see Sec.\ \ref{sec:General Simulation Setup}).
 
 %\item Averaging over multiple simulations with analytic fitting of integral provides a good way of smoothing noise and provides an objective means of determining the viscosity \cite{Zhang2015}.
 % I think this point of averaging multiple simulations is important enough to merit its' own discussion
@@ -1038,11 +1041,14 @@ Note that, although the best practice is to start each independent replicate at 
 
 In practice, several tricks-of-the-trade are employed to reduce fluctuations and, thereby, the standard deviation $(\sigma)$. For self-diffusivity, it is a standard practice to average the \DIFdelbegin \DIFdel{mean-square-displacement }\DIFdelend \DIFaddbegin \DIFadd{mean squared displacement }\DIFaddend or velocity autocorrelation function over all $N$ molecules (see Table \ref{tab:EMD_equations}). For shear viscosity, it is not possible to average over the number of molecules because viscosity is a collective property that depends on the pressure/stress tensor of the system. For this reason, it is much easier to get precise diffusivity estimates than it is to get precise viscosity estimates; additional tactics are typically employed to improve the viscosity precision, namely, large numbers of replicate simulations.
 
-The self-diffusivity is a tensor, and it is common practice in homogeneous systems to average the diagonal components, such that $D = \frac{1}{3} (D_{xx} + D_{yy} + D_{zz})$ where for example $ D_{xx}=\displaystyle \frac{1}{2} \lim_{t\to\infty} \frac{d}{dt} \left\langle \frac{1}{N} \sum_{i=1}^{N} |x_i(t)-x_i(0)|^2 \right\rangle$. Since formally $D_{xx}=D_{yy}=D_{zz}$ for homogeneous systems, one can test the equivalence of the three terms as a check on a simulation and even to make a crude estimate of the uncertainty in $D$. In inhomogeneous systems, the diagonal terms will not necessarily be equivalent. Off diagonal terms should be zero, and we encourage the user to verify this.
+The self-diffusivity is a tensor, and it is common practice in homogeneous systems to average the diagonal components, such that $D = \frac{1}{3} (D_{xx} + D_{yy} + D_{zz})$ where for example $ D_{xx}=\displaystyle \frac{1}{2} \lim_{t\to\infty} \frac{d}{dt} \left\langle \frac{1}{N} \sum_{i=1}^{N} |x_i(t)-x_i(0)|^2 \right\rangle$. Since formally $D_{xx}=D_{yy}=D_{zz}$ for homogeneous systems, one can test the equivalence of the three terms as a check on a simulation and even to make a crude estimate of the uncertainty in $D$. \DIFdelbegin \DIFdel{In }\DIFdelend \DIFaddbegin \DIFadd{We also encourage the user to verify that the off-diagonal terms are approximately zero. Note that for }\DIFaddend inhomogeneous systems, the diagonal terms will not necessarily be equivalent \DIFdelbegin \DIFdel{. Off diagonal terms should be zero, and we encourage the user to verify this}\DIFdelend \DIFaddbegin \DIFadd{and the off-diagonal terms may not be zero}\DIFaddend .
 
 For viscosity, the recommended practice is to use multiple components from the pressure/stress tensor. For example, although early studies only implemented a single off-diagonal component (typically $xy$), the common practice in recent studies is to use all three off-diagonal ($xy$, $yz$, $xz$) and sometimes three additional modified diagonal terms of the pressure/stress tensor (see Sec.\ \ref{sec:Viscosity:General: Improved precision}).
 
-Finally, for both self-diffusivity and shear viscosity it is common to average over multiple time origins $(t_0)$. It is important that the difference between subsequent $t_0$ values $(\delta t_0)$ be longer than the correlation time so that the different time intervals are independent.
+Finally, for both self-diffusivity and shear viscosity it is common to average over multiple time origins $(t_0)$. It is important that the difference between subsequent $t_0$ values $(\delta t_0)$ be longer than the correlation time so that the different time intervals are independent\DIFdelbegin \DIFdel{.}\DIFdelend \DIFaddbegin \DIFadd{(see Ref.\ \mbox{%DIFAUXCMD
+		\cite{Grossfield2018} }\hspace{0pt}%DIFAUXCMD
+	for details regarding correlation time).
+}\DIFaddend
 
 \subsubsection{Clear communication} \label{sec:General: Clear communication}
 
@@ -1060,14 +1066,16 @@ and \mbox{%DIFAUXCMD
 \cite{Grossfield2018}}\hspace{0pt}%DIFAUXCMD
 }\DIFaddend . Although force field deficiencies can lead to large systematic deviations with respect to the ``true'' experimental value, we limit our discussion to random uncertainties associated with fluctuations in the simulation output.
 
-Replicates can provide a rigorous uncertainty assessment. We recommend bootstrapping the uncertainties by randomly sampling which replicates are included in the data analysis procedure:
+Replicates can provide a rigorous uncertainty assessment. We recommend bootstrapping the uncertainties by randomly sampling which replicates are included in the data analysis procedure\DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+		\cite{Efron1979}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend :
 
 \begin{enumerate}
 	\item Randomly select (with replacement) a \DIFdelbegin \DIFdel{set }\DIFdelend \DIFaddbegin \DIFadd{subset }\DIFaddend of replicate simulations \label{item:Random selection}
 	\item Calculate the relevant average quantity from this random set, i.e.\DIFaddbegin \DIFadd{, }\DIFaddend $\langle\dot{\xi}(t)\dot{\xi}(0)\rangle$ for Green-Kubo or $\langle (\xi(t)-\xi(0))^2 \rangle$ for Einstein
-	\item Compute transport property $(\gamma)$ from Equations \ref{eq:Green-Kubo} or \ref{eq:Einstein}
-	\item Repeat steps 1 through 3 several hundred times \label{item:Loop}
-	\item Generate distribution of the estimated values for $D$ or $\eta$ \label{item:Bootstrap Distribution}
+	\item Compute transport property $(\gamma)$ from Equations \ref{eq:Green-Kubo} or \ref{eq:Einstein} \DIFaddbegin \label{item:Compute property}
+	\DIFaddend \item Repeat steps \DIFdelbegin \DIFdel{1 through 3 }\DIFdelend \DIFaddbegin \DIFadd{\ref{item:Random selection} through \ref{item:Compute property} }\DIFaddend several hundred times \label{item:Loop}
+	\item Generate distribution of \DIFdelbegin \DIFdel{the estimated values for }\DIFdelend $D$ or $\eta$ \DIFaddbegin \DIFadd{values from step \ref{item:Loop} }\DIFaddend \label{item:Bootstrap Distribution}
 	\item Determine lower and upper uncertainty bounds of $D$ or $\eta$ at desired confidence level, $1-\alpha$ \label{item:Confidence interval}
 \end{enumerate}
 In step \ref{item:Random selection}, the resampled set should be the same size as the original set of replicates, i.e.\DIFaddbegin \DIFadd{, }\DIFaddend $N_{\rm boots} = N_{\rm reps}$. For this reason, replacement after each random selection is key to ensure that a different set is resampled for each cycle (step \ref{item:Loop}). Note that this approach is typically most reliable when $N_{\rm reps} \ge 20$. However, we recommend this approach even if only a few replicate simulations are performed to at least have a rough estimate of the uncertainty.
@@ -1111,7 +1119,7 @@ Validation is an important step to verify that the simulation set-up and post-si
 We recommend the Einstein approach for computing self-diffusivity as it is robust and the most commonly used method. However, we also recommend validating that the Green-Kubo method provides similar estimates. Although systematic deviations are often observed between the two methods, if the analysis is done properly the values should agree within their statistical uncertainties \cite{Kondratyuk2016,Liu2012,Mondello1997}. 
 \DIFdelbegin \DIFdel{Section }\DIFdelend \DIFaddbegin 
 
-\DIFadd{Sec.\ }\DIFaddend \ref{sec:Self-Diffusivity General} discusses self-diffusivity checklist items that apply to both the Einstein and Green-Kubo approaches. \DIFdelbegin \DIFdel{Sections }\DIFdelend \DIFaddbegin \DIFadd{Secs.\ }\DIFaddend \ref{sec:Self-Diffusivity Einstein} and \ref{sec:Self-Diffusivity Green-Kubo} discuss checklist items that are specific to either the Einstein or Green-Kubo approaches, respectively, for estimating the self-diffusivity constant. \DIFdelbegin \DIFdel{Section }\DIFdelend \DIFaddbegin \DIFadd{Sec.\ }\DIFaddend \ref{sec:Self-Diffusivity Special topics} provides a brief discussion of some topics that are relevant in certain applications.
+\DIFadd{Sec.\ }\DIFaddend \ref{sec:Self-Diffusivity General} discusses self-diffusivity checklist items that apply to both the Einstein and Green-Kubo approaches. \DIFdelbegin \DIFdel{Sections }\DIFdelend \DIFaddbegin \DIFadd{Secs.\ }\DIFaddend \ref{sec:Self-Diffusivity Einstein} and \ref{sec:Self-Diffusivity Green-Kubo} discuss checklist items that are specific to either the Einstein or Green-Kubo approaches, respectively, for estimating the \DIFdelbegin \DIFdel{self-diffusivity constant. Section }\DIFdelend \DIFaddbegin \DIFadd{self-diffusion coefficient. Sec.\ }\DIFaddend \ref{sec:Self-Diffusivity Special topics} provides a brief discussion of some topics that are relevant in certain applications.
 
 \subsection{Self-diffusivity: General} \label{sec:Self-Diffusivity General}
 
@@ -1191,7 +1199,7 @@ Regardless, the simulation must be long enough so that the molecules are in the 
 
 \subsubsection{Data analysis} \label{sec:Self-Diffusivity:Einstein: Data analysis}
 
-In order to obtain reliable estimates of $D$, it is important to consider how the linear regression is performed for the MSD with respect to time (Equation 2). Specifically, the time interval that is included in the regression can have a significant impact on the predicted value of $D$. We recommend that only the ``middle'' of the MSD be used in the fit. Short time must be excluded as it follows a ballistic trajectory, while very long time is excluded due to the increased noise. Currently, we are unaware of an objective approach for defining the ``middle'' region. Until such an approach exists, we recommend that the author reports how the region was selected and how much variability in $D$ can be attributed to the choice of this region. In addition, the uncertainty in the fit of the slope should be reported. 
+In order to obtain reliable estimates of $D$, it is important to consider how the linear regression is performed for the MSD with respect to time (Equation 2). Specifically, the time interval that is included in the regression can have a significant impact on the predicted value of $D$. We recommend that only the ``middle'' of the MSD be used in the fit \DIFaddbegin \DIFadd{to approximate the long-time slope}\DIFaddend . Short time must be excluded as it follows a ballistic trajectory, while very long time is excluded due to the increased noise. Currently, we are unaware of an objective approach for defining the ``middle'' region. Until such an approach exists, we recommend that the author reports how the region was selected and how much variability in $D$ can be attributed to the choice of this region. In addition, the uncertainty in the fit of the slope should be reported. 
 \DIFdelbegin \DIFdel{A typical }\DIFdelend \DIFaddbegin 
 
 \DIFadd{A typical log-log }\DIFaddend plot, borrowed from Ref. \cite{Kondratyuk2016}, is provided in Figure \ref{fig:KondratyukFig2}, where the linear \DIFdelbegin \DIFdel{regressions at long time are included. }\DIFdelend \DIFaddbegin \DIFadd{regression to the ``middle'' region is included. From visual inspection, the ``ballistic'' short-time interval ranges from the beginning of the simulation to approximately 100 ps. The ``middle'' region is identified by the linear regime with a slope of 1 (for a log-log plot) spanning from approximately 100 ps to 1000 ps. Note that the noisy ``long-time'' simulation data (beyond 1000 ps) are not depicted in Figure \ref{fig:KondratyukFig2} and are excluded from the linear fit.
@@ -1205,7 +1213,7 @@ In order to obtain reliable estimates of $D$, it is important to consider how th
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{KondratyukFig2.png}
-	\caption{Log-log plot of MSD with respect to time. Reproduced with permission from J. Phys. Conf. Ser. 774 (2016) 012039, under the Creative Commons Attribution 3.0 license \cite{Kondratyuk2016}. The gray dashed lines are \DIFaddbeginFL \DIFaddFL{linear fits to }\DIFaddendFL the \DIFdelbeginFL \DIFdelFL{long-time asymptotes }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{diffusive regime }\DIFaddendFL of the MSD, as determined by the authors. For further details, see Ref. \cite{Kondratyuk2016}. Note that $1$ \AA $\ = 10^{-10}$ m.}%The color for each line corresponds to different torsional force field parameters. The red dash-dot line shows the LAMMPS averaging methodology.
+	\caption{Log-log plot of MSD with respect to time. Reproduced with permission from J. Phys. Conf. Ser. 774 (2016) 012039, under the Creative Commons Attribution 3.0 license \cite{Kondratyuk2016}. The gray dashed lines are \DIFaddbeginFL \DIFaddFL{linear fits to }\DIFaddendFL the \DIFdelbeginFL \DIFdelFL{long-time asymptotes of the MSD}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{diffusive regime}\DIFaddendFL , as determined by the authors. For further details, see Ref. \cite{Kondratyuk2016}. Note that $1$ \AA $\ = 10^{-10}$ m.}%The color for each line corresponds to different torsional force field parameters. The red dash-dot line shows the LAMMPS averaging methodology.
 	\label{fig:KondratyukFig2}
 \end{figure}
 
@@ -1228,7 +1236,8 @@ In order to obtain reliable estimates of $D$, it is important to consider how th
 %RAM: I do not think that we need to talk about force field accuracy
 %FYI: Richard Elliot I developed a database for self-diffusivity that covered all experimental data from the literature as far as he could find. It is included as supporting information in Ind. Eng. Chem. Res. 2010, 49, 3411–3423. This paper provides a generalized correlation of the quantity rho*D (g/cm-s) of n-alkanes at all molecular weights, temperatures, and densities below the entanglement threshold. This semi-empirical correlation is used as the basis for correlating non-alkanes as well. Accuracy diminished for associating compounds, but experimental data were relatively few in number for associating compounds.
 
-\DIFaddbegin \newpage
+%DIF > \newpage
+\DIFaddbegin 
 
 \DIFaddend \subsection{Self-diffusivity: Green-Kubo} \label{sec:Self-Diffusivity Green-Kubo}
 
@@ -1243,12 +1252,32 @@ If the self-diffusivity is computed using a Green-Kubo approach, the velocities 
 
 \subsubsection{Simulation length} \label{sec:Self-Diffusivity:Green-Kubo: Simulation length}
 
-Simulations should be long enough that the Green-Kubo integral has reached a plateau. Note that the plateau time is not the same as the required simulation time, since multiple time origins $(t_0)$ are used to compute the Green-Kubo integral. \DIFaddbegin \DIFadd{Sec.\ \ref{sec:Viscosity:General: Simulation length} provides a more thorough discussion of the relationship between the simulation time and the Green-Kubo plateau time.
+Simulations should be long enough that the Green-Kubo integral has reached a plateau. Note that the plateau time is not the same as the required simulation time, since multiple time origins $(t_0)$ are used to compute the Green-Kubo integral\DIFdelbegin \DIFdel{.
+}\DIFdelend \DIFaddbegin \DIFadd{(see Sec.\ \ref{sec:Viscosity:General: Simulation length} for a more thorough discussion regarding the relationship between simulation times and plateau times).
 }\DIFaddend 
 
-\subsubsection{Data analysis} \label{sec:Self-Diffusivity:Green-Kubo: Data analysis}
+%DIF > Care must be taken to ensure that the VACF properly converges to 0 at long times, since the long-time ``tail'' of the VACF can contribute significantly to the integral \cite{GROMACS,Allen2017}. For example, water models at liquid conditions typically exhibit a decay-to-zero time on the order of 1 ps (see Figures 12-15 of Ref. \cite{Stillinger1974}). A trade-off exists when deciding the elapsed time between subsequent time origins (often referred to as the ``lag''). Specifically, the lag must be long enough that the VACF converges to 0 while also being short enough to avoid introducing noise from the long-time tail. A good rule of thumb for ensuring that the calculated VACF has been sampled adequately is to perform simulations that are a factor of 2 to 10 times longer than the estimated decay-to-zero time. The lag between time origins should then not exceed half the total simulation time. 
+\DIFaddbegin 
 
-The most common method for computing the self-diffusivity from the VACF is to do a direct numerical integration of the VACF. If this is done, the author should provide details on how the integration was carried out (numerical procedure, algorithm, \DIFdelbegin \DIFdel{cutoffs}\DIFdelend \DIFaddbegin \DIFadd{cut-off times}\DIFaddend , etc.). The running integral versus time is calculated and the self-diffusivity is estimated from the plateau value. Note that when calculating the VACF, the maximum lag taken should be up to half the total simulation time, since longer times \DIFdelbegin \DIFdel{serve to }\DIFdelend increase statistical noise. Also, note that the \DIFdelbegin \DIFdel{long time }\DIFdelend \DIFaddbegin \DIFadd{long-time }\DIFaddend ``tail'' of the VACF must be properly converged as it contributes significantly to the integral. As with the MSD, a cut-off \DIFdelbegin \DIFdel{needs to be determined when deciding when }\DIFdelend \DIFaddbegin \DIFadd{time is chosen to determine when }\DIFaddend the integral has converged. It is important to report how sensitive the estimate is to this cut-off time. 
+%DIF > Care must be taken to ensure that the VACF properly converges to 0 at long times, since the long-time ``tail'' of the VACF can contribute significantly to the integral \cite{GROMACS,Allen2017}. For example, water models at liquid conditions typically exhibit a decay-to-zero time on the order of 1 ps (see Figures 12-15 of Ref. \cite{Stillinger1974}). A trade-off exists when deciding the elapsed time between subsequent time origins (often referred to as the ``lag''). Specifically, if the lag is too short the VACF will not converge to 0, while long-time VACF tail introduces considerable noise in the integration when the lag is too long. A good rule of thumb for ensuring that the calculated VACF has been sampled adequately is to perform simulations that are a factor of 2 to 10 times longer than the estimated decay-to-zero time. The lag between time origins should then not exceed half the total simulation time.
+
+%DIF > A trade-off exists when deciding the elapsed time between subsequent time origins (often referred to as the ``lag''). Specifically, when the lag is too short the VACF does not converge to 0 and, thus, the Green-Kubo integral does not converge to a finite value. By contrast, the long-time VACF tail introduces considerable noise in the integration when the lag is too long. Therefore, care must be taken to ensure that the VACF properly converges to 0 at long times, since the long-time ``tail'' of the VACF can contribute significantly to the integral \cite{GROMACS,Allen2017}. A good rule of thumb for ensuring that the calculated VACF has been sampled adequately is to perform simulations that are a factor of 2 to 10 times longer than the estimated decay-to-zero time. The lag between time origins should then not exceed half the total simulation time. For example, water models at liquid conditions typically exhibit a decay-to-zero time on the order of 1 ps (see Figures 12-15 of Ref. \cite{Stillinger1974}).
+
+\DIFadd{A trade-off exists when deciding the elapsed time between subsequent time origins (often referred to as the ``lag''). Specifically, if the lag is too short the VACF will not converge to 0 and, thus, the Green-Kubo integral will not converge to the appropriate finite value. By contrast, if the lag is too long the long-time VACF ``tail'' will introduce considerable noise in the integration. A good rule of thumb for ensuring that the calculated VACF has been sampled adequately is to perform simulations that are approximately a factor of 20 times longer than the estimated decay-to-zero time. The lag between time origins should then be greater than the decay-to-zero time but not exceed half the total simulation time. For example, water models at liquid conditions typically exhibit a decay-to-zero time on the order of 1 ps, such that a simulation of 20 ps with a lag time between 1 and 10 ps should yield a well converged VACF (see Figures 12-15 of Ref. \mbox{%DIFAUXCMD
+\cite{Stillinger1974}}\hspace{0pt}%DIFAUXCMD
+).
+}
+
+%DIF >  A good rule of thumb for ensuring that the calculated VACF has been sampled adequately is to perform simulations that are a factor of 2 to 10 times longer than the estimated decay-to-zero time. The lag between time origins should then not exceed half the total simulation time. For example, water models at liquid conditions typically exhibit a decay-to-zero time on the order of 1 ps, such that a simulation of 2 to 10 ps with a lag time no greater than 1 ps should be sufficient for obtaining a well converged VACF (see Figures 12-15 of Ref. \cite{Stillinger1974}).
+
+%DIF > For example, water models at liquid conditions typically exhibit a decay-to-zero time on the order of 1 ps (see Figures 12-15 of Ref. \cite{Stillinger1974}).
+
+
+\DIFaddend \subsubsection{Data analysis} \label{sec:Self-Diffusivity:Green-Kubo: Data analysis}
+
+The most common method for computing the self-diffusivity from the VACF is to do a direct numerical integration of the VACF. If this is done, the author should provide details on how the integration was carried out (numerical procedure, algorithm, \DIFdelbegin \DIFdel{cutoffs}\DIFdelend \DIFaddbegin \DIFadd{cut-off times}\DIFaddend , etc.). The running integral versus time is calculated and the self-diffusivity is estimated from the plateau value. \DIFdelbegin \DIFdel{Note that when calculating the VACF, the maximum lag taken should be up to half the total simulation time, since longer times serve to increase statistical noise. Also, note that the long time }\DIFdelend \DIFaddbegin \DIFadd{Since the long-time }\DIFaddend ``tail'' of the VACF \DIFdelbegin \DIFdel{must be properly converged as it contributes }\DIFdelend \DIFaddbegin \DIFadd{can contribute }\DIFaddend significantly to the integral \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\cite{GROMACS,Allen2017}}\hspace{0pt}%DIFAUXCMD
+, care must be taken to ensure that the VACF properly converges to 0 at long times}\DIFaddend . As with the \DIFdelbegin \DIFdel{MSD}\DIFdelend \DIFaddbegin \DIFadd{Einstein approach}\DIFaddend , a cut-off \DIFdelbegin \DIFdel{needs to be determined when deciding when }\DIFdelend \DIFaddbegin \DIFadd{time should be chosen to determine when }\DIFaddend the integral has converged. It is important to report how sensitive the estimate is to this cut-off time. 
 %RAM: I feel like this is unnecessary, since we already discuss in the introduction that both D and eta can be computed using either Einstein or Green-Kubo
 %DIF < Note that this procedure shares many features to computing the shear viscosity via a Green-Kubo approach; more details are provided in Section~\ref{sec:Viscosity:Green-Kubo: Data analysis}.
 %DIF > Note that this procedure shares many features to computing the shear viscosity via a Green-Kubo approach; more details are provided in Sec.\ \ref{sec:Viscosity:Green-Kubo: Data analysis}.
@@ -1285,10 +1314,10 @@ The most common method for computing the self-diffusivity from the VACF is to do
 Although molecular simulation is well-suited for predicting diffusivity coefficients in membranes, several issues arise that require special attention. For example, the standard non-bonded long-range cut-off corrections are not straightforward in a heterogeneous system. For this reason, it is common to modify the non-bonded interactions such that tail corrections are not needed, e.g., cut-and-shift, force-switch \cite{GROMACS,Brooks2009}. However, it is important to investigate the impact modifying the non-bonded potential has on the diffusion coefficients. 
 \DIFaddbegin 
 
-\DIFaddend Furthermore, since membranes require anisotropic pressure control it is important to use barostats/thermostats that maintain the correct isobaric/isothermal ensemble. Venable \textit{et al.} have shown that as long as a high-quality barostat and thermostat are used (such as those implemented via so-called "extended system" methods \cite{Nose1984,Hoover1985}), diffusion constants determined from \DIFdelbegin \DIFdel{NVE and NPT }\DIFdelend \DIFaddbegin \DIFadd{$NVE$ and $NPT$ }\DIFaddend simulations are quite similar \cite{Venable2017}. 
+\DIFaddend Furthermore, since membranes require anisotropic pressure control it is important to use barostats/thermostats that maintain the correct isobaric/isothermal ensemble. Venable \textit{et al.} have shown that as long as a high-quality barostat and thermostat are used (such as those implemented via so-called ``extended system'' methods \cite{Nose1984,Hoover1985}), diffusion \DIFdelbegin \DIFdel{constants determined from NVE and NPT }\DIFdelend \DIFaddbegin \DIFadd{coefficients determined from $NVE$ and $NPT$ }\DIFaddend simulations are quite similar \cite{Venable2017}. 
 \DIFaddbegin 
 
-\DIFaddend Finally, correcting diffusion coefficients for finite size effects (i.e.\DIFaddbegin \DIFadd{, }\DIFaddend when periodic boundary conditions are employed) in membrane systems requires some additional consideration. Camley \textit{et al.} \DIFdelbegin \DIFdel{developed }\DIFdelend \DIFaddbegin \DIFadd{develop }\DIFaddend a method for determining diffusion constants in membrane systems which uses the immersed-boundary approach in the context of the the Saffman-Delbr{\"u}uck model \cite{Camley2015}. This method is available via \url{https://diffusion.lobos.nih.gov}.
+\DIFaddend Finally, correcting diffusion coefficients for finite size effects (i.e.\DIFaddbegin \DIFadd{, }\DIFaddend when periodic boundary conditions are employed) in membrane systems requires some additional consideration. Camley \textit{et al.} \DIFdelbegin \DIFdel{developed }\DIFdelend \DIFaddbegin \DIFadd{develop }\DIFaddend a method for determining diffusion \DIFdelbegin \DIFdel{constants }\DIFdelend \DIFaddbegin \DIFadd{coefficients }\DIFaddend in membrane systems which uses the immersed-boundary approach in the context of the the Saffman-Delbr{\"u}uck model \cite{Camley2015}. This method is available via \url{https://diffusion.lobos.nih.gov}.
 
 %For systems that require anisotropic pressure control (e.g., membranes, etc.), use of a barostat/thermostat that maintains the correct isothermal/isobaric ensemble (e.g., extended system, Langevin piston) is required.
 
@@ -1353,7 +1382,7 @@ Figure \ref{fig:ZhangFig8}, borrowed from Ref. \cite{Zhang2015}, demonstrates th
 	\label{fig:ZhangFig8}
 \end{figure}
 
-It is important not to confuse the Green-Kubo integration time (the abscissa for the top panel of Figure \ref{fig:ZhangFig8}) with the simulation length (the different color lines in both panels of Figure \ref{fig:ZhangFig8}). Recall that the Green-Kubo integral (plotted in the top panel) is evaluated using multiple time origins $(t_0)$, so the Green-Kubo integral contains more independent trajectories for the 4 ns line than the 500 ps line. Therefore, the time at which the Green-Kubo integral reaches a plateau (around 100 ps in the top panel of Figure \ref{fig:ZhangFig8}) is not the same as the required simulation time. For sufficient independent trajectories, the required simulation time should typically be around an order of magnitude greater than the plateau time.
+It is important not to confuse the Green-Kubo integration time (the abscissa for the top panel of Figure \ref{fig:ZhangFig8}) with the simulation length (the different color lines in both panels of Figure \ref{fig:ZhangFig8}). Recall that the Green-Kubo integral (plotted in the top panel) is evaluated using multiple time origins $(t_0)$, so the Green-Kubo integral contains more independent trajectories for the 4 ns line than the 500 ps line. Therefore, the time at which the Green-Kubo integral reaches a plateau (around 100 ps in the top panel of Figure \ref{fig:ZhangFig8}) is not the same as the required simulation time. For sufficient independent trajectories, the required simulation time should typically be around an order of magnitude greater than the plateau time\DIFdelbegin \DIFdel{.}\DIFdelend \DIFaddbegin \DIFadd{, e.g., Figure \ref{fig:ZhangFig8} demonstrates that trajectories of 1 ns or longer are required for a plateau time of approximately 100 ps.}\DIFaddend
 
 Figure \ref{fig:ZhangFig10}, borrowed from Ref. \cite{Zhang2015}, demonstrates that the plateau time increases with increasing viscosity, where an order of magnitude increase in viscosity corresponds to approximately an order of magnitude increase in the plateau time. In order to account for the increase in the plateau time, higher viscosity fluids require longer overall simulation times.
 
@@ -1398,7 +1427,12 @@ demonstrate that a complex oscillatory relationship exists between the shear vis
 
 %DIF > The physical interpretation for the existence of finite size effects is that there is limited space for configurational rearrangements in small, dense systems \cite{Kim2018}. 
 
-\DIFaddend To test for system size dependence, one can run a series of simulations over a range of $N$ molecules, where $N$ is varied at least by a factor of two and ideally an order of magnitude. By plotting the computed shear viscosity versus $N^{-1/3}$ \DIFaddbegin \DIFadd{(or $V^{-1/3}$)}\DIFaddend , it is possible to ascertain if there are system size effects. We encourage authors to report these findings to help further verify system size effect trends on viscosity.  If a linear trend is observed with respect to $N^{-1/3}$, the infinite system size viscosity can be extrapolated as the intercept from a linear regression. The author should report the uncertainty associated with this linear fit and extrapolation.
+\DIFaddend To test for system size dependence, one can run a series of simulations over a range of $N$ molecules, where $N$ is varied at least by a factor of two and ideally an order of magnitude. By plotting the computed shear viscosity versus $N^{-1/3}$ \DIFaddbegin \DIFadd{(or $V^{-1/3}$)}\DIFaddend , it is possible to ascertain if there are system size effects. We encourage authors to report these findings to help further verify system size effect trends on viscosity.  
+\DIFdelbegin \DIFdel{If a linear trend is observed with respect to $N^{-1/3}$, the infinite system size viscosity can be extrapolated as the intercept from a linear regression. The author should report the uncertainty associated with this linear fit and extrapolation.
+}\DIFdelend \DIFaddbegin
+
+%DIF >  If a linear trend is observed with respect to $N^{-1/3}$, the infinite system size viscosity can be extrapolated as the intercept from a linear regression. The author should report the uncertainty associated with this linear fit and extrapolation.
+\DIFaddend
 % Should we recommend how much to vary the system size? In other words, varying the size from 200 to 250 is probably not very informative. But varying the size from 200 to 400 to 800 to 1600 will probably show you if there is a trend. So should we recommend "several" different system sizes that vary by a factor of 2 or greater? Also, normally the plot has 1/N^(some power) as the horizontal axis, where the power might have a theoretical value. These plots are nice since N=infinity corresponds to the vertical axis. I think we should mention this. -ramess101
 
 \begin{figure}[htb!]
@@ -1419,7 +1453,7 @@ demonstrate that a complex oscillatory relationship exists between the shear vis
 
 To improve statistical averaging, it is common to include multiple terms from the stress tensor. For example, Figure \ref{fig:HessFig5}, borrowed from Ref. \cite{Hess2002}, demonstrates the improvement of averaging the three off-diagonal elements of the pressure tensor, compared to a single off-diagonal element. To maximize simulation efficiency for an isotropic system, we recommend that users employ a generalized form of the Green-Kubo integral \citep{Evans:90, Daivis:1994}, which uses all six independent components of the stress tensor. Details are given in the Appendix of Ref. \cite{Daivis:1994}. This generalized integral is given by
 \begin{equation}
-  \eta = \frac{V}{10 k_{\rm B} T}  \int_0^\infty \left\langle \tau_{ij}^{\rm os}(0)\tau_{ij}^{\rm os}(t) \right\rangle_{t_0} dt
+  \eta = \frac{V}{10 k_{\rm B} T} \DIFaddbegin \DIFadd{\sum_i \sum_j }\DIFaddend \int_0^\infty \left\langle \tau_{ij}^{\rm os}(0)\tau_{ij}^{\rm os}(t) \right\rangle_{t_0} dt
   \label{eq:GKwonder}
 \end{equation}
 where the components $\tau_{ij}^{\rm os}$ of the traceless, symmetric part of the stress tensor are given by
@@ -1427,7 +1461,7 @@ where the components $\tau_{ij}^{\rm os}$ of the traceless, symmetric part of th
   \tau_{ij}^{\rm os} = \frac{\tau_{ij}+\tau_{ji}}{2} - \delta_{ij} \left( \frac{1}{3} \sum_k \tau_{kk} \right)
   \label{eq:Pwonder}
 \end{equation}
-where $\delta$ is the unit tensor. Note that the factor of 10 in the denominator of Equation~\ref{eq:GKwonder} results from assigning weighting factors of 3/3 and 4/3 for each of the six off-diagonal terms and the three diagonal terms, respectively \cite{Liu2012,Borodin2009,Mondello1997} (although some authors have argued for an equal weighting \cite{Chen2009}, which would modify the normalization factor in the denominator of Equation~\ref{eq:GKwonder}).
+where $\delta$ is the unit tensor. Note that the factor of 10 in the denominator of Equation~\ref{eq:GKwonder} results from assigning weighting factors of 3/3 and 4/3 for each of the six off-diagonal terms and the three diagonal terms, respectively \cite{Liu2012,Borodin2009,Mondello1997} (although some authors have argued for an equal weighting \cite{Chen2009}, which would modify the normalization factor in the denominator of Equation~\ref{eq:GKwonder} \DIFaddbegin \DIFadd{from 10 to 9}\DIFaddend ).
 % from a 3/3 contribution from each of the six off-diagonal terms plus an implicit 4/3 contribution from each of the three diagonal terms. 
 The equivalent generalization of the Einstein relation is
 \begin{equation}
@@ -1453,7 +1487,7 @@ We are not aware of any studies that rigorously quantify the improvement in prec
 
 Although fluctuations in $\eta$ are significantly reduced by including multiple terms from the stress tensor, the key to improved precision of viscosity estimates is to average several replicate simulations. For $N_{\rm reps}$ replicates, the Green-Kubo equation is
 \begin{equation}
-\eta = \frac{V}{10 k_{\rm B} T N_{\rm reps}} \sum_{n=1}^{N_{\rm reps}}  \int_0^\infty \left\langle \tau_{ij,n}^{\rm os}(0)\tau_{ij,n}^{\rm os}(t) \right\rangle_{t_0} dt
+\eta = \frac{V}{10 k_{\rm B} T N_{\rm reps}} \sum_{n=1}^{N_{\rm reps}} \DIFaddbegin \DIFadd{\sum_i \sum_j }\DIFaddend \int_0^\infty \left\langle \tau_{ij,n}^{\rm os}(0)\tau_{ij,n}^{\rm os}(t) \right\rangle_{t_0} dt
 \label{eq:GKwonder_replicates}
 \end{equation}
 and the Einstein relation becomes
@@ -1743,11 +1777,32 @@ Similarly, we suspect that the viscosity also depends on the van der Waals cut-o
 %
 %The focus of the current work is outlining best practices in EMD for self-diffusivity and viscosity prediction. This work may be expanded on in the future with NEMD techniques or best practices for other transport properties.
 
-Molecular simulation is commonly used to predict transport properties. However, without careful simulation design and acute analysis, results may not be meaningful. This work outlines the best practices in the design and analysis of equilibrium molecular dynamics simulations for self-diffusivity and viscosity prediction. We anticipate future studies discussing best practices for non-equilibrium molecular dynamics techniques or additional transport properties.
+Molecular simulation is commonly used to predict transport properties. However, without careful simulation design and acute analysis, results may not be meaningful. This work outlines the best practices in the design and analysis of equilibrium molecular dynamics simulations for self-diffusivity and viscosity prediction. \DIFaddbegin \DIFadd{It is worth noting that non-equilibrium molecular dynamics simulations are highly preferred for moderate to high viscosity materials (more than 20 $\times$ 10$^{-3}$ to 50 $\times$ 10$^{-3}$ Pa-s). }\DIFaddend We anticipate future studies discussing best practices for \DIFdelbegin \DIFdel{non-equilibrium molecular dynamics }\DIFdelend \DIFaddbegin \DIFadd{NEMD }\DIFaddend techniques or additional transport properties.
 
-For self-diffusivity, we recommend employing the Einstein method. In liquid systems, the $NVE$ ensemble is suggested over the $NVT$ ensemble due to the potential interference of the thermostats in self-diffusivity prediction. Uncertainty is reduced by running multiple independent simulations, allowing the system to more thoroughly sample the possible states. We \DIFdelbegin \DIFdel{recommend multiple runs at different system sizes to extrapolate the infinite system size limit prediction for }\DIFdelend \DIFaddbegin \DIFadd{discuss two methods to correct for system size effects, which are significant in }\DIFaddend self-diffusivity \DIFdelbegin \DIFdel{. Atomic positions are recommended to be outputted }\DIFdelend \DIFaddbegin \DIFadd{calculations. We recommend that the atomic positions be output }\DIFaddend 1000 times over a production run, however, the user can choose to output less frequently to reduce file size or more frequently for potentially increased accuracy. To ensure simulations are run long enough for the dynamics of the system to be fully emulated, the user can run a series of simulations at differing lengths, and observe deviation in estimated self-diffusivity with changes in simulation time. The degree of configuration space exploration can be estimated by calculating the mean squared displacements of the molecules and comparing to the radius of gyration and box length. The root MSD should be greater than the radius of gyration, and ideally, on the order of the box length. In post-simulation analysis, \DIFdelbegin \DIFdel{best practice improves }\DIFdelend \DIFaddbegin \DIFadd{we recommend improving }\DIFaddend precision by averaging the velocity autocorrelation function over all molecules and over multiple time origins. Some judgment by the user is necessary to decide where the slope is measured for the Einstein approach, and it is important that the user communicate the approach used and justify how the decision was made. Measures should be taken to rigorously estimate the precision of the self-diffusivity prediction, where we recommend bootstrapping the uncertainties.
+\DIFdelbegin \DIFdel{For self-diffusivity, we recommend employing the Einstein method. }\DIFdelend In liquid systems, \DIFaddbegin \DIFadd{we suggest production simulations use either }\DIFaddend the $NVE$ ensemble \DIFdelbegin \DIFdel{is suggested over }\DIFdelend \DIFaddbegin \DIFadd{or }\DIFaddend the $NVT$ ensemble\DIFaddbegin \DIFadd{, after judiciously selecting the thermostat and coupling strength \mbox{%DIFAUXCMD
+		\cite{Shirts2013,Fanourgakis2012}}\hspace{0pt}%DIFAUXCMD
+	. By contrast, we strongly discourage the use of the $NPT$ ensemble }\DIFaddend due to the potential interference of the \DIFdelbegin \DIFdel{thermostats in self-diffusivity prediction. Uncertainty is reduced by running multiple independent simulations, allowing the system to more thoroughly sample the possible states}\DIFdelend \DIFaddbegin \DIFadd{barostat with the system dynamics}\DIFaddend . We recommend \DIFdelbegin \DIFdel{multiple runs at different system sizes to extrapolate the infinite system size limit prediction for }\DIFdelend \DIFaddbegin \DIFadd{averaging over multiple time origins to improve precision of the }\DIFaddend self-diffusivity \DIFdelbegin \DIFdel{. Atomic positions are recommended to be outputted 1000 times over a production run, however, the user can choose to output less frequently to reduce file size or more frequently for potentially increased accuracy. }\DIFdelend \DIFaddbegin \DIFadd{and viscosity estimates. }\DIFaddend To ensure simulations are run long enough for the \DIFdelbegin \DIFdel{dynamics of the system }\DIFdelend \DIFaddbegin \DIFadd{system dynamics }\DIFaddend to be fully emulated, \DIFdelbegin \DIFdel{the user can }\DIFdelend \DIFaddbegin \DIFadd{we recommend the user }\DIFaddend run a series of simulations at differing lengths, and observe \DIFdelbegin \DIFdel{deviation }\DIFdelend \DIFaddbegin \DIFadd{deviations }\DIFaddend in estimated self-diffusivity \DIFaddbegin \DIFadd{or viscosity }\DIFaddend with changes in simulation time. \DIFdelbegin \DIFdel{The }\DIFdelend \DIFaddbegin \DIFadd{In addition, the }\DIFaddend degree of configuration space exploration can be estimated by calculating the mean squared displacements of the molecules and comparing to the radius of gyration and box length. The root MSD should be greater than the radius of gyration, and ideally, on the order of the box length. \DIFaddbegin \DIFadd{We also recommend running multiple independent simulations to more thoroughly sample the possible states. Measures should be taken to rigorously estimate the uncertainty of the self-diffusivity and viscosity prediction, where we recommend bootstrapping the replicate simulation results. 
+}
 
-For viscosity, \DIFaddbegin \DIFadd{we recommend }\DIFaddend the Green-Kubo approach\DIFdelbegin \DIFdel{is recommended}\DIFdelend , although the Einstein method may be preferred with certain systems, i.e.\DIFaddbegin \DIFadd{, }\DIFaddend if replicate simulations are too computationally expensive. It is worth noting that NEMD simulations are highly preferred for moderate to high viscosity materials (more than 20 $\times$ 10$^{-3}$ to 50 $\times$ 10$^{-3}$ Pa-s). The $NVE$ ensemble is suggested, but some success has been found using the $NVT$ ensemble \cite{Shirts2013,Fanourgakis2012}. As a collective property, viscosity requires significantly more data than self-diffusivity. The simulation length of each trajectory should typically be at least an order of magnitude greater than the Green-Kubo integral plateau time. This can be more precisely determined by comparing the Green-Kubo integrals of varying simulation lengths. Due to their slower dynamics, more viscous materials require longer simulation times. \DIFdelbegin \DIFdel{Stress tensor components are recommended to be outputted }\DIFdelend \DIFaddbegin \DIFadd{We recommend outputting the stress tensor components }\DIFaddend every 5 to 10 fs. System size seems to be of little impact on viscosity prediction (see Figures \ref{fig:MoultosFig3}-\ref{fig:ZhangFig9}), however, \DIFdelbegin \DIFdel{it is still recommended }\DIFdelend \DIFaddbegin \DIFadd{we still recommend }\DIFaddend that the user justify their choice of system size by plotting $N^{-1/3}$ versus predicted viscosity. Any trend observed would suggest system size effects, and an infinite system size result could be estimated from a linear fit. In post-simulation data processing, \DIFdelbegin \DIFdel{it is recommended to average }\DIFdelend \DIFaddbegin \DIFadd{we recommend averaging }\DIFaddend over all six independent components of the stress tensor to enhance precision. The number of replicates a system needs can vary greatly depending on the compound, number of molecules, temperature, and simulation length. \DIFdelbegin \DIFdel{It is recommended }\DIFdelend \DIFaddbegin \DIFadd{We recommend }\DIFaddend that the viscosity is estimated from the Green-Kubo equation by fitting the running integral to a double-exponential function as specified by Zhang \textit{et al.} \cite{Zhang2015} (see \DIFdelbegin \DIFdel{Section }\DIFdelend \DIFaddbegin \DIFadd{Sec.\ }\DIFaddend \ref{sec:Viscosity:Green-Kubo: Data analysis}).
+\DIFadd{For self-diffusivity, we recommend employing the Einstein method. We recommend that the atomic positions be output 1000 times over a production run, however, the user can choose to output less frequently to reduce file size or more frequently for potentially increased accuracy. We discuss two methods to correct for system size effects, which are significant in self-diffusivity calculations. }\DIFaddend In post-simulation analysis, \DIFdelbegin \DIFdel{best practice improves }\DIFdelend \DIFaddbegin \DIFadd{we recommend improving }\DIFaddend precision by averaging the velocity autocorrelation function over all molecules and \DIFdelbegin \DIFdel{over multiple time origins}\DIFdelend \DIFaddbegin \DIFadd{the diagonal self-diffusivity dimensional components}\DIFaddend . Some judgment by the user is necessary to decide where the slope is measured for the Einstein approach, and it is important that the user communicate the approach used and justify how the decision was made. 
+\DIFdelbegin \DIFdel{Measures should be taken to rigorously estimate the precision of the self-diffusivity prediction, where we recommend bootstrapping the uncertainties.
+}\DIFdelend 
+
+For viscosity, \DIFaddbegin \DIFadd{we recommend }\DIFaddend the Green-Kubo approach\DIFdelbegin \DIFdel{is recommended}\DIFdelend , although the Einstein method may be preferred with certain systems, i.e.\DIFaddbegin \DIFadd{, }\DIFaddend if replicate simulations are too computationally expensive. \DIFdelbegin \DIFdel{It is worth noting that NEMD simulations are highly preferred for moderate to high viscosity materials (more than 20 $\times$ 10$^{-3}$ to 50 $\times$ 10$^{-3}$ Pa-s). The $NVE$ ensemble is suggested, but some success has been found using the $NVT$ ensemble \mbox{%DIFAUXCMD
+		\cite{Shirts2013,Fanourgakis2012}}\hspace{0pt}%DIFAUXCMD
+	. }\DIFdelend As a collective property, viscosity requires significantly more data \DIFaddbegin \DIFadd{and replicates }\DIFaddend than self-diffusivity. \DIFdelbegin \DIFdel{The }\DIFdelend \DIFaddbegin \DIFadd{We recommend outputting the stress tensor components every 5 to 10 fs. The number of replicates a system needs can vary greatly depending on the compound, number of molecules, and temperature. The }\DIFaddend simulation length of each trajectory should typically be at least an order of magnitude greater than the Green-Kubo integral plateau time. \DIFdelbegin \DIFdel{This can be more precisely determined by comparing the Green-Kubo integrals of varying simulation lengths. }\DIFdelend Due to their slower dynamics, more viscous materials require longer simulation times. \DIFdelbegin \DIFdel{Stress tensor components are recommended to be outputted every 5 to 10 fs. }\DIFdelend System size seems to be of little impact on viscosity prediction (see Figures \ref{fig:MoultosFig3}-\ref{fig:ZhangFig9}), however, \DIFdelbegin \DIFdel{it is still recommended }\DIFdelend \DIFaddbegin \DIFadd{we still recommend }\DIFaddend that the user justify their choice of system size by plotting $N^{-1/3}$ versus predicted viscosity. \DIFdelbegin \DIFdel{Any trend observed would suggest system size effects, and an infinite system size result could be estimated from a linear fit. }\DIFdelend In post-simulation data processing, \DIFdelbegin \DIFdel{it is recommended to average over }\DIFdelend \DIFaddbegin \DIFadd{we recommend averaging over either the three off-diagonal or }\DIFaddend all six independent components of the stress tensor to enhance precision.  \DIFdelbegin \DIFdel{The number of replicates a system needs can vary greatly depending on the compound, number of molecules, temperature, and simulation length. It is recommended that the viscosity is estimated from the }\DIFdelend \DIFaddbegin \DIFadd{We recommend fitting the }\DIFaddend Green-Kubo \DIFdelbegin \DIFdel{equation by fitting the }\DIFdelend running integral to a double-exponential function \DIFdelbegin \DIFdel{as specified by Zhang }\textit{\DIFdel{et al.}} %DIFAUXCMD
+\DIFdel{\mbox{%DIFAUXCMD
+		\cite{Zhang2015}}\hspace{0pt}%DIFAUXCMD
+	(see Section \ref{sec:Viscosity:Green-Kubo: Data analysis})}\DIFdelend \DIFaddbegin \DIFadd{and extrapolating to the infinite-time limit \mbox{%DIFAUXCMD
+		\cite{Zhang2015}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend .
+
+%DIF >  (see Sec.\ \ref{sec:Viscosity:Green-Kubo: Data analysis}).
+\DIFaddbegin 
+
+%DIF > Any trend observed would suggest system size effects, and an infinite system size result could be estimated from a linear fit.
+
+\DIFaddend
 
 \section*{Acknowledgments}
 
@@ -1762,564 +1817,598 @@ By identifying certain commercially available items, this manuscript does not im
 %\nocite{*} % This command displays all refs in the bib file
 \DIFdelbegin %DIFDELCMD < \begin{thebibliography}{51}
 %DIFDELCMD < %%%
-\DIFdelend \DIFaddbegin \begin{thebibliography}{59}
-\DIFaddend \providecommand{\natexlab}[1]{#1}
-\providecommand{\urlprefix}{}
-\providecommand{\doiprefix}{doi: }
-
-\bibitem[{LAMMPS(2017, http://lammps.sandia.gov/doc/Manual.html)}]{LAMMPS}
-\textbf{\color{LiveCoMSMediumGrey} LAMMPS}.
-\newblock LAMMPS Users Manual.
-\newblock Sandia National Laboratories; 2017,
-  http://lammps.sandia.gov/doc/Manual.html.
-
-\bibitem[{GROMACS(2018,
-  http://manual.gromacs.org/documentation/2018/index.html)}]{GROMACS}
-\textbf{\color{LiveCoMSMediumGrey} GROMACS}.
-\newblock GROMACS Reference Manual; 2018,
-  http://manual.gromacs.org/documentation/2018/index.html.
-
-\bibitem[{Case et~al.(????)D.A. Case and S.R. Brozell and D.S. Cerutti and T.E.
-  Cheatham and V.W.D. Cruzeiro and T.A. Darden and R.E. Duke and D. Ghoreishi
-  and H. Gohlke and A.W. Goetz and D. Greene and R Harris and N. Homeyer and S.
-  Izadi and A. Kovalenko and T.S. Lee and S. LeGrand and P. Li and C. Lin and
-  J. Liu and T. Luchko and R. Luo and D.J. Mermelstein and K.M. Merz and Y.
-  Miao and G. Monard and H. Nguyen and I. Omelyan and A. Onufriev and F. Pan
-  and R. Qi and D.R. Roe and A. Roitberg and C. Sagui and S. Schott-Verdugo and
-  J. Shen and C.L. Simmerling and J. Smith and J. Swails and R.C. Walker and J.
-  Wang and H. Wei and R.M. Wolf and X. Wu and L. Xiao and D.M. York and P.A.
-  Kollman}]{AMBER2018}
-\textbf{\color{LiveCoMSMediumGrey} Case DA}, Brozell SR, Cerutti DS, Cheatham
-  TE, Cruzeiro VWD, Darden TA, Duke RE, Ghoreishi D, Gohlke H, Goetz AW, Greene
-  D, Harris R, Homeyer N, Izadi S, Kovalenko A, Lee TS, LeGrand S, Li P, Lin C,
-  Liu J, Luchko T, Luo R, Mermelstein DJ, Merz KM, Miao Y, Monard G, Nguyen H,
-  Omelyan I, Onufriev A, Pan F, Qi R, Roe DR, Roitberg A, Sagui C,
-  Schott-Verdugo S, Shen J, Simmerling CL, Smith J, Swails J, Walker RC, Wang
-  J, Wei H, Wolf RM, Wu X, Xiao L, York DM, Kollman PA, {AMBER 2018, University
-  of California, San Francisco.};.
-\newblock Accessed: 2018-05-4.
-\newblock http://ambermd.org/.
-
-\bibitem[{Phillips et~al.(2005)James C. Phillips and Rosemary Braun and Wei
-  Wang and James Gumbart and Emad Tajkhorshid and Elizabeth Villa and
-  Christophe Chipot and Robert D. Skeel and Laxmikant Kale and and Klaus
-  Schulten}]{NAMD}
-\textbf{\color{LiveCoMSMediumGrey} Phillips JC}, Braun R, Wang W, Gumbart J,
-  Tajkhorshid E, Villa E, Chipot C, Skeel RD, Kale L, , Schulten K.
-\newblock Scalable molecular dynamics with NAMD.
-\newblock Journal of Computational Chemistry.  2005; 26(1):1781 --1802.
-\newblock \href{https://dx.doi.org/10.1002/jcc.20289}{\doiprefix
-  \detokenize{10.1002/jcc.20289}}, nAMD was developed by the Theoretical and
-  Computational Biophysics Group in the Beckman Institute for Advanced Science
-  and Technology at the University of Illinois at Urbana-Champaign.
-  http://www.ks.uiuc.edu/Research/namd/.
-
-\bibitem[{Brooks et~al.(????)B. R. Brooks and C. L. Brooks and A. D. Mackerell
-  and L. Nilsson and R. J. Petrella and B. Roux and Y. Won and G. Archontis and
-  C. Bartels and S. Boresch and A. Caflisch and L. Caves and Q. Cui and A. R.
-  Dinner and M. Feig and S. Fischer and J. Gao and M. Hodoscek and W. Im and K.
-  Kuczera and T. Lazaridis and J. Ma and V. Ovchinnikov and E. Paci and R. W.
-  Pastor and C. B. Post and J. Z. Pu and M. Schaefer and B. Tidor and R. M.
-  Venable and H. L. Woodcock and X. Wu and W. Yang and D. M. York and M.
-  Karplus}]{Brooks2009}
-\textbf{\color{LiveCoMSMediumGrey} Brooks BR}, Brooks CL, Mackerell AD, Nilsson
-  L, Petrella RJ, Roux B, Won Y, Archontis G, Bartels C, Boresch S, Caflisch A,
-  Caves L, Cui Q, Dinner AR, Feig M, Fischer S, Gao J, Hodoscek M, Im W,
-  Kuczera K, Lazaridis T, Ma J, Ovchinnikov V, Paci E, Pastor RW, Post CB, Pu
-  JZ, Schaefer M, Tidor B, Venable RM, Woodcock HL, Wu X, Yang W, York DM,
-  Karplus M.
-\newblock CHARMM: The biomolecular simulation program.
-\newblock Journal of Computational Chemistry. ; 30(10):1545--1614.
-\newblock \href{https://dx.doi.org/10.1002/jcc.21287}{\doiprefix
-  \detokenize{10.1002/jcc.21287}}.
-
-\DIFdelbegin %DIFDELCMD < \bibitem[{ms2(2017)}]{ms2}
-%DIFDELCMD < %%%
-\DIFdelend \DIFaddbegin \bibitem[{Rutkai et~al.(2017)G{\'a}bor Rutkai and Andreas K{\"o}ster and
-  Gabriela Guevara-Carrion and Tatjana Janzen and Michael Schappals and Colin
-  W. Glass and Martin Bernreuther and Amer Wafai and Simon Stephan and
-  Maximilian Kohns and Steffen Reiser and Stephan Deublein and Martin Horsch
-  and Hans Hasse and Jadran Vrabec}]{ms2}
-\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Rutkai G}}\DIFadd{, K}{\DIFadd{\"o}}\DIFadd{ster A, Guevara-Carrion G,
-  Janzen T, Schappals M, Glass CW, Bernreuther M, Wafai A, Stephan S, Kohns M,
-  Reiser S, Deublein S, Horsch M, Hasse H, Vrabec J.
-}\newblock \DIFaddend ms2: A molecular simulation tool for thermodynamic properties,
-  release 3.0.
-\newblock Computer Physics Communications.  2017; 221:343 -- 351.
-\newblock \DIFdelbegin %DIFDELCMD < \href{https://dx.doi.org/https://doi.org/10.1016/j.cpc.2017.07.025}{\doiprefix
-%DIFDELCMD <   \detokenize{https://doi.org/10.1016/j.cpc.2017.07.025}}%%%
-\DIFdelend \DIFaddbegin \href{https://dx.doi.org/10.1016/j.cpc.2017.07.025}{\doiprefix
-  \detokenize{10.1016/j.cpc.2017.07.025}}\DIFaddend .
-
-\bibitem[{Roe and Cheatham(2013)Roe, Daniel R. and Cheatham, Thomas
-  E.}]{Roe2013}
-\textbf{\color{LiveCoMSMediumGrey} Roe DR}, Cheatham TE.
-\newblock {PTRAJ and CPPTRAJ: Software for Processing and Analysis of Molecular
-  Dynamics Trajectory Data}.
-\newblock J Chem Theory Comput.  2013; 9(7):3084--3095.
-\newblock \href{https://dx.doi.org/10.1021/ct400341p}{\doiprefix
-  \detokenize{10.1021/ct400341p}}.
-
-\bibitem[{McGibbon et~al.(2015)Robert T. McGibbon and Kyle A. Beauchamp and
-  Matthew P. Harrigan and Christoph Klein and Jason M. Swails and Carlos X.
-  Hernández and Christian R. Schwantes and Lee-Ping Wang and Thomas J. Lane
-  and Vijay S. Pande}]{MDTraj}
-\textbf{\color{LiveCoMSMediumGrey} McGibbon RT}, Beauchamp KA, Harrigan MP,
-  Klein C, Swails JM, Hernández CX, Schwantes CR, Wang LP, Lane TJ, Pande VS.
-\newblock MDTraj: A Modern Open Library for the Analysis of Molecular Dynamics
-  Trajectories.
-\newblock Biophysical Journal.  2015; 109(8):1528 -- 1532.
-\newblock \DIFdelbegin %DIFDELCMD < \href{https://dx.doi.org/https://doi.org/10.1016/j.bpj.2015.08.015}{\doiprefix
-%DIFDELCMD <   \detokenize{https://doi.org/10.1016/j.bpj.2015.08.015}}%%%
-\DIFdelend \DIFaddbegin \href{https://dx.doi.org/10.1016/j.bpj.2015.08.015}{\doiprefix
-  \detokenize{10.1016/j.bpj.2015.08.015}}\DIFaddend .
-
-\bibitem[{Humphrey et~al.(1996)William Humphrey and Andrew Dalke and Klaus
-  Schulten}]{VMD}
-\textbf{\color{LiveCoMSMediumGrey} Humphrey W}, Dalke A, Schulten K.
-\newblock VMD: Visual molecular dynamics.
-\newblock Journal of Molecular Graphics.  1996; 14(1):33 -- 38.
-\newblock \DIFdelbegin %DIFDELCMD < \href{https://dx.doi.org/https://doi.org/10.1016/0263-7855(96)00018-5}{\doiprefix
-%DIFDELCMD <   \detokenize{https://doi.org/10.1016/0263-7855(96)00018-5}}%%%
-\DIFdelend \DIFaddbegin \href{https://dx.doi.org/10.1016/0263-7855(96)00018-5}{\doiprefix
-  \detokenize{10.1016/0263-7855(96)00018-5}}\DIFaddend .
-
-\bibitem[{Allen and Tildesley(2017)Allen, M. P. and Tildesley, D.
-  J.}]{Allen2017}
-\textbf{\color{LiveCoMSMediumGrey} Allen MP}, Tildesley DJ.
-\newblock Computer simulation of liquids.
-\newblock Second ed. Oxford England: Oxford University Press; 2017.
-
-\bibitem[{Frenkel and Smit(2002)Frenkel, Daan and Smit, Berend}]{Frenkel2002}
-\textbf{\color{LiveCoMSMediumGrey} Frenkel D}, Smit B.
-\newblock Understanding molecular simulation : from algorithms to applications.
-\newblock 2nd ed. Computational science series, San Diego: Academic Press;
-  2002.
-
-\bibitem[{Leach(2001)Leach, Andrew R.}]{Leach2001}
-\textbf{\color{LiveCoMSMediumGrey} Leach AR}.
-\newblock {Molecular modelling : principles and applications}.
-\newblock 2 ed. Pearson Prentice Hall; 2001.
-
-\bibitem[{Haile(1992)Haile, J. M. =}]{Haile1992}
-\textbf{\color{LiveCoMSMediumGrey} Haile JM}.
-\newblock Molecular Dynamics Simulation: Elementary Methods.
-\newblock New York: John Wiley and Sons, Inc.; 1992.
-
-\bibitem[{Pan(????)}]{PanaNotes}
-Athanassios Panagiotopoulos, The University of Princeton Class Notes;.
-\newblock Accessed: 2018-01-01.
-\newblock http://paros.princeton.edu/cbe422/md2.pdf;
-  http://paros.princeton.edu/cbe520/Transport.pdf.
-
-\bibitem[{Kof(????)}]{KofkeNotes}
-David Kofke, The University of Buffalo Class Notes;.
-\newblock Accessed: 2018-01-01.
-\newblock https://www.eng.buffalo.edu/\textasciitilde
-  kofke/ce530/Lectures/Lecture12.ppt.pdf.
-
-\bibitem[{Mag(????)}]{MaginnNotes}
-Ed Maginn, The University of Notre Dame Class Notes;.
-\newblock Accessed: 2018-01-01.
-\newblock https://www3.nd.edu/\textasciitilde ed/notes.pdf.
-
-\bibitem[{She(????)}]{ShellNotes}
-Scott Shell, The University of California Santa \DIFdelbegin \DIFdel{Barabara }\DIFdelend \DIFaddbegin \DIFadd{Barbara }\DIFaddend Class Notes;.
-\newblock Accessed: 2018-01-01.
-\newblock https://engineering.ucsb.edu/\textasciitilde
-  shell/che210d/Computing\_properties.pdf.
-
-\bibitem[{Chen et~al.(2009)Ting Chen and Berend Smit and Alexis T.
-  Bell}]{Chen2009}
-\textbf{\color{LiveCoMSMediumGrey} Chen T}, Smit B, Bell AT.
-\newblock Are pressure fluctuation-based equilibrium methods really worse than
-  nonequilibrium methods for calculating viscosities?
-\newblock The Journal of Chemical Physics.  2009; 131(24):246101.
-\newblock \href{https://dx.doi.org/10.1063/1.3274802}{\doiprefix
-  \detokenize{10.1063/1.3274802}}.
-
-\bibitem[{Hess(2002)Berk Hess}]{Hess2002}
-\textbf{\color{LiveCoMSMediumGrey} Hess B}.
-\newblock Determining the shear viscosity of model liquids from molecular
-  dynamics simulations.
-\newblock The Journal of Chemical Physics.  2002; 116(1):209--217.
-\newblock \href{https://dx.doi.org/10.1063/1.1421362}{\doiprefix
-  \detokenize{10.1063/1.1421362}}.
-
-\bibitem[{Nieto-Draghi et~al.(2015)Nieto-Draghi, Carlos and Fayet, Guillaume
-  and Creton, Benoit and Rozanska, Xavier and Rotureau, Patricia and de
-  Hemptinne, Jean-Charles and Ungerer, Philippe and Rousseau, Bernard and
-  Adamo, Carlo}]{Nieto2015}
-\textbf{\color{LiveCoMSMediumGrey} Nieto-Draghi C}, Fayet G, Creton B, Rozanska
-  X, Rotureau P, de~Hemptinne JC, Ungerer P, Rousseau B, Adamo C.
-\newblock A General Guidebook for the Theoretical Prediction of Physicochemical
-  Properties of Chemicals for Regulatory Purposes.
-\newblock Chemical Reviews.  2015; 115(24):13093--13164.
-\newblock \href{https://dx.doi.org/10.1021/acs.chemrev.5b00215}{\doiprefix
-  \detokenize{10.1021/acs.chemrev.5b00215}}, pMID: 26624238.
-
-\DIFdelbegin %DIFDELCMD < \bibitem[{Ung(2007)}]{Ungerer2007}
-%DIFDELCMD < %%%
-\DIFdelend \DIFaddbegin \bibitem[{Ungerer et~al.(2007)Philippe Ungerer and Carlos Nieto-Draghi and
-  Bernard Rousseau and Göktug Ahunbay and Véronique Lachet}]{Ungerer2007}
-\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Ungerer P}}\DIFadd{, Nieto-Draghi C, Rousseau B,
-  Ahunbay G, Lachet V.
-}\newblock \DIFaddend Molecular simulation of the thermophysical properties of fluids: From
-  understanding toward quantitative predictions.
-\newblock Journal of Molecular Liquids.  2007; 134(1):71 -- 89.
-\newblock \DIFdelbegin %DIFDELCMD < \href{https://dx.doi.org/https://doi.org/10.1016/j.molliq.2006.12.019}{\doiprefix
-%DIFDELCMD <   \detokenize{https://doi.org/10.1016/j.molliq.2006.12.019}}%%%
-\DIFdelend \DIFaddbegin \href{https://dx.doi.org/10.1016/j.molliq.2006.12.019}{\doiprefix
-  \detokenize{10.1016/j.molliq.2006.12.019}}\DIFaddend , eMLG/JMLG 2005 Special Issue.
-
-\bibitem[{Fanourgakis et~al.(2012)Fanourgakis, George S. and Medina, J. S. and
-  Prosmiti, R.}]{Fanourgakis2012}
-\textbf{\color{LiveCoMSMediumGrey} Fanourgakis GS}, Medina JS, Prosmiti R.
-\newblock Determining the Bulk Viscosity of Rigid Water Models.
-\newblock The Journal of Physical Chemistry A.  2012; 116(10):2564--2570.
-\newblock \href{https://dx.doi.org/10.1021/jp211952y}{\doiprefix
-  \detokenize{10.1021/jp211952y}}, pMID: 22352421.
-
-\bibitem[{Basconi and Shirts({2013})Basconi, Joseph E. and Shirts, Michael
-  R.}]{Shirts2013}
-\textbf{\color{LiveCoMSMediumGrey} Basconi JE}, Shirts MR.
-\newblock {Effects of Temperature Control Algorithms on Transport Properties
-  and Kinetics in Molecular Dynamics Simulations}.
-\newblock {Jouornal of Chemical Theory and Computation}.  {2013} {JUL};
-  {9}({7}):{2887--2899}.
-\newblock \href{https://dx.doi.org/{10.1021/ct400109a}}{\doiprefix
-  \detokenize{{10.1021/ct400109a}}}.
-
-\bibitem[{Berendsen et~al.(1984)H. J. C. Berendsen and J. P. M. Postma and W.
-  F. van Gunsteren and A. DiNola and J. R. Haak}]{Berendsen1984}
-\textbf{\color{LiveCoMSMediumGrey} Berendsen HJC}, Postma JPM, van Gunsteren
-  WF, DiNola A, Haak JR.
-\newblock Molecular dynamics with coupling to an external bath.
-\newblock The Journal of Chemical Physics.  1984; 81(8):3684--3690.
-\newblock \href{https://dx.doi.org/10.1063/1.448118}{\doiprefix
-  \detokenize{10.1063/1.448118}}.
-
-\bibitem[{Bussi et~al.(2007)Giovanni Bussi and Davide Donadio and Michele
-  Parrinello}]{Bussi2007}
-\textbf{\color{LiveCoMSMediumGrey} Bussi G}, Donadio D, Parrinello M.
-\newblock Canonical sampling through velocity rescaling.
-\newblock The Journal of Chemical Physics.  2007; 126(1):014101.
-\newblock \href{https://dx.doi.org/10.1063/1.2408420}{\doiprefix
-  \detokenize{10.1063/1.2408420}}.
-
-\bibitem[{Nos{\'e}(1984)Shuichi Nos{\'e}}]{Nose1984}
-\textbf{\color{LiveCoMSMediumGrey} Nos{\'e} S}.
-\newblock A unified formulation of the constant temperature molecular dynamics
-  methods.
-\newblock The Journal of Chemical Physics.  1984; 81(1):511--519.
-\newblock \href{https://dx.doi.org/10.1063/1.447334}{\doiprefix
-  \detokenize{10.1063/1.447334}}.
-
-\bibitem[{Andersen(1980)Hans C. Andersen}]{Andersen1980}
-\textbf{\color{LiveCoMSMediumGrey} Andersen HC}.
-\newblock Molecular dynamics simulations at constant pressure and/or
-  temperature.
-\newblock The Journal of Chemical Physics.  1980; 72(4):2384--2393.
-\newblock \href{https://dx.doi.org/10.1063/1.439486}{\doiprefix
-  \detokenize{10.1063/1.439486}}.
-
-\bibitem[{Hess et~al.(2008)Hess, Berk and Kutzner, Carsten and van der Spoel,
-  David and Lindahl, Erik}]{Hess2008}
-\textbf{\color{LiveCoMSMediumGrey} Hess B}, Kutzner C, van~der Spoel D, Lindahl
-  E.
-\newblock GROMACS 4{:} Algorithms for Highly Efficient, Load-Balanced, and
-  Scalable Molecular Simulation.
-\newblock Journal of Chemical Theory and Computation.  2008; 4(3):435--447.
-\newblock \href{https://dx.doi.org/10.1021/ct700301q}{\doiprefix
-  \detokenize{10.1021/ct700301q}}, pMID: 26620784.
-
-\bibitem[{Payal et~al.(2012)Rajdeep Singh Payal and S. Balasubramanian and
-  Indranil Rudra and Kunj Tandon and Ingo Mahlke and David Doyle and Roger
-  Cracknell}]{Payal2012}
-\textbf{\color{LiveCoMSMediumGrey} Payal RS}, Balasubramanian S, Rudra I,
-  Tandon K, Mahlke I, Doyle D, Cracknell R.
-\newblock Shear viscosity of linear alkanes through molecular simulations:
-  quantitative tests for n-decane and n-hexadecane.
-\newblock Molecular Simulation.  2012; 38(14-15):1234--1241.
-\newblock \href{https://dx.doi.org/10.1080/08927022.2012.702423}{\doiprefix
-  \detokenize{10.1080/08927022.2012.702423}}.
-
-\bibitem[{Zhang et~al.(2015)Zhang, Yong and Otani, Akihito and Maginn, Edward
-  J.}]{Zhang2015}
-\textbf{\color{LiveCoMSMediumGrey} Zhang Y}, Otani A, Maginn EJ.
-\newblock Reliable Viscosity Calculation from Equilibrium Molecular Dynamics
-  Simulations: A Time Decomposition Method.
-\newblock Journal of Chemical Theory and Computation.  2015; 11(8):3537--3546.
-\newblock \href{https://dx.doi.org/10.1021/acs.jctc.5b00351}{\doiprefix
-  \detokenize{10.1021/acs.jctc.5b00351}}, pMID: 26574439.
-
-\bibitem[{Ma et~al.(2017)Jie Ma and Zhendian Zhang and Yan Xiang and Fenglei
-  Cao and Huai Sun}]{Ma2017}
-\textbf{\color{LiveCoMSMediumGrey} Ma J}, Zhang Z, Xiang Y, Cao F, Sun H.
-\newblock On the prediction of transport properties of ionic liquid using
-  1-n-butylmethylpyridinium tetrafluoroborate as an example.
-\newblock Molecular Simulation.  2017; 43(18):1502--1512.
-\newblock \href{https://dx.doi.org/10.1080/08927022.2017.1321760}{\doiprefix
-  \detokenize{10.1080/08927022.2017.1321760}}.
-
-\bibitem[{Taylor and Kuyatt(1994)Barry N. Taylor and Chris E. Kuyatt}]{GUM}
-\textbf{\color{LiveCoMSMediumGrey} Taylor BN}, Kuyatt CE.
-\newblock Guidelines for Evaluating and Expressing the Uncertainty of {NIST}
-  Measurement Results.
-\newblock {NIST} Technical Note 1297.  1994; p. 1--9.
-
-\bibitem[{Grossfield et~al.(2018)Alan Grossfield and Paul N. Patrone and Daniel
-  R. Roe and Andrew J. Schultz and Daniel W. Siderius and Daniel M.
-  Zuckerman}]{Grossfield2018}
-\textbf{\color{LiveCoMSMediumGrey} Grossfield A}, Patrone PN, Roe DR, Schultz
-  AJ, Siderius DW, Zuckerman DM.
-\newblock Best Practices for Quantification of Uncertainty and Sampling Quality
-  in Molecular Simulations: v1.0.
-\newblock Living Journal of Computational Molecular Science.  2018; A LiveCoMS
-  Best Practices Guide.
-\newblock
-  \urlprefix\url{https://github.com/dmzuckerman/Sampling-Uncertainty/blob/master/main.pdf}.
-
-\bibitem[{Shen et~al.(????)Shen, V.K. and Siderius, D.W. and Krekelberg, W.P.
-  and Hatch, H.W. and Eds.}]{ShenSRSW}
-\textbf{\color{LiveCoMSMediumGrey} Shen VK}, Siderius DW, Krekelberg WP, Hatch
-  HW, Eds, {NIST Standard Reference Simulation Website, NIST Standard Reference
-  Database Number 173, National Institute of Standards and Technology,
-  Gaithersburg MD, 20899};.
-\newblock Accessed: 2018-04-25.
-\newblock http://doi.org/10.18434/T4M88Q.
-
-\DIFdelbegin %DIFDELCMD < \bibitem[{Kondratyuk et~al.(????)N D Kondratyuk and G E Norman and V V
-%DIFDELCMD <   Stegailov}]{Kondratyuk2016}
-%DIFDELCMD < %%%
-\DIFdelend \DIFaddbegin \bibitem[{Kondratyuk et~al.(2016)N D Kondratyuk and G E Norman and V V
-  Stegailov}]{Kondratyuk2016}
-\DIFaddend \textbf{\color{LiveCoMSMediumGrey} Kondratyuk ND}, Norman GE, Stegailov VV.
-\newblock Rheology of liquid n-triacontane: Molecular dynamics simulation.
-\newblock Journal of Physics: Conference Series.  \DIFaddbegin \DIFadd{2016}\DIFaddend ; 774(1):012039.
-
-\bibitem[{Liu et~al.(2012)Liu, Hongjun and Maginn, Edward and Visser, Ann E.
-  and Bridges, Nicholas J. and Fox, Elise B.}]{Liu2012}
-\textbf{\color{LiveCoMSMediumGrey} Liu H}, Maginn E, Visser AE, Bridges NJ, Fox
-  EB.
-\newblock Thermal and Transport Properties of Six Ionic Liquids: An
-  Experimental and Molecular Dynamics Study.
-\newblock Industrial \& Engineering Chemistry Research.  2012;
-  51(21):7242--7254.
-\newblock \href{https://dx.doi.org/10.1021/ie300222a}{\doiprefix
-  \detokenize{10.1021/ie300222a}}.
-
-\bibitem[{Mondello and Grest(1997)Maurizio Mondello and Gary S.
-  Grest}]{Mondello1997}
-\textbf{\color{LiveCoMSMediumGrey} Mondello M}, Grest GS.
-\newblock Viscosity calculations of n-alkanes by equilibrium molecular
-  dynamics.
-\newblock The Journal of Chemical Physics.  1997; 106(22):9327--9336.
-\newblock \href{https://dx.doi.org/10.1063/1.474002}{\doiprefix
-  \detokenize{10.1063/1.474002}}.
-
-\bibitem[{Moultos et~al.(2016)Othonas A. Moultos and Yong Zhang and Ioannis N.
-  Tsimpanogiannis and Ioannis G. Economou and Edward J. Maginn}]{Moultos2016}
-\textbf{\color{LiveCoMSMediumGrey} Moultos OA}, Zhang Y, Tsimpanogiannis IN,
-  Economou IG, Maginn EJ.
-\newblock System-size corrections for self-diffusion coefficients calculated
-  from molecular dynamics simulations: The case of CO2, n-alkanes, and
-  poly(ethylene glycol) dimethyl ethers.
-\newblock The Journal of Chemical Physics.  2016; 145(7):074109.
-\newblock \href{https://dx.doi.org/10.1063/1.4960776}{\doiprefix
-  \detokenize{10.1063/1.4960776}}.
-
-\bibitem[{Daivis and Evans(1995)Daivis, P. J. and Evans, D. J.}]{Daivis:1995}
-\textbf{\color{LiveCoMSMediumGrey} Daivis PJ}, Evans DJ.
-\newblock Transport Coefficients of Liquid Butane Near the Boiling Point by
-  Equilibrium Molecular Dynamics.
-\newblock Journal of Chemical Physics.  1995; 103(10):4261--4265.
-
-\bibitem[{Yeh and Hummer(2004)Yeh, In-Chul and Hummer, Gerhard}]{Yeh2004}
-\textbf{\color{LiveCoMSMediumGrey} Yeh IC}, Hummer G.
-\newblock System-Size Dependence of Diffusion Coefficients and Viscosities from
-  Molecular Dynamics Simulations with Periodic Boundary Conditions.
-\newblock The Journal of Physical Chemistry B.  2004; 108(40):15873--15879.
-\newblock \href{https://dx.doi.org/10.1021/jp0477147}{\doiprefix
-  \detokenize{10.1021/jp0477147}}.
-
-\bibitem[{Kikugawa et~al.({2015})Kikugawa, Gota and Nakano, Takeo and Ohara,
-  Taku}]{Kikugawa:2015}
-\textbf{\color{LiveCoMSMediumGrey} Kikugawa G}, Nakano T, Ohara T.
-\newblock {Hydrodynamic consideration of the finite size effect on the
-  self-diffusion coefficient in a periodic rectangular parallelepiped system}.
-\newblock {J Chem Phys}.  {2015} {JUL 14}; {143}({2}).
-\newblock \href{https://dx.doi.org/{10.1063/1.4926841}}{\doiprefix
-  \detokenize{{10.1063/1.4926841}}}.
-
-\bibitem[{Hoover(1985)Hoover, William G.}]{Hoover1985}
-\textbf{\color{LiveCoMSMediumGrey} Hoover WG}.
-\newblock Canonical dynamics: Equilibrium phase-space distributions.
-\newblock Phys Rev A.  1985 Mar; 31:1695--1697.
-\newblock \href{https://dx.doi.org/10.1103/PhysRevA.31.1695}{\doiprefix
-  \detokenize{10.1103/PhysRevA.31.1695}}.
-
-\bibitem[{Venable et~al.(2017)Venable, Richard M. and Ing{\'o}lfsson, Helgi I.
-  and Lerner, Michael G. and Perrin, B. Scott and Camley, Brian A. and Marrink,
-  Siewert J. and Brown, Frank L. H. and Pastor, Richard W.}]{Venable2017}
-\textbf{\color{LiveCoMSMediumGrey} Venable RM}, Ing{\'o}lfsson HI, Lerner MG,
-  Perrin BS, Camley BA, Marrink SJ, Brown FLH, Pastor RW.
-\newblock Lipid and Peptide Diffusion in Bilayers: The Saffman–Delbrück
-  Model and Periodic Boundary Conditions.
-\newblock The Journal of Physical Chemistry B.  2017; 121(15):3443--3457.
-\newblock \href{https://dx.doi.org/10.1021/acs.jpcb.6b09111}{\doiprefix
-  \detokenize{10.1021/acs.jpcb.6b09111}}, pMID: 27966982.
-
-\bibitem[{Camley et~al.(2015)Brian A. Camley and Michael G. Lerner and Richard
-  W. Pastor and Frank L. H. Brown}]{Camley2015}
-\textbf{\color{LiveCoMSMediumGrey} Camley BA}, Lerner MG, Pastor RW, Brown FLH.
-\newblock Strong influence of periodic boundary conditions on lateral diffusion
-  in lipid bilayer membranes.
-\newblock The Journal of Chemical Physics.  2015; 143(24):243113.
-\newblock \href{https://dx.doi.org/10.1063/1.4932980}{\doiprefix
-  \detokenize{10.1063/1.4932980}}.
-
-\DIFaddbegin \bibitem[{Kim et~al.(2018)Kim, Kang-Sahn and Han, Myung Hoon and Kim, Changho
-  and Li, Zhen and Karniadakis, George Em and Lee, Eok Kyun}]{Kim2018}
-\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Kim KS}}\DIFadd{, Han MH, Kim C, Li Z, Karniadakis
-  GE, Lee EK.
-}\newblock \DIFadd{Nature of intrinsic uncertainties in equilibrium molecular dynamics
-  estimation of shear viscosity for simple and complex fluids.
-}\newblock \DIFadd{The Journal of Chemical Physics.  2018; 149(4):044510.
-}\newblock \href{https://dx.doi.org/10.1063/1.5035119}{\doiprefix
-  \detokenize{10.1063/1.5035119}}\DIFadd{.
-}
-
-\DIFaddend \bibitem[{Evans and Morriss(1990)D. J. Evans and G. P. Morriss}]{Evans:90}
-\textbf{\color{LiveCoMSMediumGrey} Evans DJ}, Morriss GP.
-\newblock Statistical Mechanics of Nonequilibrium Liquids.
-\newblock Academic press, London; 1990.
-
-\bibitem[{Daivis and Evans(1994)Daivis, P. J. and Evans, D. J.}]{Daivis:1994}
-\textbf{\color{LiveCoMSMediumGrey} Daivis PJ}, Evans DJ.
-\newblock Comparison of constant pressure and constant volume nonequilibrium
-  simulations of sheared model decane.
-\newblock Journal of Chemical Physics.  1994; 100(1):541--547.
-
-\bibitem[{Borodin et~al.(2009)Borodin, Oleg and Smith, Grant D. and Kim,
-  Hojin}]{Borodin2009}
-\textbf{\color{LiveCoMSMediumGrey} Borodin O}, Smith GD, Kim H.
-\newblock Viscosity of a Room Temperature Ionic Liquid: Predictions from
-  Nonequilibrium and Equilibrium Molecular Dynamics Simulations.
-\newblock The Journal of Physical Chemistry B.  2009; 113(14):4771--4774.
-\newblock \href{https://dx.doi.org/10.1021/jp810016e}{\doiprefix
-  \detokenize{10.1021/jp810016e}}, pMID: 19275203.
-
-\bibitem[{Martin and Siepmann(1998)Martin, M. G. and Siepmann, J.
-  I.}]{Martin1998}
-\textbf{\color{LiveCoMSMediumGrey} Martin MG}, Siepmann JI.
-\newblock Transferable potentials for phase equilibria. 1. {United-atom}
-  description of n-alkanes.
-\newblock The Journal of Physical Chemistry B.  1998; 102(14):2569--2577.
-\newblock \href{https://dx.doi.org/10.1021/Jp972543+}{\doiprefix
-  \detokenize{10.1021/Jp972543+}}.
-
-\DIFaddbegin \bibitem[{Swope et~al.(1982)Swope, William C. and Andersen, Hans C. and Berens,
-  Peter H. and Wilson, Kent R.}]{Swope1982}
-\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Swope WC}}\DIFadd{, Andersen HC, Berens PH, Wilson
-  KR.
-}\newblock \DIFadd{A computer simulation method for the calculation of equilibrium
-  constants for the formation of physical clusters of molecules}{\DIFadd{: A}}\DIFadd{pplication
-  to small water clusters.
-}\newblock \DIFadd{The Journal of Chemical Physics.  1982; 76(1):637--649.
-}\newblock \href{https://dx.doi.org/10.1063/1.442716}{\doiprefix
-  \detokenize{10.1063/1.442716}}\DIFadd{.
-}
-
-\bibitem[{Hess et~al.(1998)Hess, Berk and Bekker, Henk and Berendsen, Herman J.
-  C. and Fraaije, Johannes G. E. M.}]{Hess1998}
-\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Hess B}}\DIFadd{, Bekker H, Berendsen HJC, Fraaije
-  JGEM.
-}\newblock {\DIFadd{LINCS: A}} \DIFadd{linear constraint solver for molecular simulations.
-}\newblock \DIFadd{Journal of Computational Chemistry.  1998; 18(12):1463--1472.
-}\newblock
-  \href{https://dx.doi.org/10.1002/(SICI)1096-987X(199709)18:12<1463::AID-JCC4>3.0.CO;2-H}{\doiprefix
-  \detokenize{10.1002/(SICI)1096-987X(199709)18:12<1463::AID-JCC4>3.0.CO;2-H}}\DIFadd{.
-}
-
-\bibitem[{Hess(2008)Hess, Berk}]{Hess2008_PLINCS}
-\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Hess B}}\DIFadd{.
-}\newblock {\DIFadd{P-LINCS: A}} \DIFadd{Parallel Linear Constraint Solver for Molecular
-  Simulation.
-}\newblock \DIFadd{Journal of Chemical Theory and Computation.  2008; 4(1):116--122.
-}\newblock \href{https://dx.doi.org/10.1021/ct700200b}{\doiprefix
-  \detokenize{10.1021/ct700200b}}\DIFadd{.
-}
-
-\bibitem[{Guo et~al.(2002)Guang-Jun Guo and Yi-Gang Zhang and Keith Refson and
-  Ya-Juan Zhao}]{GUANG2002}
-\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Guo GJ}}\DIFadd{, Zhang YG, Refson K, Zhao YJ.
-}\newblock \DIFadd{Viscosity and stress autocorrelation function in supercooled water: a
-  molecular dynamics study.
-}\newblock \DIFadd{Molecular Physics.  2002; 100(16):2617--2627.
-}\newblock \href{https://dx.doi.org/10.1080/00268970210133477}{\doiprefix
-  \detokenize{10.1080/00268970210133477}}\DIFadd{.
-}
-
-\DIFaddend \bibitem[{van~der Spoel et~al.(1998)David van der Spoel and Paul J. van Maaren
-  and Herman J. C. Berendsen}]{vanderSpoel1998}
-\textbf{\color{LiveCoMSMediumGrey} van~der Spoel D}, van Maaren PJ, Berendsen
-  HJC.
-\newblock A systematic study of water models for molecular simulation:
-  Derivation of water models optimized for use with a reaction field.
-\newblock The Journal of Chemical Physics.  1998; 108(24):10220--10230.
-\newblock \href{https://dx.doi.org/10.1063/1.476482}{\doiprefix
-  \detokenize{10.1063/1.476482}}.
-
-\bibitem[{Fern{\'a}ndez et~al.(2005)G. A. Fern{\'a}ndez and J. Vrabec and H.
-  Hasse}]{Fernandez2005}
-\textbf{\color{LiveCoMSMediumGrey} Fern{\'a}ndez GA}, Vrabec J, Hasse H.
-\newblock Shear viscosity and thermal conductivity of quadrupolar real fluids
-  from molecular simulation.
-\newblock Molecular Simulation.  2005; 31(11):787--793.
-\newblock \href{https://dx.doi.org/10.1080/08927020500252599}{\doiprefix
-  \detokenize{10.1080/08927020500252599}}.
-
-\bibitem[{Rey-Castro and Vega(2006)Rey-Castro, Carlos and Vega, Lourdes
-  F.}]{ReyCastro2006}
-\textbf{\color{LiveCoMSMediumGrey} Rey-Castro C}, Vega LF.
-\newblock Transport Properties of the Ionic Liquid 1-Ethyl-3-Methylimidazolium
-  Chloride from Equilibrium Molecular Dynamics Simulation. The Effect of
-  Temperature.
-\newblock The Journal of Physical Chemistry B.  2006; 110(29):14426--14435.
-\newblock \href{https://dx.doi.org/10.1021/jp062885s}{\doiprefix
-  \detokenize{10.1021/jp062885s}}, pMID: 16854152.
-\DIFaddbegin 
-
-\bibitem[{Darden et~al.(1993)Darden, Tom and York, Darrin and Pedersen,
-  Lee}]{Darden1993}
-\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Darden T}}\DIFadd{, York D, Pedersen L.
-}\newblock \DIFadd{Particle mesh Ewald: An }{\DIFadd{Nlog(N)}} \DIFadd{method for Ewald sums in large
-  systems.
-}\newblock \DIFadd{The Journal of Chemical Physics.  1993; 98(12):10089--10092.
-}\newblock \href{https://dx.doi.org/10.1063/1.464397}{\doiprefix
-  \detokenize{10.1063/1.464397}}\DIFadd{.
-}
-
-\bibitem[{Levitt et~al.(1995)Michael Levitt and Miriam Hirshberg and Ruth
-  Sharon and Valerie Daggett}]{Levitt1995}
-\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Levitt M}}\DIFadd{, Hirshberg M, Sharon R, Daggett V.
-}\newblock \DIFadd{Potential energy function and parameters for simulations of the
-  molecular dynamics of proteins and nucleic acids in solution.
-}\newblock \DIFadd{Computer Physics Communications.  1995; 91(1):215 -- 231.
-}\newblock \href{https://dx.doi.org/10.1016/0010-4655(95)00049-L}{\doiprefix
-  \detokenize{10.1016/0010-4655(95)00049-L}}\DIFadd{.
-}
-
-\bibitem[{van~der Spoel and van Maaren(2006)van der Spoel, David and van
-  Maaren, Paul J.}]{derSpoel2006}
-\textbf{\color{LiveCoMSMediumGrey} \DIFadd{van~der Spoel D}}\DIFadd{, van Maaren PJ.
-}\newblock \DIFadd{The Origin of Layer Structure Artifacts in Simulations of Liquid
-  Water.
-}\newblock \DIFadd{Journal of Chemical Theory and Computation.  2006; 2(1):1--11.
-}\newblock \href{https://dx.doi.org/10.1021/ct0502256}{\doiprefix
-  \detokenize{10.1021/ct0502256}}\DIFadd{.
-}\DIFaddend 
+\DIFdelend \DIFaddbegin \begin{thebibliography}{61}
+	\DIFaddend \providecommand{\natexlab}[1]{#1}
+	\providecommand{\urlprefix}{}
+	\providecommand{\doiprefix}{doi: }
+	
+	\bibitem[{LAMMPS(2017, http://lammps.sandia.gov/doc/Manual.html)}]{LAMMPS}
+	\textbf{\color{LiveCoMSMediumGrey} LAMMPS}.
+	\newblock LAMMPS Users Manual.
+	\newblock Sandia National Laboratories; 2017,
+	http://lammps.sandia.gov/doc/Manual.html.
+	
+	\bibitem[{GROMACS(2018,
+		http://manual.gromacs.org/documentation/2018/index.html)}]{GROMACS}
+	\textbf{\color{LiveCoMSMediumGrey} GROMACS}.
+	\newblock GROMACS Reference Manual; 2018,
+	http://manual.gromacs.org/documentation/2018/index.html.
+	
+	\bibitem[{Case et~al.(????)D.A. Case and S.R. Brozell and D.S. Cerutti and T.E.
+		Cheatham and V.W.D. Cruzeiro and T.A. Darden and R.E. Duke and D. Ghoreishi
+		and H. Gohlke and A.W. Goetz and D. Greene and R Harris and N. Homeyer and S.
+		Izadi and A. Kovalenko and T.S. Lee and S. LeGrand and P. Li and C. Lin and
+		J. Liu and T. Luchko and R. Luo and D.J. Mermelstein and K.M. Merz and Y.
+		Miao and G. Monard and H. Nguyen and I. Omelyan and A. Onufriev and F. Pan
+		and R. Qi and D.R. Roe and A. Roitberg and C. Sagui and S. Schott-Verdugo and
+		J. Shen and C.L. Simmerling and J. Smith and J. Swails and R.C. Walker and J.
+		Wang and H. Wei and R.M. Wolf and X. Wu and L. Xiao and D.M. York and P.A.
+		Kollman}]{AMBER2018}
+	\textbf{\color{LiveCoMSMediumGrey} Case DA}, Brozell SR, Cerutti DS, Cheatham
+	TE, Cruzeiro VWD, Darden TA, Duke RE, Ghoreishi D, Gohlke H, Goetz AW, Greene
+	D, Harris R, Homeyer N, Izadi S, Kovalenko A, Lee TS, LeGrand S, Li P, Lin C,
+	Liu J, Luchko T, Luo R, Mermelstein DJ, Merz KM, Miao Y, Monard G, Nguyen H,
+	Omelyan I, Onufriev A, Pan F, Qi R, Roe DR, Roitberg A, Sagui C,
+	Schott-Verdugo S, Shen J, Simmerling CL, Smith J, Swails J, Walker RC, Wang
+	J, Wei H, Wolf RM, Wu X, Xiao L, York DM, Kollman PA, {AMBER 2018, University
+		of California, San Francisco.};.
+	\newblock Accessed: 2018-05-4.
+	\newblock http://ambermd.org/.
+	
+	\bibitem[{Phillips et~al.(2005)James C. Phillips and Rosemary Braun and Wei
+		Wang and James Gumbart and Emad Tajkhorshid and Elizabeth Villa and
+		Christophe Chipot and Robert D. Skeel and Laxmikant Kale and and Klaus
+		Schulten}]{NAMD}
+	\textbf{\color{LiveCoMSMediumGrey} Phillips JC}, Braun R, Wang W, Gumbart J,
+	Tajkhorshid E, Villa E, Chipot C, Skeel RD, Kale L, , Schulten K.
+	\newblock Scalable molecular dynamics with NAMD.
+	\newblock Journal of Computational Chemistry.  2005; 26(1):1781 --1802.
+	\newblock \href{https://dx.doi.org/10.1002/jcc.20289}{\doiprefix
+		\detokenize{10.1002/jcc.20289}}, nAMD was developed by the Theoretical and
+	Computational Biophysics Group in the Beckman Institute for Advanced Science
+	and Technology at the University of Illinois at Urbana-Champaign.
+	http://www.ks.uiuc.edu/Research/namd/.
+	
+	\bibitem[{Brooks et~al.(????)B. R. Brooks and C. L. Brooks and A. D. Mackerell
+		and L. Nilsson and R. J. Petrella and B. Roux and Y. Won and G. Archontis and
+		C. Bartels and S. Boresch and A. Caflisch and L. Caves and Q. Cui and A. R.
+		Dinner and M. Feig and S. Fischer and J. Gao and M. Hodoscek and W. Im and K.
+		Kuczera and T. Lazaridis and J. Ma and V. Ovchinnikov and E. Paci and R. W.
+		Pastor and C. B. Post and J. Z. Pu and M. Schaefer and B. Tidor and R. M.
+		Venable and H. L. Woodcock and X. Wu and W. Yang and D. M. York and M.
+		Karplus}]{Brooks2009}
+	\textbf{\color{LiveCoMSMediumGrey} Brooks BR}, Brooks CL, Mackerell AD, Nilsson
+	L, Petrella RJ, Roux B, Won Y, Archontis G, Bartels C, Boresch S, Caflisch A,
+	Caves L, Cui Q, Dinner AR, Feig M, Fischer S, Gao J, Hodoscek M, Im W,
+	Kuczera K, Lazaridis T, Ma J, Ovchinnikov V, Paci E, Pastor RW, Post CB, Pu
+	JZ, Schaefer M, Tidor B, Venable RM, Woodcock HL, Wu X, Yang W, York DM,
+	Karplus M.
+	\newblock CHARMM: The biomolecular simulation program.
+	\newblock Journal of Computational Chemistry. ; 30(10):1545--1614.
+	\newblock \href{https://dx.doi.org/10.1002/jcc.21287}{\doiprefix
+		\detokenize{10.1002/jcc.21287}}.
+	
+	\DIFdelbegin %DIFDELCMD < \bibitem[{ms2(2017)}]{ms2}
+	%DIFDELCMD < %%%
+	\DIFdelend \DIFaddbegin \bibitem[{Rutkai et~al.(2017)G{\'a}bor Rutkai and Andreas K{\"o}ster and
+		Gabriela Guevara-Carrion and Tatjana Janzen and Michael Schappals and Colin
+		W. Glass and Martin Bernreuther and Amer Wafai and Simon Stephan and
+		Maximilian Kohns and Steffen Reiser and Stephan Deublein and Martin Horsch
+		and Hans Hasse and Jadran Vrabec}]{ms2}
+	\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Rutkai G}}\DIFadd{, K}{\DIFadd{\"o}}\DIFadd{ster A, Guevara-Carrion G,
+		Janzen T, Schappals M, Glass CW, Bernreuther M, Wafai A, Stephan S, Kohns M,
+		Reiser S, Deublein S, Horsch M, Hasse H, Vrabec J.
+	}\newblock \DIFaddend ms2: A molecular simulation tool for thermodynamic properties,
+	release 3.0.
+	\newblock Computer Physics Communications.  2017; 221:343 -- 351.
+	\newblock \DIFdelbegin %DIFDELCMD < \href{https://dx.doi.org/https://doi.org/10.1016/j.cpc.2017.07.025}{\doiprefix
+	%DIFDELCMD <   \detokenize{https://doi.org/10.1016/j.cpc.2017.07.025}}%%%
+	\DIFdelend \DIFaddbegin \href{https://dx.doi.org/10.1016/j.cpc.2017.07.025}{\doiprefix
+		\detokenize{10.1016/j.cpc.2017.07.025}}\DIFaddend .
+	
+	\bibitem[{Roe and Cheatham(2013)Roe, Daniel R. and Cheatham, Thomas
+		E.}]{Roe2013}
+	\textbf{\color{LiveCoMSMediumGrey} Roe DR}, Cheatham TE.
+	\newblock {PTRAJ and CPPTRAJ: Software for Processing and Analysis of Molecular
+		Dynamics Trajectory Data}.
+	\newblock J Chem Theory Comput.  2013; 9(7):3084--3095.
+	\newblock \href{https://dx.doi.org/10.1021/ct400341p}{\doiprefix
+		\detokenize{10.1021/ct400341p}}.
+	
+	\bibitem[{McGibbon et~al.(2015)Robert T. McGibbon and Kyle A. Beauchamp and
+		Matthew P. Harrigan and Christoph Klein and Jason M. Swails and Carlos X.
+		Hernández and Christian R. Schwantes and Lee-Ping Wang and Thomas J. Lane
+		and Vijay S. Pande}]{MDTraj}
+	\textbf{\color{LiveCoMSMediumGrey} McGibbon RT}, Beauchamp KA, Harrigan MP,
+	Klein C, Swails JM, Hernández CX, Schwantes CR, Wang LP, Lane TJ, Pande VS.
+	\newblock MDTraj: A Modern Open Library for the Analysis of Molecular Dynamics
+	Trajectories.
+	\newblock Biophysical Journal.  2015; 109(8):1528 -- 1532.
+	\newblock \DIFdelbegin %DIFDELCMD < \href{https://dx.doi.org/https://doi.org/10.1016/j.bpj.2015.08.015}{\doiprefix
+	%DIFDELCMD <   \detokenize{https://doi.org/10.1016/j.bpj.2015.08.015}}%%%
+	\DIFdelend \DIFaddbegin \href{https://dx.doi.org/10.1016/j.bpj.2015.08.015}{\doiprefix
+		\detokenize{10.1016/j.bpj.2015.08.015}}\DIFaddend .
+	
+	\bibitem[{Humphrey et~al.(1996)William Humphrey and Andrew Dalke and Klaus
+		Schulten}]{VMD}
+	\textbf{\color{LiveCoMSMediumGrey} Humphrey W}, Dalke A, Schulten K.
+	\newblock VMD: Visual molecular dynamics.
+	\newblock Journal of Molecular Graphics.  1996; 14(1):33 -- 38.
+	\newblock \DIFdelbegin %DIFDELCMD < \href{https://dx.doi.org/https://doi.org/10.1016/0263-7855(96)00018-5}{\doiprefix
+	%DIFDELCMD <   \detokenize{https://doi.org/10.1016/0263-7855(96)00018-5}}%%%
+	\DIFdelend \DIFaddbegin \href{https://dx.doi.org/10.1016/0263-7855(96)00018-5}{\doiprefix
+		\detokenize{10.1016/0263-7855(96)00018-5}}\DIFaddend .
+	
+	\bibitem[{Allen and Tildesley(2017)Allen, M. P. and Tildesley, D.
+		J.}]{Allen2017}
+	\textbf{\color{LiveCoMSMediumGrey} Allen MP}, Tildesley DJ.
+	\newblock Computer simulation of liquids.
+	\newblock Second ed. Oxford England: Oxford University Press; 2017.
+	
+	\bibitem[{Frenkel and Smit(2002)Frenkel, Daan and Smit, Berend}]{Frenkel2002}
+	\textbf{\color{LiveCoMSMediumGrey} Frenkel D}, Smit B.
+	\newblock Understanding molecular simulation : from algorithms to applications.
+	\newblock 2nd ed. Computational science series, San Diego: Academic Press;
+	2002.
+	
+	\bibitem[{Leach(2001)Leach, Andrew R.}]{Leach2001}
+	\textbf{\color{LiveCoMSMediumGrey} Leach AR}.
+	\newblock {Molecular modelling : principles and applications}.
+	\newblock 2 ed. Pearson Prentice Hall; 2001.
+	
+	\bibitem[{Haile(1992)Haile, J. M. =}]{Haile1992}
+	\textbf{\color{LiveCoMSMediumGrey} Haile JM}.
+	\newblock Molecular Dynamics Simulation: Elementary Methods.
+	\newblock New York: John Wiley and Sons, Inc.; 1992.
+	
+	\bibitem[{Pan(????)}]{PanaNotes}
+	Athanassios Panagiotopoulos, The University of Princeton Class Notes;.
+	\newblock Accessed: 2018-01-01.
+	\newblock http://paros.princeton.edu/cbe422/md2.pdf;
+	http://paros.princeton.edu/cbe520/Transport.pdf.
+	
+	\bibitem[{Kof(????)}]{KofkeNotes}
+	David Kofke, The University of Buffalo Class Notes;.
+	\newblock Accessed: 2018-01-01.
+	\newblock https://www.eng.buffalo.edu/\textasciitilde
+	kofke/ce530/Lectures/Lecture12.ppt.pdf.
+	
+	\bibitem[{Mag(????)}]{MaginnNotes}
+	Ed Maginn, The University of Notre Dame Class Notes;.
+	\newblock Accessed: 2018-01-01.
+	\newblock https://www3.nd.edu/\textasciitilde ed/notes.pdf.
+	
+	\bibitem[{She(????)}]{ShellNotes}
+	Scott Shell, The University of California\DIFdelbegin \DIFdel{Santa Barabara }\DIFdelend \DIFaddbegin \DIFadd{, Santa Barbara }\DIFaddend Class Notes;.
+	\newblock Accessed: 2018-01-01.
+	\newblock https://engineering.ucsb.edu/\textasciitilde
+	shell/che210d/Computing\_properties.pdf.
+	
+	\bibitem[{Chen et~al.(2009)Ting Chen and Berend Smit and Alexis T.
+		Bell}]{Chen2009}
+	\textbf{\color{LiveCoMSMediumGrey} Chen T}, Smit B, Bell AT.
+	\newblock Are pressure fluctuation-based equilibrium methods really worse than
+	nonequilibrium methods for calculating viscosities?
+	\newblock The Journal of Chemical Physics.  2009; 131(24):246101.
+	\newblock \href{https://dx.doi.org/10.1063/1.3274802}{\doiprefix
+		\detokenize{10.1063/1.3274802}}.
+	
+	\bibitem[{Hess(2002)Berk Hess}]{Hess2002}
+	\textbf{\color{LiveCoMSMediumGrey} Hess B}.
+	\newblock Determining the shear viscosity of model liquids from molecular
+	dynamics simulations.
+	\newblock The Journal of Chemical Physics.  2002; 116(1):209--217.
+	\newblock \href{https://dx.doi.org/10.1063/1.1421362}{\doiprefix
+		\detokenize{10.1063/1.1421362}}.
+	
+	\bibitem[{Nieto-Draghi et~al.(2015)Nieto-Draghi, Carlos and Fayet, Guillaume
+		and Creton, Benoit and Rozanska, Xavier and Rotureau, Patricia and de
+		Hemptinne, Jean-Charles and Ungerer, Philippe and Rousseau, Bernard and
+		Adamo, Carlo}]{Nieto2015}
+	\textbf{\color{LiveCoMSMediumGrey} Nieto-Draghi C}, Fayet G, Creton B, Rozanska
+	X, Rotureau P, de~Hemptinne JC, Ungerer P, Rousseau B, Adamo C.
+	\newblock A General Guidebook for the Theoretical Prediction of Physicochemical
+	Properties of Chemicals for Regulatory Purposes.
+	\newblock Chemical Reviews.  2015; 115(24):13093--13164.
+	\newblock \href{https://dx.doi.org/10.1021/acs.chemrev.5b00215}{\doiprefix
+		\detokenize{10.1021/acs.chemrev.5b00215}}, pMID: 26624238.
+	
+	\DIFdelbegin %DIFDELCMD < \bibitem[{Ung(2007)}]{Ungerer2007}
+	%DIFDELCMD < %%%
+	\DIFdelend \DIFaddbegin \bibitem[{Ungerer et~al.(2007)Philippe Ungerer and Carlos Nieto-Draghi and
+		Bernard Rousseau and Göktug Ahunbay and Véronique Lachet}]{Ungerer2007}
+	\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Ungerer P}}\DIFadd{, Nieto-Draghi C, Rousseau B,
+		Ahunbay G, Lachet V.
+	}\newblock \DIFaddend Molecular simulation of the thermophysical properties of fluids: From
+	understanding toward quantitative predictions.
+	\newblock Journal of Molecular Liquids.  2007; 134(1):71 -- 89.
+	\newblock \DIFdelbegin %DIFDELCMD < \href{https://dx.doi.org/https://doi.org/10.1016/j.molliq.2006.12.019}{\doiprefix
+	%DIFDELCMD <   \detokenize{https://doi.org/10.1016/j.molliq.2006.12.019}}%%%
+	\DIFdelend \DIFaddbegin \href{https://dx.doi.org/10.1016/j.molliq.2006.12.019}{\doiprefix
+		\detokenize{10.1016/j.molliq.2006.12.019}}\DIFaddend , eMLG/JMLG 2005 Special Issue.
+	
+	\bibitem[{Fanourgakis et~al.(2012)Fanourgakis, George S. and Medina, J. S. and
+		Prosmiti, R.}]{Fanourgakis2012}
+	\textbf{\color{LiveCoMSMediumGrey} Fanourgakis GS}, Medina JS, Prosmiti R.
+	\newblock Determining the Bulk Viscosity of Rigid Water Models.
+	\newblock The Journal of Physical Chemistry A.  2012; 116(10):2564--2570.
+	\newblock \href{https://dx.doi.org/10.1021/jp211952y}{\doiprefix
+		\detokenize{10.1021/jp211952y}}, pMID: 22352421.
+	
+	\bibitem[{Basconi and Shirts({2013})Basconi, Joseph E. and Shirts, Michael
+		R.}]{Shirts2013}
+	\textbf{\color{LiveCoMSMediumGrey} Basconi JE}, Shirts MR.
+	\newblock {Effects of Temperature Control Algorithms on Transport Properties
+		and Kinetics in Molecular Dynamics Simulations}.
+	\newblock {Jouornal of Chemical Theory and Computation}.  {2013} {JUL};
+	{9}({7}):{2887--2899}.
+	\newblock \href{https://dx.doi.org/{10.1021/ct400109a}}{\doiprefix
+		\detokenize{{10.1021/ct400109a}}}.
+	
+	\bibitem[{Berendsen et~al.(1984)H. J. C. Berendsen and J. P. M. Postma and W.
+		F. van Gunsteren and A. DiNola and J. R. Haak}]{Berendsen1984}
+	\textbf{\color{LiveCoMSMediumGrey} Berendsen HJC}, Postma JPM, van Gunsteren
+	WF, DiNola A, Haak JR.
+	\newblock Molecular dynamics with coupling to an external bath.
+	\newblock The Journal of Chemical Physics.  1984; 81(8):3684--3690.
+	\newblock \href{https://dx.doi.org/10.1063/1.448118}{\doiprefix
+		\detokenize{10.1063/1.448118}}.
+	
+	\bibitem[{Bussi et~al.(2007)Giovanni Bussi and Davide Donadio and Michele
+		Parrinello}]{Bussi2007}
+	\textbf{\color{LiveCoMSMediumGrey} Bussi G}, Donadio D, Parrinello M.
+	\newblock Canonical sampling through velocity rescaling.
+	\newblock The Journal of Chemical Physics.  2007; 126(1):014101.
+	\newblock \href{https://dx.doi.org/10.1063/1.2408420}{\doiprefix
+		\detokenize{10.1063/1.2408420}}.
+	
+	\bibitem[{Nos{\'e}(1984)Shuichi Nos{\'e}}]{Nose1984}
+	\textbf{\color{LiveCoMSMediumGrey} Nos{\'e} S}.
+	\newblock A unified formulation of the constant temperature molecular dynamics
+	methods.
+	\newblock The Journal of Chemical Physics.  1984; 81(1):511--519.
+	\newblock \href{https://dx.doi.org/10.1063/1.447334}{\doiprefix
+		\detokenize{10.1063/1.447334}}.
+	
+	\bibitem[{Andersen(1980)Hans C. Andersen}]{Andersen1980}
+	\textbf{\color{LiveCoMSMediumGrey} Andersen HC}.
+	\newblock Molecular dynamics simulations at constant pressure and/or
+	temperature.
+	\newblock The Journal of Chemical Physics.  1980; 72(4):2384--2393.
+	\newblock \href{https://dx.doi.org/10.1063/1.439486}{\doiprefix
+		\detokenize{10.1063/1.439486}}.
+	
+	\bibitem[{Hess et~al.(2008)Hess, Berk and Kutzner, Carsten and van der Spoel,
+		David and Lindahl, Erik}]{Hess2008}
+	\textbf{\color{LiveCoMSMediumGrey} Hess B}, Kutzner C, van~der Spoel D, Lindahl
+	E.
+	\newblock GROMACS 4{:} Algorithms for Highly Efficient, Load-Balanced, and
+	Scalable Molecular Simulation.
+	\newblock Journal of Chemical Theory and Computation.  2008; 4(3):435--447.
+	\newblock \href{https://dx.doi.org/10.1021/ct700301q}{\doiprefix
+		\detokenize{10.1021/ct700301q}}, pMID: 26620784.
+	
+	\bibitem[{Payal et~al.(2012)Rajdeep Singh Payal and S. Balasubramanian and
+		Indranil Rudra and Kunj Tandon and Ingo Mahlke and David Doyle and Roger
+		Cracknell}]{Payal2012}
+	\textbf{\color{LiveCoMSMediumGrey} Payal RS}, Balasubramanian S, Rudra I,
+	Tandon K, Mahlke I, Doyle D, Cracknell R.
+	\newblock Shear viscosity of linear alkanes through molecular simulations:
+	quantitative tests for n-decane and n-hexadecane.
+	\newblock Molecular Simulation.  2012; 38(14-15):1234--1241.
+	\newblock \href{https://dx.doi.org/10.1080/08927022.2012.702423}{\doiprefix
+		\detokenize{10.1080/08927022.2012.702423}}.
+	
+	\bibitem[{Zhang et~al.(2015)Zhang, Yong and Otani, Akihito and Maginn, Edward
+		J.}]{Zhang2015}
+	\textbf{\color{LiveCoMSMediumGrey} Zhang Y}, Otani A, Maginn EJ.
+	\newblock Reliable Viscosity Calculation from Equilibrium Molecular Dynamics
+	Simulations: A Time Decomposition Method.
+	\newblock Journal of Chemical Theory and Computation.  2015; 11(8):3537--3546.
+	\newblock \href{https://dx.doi.org/10.1021/acs.jctc.5b00351}{\doiprefix
+		\detokenize{10.1021/acs.jctc.5b00351}}, pMID: 26574439.
+	
+	\bibitem[{Ma et~al.(2017)Jie Ma and Zhendian Zhang and Yan Xiang and Fenglei
+		Cao and Huai Sun}]{Ma2017}
+	\textbf{\color{LiveCoMSMediumGrey} Ma J}, Zhang Z, Xiang Y, Cao F, Sun H.
+	\newblock On the prediction of transport properties of ionic liquid using
+	1-n-butylmethylpyridinium tetrafluoroborate as an example.
+	\newblock Molecular Simulation.  2017; 43(18):1502--1512.
+	\newblock \href{https://dx.doi.org/10.1080/08927022.2017.1321760}{\doiprefix
+		\detokenize{10.1080/08927022.2017.1321760}}.
+	
+	\DIFdelbegin %DIFDELCMD < \bibitem[{Taylor and Kuyatt(1994)Barry N. Taylor and Chris E. Kuyatt}]{GUM}
+	%DIFDELCMD < %%%
+	\textbf{%DIFDELCMD < \color{LiveCoMSMediumGrey} %%%
+		\DIFdel{Taylor BN}}%DIFAUXCMD
+	\DIFdel{, Kuyatt CE.
+	}%DIFDELCMD < \newblock %%%
+	\DIFdel{Guidelines for Evaluating and Expressing the Uncertainty of }%DIFDELCMD < {%%%
+	\DIFdel{NIST}%DIFDELCMD < }
+	%DIFDELCMD <   %%%
+	\DIFdel{Measurement Results.
+	}%DIFDELCMD < \newblock {%%%
+	\DIFdel{NIST}%DIFDELCMD < } %%%
+	\DIFdel{Technical Note 1297.  1994; p. 1--9.
+	}%DIFDELCMD < 
+	
+	%DIFDELCMD < %%%
+	\DIFdelend \bibitem[{Grossfield et~al.(2018)Alan Grossfield and Paul N. Patrone and Daniel
+		R. Roe and Andrew J. Schultz and Daniel W. Siderius and Daniel M.
+		Zuckerman}]{Grossfield2018}
+	\textbf{\color{LiveCoMSMediumGrey} Grossfield A}, Patrone PN, Roe DR, Schultz
+	AJ, Siderius DW, Zuckerman DM.
+	\newblock Best Practices for Quantification of Uncertainty and Sampling Quality
+	in Molecular Simulations: v1.0.
+	\newblock Living Journal of Computational Molecular Science.  2018; A LiveCoMS
+	Best Practices Guide.
+	\newblock
+	\urlprefix\url{https://github.com/dmzuckerman/Sampling-Uncertainty/blob/master/main.pdf}.
+	
+	\DIFaddbegin \bibitem[{Taylor and Kuyatt(1994)Barry N. Taylor and Chris E. Kuyatt}]{GUM}
+	\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Taylor BN}}\DIFadd{, Kuyatt CE.
+	}\newblock \DIFadd{Guidelines for Evaluating and Expressing the Uncertainty of }{\DIFadd{NIST}}
+	\DIFadd{Measurement Results.
+	}\newblock {\DIFadd{NIST}} \DIFadd{Technical Note 1297.  1994; p. 1--9.
+	}
+	
+	\bibitem[{Efron(1979)Efron, B.}]{Efron1979}
+	\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Efron B}}\DIFadd{.
+	}\newblock \DIFadd{Bootstrap Methods: Another Look at the Jackknife.
+	}\newblock \DIFadd{The Annals of Statistics.  1979; 7(1):1--26.
+	}\newblock \href{https://dx.doi.org/10.1214/aos/1176344552}{\doiprefix
+		\detokenize{10.1214/aos/1176344552}}\DIFadd{.
+	}
+	
+	\DIFaddend \bibitem[{Shen et~al.(????)Shen, V.K. and Siderius, D.W. and Krekelberg, W.P.
+		and Hatch, H.W. and Eds.}]{ShenSRSW}
+	\textbf{\color{LiveCoMSMediumGrey} Shen VK}, Siderius DW, Krekelberg WP, Hatch
+	HW, Eds, {NIST Standard Reference Simulation Website, NIST Standard Reference
+		Database Number 173, National Institute of Standards and Technology,
+		Gaithersburg MD, 20899};.
+	\newblock Accessed: 2018-04-25.
+	\newblock http://doi.org/10.18434/T4M88Q.
+	
+	\DIFdelbegin %DIFDELCMD < \bibitem[{Kondratyuk et~al.(????)N D Kondratyuk and G E Norman and V V
+	%DIFDELCMD <   Stegailov}]{Kondratyuk2016}
+	%DIFDELCMD < %%%
+	\DIFdelend \DIFaddbegin \bibitem[{Kondratyuk et~al.(2016)N D Kondratyuk and G E Norman and V V
+		Stegailov}]{Kondratyuk2016}
+	\DIFaddend \textbf{\color{LiveCoMSMediumGrey} Kondratyuk ND}, Norman GE, Stegailov VV.
+	\newblock Rheology of liquid n-triacontane: Molecular dynamics simulation.
+	\newblock Journal of Physics: Conference Series.  \DIFaddbegin \DIFadd{2016}\DIFaddend ; 774(1):012039.
+	
+	\bibitem[{Liu et~al.(2012)Liu, Hongjun and Maginn, Edward and Visser, Ann E.
+		and Bridges, Nicholas J. and Fox, Elise B.}]{Liu2012}
+	\textbf{\color{LiveCoMSMediumGrey} Liu H}, Maginn E, Visser AE, Bridges NJ, Fox
+	EB.
+	\newblock Thermal and Transport Properties of Six Ionic Liquids: An
+	Experimental and Molecular Dynamics Study.
+	\newblock Industrial \& Engineering Chemistry Research.  2012;
+	51(21):7242--7254.
+	\newblock \href{https://dx.doi.org/10.1021/ie300222a}{\doiprefix
+		\detokenize{10.1021/ie300222a}}.
+	
+	\bibitem[{Mondello and Grest(1997)Maurizio Mondello and Gary S.
+		Grest}]{Mondello1997}
+	\textbf{\color{LiveCoMSMediumGrey} Mondello M}, Grest GS.
+	\newblock Viscosity calculations of n-alkanes by equilibrium molecular
+	dynamics.
+	\newblock The Journal of Chemical Physics.  1997; 106(22):9327--9336.
+	\newblock \href{https://dx.doi.org/10.1063/1.474002}{\doiprefix
+		\detokenize{10.1063/1.474002}}.
+	
+	\bibitem[{Moultos et~al.(2016)Othonas A. Moultos and Yong Zhang and Ioannis N.
+		Tsimpanogiannis and Ioannis G. Economou and Edward J. Maginn}]{Moultos2016}
+	\textbf{\color{LiveCoMSMediumGrey} Moultos OA}, Zhang Y, Tsimpanogiannis IN,
+	Economou IG, Maginn EJ.
+	\newblock System-size corrections for self-diffusion coefficients calculated
+	from molecular dynamics simulations: The case of CO2, n-alkanes, and
+	poly(ethylene glycol) dimethyl ethers.
+	\newblock The Journal of Chemical Physics.  2016; 145(7):074109.
+	\newblock \href{https://dx.doi.org/10.1063/1.4960776}{\doiprefix
+		\detokenize{10.1063/1.4960776}}.
+	
+	\bibitem[{Daivis and Evans(1995)Daivis, P. J. and Evans, D. J.}]{Daivis:1995}
+	\textbf{\color{LiveCoMSMediumGrey} Daivis PJ}, Evans DJ.
+	\newblock Transport Coefficients of Liquid Butane Near the Boiling Point by
+	Equilibrium Molecular Dynamics.
+	\newblock Journal of Chemical Physics.  1995; 103(10):4261--4265.
+	
+	\bibitem[{Yeh and Hummer(2004)Yeh, In-Chul and Hummer, Gerhard}]{Yeh2004}
+	\textbf{\color{LiveCoMSMediumGrey} Yeh IC}, Hummer G.
+	\newblock System-Size Dependence of Diffusion Coefficients and Viscosities from
+	Molecular Dynamics Simulations with Periodic Boundary Conditions.
+	\newblock The Journal of Physical Chemistry B.  2004; 108(40):15873--15879.
+	\newblock \href{https://dx.doi.org/10.1021/jp0477147}{\doiprefix
+		\detokenize{10.1021/jp0477147}}.
+	
+	\bibitem[{Kikugawa et~al.({2015})Kikugawa, Gota and Nakano, Takeo and Ohara,
+		Taku}]{Kikugawa:2015}
+	\textbf{\color{LiveCoMSMediumGrey} Kikugawa G}, Nakano T, Ohara T.
+	\newblock {Hydrodynamic consideration of the finite size effect on the
+		self-diffusion coefficient in a periodic rectangular parallelepiped system}.
+	\newblock {J Chem Phys}.  {2015} {JUL 14}; {143}({2}).
+	\newblock \href{https://dx.doi.org/{10.1063/1.4926841}}{\doiprefix
+		\detokenize{{10.1063/1.4926841}}}.
+	
+	\DIFaddbegin \bibitem[{Stillinger and Rahman(1974)Stillinger, Frank H. and Rahman,
+		Aneesur}]{Stillinger1974}
+	\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Stillinger FH}}\DIFadd{, Rahman A.
+	}\newblock \DIFadd{Improved simulation of liquid water by molecular dynamics.
+	}\newblock \DIFadd{The Journal of Chemical Physics.  1974; 60(4):1545--1557.
+	}\newblock \href{https://dx.doi.org/10.1063/1.1681229}{\doiprefix
+		\detokenize{10.1063/1.1681229}}\DIFadd{.
+	}
+	
+	\DIFaddend \bibitem[{Hoover(1985)Hoover, William G.}]{Hoover1985}
+	\textbf{\color{LiveCoMSMediumGrey} Hoover WG}.
+	\newblock Canonical dynamics: Equilibrium phase-space distributions.
+	\newblock Phys Rev A.  1985 Mar; 31:1695--1697.
+	\newblock \href{https://dx.doi.org/10.1103/PhysRevA.31.1695}{\doiprefix
+		\detokenize{10.1103/PhysRevA.31.1695}}.
+	
+	\bibitem[{Venable et~al.(2017)Venable, Richard M. and Ing{\'o}lfsson, Helgi I.
+		and Lerner, Michael G. and Perrin, B. Scott and Camley, Brian A. and Marrink,
+		Siewert J. and Brown, Frank L. H. and Pastor, Richard W.}]{Venable2017}
+	\textbf{\color{LiveCoMSMediumGrey} Venable RM}, Ing{\'o}lfsson HI, Lerner MG,
+	Perrin BS, Camley BA, Marrink SJ, Brown FLH, Pastor RW.
+	\newblock Lipid and Peptide Diffusion in Bilayers: The Saffman–Delbrück
+	Model and Periodic Boundary Conditions.
+	\newblock The Journal of Physical Chemistry B.  2017; 121(15):3443--3457.
+	\newblock \href{https://dx.doi.org/10.1021/acs.jpcb.6b09111}{\doiprefix
+		\detokenize{10.1021/acs.jpcb.6b09111}}, pMID: 27966982.
+	
+	\bibitem[{Camley et~al.(2015)Brian A. Camley and Michael G. Lerner and Richard
+		W. Pastor and Frank L. H. Brown}]{Camley2015}
+	\textbf{\color{LiveCoMSMediumGrey} Camley BA}, Lerner MG, Pastor RW, Brown FLH.
+	\newblock Strong influence of periodic boundary conditions on lateral diffusion
+	in lipid bilayer membranes.
+	\newblock The Journal of Chemical Physics.  2015; 143(24):243113.
+	\newblock \href{https://dx.doi.org/10.1063/1.4932980}{\doiprefix
+		\detokenize{10.1063/1.4932980}}.
+	
+	\DIFaddbegin \bibitem[{Kim et~al.(2018)Kim, Kang-Sahn and Han, Myung Hoon and Kim, Changho
+		and Li, Zhen and Karniadakis, George Em and Lee, Eok Kyun}]{Kim2018}
+	\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Kim KS}}\DIFadd{, Han MH, Kim C, Li Z, Karniadakis
+		GE, Lee EK.
+	}\newblock \DIFadd{Nature of intrinsic uncertainties in equilibrium molecular dynamics
+		estimation of shear viscosity for simple and complex fluids.
+	}\newblock \DIFadd{The Journal of Chemical Physics.  2018; 149(4):044510.
+	}\newblock \href{https://dx.doi.org/10.1063/1.5035119}{\doiprefix
+		\detokenize{10.1063/1.5035119}}\DIFadd{.
+	}
+	
+	\DIFaddend \bibitem[{Evans and Morriss(1990)D. J. Evans and G. P. Morriss}]{Evans:90}
+	\textbf{\color{LiveCoMSMediumGrey} Evans DJ}, Morriss GP.
+	\newblock Statistical Mechanics of Nonequilibrium Liquids.
+	\newblock Academic press, London; 1990.
+	
+	\bibitem[{Daivis and Evans(1994)Daivis, P. J. and Evans, D. J.}]{Daivis:1994}
+	\textbf{\color{LiveCoMSMediumGrey} Daivis PJ}, Evans DJ.
+	\newblock Comparison of constant pressure and constant volume nonequilibrium
+	simulations of sheared model decane.
+	\newblock Journal of Chemical Physics.  1994; 100(1):541--547.
+	
+	\bibitem[{Borodin et~al.(2009)Borodin, Oleg and Smith, Grant D. and Kim,
+		Hojin}]{Borodin2009}
+	\textbf{\color{LiveCoMSMediumGrey} Borodin O}, Smith GD, Kim H.
+	\newblock Viscosity of a Room Temperature Ionic Liquid: Predictions from
+	Nonequilibrium and Equilibrium Molecular Dynamics Simulations.
+	\newblock The Journal of Physical Chemistry B.  2009; 113(14):4771--4774.
+	\newblock \href{https://dx.doi.org/10.1021/jp810016e}{\doiprefix
+		\detokenize{10.1021/jp810016e}}, pMID: 19275203.
+	
+	\bibitem[{Martin and Siepmann(1998)Martin, M. G. and Siepmann, J.
+		I.}]{Martin1998}
+	\textbf{\color{LiveCoMSMediumGrey} Martin MG}, Siepmann JI.
+	\newblock Transferable potentials for phase equilibria. 1. {United-atom}
+	description of n-alkanes.
+	\newblock The Journal of Physical Chemistry B.  1998; 102(14):2569--2577.
+	\newblock \href{https://dx.doi.org/10.1021/Jp972543+}{\doiprefix
+		\detokenize{10.1021/Jp972543+}}.
+	
+	\DIFaddbegin \bibitem[{Swope et~al.(1982)Swope, William C. and Andersen, Hans C. and Berens,
+		Peter H. and Wilson, Kent R.}]{Swope1982}
+	\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Swope WC}}\DIFadd{, Andersen HC, Berens PH, Wilson
+		KR.
+	}\newblock \DIFadd{A computer simulation method for the calculation of equilibrium
+		constants for the formation of physical clusters of molecules}{\DIFadd{: A}}\DIFadd{pplication
+		to small water clusters.
+	}\newblock \DIFadd{The Journal of Chemical Physics.  1982; 76(1):637--649.
+	}\newblock \href{https://dx.doi.org/10.1063/1.442716}{\doiprefix
+		\detokenize{10.1063/1.442716}}\DIFadd{.
+	}
+	
+	\bibitem[{Hess et~al.(1998)Hess, Berk and Bekker, Henk and Berendsen, Herman J.
+		C. and Fraaije, Johannes G. E. M.}]{Hess1998}
+	\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Hess B}}\DIFadd{, Bekker H, Berendsen HJC, Fraaije
+		JGEM.
+	}\newblock {\DIFadd{LINCS: A}} \DIFadd{linear constraint solver for molecular simulations.
+	}\newblock \DIFadd{Journal of Computational Chemistry.  1998; 18(12):1463--1472.
+	}\newblock
+	\href{https://dx.doi.org/10.1002/(SICI)1096-987X(199709)18:12<1463::AID-JCC4>3.0.CO;2-H}{\doiprefix
+		\detokenize{10.1002/(SICI)1096-987X(199709)18:12<1463::AID-JCC4>3.0.CO;2-H}}\DIFadd{.
+	}
+	
+	\bibitem[{Hess(2008)Hess, Berk}]{Hess2008_PLINCS}
+	\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Hess B}}\DIFadd{.
+	}\newblock {\DIFadd{P-LINCS: A}} \DIFadd{Parallel Linear Constraint Solver for Molecular
+		Simulation.
+	}\newblock \DIFadd{Journal of Chemical Theory and Computation.  2008; 4(1):116--122.
+	}\newblock \href{https://dx.doi.org/10.1021/ct700200b}{\doiprefix
+		\detokenize{10.1021/ct700200b}}\DIFadd{.
+	}
+	
+	\bibitem[{Guo et~al.(2002)Guang-Jun Guo and Yi-Gang Zhang and Keith Refson and
+		Ya-Juan Zhao}]{GUANG2002}
+	\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Guo GJ}}\DIFadd{, Zhang YG, Refson K, Zhao YJ.
+	}\newblock \DIFadd{Viscosity and stress autocorrelation function in supercooled water: a
+		molecular dynamics study.
+	}\newblock \DIFadd{Molecular Physics.  2002; 100(16):2617--2627.
+	}\newblock \href{https://dx.doi.org/10.1080/00268970210133477}{\doiprefix
+		\detokenize{10.1080/00268970210133477}}\DIFadd{.
+	}
+	
+	\DIFaddend \bibitem[{van~der Spoel et~al.(1998)David van der Spoel and Paul J. van Maaren
+		and Herman J. C. Berendsen}]{vanderSpoel1998}
+	\textbf{\color{LiveCoMSMediumGrey} van~der Spoel D}, van Maaren PJ, Berendsen
+	HJC.
+	\newblock A systematic study of water models for molecular simulation:
+	Derivation of water models optimized for use with a reaction field.
+	\newblock The Journal of Chemical Physics.  1998; 108(24):10220--10230.
+	\newblock \href{https://dx.doi.org/10.1063/1.476482}{\doiprefix
+		\detokenize{10.1063/1.476482}}.
+	
+	\bibitem[{Fern{\'a}ndez et~al.(2005)G. A. Fern{\'a}ndez and J. Vrabec and H.
+		Hasse}]{Fernandez2005}
+	\textbf{\color{LiveCoMSMediumGrey} Fern{\'a}ndez GA}, Vrabec J, Hasse H.
+	\newblock Shear viscosity and thermal conductivity of quadrupolar real fluids
+	from molecular simulation.
+	\newblock Molecular Simulation.  2005; 31(11):787--793.
+	\newblock \href{https://dx.doi.org/10.1080/08927020500252599}{\doiprefix
+		\detokenize{10.1080/08927020500252599}}.
+	
+	\bibitem[{Rey-Castro and Vega(2006)Rey-Castro, Carlos and Vega, Lourdes
+		F.}]{ReyCastro2006}
+	\textbf{\color{LiveCoMSMediumGrey} Rey-Castro C}, Vega LF.
+	\newblock Transport Properties of the Ionic Liquid 1-Ethyl-3-Methylimidazolium
+	Chloride from Equilibrium Molecular Dynamics Simulation. The Effect of
+	Temperature.
+	\newblock The Journal of Physical Chemistry B.  2006; 110(29):14426--14435.
+	\newblock \href{https://dx.doi.org/10.1021/jp062885s}{\doiprefix
+		\detokenize{10.1021/jp062885s}}, pMID: 16854152.
+	\DIFaddbegin 
+	
+	\bibitem[{Darden et~al.(1993)Darden, Tom and York, Darrin and Pedersen,
+		Lee}]{Darden1993}
+	\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Darden T}}\DIFadd{, York D, Pedersen L.
+	}\newblock \DIFadd{Particle mesh Ewald: An }{\DIFadd{Nlog(N)}} \DIFadd{method for Ewald sums in large
+		systems.
+	}\newblock \DIFadd{The Journal of Chemical Physics.  1993; 98(12):10089--10092.
+	}\newblock \href{https://dx.doi.org/10.1063/1.464397}{\doiprefix
+		\detokenize{10.1063/1.464397}}\DIFadd{.
+	}
+	
+	\bibitem[{Levitt et~al.(1995)Michael Levitt and Miriam Hirshberg and Ruth
+		Sharon and Valerie Daggett}]{Levitt1995}
+	\textbf{\color{LiveCoMSMediumGrey} \DIFadd{Levitt M}}\DIFadd{, Hirshberg M, Sharon R, Daggett V.
+	}\newblock \DIFadd{Potential energy function and parameters for simulations of the
+		molecular dynamics of proteins and nucleic acids in solution.
+	}\newblock \DIFadd{Computer Physics Communications.  1995; 91(1):215 -- 231.
+	}\newblock \href{https://dx.doi.org/10.1016/0010-4655(95)00049-L}{\doiprefix
+		\detokenize{10.1016/0010-4655(95)00049-L}}\DIFadd{.
+	}
+	
+	\bibitem[{van~der Spoel and van Maaren(2006)van der Spoel, David and van
+		Maaren, Paul J.}]{derSpoel2006}
+	\textbf{\color{LiveCoMSMediumGrey} \DIFadd{van~der Spoel D}}\DIFadd{, van Maaren PJ.
+	}\newblock \DIFadd{The Origin of Layer Structure Artifacts in Simulations of Liquid
+		Water.
+	}\newblock \DIFadd{Journal of Chemical Theory and Computation.  2006; 2(1):1--11.
+	}\newblock \href{https://dx.doi.org/10.1021/ct0502256}{\doiprefix
+		\detokenize{10.1021/ct0502256}}\DIFadd{.
+	}\DIFaddend 
 
 \end{thebibliography}
 

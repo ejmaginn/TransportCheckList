@@ -3,17 +3,16 @@
 \providecommand{\urlprefix}{}
 \providecommand{\doiprefix}{doi: }
 
-\bibitem[{LAMMPS(2017, http://lammps.sandia.gov/doc/Manual.html)}]{LAMMPS}
+\bibitem[{LAMMPS(2017)}]{LAMMPS}
 \textbf{\color{LiveCoMSMediumGrey} LAMMPS}.
 \newblock LAMMPS Users Manual.
 \newblock Sandia National Laboratories; 2017,
-  http://lammps.sandia.gov/doc/Manual.html.
+  \urlprefix\url{http://lammps.sandia.gov/doc/Manual.html}.
 
-\bibitem[{GROMACS(2018,
-  http://manual.gromacs.org/documentation/2018/index.html)}]{GROMACS}
+\bibitem[{GROMACS(2018)}]{GROMACS}
 \textbf{\color{LiveCoMSMediumGrey} GROMACS}.
 \newblock GROMACS Reference Manual; 2018,
-  http://manual.gromacs.org/documentation/2018/index.html.
+  \urlprefix\url{http://manual.gromacs.org/documentation/2018/index.html}.
 
 \bibitem[{Case et~al.(????)D.A. Case and S.R. Brozell and D.S. Cerutti and T.E.
   Cheatham and V.W.D. Cruzeiro and T.A. Darden and R.E. Duke and D. Ghoreishi
@@ -34,7 +33,7 @@
   J, Wei H, Wolf RM, Wu X, Xiao L, York DM, Kollman PA, {AMBER 2018, University
   of California, San Francisco.};.
 \newblock Accessed: 2018-05-4.
-\newblock http://ambermd.org/.
+\newblock \url{http://ambermd.org/}.
 
 \bibitem[{Phillips et~al.(2005)James C. Phillips and Rosemary Braun and Wei
   Wang and James Gumbart and Emad Tajkhorshid and Elizabeth Villa and
@@ -88,7 +87,7 @@
 \textbf{\color{LiveCoMSMediumGrey} Roe DR}, Cheatham TE.
 \newblock {PTRAJ and CPPTRAJ: Software for Processing and Analysis of Molecular
   Dynamics Trajectory Data}.
-\newblock J Chem Theory Comput.  2013; 9(7):3084--3095.
+\newblock Journal of Chemical Theory and Computation.  2013; 9(7):3084--3095.
 \newblock \href{https://dx.doi.org/10.1021/ct400341p}{\doiprefix
   \detokenize{10.1021/ct400341p}}.
 
@@ -137,25 +136,25 @@
 \bibitem[{Pan(????)}]{PanaNotes}
 Athanassios Panagiotopoulos, The University of Princeton Class Notes;.
 \newblock Accessed: 2018-01-01.
-\newblock http://paros.princeton.edu/cbe422/md2.pdf;
-  http://paros.princeton.edu/cbe520/Transport.pdf.
+\newblock \url{http://paros.princeton.edu/cbe422/md2.pdf};
+  \url{http://paros.princeton.edu/cbe520/Transport.pdf}.
 
 \bibitem[{Kof(????)}]{KofkeNotes}
 David Kofke, The University of Buffalo Class Notes;.
 \newblock Accessed: 2018-01-01.
-\newblock https://www.eng.buffalo.edu/\textasciitilde
-  kofke/ce530/Lectures/Lecture12.ppt.pdf.
+\newblock \url{https://www.eng.buffalo.edu/\textasciitilde
+  kofke/ce530/Lectures/Lecture12.ppt.pdf}.
 
 \bibitem[{Mag(????)}]{MaginnNotes}
 Ed Maginn, The University of Notre Dame Class Notes;.
 \newblock Accessed: 2018-01-01.
-\newblock https://www3.nd.edu/\textasciitilde ed/notes.pdf.
+\newblock \url{https://www3.nd.edu/\textasciitilde ed/notes.pdf}.
 
 \bibitem[{She(????)}]{ShellNotes}
 Scott Shell, The University of California, Santa Barbara Class Notes;.
 \newblock Accessed: 2018-01-01.
-\newblock https://engineering.ucsb.edu/\textasciitilde
-  shell/che210d/Computing\_properties.pdf.
+\newblock \url{https://engineering.ucsb.edu/\textasciitilde
+  shell/che210d/Computing\_properties.pdf}.
 
 \bibitem[{Chen et~al.(2009)Ting Chen and Berend Smit and Alexis T.
   Bell}]{Chen2009}
@@ -209,10 +208,10 @@ Scott Shell, The University of California, Santa Barbara Class Notes;.
 \textbf{\color{LiveCoMSMediumGrey} Basconi JE}, Shirts MR.
 \newblock {Effects of Temperature Control Algorithms on Transport Properties
   and Kinetics in Molecular Dynamics Simulations}.
-\newblock {Jouornal of Chemical Theory and Computation}.  {2013} {JUL};
+\newblock {Journal of Chemical Theory and Computation}.  {2013} {JUL};
   {9}({7}):{2887--2899}.
-\newblock \href{https://dx.doi.org/{10.1021/ct400109a}}{\doiprefix
-  \detokenize{{10.1021/ct400109a}}}.
+\newblock \href{https://dx.doi.org/10.1021/ct400109a}{\doiprefix
+  \detokenize{10.1021/ct400109a}}.
 
 \bibitem[{Berendsen et~al.(1984)H. J. C. Berendsen and J. P. M. Postma and W.
   F. van Gunsteren and A. DiNola and J. R. Haak}]{Berendsen1984}
@@ -361,7 +360,7 @@ Scott Shell, The University of California, Santa Barbara Class Notes;.
 \textbf{\color{LiveCoMSMediumGrey} Daivis PJ}, Evans DJ.
 \newblock Transport Coefficients of Liquid Butane Near the Boiling Point by
   Equilibrium Molecular Dynamics.
-\newblock Journal of Chemical Physics.  1995; 103(10):4261--4265.
+\newblock The Journal of Chemical Physics.  1995; 103(10):4261--4265.
 
 \bibitem[{Yeh and Hummer(2004)Yeh, In-Chul and Hummer, Gerhard}]{Yeh2004}
 \textbf{\color{LiveCoMSMediumGrey} Yeh IC}, Hummer G.
@@ -376,7 +375,7 @@ Scott Shell, The University of California, Santa Barbara Class Notes;.
 \textbf{\color{LiveCoMSMediumGrey} Kikugawa G}, Nakano T, Ohara T.
 \newblock {Hydrodynamic consideration of the finite size effect on the
   self-diffusion coefficient in a periodic rectangular parallelepiped system}.
-\newblock {J Chem Phys}.  {2015} {JUL 14}; {143}({2}).
+\newblock {The Journal of Chemical Physics}.  {2015} {JUL 14}; {143}({2}).
 \newblock \href{https://dx.doi.org/{10.1063/1.4926841}}{\doiprefix
   \detokenize{{10.1063/1.4926841}}}.
 
@@ -391,7 +390,7 @@ Scott Shell, The University of California, Santa Barbara Class Notes;.
 \bibitem[{Hoover(1985)Hoover, William G.}]{Hoover1985}
 \textbf{\color{LiveCoMSMediumGrey} Hoover WG}.
 \newblock Canonical dynamics: Equilibrium phase-space distributions.
-\newblock Phys Rev A.  1985 Mar; 31:1695--1697.
+\newblock Physical Review A.  1985 Mar; 31:1695--1697.
 \newblock \href{https://dx.doi.org/10.1103/PhysRevA.31.1695}{\doiprefix
   \detokenize{10.1103/PhysRevA.31.1695}}.
 
@@ -434,7 +433,7 @@ Scott Shell, The University of California, Santa Barbara Class Notes;.
 \textbf{\color{LiveCoMSMediumGrey} Daivis PJ}, Evans DJ.
 \newblock Comparison of constant pressure and constant volume nonequilibrium
   simulations of sheared model decane.
-\newblock Journal of Chemical Physics.  1994; 100(1):541--547.
+\newblock The Journal of Chemical Physics.  1994; 100(1):541--547.
 
 \bibitem[{Borodin et~al.(2009)Borodin, Oleg and Smith, Grant D. and Kim,
   Hojin}]{Borodin2009}

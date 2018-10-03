@@ -90,86 +90,76 @@ You're missing a field name---line 358 of file transport_properties.bib
  : %URL = {http://dx.doi.org/10.1021/jp062885s},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 368 of file transport_properties.bib
- : 
- : url = {http://lammps.sandia.gov/doc/Manual.html}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 376 of file transport_properties.bib
- : 
- : url = {http://manual.gromacs.org/documentation/2018/index.html}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 412 of file transport_properties.bib
+You're missing a field name---line 413 of file transport_properties.bib
  : 
  : %URL = {https://doi.org/10.1063/1.4932980},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 426 of file transport_properties.bib
+You're missing a field name---line 427 of file transport_properties.bib
  : 
  : %URL = {https://doi.org/10.1021/acs.jpcb.6b09111},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 511 of file transport_properties.bib
+You're missing a field name---line 512 of file transport_properties.bib
  : 
  : %URL = {https://doi.org/10.1080/08927020500252599},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 525 of file transport_properties.bib
+You're missing a field name---line 526 of file transport_properties.bib
  : 
  : %URL = {https://doi.org/10.1021/jp810016e},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 545 of file transport_properties.bib
+You're missing a field name---line 546 of file transport_properties.bib
  : 
  : %URL = {https://doi.org/10.1063/1.476482},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 571 of file transport_properties.bib
+You're missing a field name---line 572 of file transport_properties.bib
  : 
  : %URL = {https://doi.org/10.1063/1.470648},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 584 of file transport_properties.bib
+You're missing a field name---line 585 of file transport_properties.bib
  : 
  : %URL = {https://doi.org/10.1063/1.439486},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 598 of file transport_properties.bib
+You're missing a field name---line 599 of file transport_properties.bib
  : 
  : %  DURL = { http://dx.doi.org/10.1021/ct400341p },
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 654 of file transport_properties.bib
+You're missing a field name---line 655 of file transport_properties.bib
  : 
  : %URL = {https://doi.org/10.1063/1.448118},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 667 of file transport_properties.bib
+You're missing a field name---line 668 of file transport_properties.bib
  : 
  : %URL = {https://doi.org/10.1063/1.2408420},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 680 of file transport_properties.bib
+You're missing a field name---line 681 of file transport_properties.bib
  : 
  : %URL = {https://doi.org/10.1063/1.447334},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 684 of file transport_properties.bib
+Repeated entry---line 685 of file transport_properties.bib
  : @article{Andersen1980
  :                      ,
 I'm skipping whatever remains of this entry
-You're missing a field name---line 707 of file transport_properties.bib
+You're missing a field name---line 708 of file transport_properties.bib
  : 
  : %URL = {https://doi.org/10.1021/ct700301q },
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 719 of file transport_properties.bib
+You're missing a field name---line 720 of file transport_properties.bib
  : 
  : %url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.21287}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 734 of file transport_properties.bib
+You're missing a field name---line 735 of file transport_properties.bib
  : 
  : %  url = {https://link.aps.org/doi/10.1103/PhysRevA.31.1695}
 (Error may have been on previous line)
@@ -201,4 +191,4 @@ Warning--missing publisher in ShenSRSW
 Warning--there's a month but no year in ShenSRSW
 You can't pop an empty literal stack for entry Martin1998
 while executing---line 1927 of file vancouver-livecoms.bst
-(There were 37 error messages)
+(There were 35 error messages)

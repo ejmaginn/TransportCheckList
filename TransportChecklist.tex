@@ -16,6 +16,8 @@
 \newcommand{\versionnumber}{1}  % you should update the minor version number in preprints and major version number of submissions.
 \newcommand{\githubrepository}{\url{https://github.com/ejmaginn/TransportCheckList}}  %this should be the main github repository for this article
 \graphicspath{{figures/}}
+\usepackage{hyperref}
+%\def\UrlBreaks{\do\/\do-}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% ARTICLE SETUP
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,24 +135,24 @@ In addition to the present manuscript, we highly recommend reviewing this list o
 \begin{enumerate}
 	\item Text books:
 	\begin{enumerate}
-		\item Allen and Tildesley, Computer simulation of liquids, pages 73--79, 274--281, and 292--296. \cite{Allen2017}
-		\item Frenkel and Smit, Understanding molecular simulation: from algorithms to applications, pages 87--90 and 509--523. \cite{Frenkel2002}
-		\item Leach, Molecular modelling: principles and applications, pages 374--382. \cite{Leach2001}
-		\item Haile, Molecular dynamics simulation: elementary methods, pages 189--192 and 485--488. \cite{Haile1992}
+		\item Allen and Tildesley, \textit{Computer simulation of liquids}, pages 73--79, 274--281, and 292--296. \cite{Allen2017}
+		\item Frenkel and Smit, \textit{Understanding molecular simulation: from algorithms to applications}, pages 87--90 and 509--523. \cite{Frenkel2002}
+		\item Leach, \textit{Molecular modelling: principles and applications}, pages 374--382. \cite{Leach2001}
+		\item Haile, \textit{Molecular dynamics simulation: elementary methods}, pages 189--192 and 485--488. \cite{Haile1992}
 	\end{enumerate}
 	\item Class notes:
 	\begin{enumerate}
-		\item Panagiotopoulos, The University of Princeton. \cite{PanaNotes}
-		\item Kofke, The University of Buffalo. \cite{KofkeNotes}
-		\item Maginn, The University of Notre Dame. \cite{MaginnNotes}
-		\item Shell, The University of California, Santa Barbara. \cite{ShellNotes}
+		\item Panagiotopoulos. \cite{PanaNotes}
+		\item Kofke. \cite{KofkeNotes}
+		\item Maginn. \cite{MaginnNotes}
+		\item Shell. \cite{ShellNotes}
 	\end{enumerate}
 	\item Peer-reviewed articles:
 	\begin{enumerate}
-		\item Chen et al., Are pressure fluctuation-based equilibrium methods really worse than nonequilibrium methods for calculating viscosities? \cite{Chen2009}
-		\item Hess, Determining the shear viscosity of model liquids from molecular dynamics simulations. \cite{Hess2002}
-		\item Nieto-Draghi et al., A general guidebook for the theoretical prediction of physicochemical properties of chemical for regulatory purposes, pages 13139--13140. \cite{Nieto2015}
-		\item Ungerer et al., Molecular simulation of the thermophysical properties of fluids: From understanding toward quantitative predictions. \cite{Ungerer2007}
+		\item Chen et al., \textit{Are pressure fluctuation-based equilibrium methods really worse than nonequilibrium methods for calculating viscosities?} \cite{Chen2009}
+		\item Hess, \textit{Determining the shear viscosity of model liquids from molecular dynamics simulations.} \cite{Hess2002}
+		\item Nieto-Draghi et al., \textit{A general guidebook for the theoretical prediction of physicochemical properties of chemical for regulatory purposes}, pages 13139--13140. \cite{Nieto2015}
+		\item Ungerer et al., \textit{Molecular simulation of the thermophysical properties of fluids: From understanding toward quantitative predictions.} \cite{Ungerer2007}
 	\end{enumerate}
 	\item Software manuals:
 	\begin{enumerate}
@@ -236,23 +238,30 @@ For self-diffusivity, $\xi$ is the Cartesian atom position $(r_{\alpha})$ and th
 	% ``c'' right aligns text in the column
 	% & separates columns, \\ ends the row.
 
-	\begin{tabular}{l l l l l}
+	\begin{tabular}{c c c c}
 		\toprule
-		Property & $\gamma$          & $\xi$                        & Green-Kubo (Equation \ref{eq:Green-Kubo})    & Einstein (Equation \ref{eq:Einstein})     \\
+		Property $(\gamma)$          & Mechanical variable $(\xi)$                        & Green-Kubo (Equation \ref{eq:Green-Kubo})    & Einstein (Equation \ref{eq:Einstein})     \\
 		\midrule
-		Self-diffusivity     & $D$ & $r_{\alpha}$          & $ \displaystyle \frac{1}{d_\alpha} \int_{0}^{\infty}dt\left\langle \frac{1}{N} \sum_{i=1}^{N} v_{\alpha,i}(t) v_{\alpha,i}(0)\right\rangle_{t_0}$    & $ \displaystyle \frac{1}{2d_\alpha} \lim_{t\to\infty} \frac{d}{dt} \left\langle \frac{1}{N} \sum_{i=1}^{N} |r_{\alpha,i}(t)-r_{\alpha,i}(0)|^2 \right\rangle_{t_0}$   \\
-		Shear viscosity     & $\eta$       & $r_\alpha v_\beta$           & $ \displaystyle \frac{V}{k_{\rm B}T} \int_{0}^{\infty}dt\left\langle \tau_{\alpha\beta}(t) \tau_{\alpha\beta}(0)\right\rangle_{t_0}$    & $ \displaystyle \frac{V}{2k_{\rm B}T} \lim_{t\to\infty} \frac{d}{dt} \left\langle \left(\int_{0}^{t}dt' \tau_{\alpha\beta}(t')\right)^2 \right\rangle_{t_0}$  \\
+		Self-diffusivity $(D)$ & $r_{\alpha}$          & $ \displaystyle \frac{1}{d_\alpha} \int_{0}^{\infty}dt\left\langle \frac{1}{N} \sum_{i=1}^{N} v_{\alpha,i}(t) v_{\alpha,i}(0)\right\rangle_{t_0}$    & $ \displaystyle \frac{1}{2d_\alpha} \lim_{t\to\infty} \frac{d}{dt} \left\langle \frac{1}{N} \sum_{i=1}^{N} |r_{\alpha,i}(t)-r_{\alpha,i}(0)|^2 \right\rangle_{t_0}$   \\
+		Shear viscosity $(\eta)$       & $r_\alpha v_\beta$           & $ \displaystyle \frac{V}{k_{\rm B}T} \int_{0}^{\infty}dt\left\langle \tau_{\alpha\beta}(t) \tau_{\alpha\beta}(0)\right\rangle_{t_0}$    & $ \displaystyle \frac{V}{2k_{\rm B}T} \lim_{t\to\infty} \frac{d}{dt} \left\langle \left(\int_{0}^{t}dt' \tau_{\alpha\beta}(t')\right)^2 \right\rangle_{t_0}$  \\
 		\bottomrule
 	\end{tabular}
 	\newline
 	%$P_{\alpha,\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( \frac{p_{\alpha,i}(t)p_{\beta,i}(t)}{m} + \alpha_i(t) \ddot{\beta_i}(t) \right)$
+%	$\gamma=$ transport coefficient \newline
+%	$\xi=$ mechanical variable associated with $\gamma$ \newline
+	$t=$ time \newline
+	$r=$ position \newline
+	$v=$ velocity \newline
 	$\alpha$, $\beta = x, y, $ or $z$ Cartesian coordinates of the atoms or molecule center of mass \newline
 	$d_\alpha =$ dimensionality (1, 2, or 3) \newline
 	$N=$ number of atoms or molecules (see Sec.\ \ref{sec:General: Clear communication}) \newline
-%	$V=$ volume \newline
+	$V=$ volume \newline
+	$T=$ temperature \newline
 	$k_{\rm B}=$ Boltzmann constant \newline
 	$\tau_{\alpha\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( m v_{\alpha,i}(t) v_{\beta,i}(t) + r_{\alpha,i}(t) f_{\beta,i}(t) \right) , \alpha \ne \beta$ \newline
-	$f_{\beta,i}$ is the force acting on particle $i$ in direction $\beta$ \newline
+	$f_{\beta,i}=$ the force acting on particle $i$ in direction $\beta$ \newline
+	$m=$ mass of particle \newline
 	$\langle \cdots \rangle_{t_0}$ denotes an average over time origins (see Sec.\ \ref{sec:General: Improve precision})
 \end{table*}
 
@@ -675,7 +684,7 @@ Replicates can provide a rigorous uncertainty assessment. We recommend bootstrap
 \end{enumerate}
 In step \ref{item:Random selection}, the resampled set should be the same size as the original set of replicates, i.e., $N_{\rm boots} = N_{\rm reps}$. For this reason, replacement after each random selection is key to ensure that a different set is resampled for each cycle (step \ref{item:Loop}). Note that this approach is typically most reliable when $N_{\rm reps} \ge 20$. However, we recommend this approach even if only a few replicate simulations are performed to at least have a rough estimate of the uncertainty.
  
-Step \ref{item:Confidence interval} requires the probability density function (PDF, or alternatively the cumulative distribution function, CDF) for $D$ or $\eta$. The bootstrapped distribution of $D$ or $\eta$ obtained in Step \ref{item:Bootstrap Distribution} is used to approximate the PDF, which is typically expressed as either a histogram or by fitting to a normal distribution. Solving for the lower and upper bounds of $D$ or $\eta$ can be performed in several different ways, but the two-sided tail approach is most common. With this approach, the lower and upper bounds correspond to the values that yield $\alpha/2 \times 100$~\% of the integrated PDF in the lower and upper tails. We recommend using $\alpha = 0.05$, corresponding to a 95~\% confidence interval.
+Step \ref{item:Confidence interval} requires the probability density function (PDF, or alternatively the cumulative distribution function, CDF) for $D$ or $\eta$. The bootstrapped distribution of $D$ or $\eta$ obtained in Step \ref{item:Bootstrap Distribution} is used to approximate the PDF, which is typically expressed as either a histogram or by fitting to a normal distribution. Solving for the lower and upper bounds of $D$ or $\eta$ can be performed in several different ways, but the two-sided tail approach is most common. With this approach, the lower and upper bounds correspond to the values that yield $\alpha/2 \times 100$\% of the integrated PDF in the lower and upper tails. We recommend using $\alpha = 0.05$, corresponding to a 95\% confidence interval.
 
 %Compute statistical uncertainty by running independent replicates (using multiple starting states from $NPT$ run at desired temperature) and taking the standard deviation (what do the uncertainty people say?) How many replicates do we recommend? \label{item:uncertainty}
 %
@@ -726,7 +735,7 @@ It is possible to use the coordinates / velocities of each atom or the center of
 
 \subsubsection{Finite size effects} \label{sec:Self-Diffusivity:General: Finite size}
 
-Finite size effects are significant for self-diffusivity calculations and must be accounted for to obtain meaningful estimates. Calculated self-diffusivities increase with increasing system size, as can be seen in Figure~\ref{fig:MoultosFig1} from Ref. \cite{Moultos2016} where the self-diffusivity of high pressure CO$_2$ differs by approximately 10~\% depending on the size of the system. We therefore stress the importance of reporting the self-diffusivity in the ``infinite'' box limit. This can be determined in one of two ways. 
+Finite size effects are significant for self-diffusivity calculations and must be accounted for to obtain meaningful estimates. Calculated self-diffusivities increase with increasing system size, as can be seen in Figure~\ref{fig:MoultosFig1} from Ref. \cite{Moultos2016} where the self-diffusivity of high pressure CO$_2$ differs by approximately 10\% depending on the size of the system. We therefore stress the importance of reporting the self-diffusivity in the ``infinite'' box limit. This can be determined in one of two ways. 
 
 The first approach is to perform simulations with progressively larger system sizes, i.e., by increasing the number of molecules, $N$, and the box length, $L$, such that the density is constant. The computed self-diffusivities are then plotted as a function of $N^{-1/3}$. As shown in Figure~\ref{fig:MoultosFig1}, such a plot is approximately linear, and extrapolating to when $N^{-1/3}=0$ (i.e., $N \rightarrow \infty$) gives an estimate of the self-diffusivity (although note that some studies, such as Ref. \cite{Daivis:1995}, extrapolate $D$ with respect to $N^{-1}$). The downside of this approach is that it requires multiple simulations and the large system simulations are computationally intensive. 
 
@@ -743,7 +752,7 @@ As can be seen in Figure~\ref{fig:MoultosFig1}, both methods give similar result
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{MoultosFig1.png}
-	\caption{System size dependence of self-diffusivity obtained with Einstein approach. Reproduced with permission from J. Chem. Phys. 145, 074109 (2016). Copyright 2016 AIP Publishing \cite{Moultos2016}. Blue dashed lines are obtained by extrapolating the MD results to the infinite system size, i.e., $N^{-1/3} \to 0$. Red diamonds are the values of $D$ after correcting for finite size effects, i.e., Equation \ref{eq:YH-correction}. The red dashed line is an average of these corrected values of $D$. For further details, see Ref. \cite{Moultos2016}. Note that $1$ bar $ = 10^5$ Pa.}
+	\caption{System size dependence of self-diffusivity obtained with Einstein approach. Reproduced with permission from J. Chem. Phys. 145, 074109 (2016). Copyright 2016 AIP Publishing \cite{Moultos2016}. Blue dashed lines are obtained by extrapolating the MD results to the infinite system size, i.e., $N^{-1/3} \to 0$. Red diamonds are the values of $D$ after applying the Yem-Hummer (YH) finite-size correction, i.e., Equation \ref{eq:YH-correction}. The red dashed line is an average of these corrected values of $D$. For further details, see Ref. \cite{Moultos2016}. Note that $1$ bar $ = 10^5$ Pa.}
 	\label{fig:MoultosFig1}
 \end{figure}
 
@@ -794,7 +803,7 @@ A typical log-log plot, borrowed from Ref. \cite{Kondratyuk2016}, is provided in
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{KondratyukFig2.png}
-	\caption{Log-log plot of MSD with respect to time. Reproduced with permission from J. Phys. Conf. Ser. 774 (2016) 012039, under the Creative Commons Attribution 3.0 license \cite{Kondratyuk2016}. The gray dashed lines are linear fits to the diffusive regime, as determined by the authors. For further details, see Ref. \cite{Kondratyuk2016}. Note that $1$ \AA $\ = 10^{-10}$ m.}%The color for each line corresponds to different torsional force field parameters. The red dash-dot line shows the LAMMPS averaging methodology.
+	\caption{Log-log plot of MSD with respect to time. Reproduced with permission from J. Phys. Conf. Ser. 774 (2016) 012039, under the Creative Commons Attribution 3.0 license \cite{Kondratyuk2016}. The line colors correspond to different torsional energies $(E_{\rm tors})$. The dash-dotted and solid red lines represent the same simulation results averaged over one and sixty time origins, respectively. The gray dashed lines are linear fits to the corresponding diffusive regimes, as determined by the authors. For further details, see Ref. \cite{Kondratyuk2016}. Note that $1$ \AA $\ = 10^{-10}$ m.}%The color for each line corresponds to different torsional force field parameters. The red dash-dot line shows the LAMMPS averaging methodology.
 	\label{fig:KondratyukFig2}
 \end{figure}
 
@@ -1024,7 +1033,7 @@ We are not aware of any studies that rigorously quantify the improvement in prec
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{ChenFig1.png}
-	\caption{Green-Kubo viscosity plot for Lennard-Jones (LJ) fluid (in reduced LJ units, i.e., $\eta^* = \frac{\eta \sigma^2}{\sqrt{m \epsilon}}$ and $t^* = t \sqrt{\frac{\epsilon}{m \sigma^2}}$, where $\sigma$ and $\epsilon$ are the respective LJ size and energy parameters and $m$ is the mass of the LJ particle). Reproduced from J. Chem. Phys., 131, 246101 (2009), with the permission of AIP Publishing \cite{Chen2009}. Red line is obtained by averaging the three off-diagonal elements while the black line is obtained from all six pressure tensor elements. For further details, see Ref. \cite{Chen2009}.}
+	\caption{Green-Kubo viscosity plot for Lennard-Jones (LJ) fluid (in reduced LJ units, i.e., $\eta^* = \frac{\eta \sigma^2}{\sqrt{m \epsilon}}$ and $t^* = t \sqrt{\frac{\epsilon}{m \sigma^2}}$, where $\sigma$ and $\epsilon$ are the respective LJ size and energy parameters and $m$ is the mass of the LJ particle). Reproduced from J. Chem. Phys., 131, 246101 (2009), with the permission of AIP Publishing \cite{Chen2009}. The inset focuses on the short-time interval where the initial plateau is observed. Red line is obtained by averaging the three off-diagonal elements while the black line is obtained from all six pressure tensor elements. For further details, see Ref. \cite{Chen2009}.}
 	\label{fig:ChenFig1}
 \end{figure}
 
@@ -1147,7 +1156,7 @@ Ref. \cite{Borodin2009} proposes an alternative model by integrating the slow st
 \end{equation}
 where $\eta_\infty$, $\tau_s$, and $\beta_s$ are fitting parameters that relate to the infinite-time viscosity, decay time, and the exponent of slow relaxation. 
 
-We recommend the use of Equation \ref{eq: Double exponential} as we have found it to be a more flexible fitting model, i.e., the optimized sum-squared-error is typically lower than that of Equation \ref{eq:Borodin}. That being said, the $\eta_{\infty}$ estimates obtained with Equations \ref{eq: Double exponential} and \ref{eq:Borodin} are quite similar. Deviations in $\eta_{\infty}$ between the two equations are generally less than 1~\% for both low (gas phase) and high (compressed liquid phase) viscosities. Regardless of whether Equation \ref{eq: Double exponential} or \ref{eq:Borodin} is implemented, it is important to include a description of how the fit is performed, e.g., the objective function, range of data included.
+We recommend the use of Equation \ref{eq: Double exponential} as we have found it to be a more flexible fitting model, i.e., the optimized sum-squared-error is typically lower than that of Equation \ref{eq:Borodin}. That being said, the $\eta_{\infty}$ estimates obtained with Equations \ref{eq: Double exponential} and \ref{eq:Borodin} are quite similar. Deviations in $\eta_{\infty}$ between the two equations are generally less than 1\% for both low (gas phase) and high (compressed liquid phase) viscosities. Regardless of whether Equation \ref{eq: Double exponential} or \ref{eq:Borodin} is implemented, it is important to include a description of how the fit is performed, e.g., the objective function, range of data included.
 
 Ref. \cite{Zhang2015} recommends that the data be weighted by the inverse of the standard deviation $(\sigma)$ from the replicate simulation values. As $\sigma$ increases significantly with respect to time, Ref. \cite{Zhang2015} fit $\sigma$ to the model $A t^b$, where $t$ is time and $A$ and $b$ are fitting parameters. This fit is used to develop a weighting model of the form $w \propto t^{-b}$, where $w$ is the weight and $b$ is the weighting exponent obtained from the $\sigma$ model fit. If such a model is utilized, the resulting estimate of $\eta$ may depend strongly on $b$, the weighting exponent. 
 
@@ -1166,7 +1175,7 @@ For these reasons, we recommend that the author quantifies the uncertainty in th
 	\label{fig:ZhangFig7_12}
 \end{figure}
 
-Ref. \cite{Zhang2015} also suggests that a cut-off time be implemented to improve the fit. They provide a heuristic that the cut-off time correspond to when the standard deviation is 40~\% of the plateau value. Regardless of how the cut-off is determined, it is important to quantify the degree to which the estimated viscosity depends on this parameter. For example, Zhang \textit{et al.} reported that the viscosity decreased by 0.8~\% and 6.1~\% when using a cut-off time corresponding to a standard deviation of 30~\% or 20~\% the plateau value, respectively. However, since the magnitude of variability depends strongly on the system, we recommend that the author quantify the cut-off time dependence.
+Ref. \cite{Zhang2015} also suggests that a cut-off time be implemented to improve the fit. They provide a heuristic that the cut-off time correspond to when the standard deviation is 40\% of the plateau value. Regardless of how the cut-off is determined, it is important to quantify the degree to which the estimated viscosity depends on this parameter. For example, Zhang \textit{et al.} reported that the viscosity decreased by 0.8\% and 6.1\% when using a cut-off time corresponding to a standard deviation of 30\% or 20\% the plateau value, respectively. However, since the magnitude of variability depends strongly on the system, we recommend that the author quantify the cut-off time dependence.
 
 Furthermore, Ref. \cite{Zhang2015} recommends excluding short-time data from the fitting procedure. In Figure \ref{fig:ZhangFig4}, borrowed from Ref. \cite{Zhang2015}, we observe large oscillations at very short times, \textit{ca.} $t < 2$ ps. A weighting function with a $t^{-b}$ form assigns an inappropriately large weight to these short-time data points. Therefore, it is important to exclude data in this short-time region from the model fitting. 
 
@@ -1298,11 +1307,11 @@ For viscosity, we recommend the Green-Kubo approach, although the Einstein metho
 
 \section*{Acknowledgments}
 
-This research was performed while R.A.M. held a National Research Council (NRC) Postdoctoral Research Associateship at the National Institute of Standards and Technology (NIST).
+We are grateful for the internal review provided by Alta Y. Fang and Arno R. Laesecke of the National Institute of Standards and Technology (NIST). This research was performed while R.A.M. held a National Research Council (NRC) Postdoctoral Research Associateship at NIST.
 
 \section*{Disclaimer}
 
-By identifying certain commercially available items, this manuscript does not imply recommendation by NIST.
+Commercial equipment, instruments, or materials are identified only in order to adequately specify certain procedures. In no case does such identification imply recommendation or endorsement by NIST, nor does it imply that the products identified are necessarily the best available for the intended purpose.
 
 %\nocite{*} % This command displays all refs in the bib file
 \bibliography{transport_properties}

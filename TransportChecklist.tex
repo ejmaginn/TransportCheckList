@@ -13,7 +13,7 @@
 \usepackage[version=4]{mhchem}
 \usepackage{siunitx}
 \DeclareSIUnit\Molar{M}
-\newcommand{\versionnumber}{1}  % you should update the minor version number in preprints and major version number of submissions.
+\newcommand{\versionnumber}{1.0}  % you should update the minor version number in preprints and major version number of submissions.
 \newcommand{\githubrepository}{\url{https://github.com/ejmaginn/TransportCheckList}}  %this should be the main github repository for this article
 \graphicspath{{figures/}}
 \usepackage{hyperref}
@@ -21,7 +21,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% ARTICLE SETUP
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Best Practices for Computing Transport Properties 1. Self-Diffusivity and Viscosity from Equilibrium Molecular Dynamics v\versionnumber}
+\title{Best Practices for Computing Transport Properties 1. Self-Diffusivity and Viscosity from Equilibrium Molecular Dynamics [Article v\versionnumber]}
 
 %Edward Maginn (ejmaginn), Richard Elliott, Sunny Hwang, Daniel Roe (GitHub: drroe), Rich Messerly (ramess101)
 
@@ -147,6 +147,7 @@ In addition to the present manuscript, we highly recommend reviewing this list o
 		\item Maginn. \cite{MaginnNotes}
 		\item Shell. \cite{ShellNotes}
 	\end{enumerate}
+    \vfill\null
 	\item Peer-reviewed articles:
 	\begin{enumerate}
 		\item Chen et al., \textit{Are pressure fluctuation-based equilibrium methods really worse than nonequilibrium methods for calculating viscosities?} \cite{Chen2009}
@@ -262,7 +263,7 @@ For self-diffusivity, $\xi$ is the Cartesian atom position $(r_{\alpha})$ and th
 	$\tau_{\alpha\beta}(t) = \frac{1}{V} \sum_{i=1}^{N} \left( m v_{\alpha,i}(t) v_{\beta,i}(t) + r_{\alpha,i}(t) f_{\beta,i}(t) \right) , \alpha \ne \beta$ \newline
 	$f_{\beta,i}=$ the force acting on particle $i$ in direction $\beta$ \newline
 	$m=$ mass of particle \newline
-	$\langle \cdots \rangle_{t_0}$ denotes an average over time origins (see Sec.\ \ref{sec:General: Improve precision})
+	$\langle \cdots \rangle_{t_0}=$ an average over time origins (see Sec.\ \ref{sec:General: Improve precision})
 \end{table*}
 
 Although both Equation \ref{eq:Green-Kubo} (Green-Kubo) and Equation \ref{eq:Einstein} (Einstein) are theoretically rigorous, in practice one method is often preferred depending on the property being estimated. In the case of self-diffusivity, we recommend the Einstein (MSD) approach. In contrast, for shear viscosity we typically recommend Green-Kubo, although for some systems the Einstein approach may be preferable. As the simulation set-up and computational cost are essentially the same for the Green-Kubo and Einstein approaches, the primary difference is the post-simulation data analysis required. Precision and reproducibility of the estimated value are key factors for selecting between the Green-Kubo or Einstein methods. For this reason, we emphasize the importance of proper and clearly communicated data analysis and rigorous uncertainty quantification.

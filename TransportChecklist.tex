@@ -753,7 +753,7 @@ As can be seen in Figure~\ref{fig:MoultosFig1}, both methods give similar result
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{MoultosFig1.png}
-	\caption{Self-diffusivity obtained with Einstein approach demonstrates significant system size dependence. Reproduced with permission from J. Chem. Phys. 145, 074109 (2016). Copyright 2016 AIP Publishing \cite{Moultos2016}. Blue dashed lines are obtained by extrapolating the MD results to the infinite system size, i.e., $N^{-1/3} \to 0$. Red diamonds are the values of $D$ after applying the Yem-Hummer (YH) finite-size correction, i.e., Equation \ref{eq:YH-correction}. The red dashed line is an average of these corrected values of $D$. For further details, see Ref. \cite{Moultos2016}. Note that $1$ bar $ = 10^5$ Pa.}
+	\caption{Self-diffusivity obtained with Einstein approach demonstrates significant system size dependence. Reproduced with permission from J. Chem. Phys. 145, 074109 (2016). Copyright 2016 AIP Publishing \cite{Moultos2016}. Blue dashed lines are obtained by extrapolating the MD results to the infinite system size, i.e., $N^{-1/3} \to 0$. Red diamonds are the values of $D$ after applying the Yeh-Hummer (YH) finite-size correction, i.e., Equation \ref{eq:YH-correction}. The red dashed line is an average of these corrected values of $D$. For further details, see Ref. \cite{Moultos2016}. Note that $1$ bar $ = 10^5$ Pa.}
 	\label{fig:MoultosFig1}
 \end{figure}
 
@@ -888,6 +888,8 @@ The most common method for computing the self-diffusivity from the VACF is to do
 %\end{enumerate}
 
 \subsection{Self-diffusivity: Special topics} \label{sec:Self-Diffusivity Special topics}
+
+\subsubsection{Considerations for membrane systems}
 
 Although molecular simulation is well-suited for predicting diffusivity coefficients in membranes, several issues arise that require special attention. For example, the standard non-bonded long-range cut-off corrections are not straightforward in a heterogeneous system. For this reason, it is common to modify the non-bonded interactions such that tail corrections are not needed, e.g., cut-and-shift, force-switch \cite{GROMACS,Brooks2009}. However, it is important to investigate the impact modifying the non-bonded potential has on the diffusion coefficients. 
 
@@ -1172,7 +1174,7 @@ For these reasons, we recommend that the author quantifies the uncertainty in th
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{ZhangFig7_12.png}
-	\caption{The exponent of the weighting model, $b$, affects the viscosity estimate of certain systems. $b = 0.52$ for Ethanol at 298 K, top panel, while $b$ is between $0.60$ to $0.73$ for [BMIM][Tf$_2$N] at 350 K, bottom panel. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite{Zhang2015}. Note that 1 cP $\ = 10^{-3}$ Pa-s.}
+	\caption{The exponent of the weighting model, $b$, affects the viscosity estimate of certain systems. $b = 0.52$ for ethanol at 298 K, top panel, while $b$ is between $0.60$ to $0.73$ for [BMIM][Tf$_2$N] at 350 K, bottom panel. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite{Zhang2015}. Note that 1 cP $\ = 10^{-3}$ Pa-s.}
 	\label{fig:ZhangFig7_12}
 \end{figure}
 
@@ -1279,6 +1281,8 @@ In addition, we recommend bootstrapping the time interval uncertainty, i.e., com
 %For example, for the single and 30 replicate simulations in Figure \ref{fig:Einstein_slope_time_interval} Panels a) and b), respectively, we can report the variability  a useful measure of uncertainty is the range of $\eta$ values obtained by analyzing numerous (order of 100) different time regions.
 
 \subsection{Viscosity: Special topics} \label{sec:Viscosity Special topics}
+
+\subsubsection{Considerations for cut-off length}
 
 The GROMACS manual reports that viscosity ``is very dependent on the treatment of the electrostatics. Using a (short) cut-off results in large noise on the off-diagonal pressure elements, which can increase the calculated viscosity by an order of magnitude.'' \cite{GROMACS,Hess2002} Therefore, when computing viscosities for systems with electrostatics, it is extremely important to investigate the effect of cut-off distance. This can be done by performing simulations with variable Coulombic cut-off lengths, typically 0.9, 1.2, and 1.4 nm. We also recommend investigating whether the estimated viscosity depends strongly on the algorithm for computing the electrostatics, e.g., particle mesh Ewald. \cite{GROMACS,Darden1993} 
 

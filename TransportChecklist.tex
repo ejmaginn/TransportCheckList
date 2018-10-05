@@ -753,7 +753,7 @@ As can be seen in Figure~\ref{fig:MoultosFig1}, both methods give similar result
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{MoultosFig1.png}
-	\caption{Self-diffusivity obtained with Einstein approach demonstrates significant system size dependence. Reproduced with permission from J. Chem. Phys. 145, 074109 (2016). Copyright 2016 AIP Publishing \cite{Moultos2016}. Blue dashed lines are obtained by extrapolating the MD results to the infinite system size, i.e., $N^{-1/3} \to 0$. Red diamonds are the values of $D$ after applying the Yeh-Hummer (YH) finite-size correction, i.e., Equation \ref{eq:YH-correction}. The red dashed line is an average of these corrected values of $D$. For further details, see Ref. \cite{Moultos2016}. Note that $1$ bar $ = 10^5$ Pa.}
+	\caption{Self-diffusivity obtained with Einstein approach demonstrates significant system size dependence. Reproduced with permission from J. Chem. Phys. 145, 074109 (2016). Copyright 2016 AIP Publishing \cite{Moultos2016}. Blue dashed lines are obtained by extrapolating the molecular dynamics (MD) results to the infinite system size, i.e., $N^{-1/3} \to 0$. Red diamonds are the values of $D$ after applying the Yeh-Hummer (YH) finite-size correction, i.e., Equation \ref{eq:YH-correction}. The red dashed line is an average of these corrected values of $D$. For further details, see Ref. \cite{Moultos2016}. Note that $1$ bar $ = 10^5$ Pa.}
 	\label{fig:MoultosFig1}
 \end{figure}
 
@@ -1112,7 +1112,7 @@ Figure \ref{fig:FanourgakisFig1}, from Ref. \cite{Fanourgakis2012}, demonstrates
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{FanourgakisFig1.png}
-	\caption{Equation \ref{eq:ACF_fit} provides reliable fit of autocorrelation function. Reproduced with permission from J. Phys. Chem. A., 2012, 116 (10), pp 2564--2570. Copyright (2012) ACS Publications \cite{Fanourgakis2012}. S$_{\rm ACF}$ and S$^{\rm f}_{\rm ACF}$ correspond to the raw autocorrelation function and the fit to Equation \ref{eq:ACF_fit}, respectively. The red dotted line and blue dashed--dotted line correspond to the fast and slow autocorrelation components, respectively, i.e., the first and second terms of Equation \ref{eq:ACF_fit}. For further details, see Ref. \cite{Fanourgakis2012}.}
+	\caption{Equation \ref{eq:ACF_fit} provides reliable fit of autocorrelation function. Reproduced with permission from J. Phys. Chem. A., 2012, 116 (10), pp 2564--2570. Copyright (2012) ACS Publications \cite{Fanourgakis2012}. S$_{\rm ACF}$ and S$^{\rm f}_{\rm ACF}$ correspond to the raw autocorrelation function and the fit to Equation \ref{eq:ACF_fit}, respectively. The red dotted line and blue dashed--dotted line correspond to the fast and slow autocorrelation components, respectively, i.e., the first and second terms of Equation \ref{eq:ACF_fit}. The inset highlights the large long-time fluctuations. For further details, see Ref. \cite{Fanourgakis2012}.}
 	\label{fig:FanourgakisFig1}
 \end{figure}
 
@@ -1174,7 +1174,7 @@ For these reasons, we recommend that the author quantifies the uncertainty in th
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{ZhangFig7_12.png}
-	\caption{The exponent of the weighting model, $b$, affects the viscosity estimate of certain systems. $b = 0.52$ for ethanol at 298 K, top panel, while $b$ is between $0.60$ to $0.73$ for [BMIM][Tf$_2$N] at 350 K, bottom panel. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite{Zhang2015}. Note that 1 cP $\ = 10^{-3}$ Pa-s.}
+	\caption{The Green-Kubo viscosity estimate depends on the exponent of the weighting model, $b$, which is approximately $0.5$ for certain systems. Note that $b = 0.52$ for ethanol at 298 K, top panel, while $b$ is between $0.60$ to $0.73$ for [BMIM][Tf$_2$N] at 350 K, bottom panel. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite{Zhang2015}. Note that 1 cP $\ = 10^{-3}$ Pa-s.}
 	\label{fig:ZhangFig7_12}
 \end{figure}
 
@@ -1185,7 +1185,7 @@ Furthermore, Ref. \cite{Zhang2015} recommends excluding short-time data from the
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{ZhangFig4.png}
-	\caption{Green-Kubo viscosity demonstrates large fluctuations at very short time. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite{Zhang2015}. Note that 1 cP $\ = 10^{-3}$ Pa-s.}
+	\caption{Green-Kubo ``running integral'' demonstrates large fluctuations at very short time. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite{Zhang2015}. Note that 1 cP $\ = 10^{-3}$ Pa-s.}
 	\label{fig:ZhangFig4}
 \end{figure}  
 
@@ -1224,7 +1224,7 @@ Furthermore, Ref. \cite{Zhang2015} recommends excluding short-time data from the
 %	\caption{Uncertainty quantification of cut-off time and weighting exponent for method proposed by Zhang \textit{et al.} Results are shown for a system of 400 united-atom ethane molecules, simulated with the \cite{Potoff2009} model at saturated liquid density for a temperature of 137 K. Top panel plots the Green-Kubo running integral as average of 100 replicates, each of 1 ns duration. The dashed lines represent different estimates of uncertainty attributed to the cut-off time or the weighting exponent. Middle panel plots the estimated viscosity as a function of cut-off time for a fixed weighting exponent. Bottom panel plots the estimated viscosity as a function of the weighting exponent for two different cut-off times. For longer cut-off times, the viscosity depends strongly on the weighting exponent (around $\pm 2$\%) while shorter times are much less dependent (around $\pm 0.1$\%). For the recommended weighting exponent, the cut-off time can cause the viscosity to vary by around $\pm 2$\%. Note that these results may depend strongly on the state point and number of molecules.}
 %	\label{fig:GK_tcut_b}
 %\end{figure}
-
+\vfill\null
 \subsection{Viscosity: Einstein} \label{sec:Viscosity Einstein}
 
 %\subsubsection{Improved precision} \label{sec:Viscosity:Einstein: Improved precision}
@@ -1246,7 +1246,7 @@ For example, Figure \ref{fig:Einstein_slope_time_interval} helps visualize the u
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=3.2in]{Einstein_slope_time_interval.png}
-	\caption{Viscosity is highly sensitive to the time interval used to compute the Einstein slope. For example, ``start time'' $=$ 50 ps and ``end time'' $=$ 200 ps computes the slope from $t = 50$ to $200$ ps of $\displaystyle \frac{V}{2 k_{\rm B} T N_{\rm reps}} \sum_{n=1}^{N_{\rm reps}} \left\langle \int_0^t \tau_{\alpha\beta,n}(t') dt' \right\rangle_{t_0}$. Panels a) and b) correspond to a single simulation and 30 replicate simulations, respectively. The same color scale is used in both panels, but Panel b) also includes a zoomed-in color bar. Simulation data are the same as those presented in Figure \ref{fig:Einstein_3terms_30replicates}.}
+	\caption{Einstein viscosity is highly sensitive to the time interval used to compute the slope. For example, ``start time'' $=$ 50 ps and ``end time'' $=$ 200 ps computes the slope from $t = 50$ to $200$ ps of $\displaystyle \frac{V}{2 k_{\rm B} T N_{\rm reps}} \sum_{n=1}^{N_{\rm reps}} \left\langle \int_0^t \tau_{\alpha\beta,n}(t') dt' \right\rangle_{t_0}$. Panels a) and b) correspond to a single simulation and 30 replicate simulations, respectively. The same color scale is used in both panels, but Panel b) also includes a zoomed-in color bar. Simulation data are the same as those presented in Figure \ref{fig:Einstein_3terms_30replicates}.}
 	\label{fig:Einstein_slope_time_interval}
 \end{figure}
 

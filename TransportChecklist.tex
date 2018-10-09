@@ -750,7 +750,7 @@ $T$ is the absolute temperature, $\eta$ is the shear viscosity, and $\xi = 2.837
 
 As can be seen in Figure~\ref{fig:MoultosFig1}, both methods give similar results (compare the blue and red dashed lines). The advantage of the Yeh-Hummer correction is that a good estimate of the self-diffusivity can be obtained from a single simulation. Note that a different correction is required for non-cubic simulation boxes \cite{Kikugawa:2015}. Also note that a different correction may be more appropriate for anisotropic condensed-phase systems (e.g., those containing membranes), discussed in Sec.\ \ref{sec:Self-Diffusivity Special topics}.
 
-\begin{figure}[htb!]
+\begin{figure}[]
 	\centering
 	\includegraphics[width=3.2in]{MoultosFig1.png}
 	\caption{Self-diffusivity obtained with Einstein approach demonstrates significant system size dependence. Reproduced with permission from J. Chem. Phys. 145, 074109 (2016). Copyright 2016 AIP Publishing \cite{Moultos2016}. Blue dashed lines are obtained by extrapolating the molecular dynamics (MD) results to the infinite system size, i.e., $N^{-1/3} \to 0$. Red diamonds are the values of $D$ after applying the Yeh-Hummer (YH) finite-size correction, i.e., Equation \ref{eq:YH-correction}. The red dashed line is an average of these corrected values of $D$. For further details, see Ref. \cite{Moultos2016}. Note that $1$ bar $ = 10^5$ Pa.}
@@ -1050,10 +1050,10 @@ and the Einstein relation becomes
 \eta = \displaystyle \frac{V}{20 k_{\rm B} T N_{\rm reps}} \lim_{t\to\infty} \frac{d}{dt} \sum_{n=1}^{N_{\rm reps}} \sum_i \sum_j \left\langle \int_0^t \tau_{ij,n}^{\rm os}(t') dt' \right\rangle_{t_0}
 \label{eq:Einwonder_replicates}
 \end{equation}
-
+%
 For example, Figure \ref{fig:Einstein_3terms_30replicates} demonstrates that averaging three stress tensors is not sufficient to obtain a reliable Einstein slope as $t \to \infty$. By contrast, a near linear trend at high time is observed by averaging a large number of replicates $(N_{\rm reps} = 30)$.
 
-\begin{figure}[htb!]
+\begin{figure}[]
 	\centering
 	\includegraphics[width=3.2in]{Einstein_3terms_30replicates.pdf}
 	\caption{Einstein approach for viscosity is improved by averaging three stress tensor terms and 30 replicate runs. Simulations were performed with Gromacs 2018 for saturated liquid ethane at 137 K using the TraPPE-UA model \cite{Martin1998}. Simulation details: velocity Verlet integrator \cite{Swope1982}, 2 fs time-step, 6 fs pressure tensor output frequency, 12 time origins, 1 ns equilibration time, 1 ns production time, 400 molecule system, 1.4 nm non-bonded cut-off distance with analytic tail corrections, Nos{\'e}-Hoover thermostat with time constant of 1 ps \cite{Hoover1985}, bond-lengths constrained with a linear constraint solver (LINCS) algorithm \cite{GROMACS,Hess1998,Hess2008_PLINCS}.}
@@ -1109,7 +1109,7 @@ where $C, \omega, \tau_f, \tau_s, \beta_f, \beta_s$ (and sometimes $S^{\rm f}_{\
 
 Figure \ref{fig:FanourgakisFig1}, from Ref. \cite{Fanourgakis2012}, demonstrates that Equation \ref{eq:ACF_fit} has the correct shape to fit the stress autocorrelation function for this system. However, notice the significant deviation between the model fit $(S^{\rm f}_{\rm ACF})$ and the raw simulation output $(S_{\rm ACF})$ for time less than 0.02 ps and the relatively small deviations in the first two peaks around 0.1 ps. These systematic deviations in the model fit can lead to significant bias in the estimated viscosity. One method to overcome this issue is to place a larger weight on short-time data or to include a cut-off time beyond which $S_{\rm ACF}$ data are not included in the model fit.
 
-\begin{figure}[htb!]
+\begin{figure}[]
 	\centering
 	\includegraphics[width=3.2in]{FanourgakisFig1.png}
 	\caption{Equation \ref{eq:ACF_fit} provides reliable fit of autocorrelation function. Reproduced with permission from J. Phys. Chem. A., 2012, 116 (10), pp 2564--2570. Copyright (2012) ACS Publications \cite{Fanourgakis2012}. S$_{\rm ACF}$ and S$^{\rm f}_{\rm ACF}$ correspond to the raw autocorrelation function and the fit to Equation \ref{eq:ACF_fit}, respectively. The red dotted line and blue dashed--dotted line correspond to the fast and slow autocorrelation components, respectively, i.e., the first and second terms of Equation \ref{eq:ACF_fit}. The inset highlights the large long-time fluctuations. For further details, see Ref. \cite{Fanourgakis2012}.}
@@ -1171,7 +1171,7 @@ For these reasons, we recommend that the author quantifies the uncertainty in th
 
 %  by first bootstrapping the fit of the standard deviation to the weighting model and then fitt  evaluating Bootstrapping the uncertainty in $\eta$ caused by $b$ can be accomplished by propagating the uncertainty in $b$ from fitting the standard deviation with the weighting model.
 
-\begin{figure}[htb!]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=3.2in]{ZhangFig7_12.png}
 	\caption{The Green-Kubo viscosity estimate depends on the exponent of the weighting model, $b$, which is approximately $0.5$ for certain systems. Note that $b = 0.52$ for ethanol at 298 K, top panel, while $b$ is between $0.60$ to $0.73$ for [BMIM][Tf$_2$N] at 350 K, bottom panel. Reprinted with permission from J. Chem. Theory Comput., 2015, 11 (8), pp 3537–3546. Copyright (2015) American Chemical Society. For further details, see Ref. \cite{Zhang2015}. Note that 1 cP $\ = 10^{-3}$ Pa-s.}

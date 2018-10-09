@@ -624,9 +624,9 @@ FUNCTION {format.names}
       't :=
       nameptr #1 >
         {
-          nameptr #50
+          nameptr #20
           #1 + =
-          numnames #50
+          numnames #20
           > and
             { "others" 't :=
               #1 'namesleft := }
@@ -679,9 +679,9 @@ FUNCTION {format.names.auth}
       't :=
       nameptr #1 >
         {
-          nameptr #50
+          nameptr #20
           #1 + =
-          numnames #50
+          numnames #20
           > and
             { "others" 't :=
               #1 'namesleft := }
@@ -879,12 +879,15 @@ FUNCTION {format.inventors}
 
 FUNCTION {format.note}
 {
-  url empty$
-    'skip$
-    { "\urlprefix\url{" url * "}" * output }
-  if$
+  %%url empty$
+  %%  'skip$
+  %%  { "\urlprefix\url{" url * "}" * output }
+  %%if$
   doi empty$
-    'skip$
+    {url empty$
+      'skip$
+      { "\urlprefix\url{" url * "}" * output }
+    if$}
     { "\href{https://dx.doi.org/" doi * "}{\doiprefix \detokenize{" * doi * "}}" * output }
   if$
  note empty$
@@ -1012,7 +1015,9 @@ FUNCTION {word.in}
 
 FUNCTION {format.journal.date}
 {
-  month "month" bibinfo.check
+  %month "month" bibinfo.check  %% removed to suppress month
+  no.blank.or.punct  %% added to achieve proper ordering (journal name. Year ; ...)
+  ""
   duplicate$ empty$
   year  "year"  bibinfo.check duplicate$ empty$
     {
@@ -1624,8 +1629,8 @@ FUNCTION {techreport}
   format.institution.address output
   format.date "year" output.check
 %  format.tr.number output.nonnull
-%  new.block
-%  format.note output
+  new.block
+  format.note output
 %  output.web.refs  % urlbst
   fin.entry
 }

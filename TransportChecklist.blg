@@ -1,6 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: TransportChecklist.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: TransportChecklist.aux
 The style file: vancouver-livecoms.bst
 Illegal, another \bibstyle command---line 21 of file TransportChecklist.aux
  : \bibstyle
@@ -186,7 +184,6 @@ You're missing a field name---line 760 of file transport_properties.bib
  : }
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty author and editor in AMBER2018
 Warning--missing publisher in AMBER2018
 Warning--there's a month but no year in AMBER2018
@@ -206,45 +203,4 @@ Warning--empty author in ShellNotes
 Warning--empty author and editor in ShellNotes
 Warning--missing publisher in ShellNotes
 Warning--there's a month but no year in ShellNotes
-You've used 61 entries,
-            3450 wiz_defined-function locations,
-            1170 strings with 19765 characters,
-and the built_in function-call counts, 143307 in all, are:
-= -- 18763
-> -- 953
-< -- 24
-+ -- 706
-- -- 238
-* -- 12808
-:= -- 14871
-add.period$ -- 227
-call.type$ -- 61
-change.case$ -- 9
-chr.to.int$ -- 61
-cite$ -- 88
-duplicate$ -- 13856
-empty$ -- 13413
-format.name$ -- 370
-if$ -- 33538
-int.to.chr$ -- 1
-int.to.str$ -- 1
-missing$ -- 635
-newline$ -- 355
-num.names$ -- 115
-pop$ -- 1025
-preamble$ -- 1
-purify$ -- 0
-quote$ -- 0
-skip$ -- 834
-stack$ -- 0
-substring$ -- 27020
-swap$ -- 1531
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 354
-warning$ -- 19
-while$ -- 550
-width$ -- 0
-write$ -- 880
 (There were 37 error messages)

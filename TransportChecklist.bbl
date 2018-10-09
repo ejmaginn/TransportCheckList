@@ -40,7 +40,7 @@
 \newblock Scalable molecular dynamics with NAMD.
 \newblock Journal of Computational Chemistry.  2005; 26(1):1781 --1802.
 \newblock \href{https://dx.doi.org/10.1002/jcc.20289}{\doiprefix
-  \detokenize{10.1002/jcc.20289}}, nAMD was developed by the Theoretical and
+  \detokenize{10.1002/jcc.20289}}, {N}AMD was developed by the Theoretical and
   Computational Biophysics Group in the Beckman Institute for Advanced Science
   and Technology at the University of Illinois at Urbana-Champaign.
   http://www.ks.uiuc.edu/Research/namd/.
